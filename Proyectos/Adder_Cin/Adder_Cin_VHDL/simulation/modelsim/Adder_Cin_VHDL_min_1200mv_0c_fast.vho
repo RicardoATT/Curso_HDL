@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "02/27/2024 22:33:49"
+-- DATE "03/12/2024 03:47:25"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -79,7 +79,7 @@ ENTITY 	Adder_Cin_VHDL IS
 	A : IN std_logic;
 	B : IN std_logic;
 	Cin : IN std_logic;
-	Sum : BUFFER std_logic
+	Sum : OUT std_logic
 	);
 END Adder_Cin_VHDL;
 

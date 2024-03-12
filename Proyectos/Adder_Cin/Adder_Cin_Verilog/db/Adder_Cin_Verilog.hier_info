@@ -2,6 +2,6 @@
 A => Sum.IN0
 B => Sum.IN1
 Cin => Sum.IN1
-Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Sum << Sum.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_Verilog {C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_Verilog/Adder_Cin_Verilog.v}
+

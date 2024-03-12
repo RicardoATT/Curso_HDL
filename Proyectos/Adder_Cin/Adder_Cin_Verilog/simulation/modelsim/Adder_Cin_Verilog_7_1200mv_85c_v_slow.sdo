@@ -29,20 +29,20 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Adder_Cin_Verilog")
-  (DATE "02/27/2024 22:38:12")
+  (DATE "03/12/2024 03:05:36")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition")
   (DIVIDER .)
-  (TIMESCALE 1 ps)
+  (TIMESCALE 100 ns)
 
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
     (INSTANCE Sum\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (696:696:696) (681:681:681))
-        (IOPATH i o (2885:2885:2885) (2860:2860:2860))
+        (PORT i (0.00696:0.00696:0.00696) (0.00681:0.00681:0.00681))
+        (IOPATH i o (0.02885:0.02885:0.02885) (0.0286:0.0286:0.0286))
       )
     )
   )
@@ -51,7 +51,7 @@
     (INSTANCE B\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (650:650:650) (756:756:756))
+        (IOPATH i o (0.0065:0.0065:0.0065) (0.00756:0.00756:0.00756))
       )
     )
   )
@@ -60,7 +60,7 @@
     (INSTANCE Cin\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (640:640:640) (746:746:746))
+        (IOPATH i o (0.0064:0.0064:0.0064) (0.00746:0.00746:0.00746))
       )
     )
   )
@@ -69,7 +69,7 @@
     (INSTANCE A\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (650:650:650) (756:756:756))
+        (IOPATH i o (0.0065:0.0065:0.0065) (0.00756:0.00756:0.00756))
       )
     )
   )
@@ -78,12 +78,12 @@
     (INSTANCE Sum\~0)
     (DELAY
       (ABSOLUTE
-        (PORT dataa (2813:2813:2813) (3066:3066:3066))
-        (PORT datab (2759:2759:2759) (3023:3023:3023))
-        (PORT datad (2750:2750:2750) (3001:3001:3001))
-        (IOPATH dataa combout (429:429:429) (437:437:437))
-        (IOPATH datab combout (441:441:441) (443:443:443))
-        (IOPATH datad combout (155:155:155) (139:139:139))
+        (PORT dataa (0.02813:0.02813:0.02813) (0.03066:0.03066:0.03066))
+        (PORT datab (0.02759:0.02759:0.02759) (0.03023:0.03023:0.03023))
+        (PORT datad (0.0275:0.0275:0.0275) (0.03001:0.03001:0.03001))
+        (IOPATH dataa combout (0.00429:0.00429:0.00429) (0.00437:0.00437:0.00437))
+        (IOPATH datab combout (0.00441:0.00441:0.00441) (0.00443:0.00443:0.00443))
+        (IOPATH datad combout (0.00155:0.00155:0.00155) (0.00139:0.00139:0.00139))
       )
     )
   )

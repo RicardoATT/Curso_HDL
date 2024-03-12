@@ -1,9 +1,3 @@
-/*	Alumno:					Ricardo Aldair Tirado Torres
-	Materia:					Lenguajes de Descripción de Hardware
-	Nombre del proyecto:	Sumador con Carry de entrada en Verilog
-	Tarea:					1
-*/
-
 module Adder_Cin_Verilog(
 	input		A,
 	input 	B,

@@ -1,10 +1,10 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Usuario/Documents/HDL/Adder_Cin/Adder_Cin_VHDL/Adder_Cin_VHDL.vhd
+source_file = 1, C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/Adder_Cin_VHDL.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/Users/Usuario/Documents/HDL/Adder_Cin/Adder_Cin_VHDL/db/Adder_Cin_VHDL.cbx.xml
+source_file = 1, C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/db/Adder_Cin_VHDL.cbx.xml
 design_name = hard_block
 design_name = Adder_Cin_VHDL
 instance = comp, \Sum~output\, Sum~output, Adder_Cin_VHDL, 1
