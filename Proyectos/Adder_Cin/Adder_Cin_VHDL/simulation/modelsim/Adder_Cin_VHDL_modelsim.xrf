@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Usuario/Documents/HDL/Adder_Cin/Adder_Cin_VHDL/Adder_Cin_VHDL.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/18.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Usuario/Documents/HDL/Adder_Cin/Adder_Cin_VHDL/db/Adder_Cin_VHDL.cbx.xml
+design_name = hard_block
+design_name = Adder_Cin_VHDL
+instance = comp, \Sum~output\, Sum~output, Adder_Cin_VHDL, 1
+instance = comp, \B~input\, B~input, Adder_Cin_VHDL, 1
+instance = comp, \Cin~input\, Cin~input, Adder_Cin_VHDL, 1
+instance = comp, \A~input\, A~input, Adder_Cin_VHDL, 1
+instance = comp, \Sum~0\, Sum~0, Adder_Cin_VHDL, 1
