@@ -1,0 +1,102 @@
+\section{Anexos}
+
+\subsection{Descripciones}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:fsm1h,
+	caption={Descripción de la FSM implementada con las ecuaciones de \textit{one hot}.}
+]{
+	../../Quartus/FSM/FSM.v
+}
+
+\enter
+
+\enter
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:fsm1hm,
+	caption={Descripción de la FSM implementada con las ecuaciones de \textit{one hot} modificada.}
+]{
+	../../Quartus/FSM/FSM_onehotModif.v
+}
+
+\enter
+
+\enter
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:fsmcomp1h,
+	caption={Descripción por comportamiento de la FSM, siguiento la tabla \textit{one hot}.}
+]{
+	../../Quartus/FSM/FSMcomp_1hot.v
+}
+
+\newpage
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:fsmcompmin,
+	caption={Descripción por comportamiento de la FSM, siguiento la tabla \textit{minimal bits}.}
+]{
+	../../Quartus/FSM/FSMcomp_minimal.v
+}
+
+\newpage
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:fsm2reg,
+	caption={Descripción de la FSM utilizando corrimientos lógicos y 2 registros.}
+]{
+	../../Quartus/FSM/FSM_2reg.v
+}
+
+\enter
+
+\enter
+
+\lstinputlisting[
+language=verilog,
+label=prog:fsm1reg,
+caption={Descripción de la FSM utilizando corrimientos aritméticos y un registro.}
+]{
+	../../Quartus/FSM/FSM_1reg.v
+}
+
+
+
+
+
+
+
+	
+\newpage
+\subsection{Bancos de prueba}
+
+\lstinputlisting[
+	language=verilog,
+	%label=prog:asign,
+	caption={\textit{Testbench} para \autoref{prog:fsm1h}, \autoref{prog:fsm1hm}, \autoref{prog:fsmcomp1h} y \autoref{prog:fsmcompmin}.}
+]{
+	../../Quartus/FSM/simulation/modelsim/FSM.vt
+}
+
+\enter
+
+\enter
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asignF,
+caption={\textit{Testbench} para \autoref{prog:fsm2reg} y \autoref{prog:fsm1reg}.}
+]{
+	../../Quartus/FSM/simulation/modelsim/FSM_regs.vt
+}
+
+
+
+
+

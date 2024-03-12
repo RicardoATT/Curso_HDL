@@ -1,0 +1,28 @@
+# Archivos generados por pdflatex
+*.aux
+*.bcf
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.pdf
+.run.
+*.bbl
+*.blg
+*.dvi
+.sync
+*.lof
+*.lot
+
+# Archivos generados por htlatex
+*.svg
+*.html
+*.css
+*.xref
+*.idv
+*.lg
+*.tmp
+*.4tc
+*.4ct
+.fuse

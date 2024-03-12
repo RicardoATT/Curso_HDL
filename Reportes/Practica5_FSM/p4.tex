@@ -1,0 +1,30 @@
+\section{Análisis del flip-flop D inferido \label{sec:s4}}
+
+
+
+\begin{center}
+	\begin{minipage}{10cm}
+		En dos proyectos separados describir por comportamiento en uno un latch D simple y en el
+		otro un flip-flop D simple (sólo dos entradas: D y clk). Compilar y usar el visor que permita
+		observar el elemento lógico donde se implementan el latch y el flip-flop. ¿En qué parte del
+		elemento lógico se implementa el latch y en que parte se implementa el flip-flop?
+	\end{minipage}
+\end{center}
+
+\enter
+
+Al observar el \textit{chip planner}, es posible darse cuenta que, al describir el flip-flop D por comportamiento, se coloca el circuto en el flip-flop D del mismo elemento lógico, esto se ilusta en la \autoref{fig:ffdcomp}.
+\begin{figure}[ht]
+	\centering
+	
+	\includegraphics[scale=0.4]{ffd_comportamental.png}
+	
+	\caption{
+		\textit{Chip planner} del Flip-flop D, descrito por comportamiento.
+		\label{fig:ffdcomp}
+	}
+\end{figure}
+
+\enter
+
+Es una diferencia con lo mostrado en la \autoref{fig:ffd}, donde se asignan las \textit{look up tables} debido a la manera en que fue descrito.

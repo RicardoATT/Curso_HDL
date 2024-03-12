@@ -1,0 +1,40 @@
+\input{../Preambulo.tex}
+\input{../PortadaNormal.tex}
+
+
+\begin{document}
+	\pagenumbering{gobble}
+	\pnormal
+	{Lenguajes de descripción de hardware}
+	{Práctica 5. Máquina de estados finitos.}
+	{M. en C. Osvaldo Espinoza Sosa}
+	\tableofcontents
+	
+	\pagenumbering{arabic}
+	\newpage \input{p1.tex}
+	\newpage \input{p2.tex}
+	\newpage \input{p3.tex}
+	%\newpage \input{p4.tex}
+
+	
+	\newpage
+	\section{Conclusiones}
+	Se logró detectar secuencias de unos y ceros describiendo una máquina de estados finitos de diferentes maneras.
+	
+	\enter
+	
+	Se implementó una máquina de estados utilizando las ecuaciones de cada estado para la detección de secuencias y variando el uso de tabla \textit{one hot} y
+	\textit{one hot} modificada, analizando los resultados del diagrama RTL.
+	
+	\enter
+	
+	Se implementó una máquina de estados finitos por comportamiento, variando el uso del código \textit{minimal bits} y \textit{one hot}, analizando el reporte en su configuración de máquina de estados finitos, comprobando la diferencia que hace el compilador para implementar \textit{minimal bits} o \textit{one hot}.
+	
+	\enter
+	
+	Se implementó la detección de secuencia de bit utilizando corrimientos lógicos y aritméticos con 2 y 1 registros, respectivamente. Se encontraron maneras alternativas de resolver el problema de la máquina de estados finitos sin usar tablas de codificación definidas.
+	
+	\newpage \input{anexos.tex}
+\end{document}
+
+
