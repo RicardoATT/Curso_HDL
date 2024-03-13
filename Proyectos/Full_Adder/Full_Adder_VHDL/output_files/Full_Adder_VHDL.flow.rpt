@@ -1,5 +1,5 @@
 Flow report for Full_Adder_VHDL
-Tue Mar 12 03:25:02 2024
+Tue Mar 12 23:26:57 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 12 03:25:02 2024       ;
+; Flow Status                        ; Successful - Tue Mar 12 23:26:57 2024       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Full_Adder_VHDL                             ;
 ; Top-level Entity Name              ; Full_Adder_VHDL                             ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2 / 114,480 ( < 1 % )                       ;
-;     Total combinational functions  ; 2 / 114,480 ( < 1 % )                       ;
+; Total logic elements               ; 10 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 10 / 114,480 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 5 / 529 ( < 1 % )                           ;
+; Total pins                         ; 35 / 529 ( 7 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/12/2024 03:24:42 ;
+; Start date & time ; 03/12/2024 23:26:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Full_Adder_VHDL     ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+-----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                   ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+-----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 9619526169586.171023548110360           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 9619526169586.171030759608952           ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; i1                                      ; --            ; --          ; --             ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Full_Adder_VHDL                         ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                    ; --            ; --          ; eda_simulation ;
@@ -103,12 +103,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4797 MB             ; 00:00:06                           ;
-; Fitter               ; 00:00:06     ; 1.0                     ; 6672 MB             ; 00:00:08                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4681 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4950 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4646 MB             ; 00:00:00                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4790 MB             ; 00:00:05                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 6667 MB             ; 00:00:09                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4684 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4959 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4651 MB             ; 00:00:01                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,15 +1,22 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_arith.all;
-use ieee.std_logic_signed.all;
+use ieee.std_logic_unsigned.all;
 
 entity Full_Adder_VHDL is
-	port(	A, B, Cin	: 	in		std_logic;
-			Sum, Cout	: 	out	std_logic);
+	port(	Cin	: 	in			std_logic;
+			A, B	: 	in			std_logic_vector(7 downto 0);
+			Temp	: 	buffer	std_logic_vector(8 downto 0);
+			Sum	: 	out		std_logic_vector(7 downto 0);
+			Cout	: 	out		std_logic);
 end Full_Adder_VHDL;
 
 architecture behavior of Full_Adder_VHDL is
 begin
-	Sum	<=	(A xor B) xor Cin;
-	Cout	<= (A and B) or ((A xor B) and Cin);
+	process(A, B, Cin)
+	begin
+		Temp <= ('0' & A) + ('0' & B) + Cin;
+		Sum  <= Temp(7 downto 0);
+		Cout <= Temp(8);
+	end process;
 end behavior;

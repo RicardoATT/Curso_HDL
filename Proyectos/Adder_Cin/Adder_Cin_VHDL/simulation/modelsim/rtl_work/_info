@@ -9,8 +9,8 @@ z2
 cModel Technology
 Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/simulation/modelsim
 Eadder_cin_vhdl
-Z1 w1710231984
-Z2 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z1 w1710303290
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -18,14 +18,14 @@ R0
 Z6 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/Adder_Cin_VHDL.vhd
 Z7 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/Adder_Cin_VHDL.vhd
 l0
-L11
-V34Y<;LAJo]BQ>Z_BISSBV3
-!s100 eXRGOU6Z:8ROoGGF<iNa53
+L6
+VA<I6>k@@?VPOY@O;GMA0a2
+!s100 V__58=dA[:V929N^;I>E[1
 Z8 OV;C;10.5b;63
 31
-Z9 !s110 1710233219
+Z9 !s110 1710304623
 !i10b 1
-Z10 !s108 1710233219.000000
+Z10 !s108 1710304623.000000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/Adder_Cin_VHDL.vhd|
 Z12 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/Adder_Cin_VHDL.vhd|
 !i113 1
@@ -36,11 +36,11 @@ R2
 R3
 R4
 R5
-DEx4 work 14 adder_cin_vhdl 0 22 34Y<;LAJo]BQ>Z_BISSBV3
-l17
-L16
-VDFf>JI>HMz89]KCS2jB^^3
-!s100 NAbhZHCh;kLhEZ]kSR[KP1
+DEx4 work 14 adder_cin_vhdl 0 22 A<I6>k@@?VPOY@O;GMA0a2
+l13
+L12
+V7Dgho3TnH]XGU_JHMlVQE1
+!s100 A@DZ?kWjFUV4aG>oOJ7kU0
 R8
 31
 R9
@@ -52,16 +52,18 @@ R12
 R13
 R14
 Eadder_cin_vhdl_vhd_tst
-Z15 w1710233025
+Z15 w1710304614
+R2
+R3
 R4
 R5
 R0
 Z16 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/simulation/modelsim/Adder_Cin_VHDL.vht
 Z17 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder_Cin/Adder_Cin_VHDL/simulation/modelsim/Adder_Cin_VHDL.vht
 l0
-L4
-VGWQP=olOmSh7foj3UA0:n1
-!s100 <Gnm<eA;NDLD3GaKHl<SR0
+L6
+V5WN6kNO4zch_^W>[2o2:j2
+!s100 Sz;[J4<dF:z7N0JDz61[90
 R8
 31
 R9
@@ -73,13 +75,15 @@ Z19 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Adder
 R13
 R14
 Aadder_cin_vhdl_arch
+R2
+R3
 R4
 R5
-DEx4 work 22 adder_cin_vhdl_vhd_tst 0 22 GWQP=olOmSh7foj3UA0:n1
-l20
-L7
-VC?mICg@c[?4ZYi2>N3Pf01
-!s100 <7af74klgCSAbzm_Va4;e1
+DEx4 work 22 adder_cin_vhdl_vhd_tst 0 22 5WN6kNO4zch_^W>[2o2:j2
+l22
+L9
+V8URTMa>>fMH<j_kSzYk4>3
+!s100 ]?nVhzzi;bTG5LW36T46Y0
 R8
 31
 R9
