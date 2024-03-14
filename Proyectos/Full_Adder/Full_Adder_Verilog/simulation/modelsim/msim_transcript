@@ -12,29 +12,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog {C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/Full_Adder_Verilog.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:37:16 on Mar 12,2024
+# Start time: 16:38:14 on Mar 13,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog" C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/Full_Adder_Verilog.v 
 # -- Compiling module Full_Adder_Verilog
 # 
 # Top level modules:
 # 	Full_Adder_Verilog
-# End time: 03:37:16 on Mar 12,2024, Elapsed time: 0:00:00
+# End time: 16:38:14 on Mar 13,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/simulation/modelsim {C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/simulation/modelsim/Full_Adder_Verilog.vt}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:37:16 on Mar 12,2024
+# Start time: 16:38:14 on Mar 13,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/simulation/modelsim" C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/simulation/modelsim/Full_Adder_Verilog.vt 
 # -- Compiling module Full_Adder_Verilog_vlg_tst
 # 
 # Top level modules:
 # 	Full_Adder_Verilog_vlg_tst
-# End time: 03:37:16 on Mar 12,2024, Elapsed time: 0:00:00
+# End time: 16:38:14 on Mar 13,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Full_Adder_Verilog_vlg_tst
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" Full_Adder_Verilog_vlg_tst 
-# Start time: 03:37:16 on Mar 12,2024
+# Start time: 16:38:14 on Mar 13,2024
 # Loading work.Full_Adder_Verilog_vlg_tst
 # Loading work.Full_Adder_Verilog
 # 
@@ -45,5 +45,13 @@
 # .main_pane.objects.interior.cs.body.tree
 # run 400 ns
 # Running testbench at CIC
-# End time: 03:39:24 on Mar 12,2024, Elapsed time: 0:02:08
+restart
+run
+# Running testbench at CIC
+add wave -position insertpoint  \
+sim:/Full_Adder_Verilog_vlg_tst/i1/Temp
+restart
+run
+# Running testbench at CIC
+# End time: 16:42:15 on Mar 13,2024, Elapsed time: 0:04:01
 # Errors: 0, Warnings: 0

@@ -1,0 +1,36 @@
+`timescale 1 ns/ 1 ps
+module Adder_Subtractor_Verilog_vlg_tst();
+	reg 	C;
+	reg 	[7:0]		A;
+	reg 	[7:0]		B;                                              
+	wire 	[8:0]		Total;
+									 
+	Adder_Subtractor_Verilog i1 ( 
+		.C(C),
+		.A(A),
+		.B(B),
+		.Total(Total)
+	);
+
+	initial                                                
+	begin
+		C = 0; A = 0; B = 0;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#50; C = 0; A = 135; B = 206; // 135 + 206
+		#50; C = 0; A = 122; B = 52;  // 122 + 52
+		#50; C = 0; A = 178; B = 18;  // 178 + 18
+		#50; C = 0; A = 170; B = 115; // 170 + 115
+		#50; C = 0; A = 23;  B = 77;  // 23 + 77
+		#50; C = 1; A = 0;   B = 0;   // 0 - 0
+		#50; C = 1; A = 135; B = 206; // 135 - 206
+		#50; C = 1; A = 122; B = 52;  // 122 - 52
+		#50; C = 1; A = 178; B = 18;  // 178 - 18
+		#50; C = 1; A = 170; B = 115; // 170 - 115
+		#50; C = 1; A = 23;  B = 77;  // 23 - 77
+	end                                                    
+
+endmodule

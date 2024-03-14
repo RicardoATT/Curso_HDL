@@ -1,11 +1,16 @@
 module Adder_Subtractor_Verilog(
-	input		A,
-	input 	B,
 	input 	C,
-	output	Res,
-	output	Cout
+	input				[7:0]		A,
+	input 			[7:0]		B,
+	output	reg	[8:0]		Total
 );
 	
-	assign Sum = (A ^ B) ^ Cin;
-	
+	always @(A, B, C)
+	begin
+		if(!C)
+			Total <= {1'b0, A} + {1'b0, B};
+		else
+			Total <= {1'b0, A} - {1'b0, B};
+	end
+
 endmodule

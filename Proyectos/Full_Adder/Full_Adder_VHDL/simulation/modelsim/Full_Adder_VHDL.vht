@@ -5,26 +5,27 @@ ENTITY Full_Adder_VHDL_vhd_tst IS
 END Full_Adder_VHDL_vhd_tst;
 
 ARCHITECTURE Full_Adder_VHDL_arch OF Full_Adder_VHDL_vhd_tst IS                                                 
-	SIGNAL 	A		: STD_LOGIC:='0';
-	SIGNAL 	B		: STD_LOGIC:='0';
 	SIGNAL 	Cin	: STD_LOGIC:='0';
-	SIGNAL 	Sum	: STD_LOGIC;
+	SIGNAL 	A		: STD_LOGIC_VECTOR(7 downto 0):="00000000";
+	SIGNAL 	B		: STD_LOGIC_VECTOR(7 downto 0):="00000000";
+	SIGNAL 	Temp	: STD_LOGIC_VECTOR(8 downto 0);
+	SIGNAL 	Sum	: STD_LOGIC_VECTOR(7 downto 0);
 	SIGNAL 	Cout	: STD_LOGIC;
 	COMPONENT Full_Adder_VHDL
 		PORT 	(
-				A 		: IN STD_LOGIC;
-				B 		: IN STD_LOGIC;
-				Cin 	: IN STD_LOGIC;
-				Sum 	: OUT STD_LOGIC;
-				Cout 	: OUT STD_LOGIC
+				Cin 	: IN		STD_LOGIC;
+				A 		: IN		STD_LOGIC_VECTOR(7 downto 0);
+				B 		: IN		STD_LOGIC_VECTOR(7 downto 0);
+				Sum 	: OUT		STD_LOGIC_VECTOR(7 downto 0);
+				Cout 	: OUT		STD_LOGIC
 				);
 	END COMPONENT;
 BEGIN
 	i1 : Full_Adder_VHDL
 	PORT MAP (
+				Cin 	=> Cin,
 				A 		=> A,
 				B 		=> B,
-				Cin 	=> Cin,
 				Sum 	=> Sum,
 				Cout	=> Cout
 				);
@@ -37,34 +38,27 @@ BEGIN
 	always : PROCESS                                              
 	BEGIN                                                         
 		WAIT FOR 50ns;
-		A 		<= '0';
-		B 		<= '0';
-		Cin 	<= '1';
+		Cin <= '0'; A <= "10000111";  B <= "11001110"; -- 135 + 206
 		WAIT FOR 50ns;
-		A 		<= '0';
-		B 		<= '1';
-		Cin 	<= '0';
+		Cin <= '0'; A <= "01111010";  B <= "00110100"; -- 122 + 52
 		WAIT FOR 50ns;
-		A 		<= '0';
-		B 		<= '1';
-		Cin 	<= '1';	
+		Cin <= '0'; A <= "10110010";  B <= "00010010"; -- 178 + 18
 		WAIT FOR 50ns;
-		A 		<= '1';
-		B 		<= '0';
-		Cin 	<= '0';
+		Cin <= '0'; A <= "10101010";  B <= "01110011"; -- 170 + 115
 		WAIT FOR 50ns;
-		A 		<= '1';
-		B 		<= '0';
-		Cin 	<= '1';
+		Cin <= '0'; A <= "00010111";  B <= "01001101"; -- 23 + 77
 		WAIT FOR 50ns;
-		A 		<= '1';
-		B 		<= '1';
-		Cin 	<= '0';
+		Cin <= '1'; A <= "00000000";  B <= "00000000"; -- 0 + 0 + 1
 		WAIT FOR 50ns;
-		A 		<= '1';
-		B 		<= '1';
-		Cin 	<= '1';
+		Cin <= '1'; A <= "10000111";  B <= "11001110"; -- 135 + 206 + 1
 		WAIT FOR 50ns;
+		Cin <= '1'; A <= "01111010";  B <= "00110100"; -- 122 + 52 + 1
+		WAIT FOR 50ns;
+		Cin <= '1'; A <= "10110010";  B <= "00010010"; -- 178 + 18 + 1
+		WAIT FOR 50ns;
+		Cin <= '1'; A <= "10101010";  B <= "01110011"; -- 170 + 115 + 1
+		WAIT FOR 50ns;
+		Cin <= '1'; A <= "00010111";  B <= "01001101"; -- 23 + 77 + 1
 		WAIT;                                                        
 	END PROCESS always;                                          
 END Full_Adder_VHDL_arch;
