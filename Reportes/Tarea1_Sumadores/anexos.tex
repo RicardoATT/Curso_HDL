@@ -1,13 +1,13 @@
 \section{Anexos}
 
-\subsection{Descripciones}
+\subsection{Descripciones del hardware}
 
 \lstinputlisting[
-	language=verilog,
-	label=prog:fsm1h,
-	caption={Descripción de un sumador de 8 bits con \textit{Carry} de entrada.}
+	language=vhdl,
+	label=prog:Adder_Cin_VHDL,
+	caption={Descripción en VHDL de un sumador de 8 bits con acarreo de entrada.}
 ]{
-	../../Proyectos/Adder_Cin/Adder_Cin.v
+	../../Proyectos/Adder_Cin/Adder_Cin_VHDL/Adder_Cin_VHDL.vhd
 }
 
 \enter
@@ -15,11 +15,11 @@
 \enter
 
 \lstinputlisting[
-	language=verilog,
-	label=prog:fsm1hm,
-	caption={Descripción de un sumador completo de 8 bits \(con \textit{Carry} de entrada y de salida\).}
+	language=vhdl,
+	label=prog:Full_Adder_VHDL,
+	caption={Descripción en VHDL de un sumador completo de 8 bits.}
 ]{
-	../../Proyectos/Full_Adder/Full_Adder.v
+	../../Proyectos/Full_Adder/Full_Adder_VHDL/Full_Adder_VHDL.vhd
 }
 
 \enter
@@ -27,23 +27,19 @@
 \enter
 
 \lstinputlisting[
-	language=verilog,
-	label=prog:fsmcomp1h,
-	caption={Descripción de un sumador-restador de 8 bits.}
+	language=vhdl,
+	label=prog:Adder_Subtractor_VHDL,
+	caption={Descripción en VHDL de un sumador-restador de 8 bits.}
 ]{
-	../../Proyectos/Adder_Subtractor/Adder_Subtractor.v
+	../../Proyectos/Adder_Subtractor/Adder_Subtractor_VHDL/Adder_Subtractor_VHDL.vhd
 }
 
-
-\newpage
-\subsection{Bancos de prueba}
-
 \lstinputlisting[
-	language=verilog,
-	%label=prog:asign,
-	caption={\textit{Testbench} para \autoref{prog:fsm1h}, \autoref{prog:fsm1hm}, \autoref{prog:fsmcomp1h} y \autoref{prog:fsmcompmin}.}
+language=verilog,
+label=prog:Adder_Cin_Verilog,
+caption={Descripción en Verilog de un sumador de 8 bits con acarreo de entrada.}
 ]{
-	../../Proyectos/Adder_Cin/simulation/modelsim/Adder_Ci.vt
+	../../Proyectos/Adder_Cin/Adder_Cin_Verilog/Adder_Cin_Verilog.v
 }
 
 \enter
@@ -52,13 +48,72 @@
 
 \lstinputlisting[
 language=verilog,
-%label=prog:asignF,
-caption={\textit{Testbench} para \autoref{prog:fsm2reg} y \autoref{prog:fsm1reg}.}
+label=prog:Full_Adder_Verilog,
+caption={Descripción en Verilog de un sumador completo de 8 bits.}
 ]{
-	../../Quartus/FSM/simulation/modelsim/FSM_regs.vt
+	../../Proyectos/Full_Adder/Full_Adder_Verilog/Full_Adder_Verilog.v
 }
 
+\enter
 
+\enter
 
+\lstinputlisting[
+language=verilog,
+label=prog:Adder_Subtractor_Verilog,
+caption={Descripción en Verilog de un sumador-restador de 8 bits.}
+]{
+	../../Proyectos/Adder_Subtractor/Adder_Subtractor_Verilog/Adder_Subtractor_Verilog.v
+}
 
+\newpage
+\subsection{Bancos de pruebas (\textit{Test Benches})}
+
+\lstinputlisting[
+	language=vhdl,
+	%label=prog:asign,
+	caption={Banco de prueba para el \autoref{prog:Adder_Cin_VHDL}.}
+]{
+	../../Proyectos/Adder_Cin/Adder_Cin_VHDL/simulation/modelsim/Adder_Cin_VHDL.vht
+}
+
+\lstinputlisting[
+language=vhdl,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:Full_Adder_VHDL}.}
+]{
+	../../Proyectos/Full_Adder/Full_Adder_VHDL/simulation/modelsim/Full_Adder_VHDL.vht
+}
+
+\lstinputlisting[
+language=vhdl,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:Adder_Subtractor_VHDL}.}
+]{
+	../../Proyectos/Adder_Subtractor/Adder_Subtractor_VHDL/simulation/modelsim/Adder_Subtractor_VHDL.vht
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:Adder_Cin_Verilog}.}
+]{
+	../../Proyectos/Adder_Cin/Adder_Cin_Verilog/simulation/modelsim/Adder_Cin_Verilog.vt
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:Full_Adder_Verilog}.}
+]{
+	../../Proyectos/Full_Adder/Full_Adder_Verilog/simulation/modelsim/Full_Adder_Verilog.vt
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:Adder_Subtractor_Verilog}.}
+]{
+	../../Proyectos/Adder_Subtractor/Adder_Subtractor_Verilog/simulation/modelsim/Adder_Subtractor_Verilog.vt
+}
 

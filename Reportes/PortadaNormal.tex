@@ -4,35 +4,39 @@
 		opacity= 0.05,
 		angle= 0,
 		contents= {
-			\includegraphics[width=0.75\paperwidth, height=0.9\paperheight]{../ImgPortada/IPN_Logo.png}
+			\includegraphics[width=0.75\paperwidth, height=0.75\paperheight]{../ImgPortada/CIC_Logo.png}
 		}
 	}
 	\BgThispage
 	\begin{center}
    		\begin{figure}[!tbp]
    			\centering
-   			\subfloat{\includegraphics[scale=0.2]{../ImgPortada/CIC_Logo.png}}
+   			\subfloat{\includegraphics[scale=0.025]{../ImgPortada/IPN_Logo.png}}
    			\hfill
    			\subfloat{\includegraphics[scale=0.2]{../ImgPortada/MICROSE_Logo.png}}
    		\end{figure}
         
-        {\LARGE \textcolor{guinda}{\textbf{I}nstituto \textbf{P}olit\'ecnico \textbf{N}acional} }
+        {\LARGE \textbf{\textcolor{guinda}{Instituto Polit\'ecnico Nacional}}}
         \\ \vspace{1cm}
-        {\LARGE \textit{ \textcolor{azul}{Centro de Investigaci\'on en Computaci\'on} } }
-		\\
-        {\Large \textit{ \textcolor{azul}{(\textbf{CIC})} } }
+        {\LARGE \textbf{\textcolor{guinda}{Centro de Investigaci\'on en Computaci\'on}}}
         \\ \vspace{2.5cm}
-        {\Large \textsc{\underline{#1}}} %%%%%%%%%%Materia%%%%%%%%%%
+        {\LARGE \texttt{#1}} %%%%%%%%%%Materia%%%%%%%%%%
         \\ \vspace{3cm}
-        {\LARGE \textbf{ \textcolor{guinda}{#2} } } %%%%%%%%%%Título%%%%%%%%%%
+        {\LARGE \textbf{ \texttt{\textcolor{guinda}{#2}} } } %%%%%%%%%%Título%%%%%%%%%%
         \\ \vspace{3cm}
+        {\Large \textsc{ Profesor: }}
+        \\ \vspace{0.3cm}
         {\Large \textsc{ #3 } } %%%%%%%%%%Profesor%%%%%%%%%%
         \\ \vspace{2cm}
-        {\Large \textsc{ Ing. Ricardo Aldair Tirado Torres } }
+        {\Large \textsc{ Por: }}
+        \\ \vspace{0.3cm}
+        {\Large \textsc{ Ing. Ricardo Aldair Tirado Torres }}
         %\ \\
-        %A230720
+        %A230726
         \\ \vspace{2cm}
-        {\large \textsc{  \textsl{ Ciudad de M\'exico, \today } } }
+        \begin{flushright}
+        	\large \textsc{Ciudad de M\'exico, \today} 
+        \end{flushright}
     \end{center}
 }
 

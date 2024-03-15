@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/simulation/modelsim
 vFull_Adder_Verilog
-Z1 !s110 1710369494
+Z1 !s110 1710478766
 !i10b 1
-!s100 U3]b_JX>oimSkh_8]0lZM2
-IA^k;@X_i1Wzd9hC7g_ELZ1
+!s100 U[K@3GYXnNdAc]]=bC8Dk0
+I4_N?MLaZ6fZn6@C1HlBHR1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1710369422
+w1710478508
 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/Full_Adder_Verilog.v
 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/Full_Adder_Verilog.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1710369494.000000
+Z4 !s108 1710478766.000000
 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/Full_Adder_Verilog.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Full_Adder/Full_Adder_Verilog/Full_Adder_Verilog.v|
 !i113 1

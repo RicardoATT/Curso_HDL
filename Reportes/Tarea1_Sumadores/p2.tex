@@ -1,120 +1,57 @@
-\section{FSM en descripción comportamental \label{sec:s2}}
-
-
+\section{Sumador completo \label{sec:s2}}
 
 \begin{center}
-	\begin{minipage}{10cm}
-		Describir por comportamiento la FSM del problema que está siendo considerado (como las
-		descripciones vistas en clase). Indicar al compilador usar códigos del registro de estado en forma
-		``minimal bits''. Compilar, simular y ver resultado en el visor RTL, ¿se genera el diagrama de
-		estados y la tabla de códigos en los reportes?
-		
-		\enter
-		
-		Para indicar al compilador qué códigos del registro de estado debe usar se debe ir al menú de
-		Quartus correspondiente: 
-		
-		\enter
-		
-		Assignments $>$ Settings $>$ Analysis $>$ sinthesis $>$ State Machine Processing
+	\begin{minipage}{12cm}
+		\begin{tcolorbox}[title=Actividad 2]
+			Codificar el sumador completo (con acarreo de entrada y acarreo de salida) indicado en la lámina 11, en los dos lenguajes y compilar. Alguno presenta algún error durante la compilación. ¿Cómo se soluciona el problema?
+		\end{tcolorbox}	
 	\end{minipage}
 \end{center}
 
-\enter
+Se presenta un error en VHDL, como se observa en la \autoref{fig:full_adder_vhdl_error}, esto surge debido a que se necesita que los operandos sean del mismo tamaño que la variable en donde se almacenará el resultado. Para solucionarlo, unicamente se necesita concatenar un bit, en bajo, en la posición más significativa de ambos operandos. Este error no sucede con Verilog, ya que el propio lenguaje concatena el bit faltante automáticamente.
 
-
-Observando el diagrama RTL, se nota que la codificación de los estados de la
-máquina da lugar a la interpretación de 2 componentes que representan el estado
-actual y el estado siguiente (cosa que en VHDL se describiría de forma separada).
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.35]{fsmcom_1hot_rtl.png}
-	\caption{
-		Diagrama RTL de la FSM, usando \textit{minimal bits}.
-		\label{fig:fsmcom_1hot_rtl}
-	}
+	\includegraphics[scale=0.7]{Full_Adder_VHDL_Error.png}
+	\caption{Error obtenido al utilizar el código de la lámina 11 sin modificar. \label{fig:full_adder_vhdl_error}}
 \end{figure}
 
+La visualización RTL del sumador completo en VHDL se muestra en la \autoref{fig:full_adder_vhdl_rtl} y en Verilog en la \autoref{fig:full_adder_verilog_rtl}. Las simulaciones para el código en VHDL se visualizan en la \autoref{fig:full_adder_vhdl_WaveBi} en base binaria y en la \autoref{fig:full_adder_vhdl_WaveDe} en base decimal. En cambio, las simulaciones para el código en Verilog se visualizan en la \autoref{fig:full_adder_verilog_WaveBi} en base binaria y en la \autoref{fig:full_adder_verilog_WaveDe} en base decimal. Los valores empleados son los mismos que los de la Actividad 1.
 
-Por otro lado, Observando la simulación, se aprecia un estado desconocido al inicio de dicha simulación, hasta 
-que se tomen los valores del estado inicial y se comience el análisis, luego se valida cuando existen 4 consecutivos iguales.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.4]{fsmcom_1hot_sim.png}
-	\caption{
-		Simulación de la FSM, usando \textit{minimal bits}.
-		\label{fig:fsmcom_1hot_sim}
-	}
+	\includegraphics[scale=0.5]{Full_Adder_VHDL_RTL.png}
+	\caption{Diagrama RTL del sumador completo en VHDL. \label{fig:full_adder_vhdl_rtl}}
 \end{figure}
 
-\newpage
-
-Cuando se analiza el reporte con la configuración de máquina de estados finitos
-se aprecia la codificación de \textit{minimal bits} utilizada en la descripción,
-al igual que una máquina que carece de conexiones.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.31]{fsmcom_min_state.png}
-	\caption{
-		Diagrama de estados para el estado actual, usando \textit{minimal bits}.
-		\label{fig:fsmcom_min_state}
-	}
+	\includegraphics[scale=0.5]{Full_Adder_Verilog_RTL.png}
+	\caption{Diagrama RTL del sumador completo en Verilog. \label{fig:full_adder_verilog_rtl}}
 \end{figure}
 
-\enter
-
-Además, se genera la máquina de estados conectada que es observable al consultar el componente del estado siguiente.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.32]{fsmcom_min_nextstate.png}
-	\caption{
-		Diagrama de estados para el estado siguiente, usando \textit{minimal bits}.
-		\label{fig:fsmcom_min_nextstate}
-	}
+	\includegraphics[scale=0.35]{Full_Adder_VHDL_WaveBi.png}
+	\caption{Simulación del sumador completo en VHDL con el visor de formas de onda de ModelSim (Base binaria). \label{fig:full_adder_vhdl_WaveBi}}
 \end{figure}
 
-
-
-
-
-
-
-
-\clearpage
-\begin{center}
-	\begin{minipage}{10cm}
-		Repetir el inciso 3 pero indicando codificación ONE - HOT. ¿Qué códigos ONE-HOT fueron
-		utilizados, como los de la tabla normal o la modificada?
-	\end{minipage}
-\end{center}
-
-\enter
-
-En el caso del diagrama RTL y la simulación, se genera el mismo resultado que
-el visto en la \autoref{fig:fsmcom_1hot_rtl} y \autoref{fig:fsmcom_1hot_sim}, 
-respectivamente
-
-\enter
-
-Cuando se analiza el reporte con la configuración de máquina de estados finitos
-se aprecia la codificación de \textit{one hot} \textbf{modificada}, esto porque el compilador busca implementarlo de una manera más óptima y para aeso sirve más esta codificación, porque se ahorra flip-flops.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.3]{fsmcom_1hot_state.png}
-	\caption{
-		Diagrama de estados para el estado actual, usando \textit{One Hot}.
-		\label{fig:fsmcom_1hot_state}
-	}
+	\includegraphics[scale=0.6]{Full_Adder_VHDL_WaveDe.png}
+	\caption{Simulación del sumador completo en VHDL con el visor de formas de onda de ModelSim (Base decimal). \label{fig:full_adder_vhdl_WaveDe}}
 \end{figure}
 
-Además, se genera la máquina de estados conectada, observable al consultar el componente del estado siguiente.
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.32]{fsmcom_1hot_nextstate.png}
-	\caption{
-		Diagrama de estados para el estado siguiente, usando \textit{One Hot}.
-		\label{fig:fsmcom_1hot_nextstate}
-	}
+	\includegraphics[scale=0.35]{Full_Adder_Verilog_WaveBi.png}
+	\caption{Simulación del sumador completo en Verilog con el visor de formas de onda de ModelSim (Base binaria). \label{fig:full_adder_verilog_WaveBi}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.6]{Full_Adder_Verilog_WaveDe.png}
+	\caption{Simulación del sumador completo en Verilog con el visor de formas de onda de ModelSim (Base decimal). \label{fig:full_adder_verilog_WaveDe}}
 \end{figure}
 
 

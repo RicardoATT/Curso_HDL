@@ -10,6 +10,8 @@
 \usepackage{paracol}
 \usepackage{multicol}
 \usepackage{setspace}
+\setstretch{1.2}
+\setlength{\parskip}{16pt}
 \usepackage{xstring}
 \usepackage{xcolor}
 \usepackage{xargs}
@@ -33,8 +35,11 @@
 \usepackage{float}
 \usepackage{enumitem}
 \usepackage{mathrsfs}
+\usepackage{tcolorbox}
+\usepackage[export]{adjustbox}
 \usepackage[makeroom]{cancel}
 \usepackage[firstpage=true]{background}
+\usepackage[numbers]{natbib}
 
 \usepackage{tikz}
 \usetikzlibrary{positioning,shadows,backgrounds,automata,arrows,arrows.meta}
@@ -43,7 +48,7 @@
 %\tikzset{every tree node/.style={align=center,anchor=north}, level distance=2cm} % Configuration for q-trees
 
 
-\usepackage[breakable]{tcolorbox}
+%\usepackage[breakable]{tcolorbox}
 
 
 
@@ -109,7 +114,8 @@
 	%headsep= 0pt,
 	%head=0pt,
 	%ignoreall,
-	hmargin= {3.5cm, 3.5cm}, %izquierda, derecha
+	hmargin= {2.5cm, 2.5
+		cm}, %izquierda, derecha
 	vmargin= {2.5cm, 2.5cm} %arriba, abajo
 }
 
@@ -256,7 +262,7 @@
 \lstdefinestyle{mystyle}{
 	backgroundcolor=\color{backcolour},   
 	commentstyle=\color{codegreen},
-	keywordstyle=\color{magenta},
+	keywordstyle=\color{blue},
 	numberstyle=\tiny\color{codegray},
 	stringstyle=\color{codepurple},
 	basicstyle=\ttfamily\footnotesize,
