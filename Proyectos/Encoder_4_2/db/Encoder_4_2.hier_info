@@ -1,0 +1,9 @@
+|Encoder_4_2
+E[0] => Decoder0.IN3
+E[1] => Decoder0.IN2
+E[2] => Decoder0.IN1
+E[3] => Decoder0.IN0
+S[0] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+

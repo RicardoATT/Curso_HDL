@@ -1,0 +1,24 @@
+`timescale 1 ns/ 1 ps
+module Decoder_2_4_vlg_tst();
+	reg 	[1:0]		E;                                             
+	wire	[3:0]		S;
+									 
+	Decoder_2_4 i1 ( 
+		.E(E),
+		.S(S)
+	);
+
+	initial                                                
+	begin
+		E = 0;		// 0001
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#50; E = 1;	// 0010
+		#50; E = 2;	// 0100
+		#50; E = 3;	// 1000
+	end                                                    
+
+endmodule 

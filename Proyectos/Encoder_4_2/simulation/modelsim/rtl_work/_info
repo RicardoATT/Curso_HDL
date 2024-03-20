@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/simulation/modelsim
+vEncoder_4_2
+Z1 !s110 1710915937
+!i10b 1
+!s100 EGKn@@P]VaH8NM<AeVS`l1
+I4RZFYYaO9ZLa:HKZoTX]V3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1710896457
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/Encoder_4_2.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/Encoder_4_2.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1710915937.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/Encoder_4_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/Encoder_4_2.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2
+Z6 tCvgOpt 0
+n@encoder_4_2
+vEncoder_4_2_vlg_tst
+R1
+!i10b 1
+!s100 BE2Tz6@UFJ<>LA>:CW6S`3
+IgzR5gZ5;58]=27z<h7N2I3
+R2
+R0
+w1710915844
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/simulation/modelsim/Encoder_4_2.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/simulation/modelsim/Encoder_4_2.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/simulation/modelsim/Encoder_4_2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/simulation/modelsim/Encoder_4_2.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Encoder_4_2/simulation/modelsim
+R6
+n@encoder_4_2_vlg_tst

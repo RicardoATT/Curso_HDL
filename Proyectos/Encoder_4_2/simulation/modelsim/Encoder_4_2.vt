@@ -1,0 +1,36 @@
+`timescale 1 ns/ 1 ps
+module Encoder_4_2_vlg_tst();
+	reg	[3:0]		E;                                             
+	wire	[1:0]		S;
+									 
+	Encoder_4_2 i1 ( 
+		.E(E),
+		.S(S)
+	);
+
+	initial                                                
+	begin
+		E = 0;			//00
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#10; E = 1;		//00
+		#10; E = 2;		//01
+		#10; E = 3;		//00
+		#10; E = 4;		//10
+		#10; E = 5;		//00
+		#10; E = 6;		//00
+		#10; E = 7;		//00
+		#10; E = 8;		//11
+		#10; E = 9;		//00
+		#10; E = 10;	//00
+		#10; E = 11;	//00
+		#10; E = 12;	//00
+		#10; E = 13;	//00
+		#10; E = 14;	//00
+		#10; E = 15;	//00
+	end                                                    
+
+endmodule 

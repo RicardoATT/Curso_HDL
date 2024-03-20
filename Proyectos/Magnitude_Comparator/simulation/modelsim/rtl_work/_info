@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/simulation/modelsim
+vMagnitude_Comparator
+Z1 !s110 1710914721
+!i10b 1
+!s100 92Udz_Ogzgk[GLFO11e]E0
+IXZTi<k65OLL;hefNK5dY[2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1710893663
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/Magnitude_Comparator.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/Magnitude_Comparator.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1710914721.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/Magnitude_Comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/Magnitude_Comparator.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator
+Z6 tCvgOpt 0
+n@magnitude_@comparator
+vMagnitude_Comparator_vlg_tst
+R1
+!i10b 1
+!s100 dHY6S:MYchhF3UYjYPg0z2
+I_^Jf26><KRM2eI2d3LN[?1
+R2
+R0
+w1710914583
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/simulation/modelsim/Magnitude_Comparator.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/simulation/modelsim/Magnitude_Comparator.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/simulation/modelsim/Magnitude_Comparator.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/simulation/modelsim/Magnitude_Comparator.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Magnitude_Comparator/simulation/modelsim
+R6
+n@magnitude_@comparator_vlg_tst
