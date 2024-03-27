@@ -1,0 +1,24 @@
+`timescale 1 ns/ 1 ps
+module ROM4x8_vlg_tst();
+	reg 	[1:0] 	DIR;
+	wire 	[7:0] 	S;
+									 
+	ROM4x8 i1 ( 
+		.DIR(DIR),
+		.S(S)
+	);
+
+	initial                                                
+	begin
+		DIR = 2'b00;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#50; DIR = 2'b01;
+		#50; DIR = 2'b10;
+		#50; DIR = 2'b11;
+	end                                                    
+
+endmodule 

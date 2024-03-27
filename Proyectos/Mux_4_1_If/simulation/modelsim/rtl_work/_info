@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/simulation/modelsim
+vMux_4_1_If
+Z1 !s110 1711515035
+!i10b 1
+!s100 2J5>@58kY=b`WOC39k0Z11
+IO3A?jl1UcVT6i4HO^8D1_0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1711514570
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/Mux_4_1_If.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/Mux_4_1_If.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1711515035.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/Mux_4_1_If.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/Mux_4_1_If.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If
+Z6 tCvgOpt 0
+n@mux_4_1_@if
+vMux_4_1_If_vlg_tst
+R1
+!i10b 1
+!s100 DHfi<`[5JF=f]GUAlSd>D3
+I>XC0gLXG1]4hBIfm[beKF2
+R2
+R0
+w1711514806
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/simulation/modelsim/Mux_4_1_If.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/simulation/modelsim/Mux_4_1_If.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/simulation/modelsim/Mux_4_1_If.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/simulation/modelsim/Mux_4_1_If.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_If/simulation/modelsim
+R6
+n@mux_4_1_@if_vlg_tst

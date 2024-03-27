@@ -1,0 +1,308 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "03/26/2024 22:50:20"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Mux_4_1_If (
+	SEL,
+	A,
+	B,
+	C,
+	D,
+	S);
+input 	[1:0] SEL;
+input 	A;
+input 	B;
+input 	C;
+input 	D;
+output 	S;
+
+// Design Ports Information
+// S	=>  Location: PIN_C5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// B	=>  Location: PIN_C6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEL[0]	=>  Location: PIN_C4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// C	=>  Location: PIN_B3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// SEL[1]	=>  Location: PIN_D4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// A	=>  Location: PIN_D5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// D	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Mux_4_1_If_7_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire S_aoutput_o;
+wire SEL_a0_a_ainput_o;
+wire C_ainput_o;
+wire SEL_a1_a_ainput_o;
+wire A_ainput_o;
+wire S_a0_combout;
+wire D_ainput_o;
+wire B_ainput_o;
+wire S_a1_combout;
+
+wire S_aoutput_I_driver;
+wire SEL_a0_a_ainput_I_driver;
+wire C_ainput_I_driver;
+wire SEL_a1_a_ainput_I_driver;
+wire A_ainput_I_driver;
+wire S_a0_DATAA_driver;
+wire S_a0_DATAB_driver;
+wire S_a0_DATAC_driver;
+wire S_a0_DATAD_driver;
+wire D_ainput_I_driver;
+wire B_ainput_I_driver;
+wire S_a1_DATAA_driver;
+wire S_a1_DATAB_driver;
+wire S_a1_DATAC_driver;
+wire S_a1_DATAD_driver;
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+cycloneive_routing_wire S_aoutput_I_routing_wire_inst (
+	.datain(S_a1_combout),
+	.dataout(S_aoutput_I_driver));
+
+// Location: IOOBUF_X3_Y73_N9
+cycloneive_io_obuf S_aoutput(
+	.i(S_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(S_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam S_aoutput.bus_hold = "false";
+defparam S_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire SEL_a0_a_ainput_I_routing_wire_inst (
+	.datain(SEL[0]),
+	.dataout(SEL_a0_a_ainput_I_driver));
+
+// Location: IOIBUF_X3_Y73_N22
+cycloneive_io_ibuf SEL_a0_a_ainput(
+	.i(SEL_a0_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(SEL_a0_a_ainput_o));
+// synopsys translate_off
+defparam SEL_a0_a_ainput.bus_hold = "false";
+defparam SEL_a0_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire C_ainput_I_routing_wire_inst (
+	.datain(C),
+	.dataout(C_ainput_I_driver));
+
+// Location: IOIBUF_X5_Y73_N1
+cycloneive_io_ibuf C_ainput(
+	.i(C_ainput_I_driver),
+	.ibar(gnd),
+	.o(C_ainput_o));
+// synopsys translate_off
+defparam C_ainput.bus_hold = "false";
+defparam C_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire SEL_a1_a_ainput_I_routing_wire_inst (
+	.datain(SEL[1]),
+	.dataout(SEL_a1_a_ainput_I_driver));
+
+// Location: IOIBUF_X1_Y73_N1
+cycloneive_io_ibuf SEL_a1_a_ainput(
+	.i(SEL_a1_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(SEL_a1_a_ainput_o));
+// synopsys translate_off
+defparam SEL_a1_a_ainput.bus_hold = "false";
+defparam SEL_a1_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire A_ainput_I_routing_wire_inst (
+	.datain(A),
+	.dataout(A_ainput_I_driver));
+
+// Location: IOIBUF_X3_Y73_N1
+cycloneive_io_ibuf A_ainput(
+	.i(A_ainput_I_driver),
+	.ibar(gnd),
+	.o(A_ainput_o));
+// synopsys translate_off
+defparam A_ainput.bus_hold = "false";
+defparam A_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire S_a0_DATAA_routing_wire_inst (
+	.datain(C_ainput_o),
+	.dataout(S_a0_DATAA_driver));
+
+cycloneive_routing_wire S_a0_DATAB_routing_wire_inst (
+	.datain(SEL_a1_a_ainput_o),
+	.dataout(S_a0_DATAB_driver));
+
+cycloneive_routing_wire S_a0_DATAC_routing_wire_inst (
+	.datain(A_ainput_o),
+	.dataout(S_a0_DATAC_driver));
+
+cycloneive_routing_wire S_a0_DATAD_routing_wire_inst (
+	.datain(SEL_a0_a_ainput_o),
+	.dataout(S_a0_DATAD_driver));
+
+// Location: LCCOMB_X4_Y72_N24
+cycloneive_lcell_comb S_a0(
+// Equation(s):
+// S_a0_combout = (SEL_a1_a_ainput_o & ((C_ainput_o) # ((SEL_a0_a_ainput_o)))) # (!SEL_a1_a_ainput_o & (((A_ainput_o & !SEL_a0_a_ainput_o))))
+
+	.dataa(S_a0_DATAA_driver),
+	.datab(S_a0_DATAB_driver),
+	.datac(S_a0_DATAC_driver),
+	.datad(S_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(S_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam S_a0.lut_mask = 16'hCCB8;
+defparam S_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire D_ainput_I_routing_wire_inst (
+	.datain(D),
+	.dataout(D_ainput_I_driver));
+
+// Location: IOIBUF_X5_Y73_N8
+cycloneive_io_ibuf D_ainput(
+	.i(D_ainput_I_driver),
+	.ibar(gnd),
+	.o(D_ainput_o));
+// synopsys translate_off
+defparam D_ainput.bus_hold = "false";
+defparam D_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire B_ainput_I_routing_wire_inst (
+	.datain(B),
+	.dataout(B_ainput_I_driver));
+
+// Location: IOIBUF_X5_Y73_N22
+cycloneive_io_ibuf B_ainput(
+	.i(B_ainput_I_driver),
+	.ibar(gnd),
+	.o(B_ainput_o));
+// synopsys translate_off
+defparam B_ainput.bus_hold = "false";
+defparam B_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire S_a1_DATAA_routing_wire_inst (
+	.datain(SEL_a0_a_ainput_o),
+	.dataout(S_a1_DATAA_driver));
+
+cycloneive_routing_wire S_a1_DATAB_routing_wire_inst (
+	.datain(S_a0_combout),
+	.dataout(S_a1_DATAB_driver));
+
+cycloneive_routing_wire S_a1_DATAC_routing_wire_inst (
+	.datain(D_ainput_o),
+	.dataout(S_a1_DATAC_driver));
+
+cycloneive_routing_wire S_a1_DATAD_routing_wire_inst (
+	.datain(B_ainput_o),
+	.dataout(S_a1_DATAD_driver));
+
+// Location: LCCOMB_X4_Y72_N2
+cycloneive_lcell_comb S_a1(
+// Equation(s):
+// S_a1_combout = (SEL_a0_a_ainput_o & ((S_a0_combout & (D_ainput_o)) # (!S_a0_combout & ((B_ainput_o))))) # (!SEL_a0_a_ainput_o & (S_a0_combout))
+
+	.dataa(S_a1_DATAA_driver),
+	.datab(S_a1_DATAB_driver),
+	.datac(S_a1_DATAC_driver),
+	.datad(S_a1_DATAD_driver),
+	.cin(gnd),
+	.combout(S_a1_combout),
+	.cout());
+// synopsys translate_off
+defparam S_a1.lut_mask = 16'hE6C4;
+defparam S_a1.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign S = S_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+wire a_aALTERA_ASDO_DATA1_a_aibuf_I_driver;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_I_driver;
+wire a_aALTERA_DATA0_a_aibuf_I_driver;
+
+endmodule

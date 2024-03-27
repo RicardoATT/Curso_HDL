@@ -1,0 +1,163 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "03/26/2024 20:31:29"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ns/ 1 ps
+
+module TriState_Buffer (
+	ENABLE,
+	A,
+	F);
+input 	ENABLE;
+input 	A;
+output 	F;
+
+// Design Ports Information
+// F	=>  Location: PIN_U5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// A	=>  Location: PIN_Y3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ENABLE	=>  Location: PIN_AC2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("TriState_Buffer_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire F_aoutput_o;
+wire A_ainput_o;
+wire ENABLE_ainput_o;
+
+wire F_aoutput_I_driver;
+wire F_aoutput_OE_driver;
+wire A_ainput_I_driver;
+wire ENABLE_ainput_I_driver;
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+cycloneive_routing_wire F_aoutput_I_routing_wire_inst (
+	.datain(A_ainput_o),
+	.dataout(F_aoutput_I_driver));
+
+cycloneive_routing_wire F_aoutput_OE_routing_wire_inst (
+	.datain(ENABLE_ainput_o),
+	.dataout(F_aoutput_OE_driver));
+
+// Location: IOOBUF_X0_Y24_N2
+cycloneive_io_obuf F_aoutput(
+	.i(F_aoutput_I_driver),
+	.oe(F_aoutput_OE_driver),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(F_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam F_aoutput.bus_hold = "false";
+defparam F_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire A_ainput_I_routing_wire_inst (
+	.datain(A),
+	.dataout(A_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y24_N15
+cycloneive_io_ibuf A_ainput(
+	.i(A_ainput_I_driver),
+	.ibar(gnd),
+	.o(A_ainput_o));
+// synopsys translate_off
+defparam A_ainput.bus_hold = "false";
+defparam A_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire ENABLE_ainput_I_routing_wire_inst (
+	.datain(ENABLE),
+	.dataout(ENABLE_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y24_N22
+cycloneive_io_ibuf ENABLE_ainput(
+	.i(ENABLE_ainput_I_driver),
+	.ibar(gnd),
+	.o(ENABLE_ainput_o));
+// synopsys translate_off
+defparam ENABLE_ainput.bus_hold = "false";
+defparam ENABLE_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+assign F = F_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+wire a_aALTERA_ASDO_DATA1_a_aibuf_I_driver;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_I_driver;
+wire a_aALTERA_DATA0_a_aibuf_I_driver;
+
+endmodule

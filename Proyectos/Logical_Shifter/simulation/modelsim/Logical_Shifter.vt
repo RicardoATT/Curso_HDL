@@ -1,0 +1,34 @@
+`timescale 1 ns/ 1 ps
+module Logical_Shifter_vlg_tst();
+	reg 	[1:0]		SEL;
+	reg 	[7:0] 	E;                                            
+	wire 	[7:0]  	S;
+									 
+	Logical_Shifter i1 ( 
+		.SEL(SEL),
+		.E(E),
+		.S(S)
+	);
+
+	initial                                                
+	begin
+		SEL = 2'b00; E = 8'b11111111;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#50; SEL = 2'b01;
+		#50; SEL = 2'b10;
+		#50; SEL = 2'b11;
+		#50; SEL = 2'b00; E = 8'b00001111;
+		#50; SEL = 2'b01;
+		#50; SEL = 2'b10;
+		#50; SEL = 2'b11;
+		#50; SEL = 2'b00; E = 8'b01010101;
+		#50; SEL = 2'b01;
+		#50; SEL = 2'b10;
+		#50; SEL = 2'b11;
+	end                                                    
+
+endmodule 

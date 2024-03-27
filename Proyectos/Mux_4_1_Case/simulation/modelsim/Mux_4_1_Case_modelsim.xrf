@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/Mux_4_1_Case.v
+source_file = 1, C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/db/Mux_4_1_Case.cbx.xml
+design_name = Mux_4_1_Case
+instance = comp, S_aoutput, S~output, Mux_4_1_Case, 1
+instance = comp, SEL_a1_a_ainput, SEL[1]~input, Mux_4_1_Case, 1
+instance = comp, A_ainput, A~input, Mux_4_1_Case, 1
+instance = comp, B_ainput, B~input, Mux_4_1_Case, 1
+instance = comp, SEL_a0_a_ainput, SEL[0]~input, Mux_4_1_Case, 1
+instance = comp, Mux0_a0, Mux0~0, Mux_4_1_Case, 1
+instance = comp, D_ainput, D~input, Mux_4_1_Case, 1
+instance = comp, C_ainput, C~input, Mux_4_1_Case, 1
+instance = comp, Mux0_a1, Mux0~1, Mux_4_1_Case, 1
+design_name = hard_block
+instance = comp, a_aALTERA_ASDO_DATA1_a_aibuf, ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_FLASH_nCE_nCSO_a_aibuf, ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_DATA0_a_aibuf, ~ALTERA_DATA0~~ibuf, hard_block, 1

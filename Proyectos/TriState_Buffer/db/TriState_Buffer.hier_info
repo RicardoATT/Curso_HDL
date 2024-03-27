@@ -1,0 +1,6 @@
+|TriState_Buffer
+ENABLE => F.OE
+A => F.DATAIN
+F << F.DB_MAX_OUTPUT_PORT_TYPE
+
+

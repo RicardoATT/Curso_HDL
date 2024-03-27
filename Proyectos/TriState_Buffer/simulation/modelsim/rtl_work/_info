@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/simulation/modelsim
+vTriState_Buffer
+Z1 !s110 1711506703
+!i10b 1
+!s100 z]0L5a4B23^QHG8iXPRY32
+I<7OC6JoIWOF=elWT0?XHd1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1711506114
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/TriState_Buffer.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/TriState_Buffer.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1711506703.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/TriState_Buffer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/TriState_Buffer.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer
+Z6 tCvgOpt 0
+n@tri@state_@buffer
+vTriState_Buffer_vlg_tst
+R1
+!i10b 1
+!s100 hZa9NL0^X7[WECgSS8bjh1
+IUfVkk1TKElVl95@^JQR3Q3
+R2
+R0
+w1711506594
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/simulation/modelsim/TriState_Buffer.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/simulation/modelsim/TriState_Buffer.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/simulation/modelsim/TriState_Buffer.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/simulation/modelsim/TriState_Buffer.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/TriState_Buffer/simulation/modelsim
+R6
+n@tri@state_@buffer_vlg_tst

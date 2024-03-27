@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/simulation/modelsim
+vMux_4_1_Case
+Z1 !s110 1711513387
+!i10b 1
+!s100 `7h<M??@L96USni9V4GbQ1
+I6mA7k@jAFjM2]ofV1jh:c1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1711511744
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/Mux_4_1_Case.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/Mux_4_1_Case.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1711513387.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/Mux_4_1_Case.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/Mux_4_1_Case.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case
+Z6 tCvgOpt 0
+n@mux_4_1_@case
+vMux_4_1_Case_vlg_tst
+R1
+!i10b 1
+!s100 ^mm>90AYOT9gTi3k<cm:[0
+I;LZIW1QE;cG^7z7=6b6Ff3
+R2
+R0
+w1711513375
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/simulation/modelsim/Mux_4_1_Case.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/simulation/modelsim/Mux_4_1_Case.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/simulation/modelsim/Mux_4_1_Case.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/simulation/modelsim/Mux_4_1_Case.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_4_1_Case/simulation/modelsim
+R6
+n@mux_4_1_@case_vlg_tst

@@ -1,0 +1,26 @@
+`timescale 1 ns/ 1 ps
+module TriState_Buffer_vlg_tst();
+	reg 	ENABLE;
+	reg 	A;                                              
+	wire 	F;
+									 
+	TriState_Buffer i1 ( 
+		.ENABLE(ENABLE),
+		.A(A),
+		.F(F)
+	);
+
+	initial                                                
+	begin
+		ENABLE = 0; A = 0;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#50; ENABLE = 0; A = 1;
+		#50; ENABLE = 1; A = 0;
+		#50; ENABLE = 1; A = 1;
+	end                                                    
+
+endmodule 
