@@ -1,31 +1,42 @@
-\section{Comparador de magnitud \label{sec:s2}}
+\section{Multiplexor 4 a 1 \label{sec:s2}}
 
 \begin{center}
 	\begin{minipage}{12cm}
 		\begin{tcolorbox}[title=Actividad 2]
-			Completar el código del comparador de magnitud en el lenguaje de su elección, para entradas de 4 bits. Compilar y simular. Configurar en la tarjeta DE2-115, asignar interruptores como entradas y un LED para observar la salida.
+			Completar el código del multiplexor 4 a 1 en el lenguaje de su elección primero usando estructura \textit{'case'} y después \textit{'ifs'} anidados. Compilar y simular. Usar el visor RTL para establecer si hay diferencias en el resultado de la síntesis de los dos casos. implementar en la tarjeta DE2-115 solo el caso de la estructura \textit{''case''}.
 		\end{tcolorbox}	
 	\end{minipage}
 \end{center}
 
-La visualización RTL del comparador de magnitud en Verilog se muestra en la \autoref{fig:magnitude_comparator_rtl}. Como se observa, la implementación del comparador de magnitud se hace utilizando un comparador de igualdad que pone la salida en alto unicamente cuando ambas entradas tienen el mismo valor. Las simulaciones para el código en Verilog se visualizan en la \autoref{fig:magnitude_comparator_WaveBi} en base binaria y en la \autoref{fig:magnitude_comparator_WaveDe} en base decimal. Se utilizaron todos los valores posibles en las entradas para observar un comportamiento completo en la salida.
+La visualización RTL del multiplexor 4 a 1 en Verilog se muestra en la \autoref{fig:mux_4_1_case_rtl} utilizando la estructura \textit{case} y en la \autoref{fig:mux_4_1_if_rtl} utilizando la estructura \textit{if}. Como se observa, el multiplexor con la estructura \textit{case} se implementa empleando una instancia de multiplexor 4 a 1, con un tamaño de selección de 2 bits, en cambio, el que se describió con estructura \textit{if} hace uso de varios elementos lógicos, específicamente 4 comparadores de magnitud y 4 multiplexores 2 a 1. Las simulaciones para el código en Verilog se visualizan en la \autoref{fig:mux_4_1_case_WaveBi} para el multiplexor de estructura \textit{case} y en la \autoref{fig:mux_4_1_if_WaveBi} para el de la estructura \textit{if}. Los bits de entrada fueron escogidos de tal forma que se observe de manera clara el funcionamiento del módulo.
+
+En los Anexos se localiza la descripción de las dos implementaciones de multiplexor. Para el primer caso se utilizó la sentencia \textit{case} para evaluar cada estado de la variable de control SEL, todo esto dentro de una lista sensible. En cambio, para el segundo caso se usó una sentencia \textit{if} por cada estado de la variable SEL, igualmente dentro de una lista sensible.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.5]{Magnitude_Comparator_RTL.png}
-	\caption{Diagrama RTL del comparador de magnitud. \label{fig:magnitude_comparator_rtl}}
+	\includegraphics[scale=0.4]{Mux_4_1_Case_RTL.png}
+	\caption{Diagrama RTL del multiplexor 4 a 1, utilizando la estructura \textit{case}. \label{fig:mux_4_1_case_rtl}}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.75]{Magnitude_Comparator_WaveBi.png}
-	\caption{Simulación del comparador de magnitud con el visor de formas de onda de ModelSim (Base binaria). \label{fig:magnitude_comparator_WaveBi}}
+	\includegraphics[scale=0.5]{Mux_4_1_If_RTL.png}
+	\caption{Diagrama RTL del multiplexor 4 a 1, utilizando la estructura \textit{if}. \label{fig:mux_4_1_if_rtl}}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=1.3]{Magnitude_Comparator_WaveDe.png}
-	\caption{Simulación del comparador de magnitud con el visor de formas de onda de ModelSim (Base decimal). \label{fig:magnitude_comparator_WaveDe}}
+	\includegraphics[scale=0.9]{Mux_4_1_Case_WaveBi.png}
+	\caption{Simulación del multiplexor 4 a 1, utilizando la estructura \textit{case} con el visor de formas de onda de ModelSim. 
+	\label{fig:mux_4_1_case_WaveBi}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1.3
+	 ]{Mux_4_1_If_WaveBi.png}
+	\caption{Simulación del multiplexor 4 a 1, utilizando la estructura \textit{if} con el visor de formas de onda de ModelSim. 
+	\label{fig:mux_4_1_if_WaveBi}}
 \end{figure}
 
 

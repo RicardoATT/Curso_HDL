@@ -4,42 +4,42 @@
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:Binary_Multiplier,
-	caption={Descripción en Verilog del multiplicador binario de 8 bits.}
+	label=prog:Logical_Shifter,
+	caption={Descripción en Verilog del desplazador lógico de 8 bits.}
 ]{
-	../../Proyectos/Binary_Multiplier/Binary_Multiplier.v
-}
-
-\enter
-
-\enter
-
-\lstinputlisting[
-	language=verilog,
-	label=prog:Magnitude_Comparator,
-	caption={Descripción en Verilog del comparador de magnitud.}
-]{
-	../../Proyectos/Magnitude_Comparator/Magnitude_Comparator.v
-}
-
-\enter
-
-\enter
-
-\lstinputlisting[
-	language=verilog,
-	label=prog:Decoder_2_4,
-	caption={Descripción en Verilog del decodificador 2 a 4.}
-]{
-	../../Proyectos/Decoder_2_4/Decoder_2_4.v
+	../../Proyectos/Logical_Shifter/Logical_Shifter.v
 }
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:Encoder_4_2,
-	caption={Descripción en Verilog del codificador 4 a 2.}
+	label=prog:Mux_4_1_Case,
+	caption={Descripción en Verilog del multiplexor 4 a 1, usando la estructura \textit{case}.}
 ]{
-	../../Proyectos/Encoder_4_2/Encoder_4_2.v
+	../../Proyectos/Mux_4_1_Case/Mux_4_1_Case.v
+}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:Mux_4_1_If,
+	caption={Descripción en Verilog del multiplexor 4 a 1, usando la estructura \textit{if}.}
+]{
+	../../Proyectos/Mux_4_1_If/Mux_4_1_If.v
+}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:ROM4x8,
+	caption={Descripción en Verilog de la memoria ROM de 4 localidades de 8 bits.}
+]{
+	../../Proyectos/ROM4x8/ROM4x8.v
+}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:TriState_Buffer,
+	caption={Descripción en Verilog del buffer tri-estado.}
+]{
+	../../Proyectos/TriState_Buffer/TriState_Buffer.v
 }
 
 \newpage
@@ -48,31 +48,39 @@
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:Binary_Multiplier}.}
+caption={Banco de prueba para el \autoref{prog:Logical_Shifter}.}
 ]{
-	../../Proyectos/Binary_Multiplier/simulation/modelsim/Binary_Multiplier.vt
+	../../Proyectos/Logical_Shifter/simulation/modelsim/Logical_Shifter.vt
 }
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:Magnitude_Comparator}.}
+caption={Banco de prueba para el \autoref{prog:Mux_4_1_Case}.}
 ]{
-	../../Proyectos/Magnitude_Comparator/simulation/modelsim/Magnitude_Comparator.vt
+	../../Proyectos/Mux_4_1_Case/simulation/modelsim/Mux_4_1_Case.vt
 }
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:Decoder_2_4}.}
+caption={Banco de prueba para el \autoref{prog:Mux_4_1_If}.}
 ]{
-	../../Proyectos/Decoder_2_4/simulation/modelsim/Decoder_2_4.vt
+	../../Proyectos/Mux_4_1_If/simulation/modelsim/Mux_4_1_If.vt
 }
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:Encoder_4_2}.}
+caption={Banco de prueba para el \autoref{prog:ROM4x8}.}
 ]{
-	../../Proyectos/Encoder_4_2/simulation/modelsim/Encoder_4_2.vt
+	../../Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:TriState_Buffer}.}
+]{
+	../../Proyectos/TriState_Buffer/simulation/modelsim/TriState_Buffer.vt
 }
