@@ -6,7 +6,7 @@
 *.out
 *.snm
 *.toc
-*.pdf
+#*.pdf
 .run.
 *.bbl
 *.blg
@@ -18,17 +18,7 @@
 
 # Archivos generados por Quartus
 
-*.bak
-*.bak1
-*.bak2
-*.bak3
-*.bak4
-*.bak5
-*.bak6
-*.bak7
-*.bak8
-*.bak9
-*.bak10
+*.bak*
 *.rpt
 *.qsf
 *.qws
