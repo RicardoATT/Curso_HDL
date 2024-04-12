@@ -1,0 +1,50 @@
+`timescale 1 ns/ 1 ps
+module Counter_Full_vlg_tst();
+	reg				CE;
+	reg				CLK;
+	reg	[7:0] 	Count_In;
+	reg				LD;
+	reg				RST;
+	reg				Up_Down;
+	wire	[7:0]		Count_Out;
+									 
+	Counter_Full i1 ( 
+		.CE(CE),
+		.CLK(CLK),
+		.Count_In(Count_In),
+		.Count_Out(Count_Out),
+		.LD(LD),
+		.RST(RST),
+		.Up_Down(Up_Down)
+	);
+
+	initial                                                
+	begin
+		CLK = 0; RST = 1; CE = 1; LD = 0; Up_Down = 1; Count_In = 12;
+		#10; RST = 0;
+		#1300;
+		// Prueba de funcionamiento de RST
+		#95; RST = 1;
+		#20; RST = 0;
+		// Prueba de funcionamiento de CE
+		#200; CE = 0;
+		#60; CE = 1;
+		// Prueba de funcionamiento de LD
+		#200; LD = 1;
+		#60; LD = 0;
+		// Prueba de funcionamiento de Up_Down
+		#200; Up_Down = 0;
+		#160; Up_Down = 1;
+		// Prueba de funcionamiento del tope de conteo
+		#500; Count_In = 50; LD = 1;
+		#20; LD = 0;
+		#280; Up_Down = 0;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#10; CLK = ~CLK;
+	end
+
+endmodule 

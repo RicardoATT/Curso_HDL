@@ -1,0 +1,27 @@
+|Counter_Asyn_RST
+CLK => Count_Out[0]~reg0.CLK
+CLK => Count_Out[1]~reg0.CLK
+CLK => Count_Out[2]~reg0.CLK
+CLK => Count_Out[3]~reg0.CLK
+CLK => Count_Out[4]~reg0.CLK
+CLK => Count_Out[5]~reg0.CLK
+CLK => Count_Out[6]~reg0.CLK
+CLK => Count_Out[7]~reg0.CLK
+RST => Count_Out[0]~reg0.ACLR
+RST => Count_Out[1]~reg0.ACLR
+RST => Count_Out[2]~reg0.ACLR
+RST => Count_Out[3]~reg0.ACLR
+RST => Count_Out[4]~reg0.ACLR
+RST => Count_Out[5]~reg0.ACLR
+RST => Count_Out[6]~reg0.ACLR
+RST => Count_Out[7]~reg0.ACLR
+Count_Out[0] << Count_Out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[1] << Count_Out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[2] << Count_Out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[3] << Count_Out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[4] << Count_Out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[5] << Count_Out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[6] << Count_Out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Count_Out[7] << Count_Out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

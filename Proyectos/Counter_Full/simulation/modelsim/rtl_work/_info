@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/simulation/modelsim
+vCounter_Full
+Z1 !s110 1712896025
+!i10b 1
+!s100 o646azMF`9KX0E9K9j^Qi2
+IK=MLb]5]d^NiY^9UL>gQM2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1712894857
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/Counter_Full.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/Counter_Full.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1712896025.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/Counter_Full.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/Counter_Full.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full
+Z6 tCvgOpt 0
+n@counter_@full
+vCounter_Full_vlg_tst
+R1
+!i10b 1
+!s100 UmNXJ9@TBX]]BJM[@U__k2
+II]nfRQUb3gEHTPXHWNZ^21
+R2
+R0
+w1712896019
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/simulation/modelsim/Counter_Full.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/simulation/modelsim/Counter_Full.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/simulation/modelsim/Counter_Full.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/simulation/modelsim/Counter_Full.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Counter_Full/simulation/modelsim
+R6
+n@counter_@full_vlg_tst

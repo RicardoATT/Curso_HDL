@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_D_Asyn_RST/FF_D_Asyn_RST.v
+source_file = 1, C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_D_Asyn_RST/db/FF_D_Asyn_RST.cbx.xml
+design_name = FF_D_Asyn_RST
+instance = comp, Q_aoutput, Q~output, FF_D_Asyn_RST, 1
+instance = comp, CLK_ainput, CLK~input, FF_D_Asyn_RST, 1
+instance = comp, D_ainput, D~input, FF_D_Asyn_RST, 1
+instance = comp, Q_areg0feeder, Q~reg0feeder, FF_D_Asyn_RST, 1
+instance = comp, RST_ainput, RST~input, FF_D_Asyn_RST, 1
+instance = comp, Q_areg0, Q~reg0, FF_D_Asyn_RST, 1
+design_name = hard_block
+instance = comp, a_aALTERA_ASDO_DATA1_a_aibuf, ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_FLASH_nCE_nCSO_a_aibuf, ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_DATA0_a_aibuf, ~ALTERA_DATA0~~ibuf, hard_block, 1

@@ -1,15 +1,9 @@
 `timescale 1 ns/ 1 ps
-module Adder_Cin_Verilog_vlg_tst();
-	reg A;
-	reg B;
-	reg Cin;                                              
-	wire Sum;
+module _vlg_tst();
+	
 									 
-	Adder_Cin_Verilog i1 ( 
-		.A(A),
-		.B(B),
-		.Cin(Cin),
-		.Sum(Sum)
+	 i1 ( 
+		
 	);
 
 	initial                                                

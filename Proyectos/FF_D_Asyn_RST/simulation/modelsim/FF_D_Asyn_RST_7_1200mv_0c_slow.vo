@@ -1,0 +1,235 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "04/11/2024 20:13:35"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module FF_D_Asyn_RST (
+	CLK,
+	RST,
+	D,
+	Q);
+input 	CLK;
+input 	RST;
+input 	D;
+output 	Q;
+
+// Design Ports Information
+// Q	=>  Location: PIN_G19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// D	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RST	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("FF_D_Asyn_RST_7_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire Q_aoutput_o;
+wire CLK_ainput_o;
+wire D_ainput_o;
+wire Q_areg0feeder_combout;
+wire RST_ainput_o;
+wire Q_areg0_q;
+
+wire Q_aoutput_I_driver;
+wire CLK_ainput_I_driver;
+wire D_ainput_I_driver;
+wire Q_areg0feeder_DATAD_driver;
+wire RST_ainput_I_driver;
+wire Q_areg0_CLK_driver;
+wire Q_areg0_D_driver;
+wire Q_areg0_CLRN_driver;
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+cycloneive_routing_wire Q_aoutput_I_routing_wire_inst (
+	.datain(Q_areg0_q),
+	.dataout(Q_aoutput_I_driver));
+
+// Location: IOOBUF_X69_Y73_N16
+cycloneive_io_obuf Q_aoutput(
+	.i(Q_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Q_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam Q_aoutput.bus_hold = "false";
+defparam Q_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
+	.datain(CLK),
+	.dataout(CLK_ainput_I_driver));
+
+// Location: IOIBUF_X115_Y14_N8
+cycloneive_io_ibuf CLK_ainput(
+	.i(CLK_ainput_I_driver),
+	.ibar(gnd),
+	.o(CLK_ainput_o));
+// synopsys translate_off
+defparam CLK_ainput.bus_hold = "false";
+defparam CLK_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire D_ainput_I_routing_wire_inst (
+	.datain(D),
+	.dataout(D_ainput_I_driver));
+
+// Location: IOIBUF_X115_Y17_N1
+cycloneive_io_ibuf D_ainput(
+	.i(D_ainput_I_driver),
+	.ibar(gnd),
+	.o(D_ainput_o));
+// synopsys translate_off
+defparam D_ainput.bus_hold = "false";
+defparam D_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Q_areg0feeder_DATAD_routing_wire_inst (
+	.datain(D_ainput_o),
+	.dataout(Q_areg0feeder_DATAD_driver));
+
+// Location: LCCOMB_X114_Y14_N16
+cycloneive_lcell_comb Q_areg0feeder(
+// Equation(s):
+// Q_areg0feeder_combout = D_ainput_o
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(Q_areg0feeder_DATAD_driver),
+	.cin(gnd),
+	.combout(Q_areg0feeder_combout),
+	.cout());
+// synopsys translate_off
+defparam Q_areg0feeder.lut_mask = 16'hFF00;
+defparam Q_areg0feeder.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire RST_ainput_I_routing_wire_inst (
+	.datain(RST),
+	.dataout(RST_ainput_I_driver));
+
+// Location: IOIBUF_X115_Y13_N1
+cycloneive_io_ibuf RST_ainput(
+	.i(RST_ainput_I_driver),
+	.ibar(gnd),
+	.o(RST_ainput_o));
+// synopsys translate_off
+defparam RST_ainput.bus_hold = "false";
+defparam RST_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Q_areg0_CLK_routing_wire_inst (
+	.datain(CLK_ainput_o),
+	.dataout(Q_areg0_CLK_driver));
+
+cycloneive_routing_wire Q_areg0_D_routing_wire_inst (
+	.datain(Q_areg0feeder_combout),
+	.dataout(Q_areg0_D_driver));
+
+cycloneive_routing_wire Q_areg0_CLRN_routing_wire_inst (
+	.datain(!RST_ainput_o),
+	.dataout(Q_areg0_CLRN_driver));
+
+// Location: FF_X114_Y14_N17
+dffeas Q_areg0(
+	.clk(Q_areg0_CLK_driver),
+	.d(Q_areg0_D_driver),
+	.asdata(vcc),
+	.clrn(Q_areg0_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Q_areg0_q),
+	.prn(vcc));
+// synopsys translate_off
+defparam Q_areg0.is_wysiwyg = "true";
+defparam Q_areg0.power_up = "low";
+// synopsys translate_on
+
+assign Q = Q_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+wire a_aALTERA_ASDO_DATA1_a_aibuf_I_driver;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_I_driver;
+wire a_aALTERA_DATA0_a_aibuf_I_driver;
+
+endmodule

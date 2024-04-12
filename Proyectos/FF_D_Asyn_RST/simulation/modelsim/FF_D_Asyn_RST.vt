@@ -1,0 +1,32 @@
+`timescale 1 ns/ 1 ps
+module FF_D_Asyn_RST_vlg_tst();
+	reg	CLK;
+	reg	D;
+	reg	RST;
+	wire	Q;
+									 
+	FF_D_Asyn_RST i1 ( 
+		.CLK(CLK),
+		.D(D),
+		.Q(Q),
+		.RST(RST)
+	);
+
+	initial                                                
+	begin
+		CLK = 0; RST = 1; D = 1;
+		#15; RST = 0; 
+		#10; D = 0;
+		#20; D = 1;
+		#50; D = 0;
+		#10; D = 1;
+		#30; RST = 1; D = 1;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#10; CLK = ~CLK;
+	end                                                    
+
+endmodule 

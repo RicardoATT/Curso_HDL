@@ -1,0 +1,27 @@
+`timescale 1 ns/ 1 ps
+module Counter_Asyn_RST_vlg_tst();
+	reg 				CLK;
+	reg 				RST;
+	wire	[7:0]		Count_Out;
+									 
+	Counter_Asyn_RST i1 ( 
+		.CLK(CLK),
+		.Count_Out(Count_Out),
+		.RST(RST)
+	);
+
+	initial                                                
+	begin
+		CLK=0; RST=1;
+		#15;   RST=0;
+		#75;   RST=1;
+		#20;   RST=0;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#10; CLK=~CLK;
+	end                                                    
+
+endmodule 

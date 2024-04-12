@@ -1,0 +1,93 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Count_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_In[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LD",
+					"strict" : false
+				},
+				{
+					"name" : "Up_Down",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
+					"name" : "CE",
+					"strict" : false
+				},
+				{
+					"name" : "Count_In[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_In[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_In[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_In[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_In[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_In[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Count_In[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
