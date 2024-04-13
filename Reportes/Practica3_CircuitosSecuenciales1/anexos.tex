@@ -4,42 +4,34 @@
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:Logical_Shifter,
-	caption={Descripción en Verilog del desplazador lógico de 8 bits.}
+	label=prog:FF_D_Asyn_RST,
+	caption={Descripción en Verilog del flip flop tipo D con \textit{reset} asíncrono.}
 ]{
-	../../Proyectos/Logical_Shifter/Logical_Shifter.v
+	../../Proyectos/FF_D_Asyn_RST/FF_D_Asyn_RST.v
 }
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:Mux_4_1_Case,
-	caption={Descripción en Verilog del multiplexor 4 a 1, usando la estructura \textit{case}.}
+	label=prog:FF_D_Syn_RST,
+	caption={Descripción en Verilog del flip flop tipo D con \textit{reset} síncrono.}
 ]{
-	../../Proyectos/Mux_4_1_Case/Mux_4_1_Case.v
+	../../Proyectos/FF_D_Syn_RST/FF_D_Syn_RST.v
 }
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:Mux_4_1_If,
-	caption={Descripción en Verilog del multiplexor 4 a 1, usando la estructura \textit{if}.}
+	label=prog:Counter_Asyn_RST,
+	caption={Descripción en Verilog del contador con \textit{reset} asíncrono.}
 ]{
-	../../Proyectos/Mux_4_1_If/Mux_4_1_If.v
+	../../Proyectos/Counter_Asyn_RST/Counter_Asyn_RST.v
 }
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:ROM4x8,
-	caption={Descripción en Verilog de la memoria ROM de 4 localidades de 8 bits.}
+	label=prog:Counter_Full,
+	caption={Descripción en Verilog del contador con \textit{reset} asíncrono, \textit{clock enable}, carga de datos, sentido y tope de la cuenta.}
 ]{
-	../../Proyectos/ROM4x8/ROM4x8.v
-}
-
-\lstinputlisting[
-	language=verilog,
-	label=prog:TriState_Buffer,
-	caption={Descripción en Verilog del buffer tri-estado.}
-]{
-	../../Proyectos/TriState_Buffer/TriState_Buffer.v
+	../../Proyectos/Counter_Full/Counter_Full.v
 }
 
 \newpage
@@ -48,39 +40,31 @@
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:Logical_Shifter}.}
+caption={Banco de prueba para el \autoref{prog:FF_D_Asyn_RST}.}
 ]{
-	../../Proyectos/Logical_Shifter/simulation/modelsim/Logical_Shifter.vt
+	../../Proyectos/FF_D_Asyn_RST/simulation/modelsim/FF_D_Asyn_RST.vt
 }
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:Mux_4_1_Case}.}
+caption={Banco de prueba para el \autoref{prog:FF_D_Syn_RST}.}
 ]{
-	../../Proyectos/Mux_4_1_Case/simulation/modelsim/Mux_4_1_Case.vt
+	../../Proyectos/FF_D_Syn_RST/simulation/modelsim/FF_D_Syn_RST.vt
 }
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:Mux_4_1_If}.}
+caption={Banco de prueba para el \autoref{prog:Counter_Asyn_RST}.}
 ]{
-	../../Proyectos/Mux_4_1_If/simulation/modelsim/Mux_4_1_If.vt
+	../../Proyectos/Counter_Asyn_RST/simulation/modelsim/Counter_Asyn_RST.vt
 }
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:ROM4x8}.}
+caption={Banco de prueba para el \autoref{prog:Counter_Full}.}
 ]{
-	../../Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt
-}
-
-\lstinputlisting[
-language=verilog,
-%label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:TriState_Buffer}.}
-]{
-	../../Proyectos/TriState_Buffer/simulation/modelsim/TriState_Buffer.vt
+	../../Proyectos/Counter_Full/simulation/modelsim/Counter_Full.vt
 }

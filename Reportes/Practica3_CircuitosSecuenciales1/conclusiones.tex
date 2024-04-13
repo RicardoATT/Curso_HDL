@@ -1,14 +1,10 @@
 \section{Conclusiones}
 En conclusión, se implementaron los 4 circuitos en lenguaje Verilog de manera exitosa.
 
-Para el desplazador lógico, se implementó utilizando concatenaciones en lugar de utilizar los operadores específicos ``<<'' y ``>>'', por lo que se entendió a profundidad el funcionamiento de este modulo. 
+Para los flip flop tipo D, se implementaron de manera correcta y se diferenció el funcionamiento del \textit{reset} asíncrono del síncrono, así como sus características físicas en el visor RTL. 
 
-Para el multiplexor, se implementó su descripción de dos formas, observando que con la estructura \textit{case} se generó un multiplexor, mientras que con la estructura \textit{if-else} se generaron otros elementos lógicos, como comparadores y multiplexores de menor tamaño.
+Para los contadores de 8 bits, se describieron de forma adecuada. Para el contador sencillo se observo como se implementa en el visor RTL, utilizando unicamente un flip flop de 8 bits junto con un sumador en el lazo de retroalimentación. Para el contador completo, se entendió como implementar la señales de control con respecto a un orden de prioridad y se observó la complejidad de este modulo al implementar no solo un flip flop de 8 bits, sino también sumadores, multiplexores y comparadores.
 
-Para la memoria ROM, se observó que este modulo se implementa de manera similar a un decodificador, diferenciándose en el tamaño, ya que la memoria puede tener cualquier tamaño.
-
-Para el buffer tri-estado, con la herramienta de \textit{Chip Planner}, se entendió como es que el entorno asignó el modulo al bloque de entradas y salidas, ya que en ese lugar se utilizan buffers para intercambiar el funcionamiento de los puertos entre entrada y salida.
-
-En general, comprendió como es que operan dichos circuitos combinatorios y como es que se implementan en el visor RTL. Se comprobó su funcionamiento utilizando las simulaciones de forma de onda en ModelSim y se asignaron los pines correspondientes en la placa de desarrollo para programar el dispositivo y realizar las pruebas pertinentes en hardware.
+Se comprobó su funcionamiento utilizando las simulaciones de forma de onda en ModelSim y se asignaron los pines correspondientes en la placa de desarrollo para programar el dispositivo y realizar las pruebas pertinentes en hardware.
 
 En los Anexos se pueden encontrar los códigos implementados junto con sus respectivos bancos de pruebas.

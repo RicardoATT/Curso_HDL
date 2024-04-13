@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "04/11/2024 20:13:35"
+// DATE "04/12/2024 19:06:32"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -41,8 +41,8 @@ output 	Q;
 // Design Ports Information
 // Q	=>  Location: PIN_G19,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // D	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CLK	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// RST	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_R24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RST	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -63,17 +63,15 @@ initial $sdf_annotate("FF_D_Asyn_RST_7_1200mv_0c_v_slow.sdo");
 wire Q_aoutput_o;
 wire CLK_ainput_o;
 wire D_ainput_o;
-wire Q_areg0feeder_combout;
 wire RST_ainput_o;
 wire Q_areg0_q;
 
 wire Q_aoutput_I_driver;
 wire CLK_ainput_I_driver;
 wire D_ainput_I_driver;
-wire Q_areg0feeder_DATAD_driver;
 wire RST_ainput_I_driver;
 wire Q_areg0_CLK_driver;
-wire Q_areg0_D_driver;
+wire Q_areg0_ASDATA_driver;
 wire Q_areg0_CLRN_driver;
 
 hard_block auto_generated_inst(
@@ -102,7 +100,7 @@ cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
 	.datain(CLK),
 	.dataout(CLK_ainput_I_driver));
 
-// Location: IOIBUF_X115_Y14_N8
+// Location: IOIBUF_X115_Y35_N22
 cycloneive_io_ibuf CLK_ainput(
 	.i(CLK_ainput_I_driver),
 	.ibar(gnd),
@@ -126,32 +124,11 @@ defparam D_ainput.bus_hold = "false";
 defparam D_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_routing_wire Q_areg0feeder_DATAD_routing_wire_inst (
-	.datain(D_ainput_o),
-	.dataout(Q_areg0feeder_DATAD_driver));
-
-// Location: LCCOMB_X114_Y14_N16
-cycloneive_lcell_comb Q_areg0feeder(
-// Equation(s):
-// Q_areg0feeder_combout = D_ainput_o
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(Q_areg0feeder_DATAD_driver),
-	.cin(gnd),
-	.combout(Q_areg0feeder_combout),
-	.cout());
-// synopsys translate_off
-defparam Q_areg0feeder.lut_mask = 16'hFF00;
-defparam Q_areg0feeder.sum_lutc_input = "datac";
-// synopsys translate_on
-
 cycloneive_routing_wire RST_ainput_I_routing_wire_inst (
 	.datain(RST),
 	.dataout(RST_ainput_I_driver));
 
-// Location: IOIBUF_X115_Y13_N1
+// Location: IOIBUF_X115_Y14_N8
 cycloneive_io_ibuf RST_ainput(
 	.i(RST_ainput_I_driver),
 	.ibar(gnd),
@@ -165,23 +142,23 @@ cycloneive_routing_wire Q_areg0_CLK_routing_wire_inst (
 	.datain(CLK_ainput_o),
 	.dataout(Q_areg0_CLK_driver));
 
-cycloneive_routing_wire Q_areg0_D_routing_wire_inst (
-	.datain(Q_areg0feeder_combout),
-	.dataout(Q_areg0_D_driver));
+cycloneive_routing_wire Q_areg0_ASDATA_routing_wire_inst (
+	.datain(D_ainput_o),
+	.dataout(Q_areg0_ASDATA_driver));
 
 cycloneive_routing_wire Q_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Q_areg0_CLRN_driver));
 
-// Location: FF_X114_Y14_N17
+// Location: FF_X114_Y35_N9
 dffeas Q_areg0(
 	.clk(Q_areg0_CLK_driver),
-	.d(Q_areg0_D_driver),
-	.asdata(vcc),
+	.d(gnd),
+	.asdata(Q_areg0_ASDATA_driver),
 	.clrn(Q_areg0_CLRN_driver),
 	.aload(gnd),
 	.sclr(gnd),
-	.sload(gnd),
+	.sload(vcc),
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),

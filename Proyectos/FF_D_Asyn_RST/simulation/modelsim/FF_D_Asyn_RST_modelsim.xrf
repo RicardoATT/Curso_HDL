@@ -5,7 +5,6 @@ design_name = FF_D_Asyn_RST
 instance = comp, Q_aoutput, Q~output, FF_D_Asyn_RST, 1
 instance = comp, CLK_ainput, CLK~input, FF_D_Asyn_RST, 1
 instance = comp, D_ainput, D~input, FF_D_Asyn_RST, 1
-instance = comp, Q_areg0feeder, Q~reg0feeder, FF_D_Asyn_RST, 1
 instance = comp, RST_ainput, RST~input, FF_D_Asyn_RST, 1
 instance = comp, Q_areg0, Q~reg0, FF_D_Asyn_RST, 1
 design_name = hard_block

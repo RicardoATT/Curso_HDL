@@ -8,18 +8,24 @@
 	\end{minipage}
 \end{center}
 
-La visualización RTL del desplazador lógico en Verilog se muestra en la \autoref{fig:logical_shifter_rtl}. En el visor se tiene un decodificador conectado junto con 8 multiplexores (uno por cada bit a la salida). Las simulaciones para el código en Verilog se visualizan en la \autoref{fig:logical_shifter_WaveBi}. Los bits a la entrada fueron escogidos de tal forma que se observe de manera clara el corrimiento a la izquierda.
+La visualización RTL del flip flop tipo D con \textit{reset} asíncrono en Verilog se muestra en la \autoref{fig:ff_d_asyn_rtl}. En el visor se observa que la señal RST se conecta al pin CLRN que sirve para limpiar el estado del flip flop, dicho estado se presenta en el pin SCLR, indicando que al restablecer el circuito, la salida tendrá el valor de esta terminal (cero). Las señales restantes se conectan a los pines correspondientes del modulo (D, CLK y Q).
 
-En los Anexos se localiza la descripción del desplazador lógico. Se observa que la descripción se hizo utilizando una lista sensible para los puertos de entrada y selección. Dentro de esta estructura se empleó la sentencia \textit{case} para indicar como se debe comportar la salida con respecto a la variable de control SEL. Cabe resaltar que para el desplazamiento lógico a la izquierda se concatenaron los bits menos significativos de la entrada a la izquierda y valores en bajo a la derecha. En caso de que se hubiera hecho un desplazamiento a la derecha, se debe hacer la concatenación de valores en bajo a la izquierda y los bits más significativos de la entrada a la derecha.
+Las simulaciones para el código en Verilog se visualizan en la \autoref{fig:ff_d_asyn_wave}. Se observa que la salida Q adquiere el valor de la entrada D unicamente cuando en la señal de reloj (CLK) hay un flanco de subida. La limpieza en el flip flop se da de manera asíncrona con el pin RST, ya que no depende de CLK, sino que cuando se tiene un flanco de subida en el \textit{reset}, se ajusta el valor de la salida a 0.
+
+En los Anexos se localiza la descripción del flip flop tipo D con \textit{reset} asíncrono. Se utilizó una lista sensible para el flanco de subida de la señal de reloj y el \textit{reset}. Dentro de esta estructura se empleó la sentencia \textit{if} para comparar el valor de RST: 
+\begin{itemize}
+	\item Si es 1, se restablece el valor de la salida a 0. 
+	\item Si es 0, la salida adquiere el valor de D.
+\end{itemize}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.8]{Logical_Shifter_RTL.png}
-	\caption{Diagrama RTL del desplazador lógico de 8 bits. \label{fig:logical_shifter_rtl}}
+	\includegraphics[scale=0.5]{FF_D_Asyn_RST_RTL.png}
+	\caption{Diagrama RTL del flip flop tipo D con \textit{reset} asíncrono. \label{fig:ff_d_asyn_rtl}}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.65]{Logical_Shifter_WaveBi.png}
-	\caption{Simulación del desplazador lógico con el visor de formas de onda de ModelSim. \label{fig:logical_shifter_WaveBi}}
+	\includegraphics[scale=1.3]{FF_D_Asyn_RST_Wave.png}
+	\caption{Simulación del flip flop tipo D con \textit{reset} asíncrono en el visor de formas de onda de ModelSim. \label{fig:ff_d_asyn_wave}}
 \end{figure}

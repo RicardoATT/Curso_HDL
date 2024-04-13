@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "04/11/2024 22:08:59"
+// DATE "04/12/2024 19:59:36"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -54,11 +54,11 @@ output 	[7:0] Count_Out;
 // Count_Out[6]	=>  Location: PIN_J19,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Count_Out[7]	=>  Location: PIN_H19,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Count_In[0]	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// LD	=>  Location: PIN_AA23,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Up_Down	=>  Location: PIN_AA24,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CLK	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// RST	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CE	=>  Location: PIN_AA22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LD	=>  Location: PIN_AA22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Up_Down	=>  Location: PIN_AA23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_M21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RST	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CE	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Count_In[1]	=>  Location: PIN_AC28,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Count_In[2]	=>  Location: PIN_AC27,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Count_In[3]	=>  Location: PIN_AD27,	 I/O Standard: 2.5 V,	 Current Strength: Default
@@ -92,15 +92,15 @@ wire Count_Out_a5_a_aoutput_o;
 wire Count_Out_a6_a_aoutput_o;
 wire Count_Out_a7_a_aoutput_o;
 wire CLK_ainput_o;
-wire Count_In_a0_a_ainput_o;
 wire LD_ainput_o;
-wire Count_In_a2_a_ainput_o;
+wire Count_In_a0_a_ainput_o;
 wire Up_Down_ainput_o;
+wire Count_In_a2_a_ainput_o;
 wire Count_In_a1_a_ainput_o;
-wire Add0_a1;
-wire Add0_a2_combout;
 wire Add1_a1;
 wire Add1_a2_combout;
+wire Add0_a1;
+wire Add0_a2_combout;
 wire Count_Out_a10_combout;
 wire Count_Out_a11_combout;
 wire RST_ainput_o;
@@ -158,8 +158,8 @@ wire Count_Out_a7_a_areg0_q;
 wire Equal1_a0_combout;
 wire Count_Out_a0_a_a7_combout;
 wire Count_Out_a0_a_a8_combout;
-wire Add1_a0_combout;
 wire Add0_a0_combout;
+wire Add1_a0_combout;
 wire Count_Out_a6_combout;
 wire Count_Out_a9_combout;
 wire Count_Out_a0_a_areg0_q;
@@ -173,17 +173,17 @@ wire Count_Out_a5_a_aoutput_I_driver;
 wire Count_Out_a6_a_aoutput_I_driver;
 wire Count_Out_a7_a_aoutput_I_driver;
 wire CLK_ainput_I_driver;
-wire Count_In_a0_a_ainput_I_driver;
 wire LD_ainput_I_driver;
-wire Count_In_a2_a_ainput_I_driver;
+wire Count_In_a0_a_ainput_I_driver;
 wire Up_Down_ainput_I_driver;
+wire Count_In_a2_a_ainput_I_driver;
 wire Count_In_a1_a_ainput_I_driver;
-wire Add0_a0_DATAB_driver;
-wire Add0_a2_DATAB_driver;
-wire Add0_a2_CIN_driver;
 wire Add1_a0_DATAA_driver;
 wire Add1_a2_DATAB_driver;
 wire Add1_a2_CIN_driver;
+wire Add0_a0_DATAB_driver;
+wire Add0_a2_DATAB_driver;
+wire Add0_a2_CIN_driver;
 wire Count_Out_a10_DATAA_driver;
 wire Count_Out_a10_DATAB_driver;
 wire Count_Out_a10_DATAD_driver;
@@ -223,7 +223,7 @@ wire Add0_a9_DATAB_driver;
 wire Add0_a9_CIN_driver;
 wire Add1_a8_DATAB_driver;
 wire Add1_a8_CIN_driver;
-wire Count_Out_a15_DATAB_driver;
+wire Count_Out_a15_DATAA_driver;
 wire Count_Out_a15_DATAC_driver;
 wire Count_Out_a15_DATAD_driver;
 wire Count_Out_a16_DATAA_driver;
@@ -236,7 +236,7 @@ wire Count_Out_a4_a_areg0_CLRN_driver;
 wire Count_Out_a4_a_areg0_ENA_driver;
 wire Add1_a10_DATAA_driver;
 wire Add1_a10_CIN_driver;
-wire Add0_a11_DATAB_driver;
+wire Add0_a11_DATAA_driver;
 wire Add0_a11_CIN_driver;
 wire Count_Out_a17_DATAB_driver;
 wire Count_Out_a17_DATAC_driver;
@@ -287,7 +287,7 @@ wire Count_Out_a6_a_areg0_D_driver;
 wire Count_Out_a6_a_areg0_CLRN_driver;
 wire Count_Out_a6_a_areg0_ENA_driver;
 wire Count_In_a7_a_ainput_I_driver;
-wire Add1_a14_DATAD_driver;
+wire Add1_a14_DATAA_driver;
 wire Add1_a14_CIN_driver;
 wire Add0_a15_DATAD_driver;
 wire Add0_a15_CIN_driver;
@@ -314,9 +314,9 @@ wire Count_Out_a0_a_a8_DATAA_driver;
 wire Count_Out_a0_a_a8_DATAB_driver;
 wire Count_Out_a0_a_a8_DATAC_driver;
 wire Count_Out_a0_a_a8_DATAD_driver;
+wire Count_Out_a6_DATAA_driver;
 wire Count_Out_a6_DATAB_driver;
 wire Count_Out_a6_DATAC_driver;
-wire Count_Out_a6_DATAD_driver;
 wire Count_Out_a9_DATAA_driver;
 wire Count_Out_a9_DATAB_driver;
 wire Count_Out_a9_DATAC_driver;
@@ -471,7 +471,7 @@ cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
 	.datain(CLK),
 	.dataout(CLK_ainput_I_driver));
 
-// Location: IOIBUF_X115_Y14_N8
+// Location: IOIBUF_X115_Y53_N15
 cycloneive_io_ibuf CLK_ainput(
 	.i(CLK_ainput_I_driver),
 	.ibar(gnd),
@@ -479,6 +479,20 @@ cycloneive_io_ibuf CLK_ainput(
 // synopsys translate_off
 defparam CLK_ainput.bus_hold = "false";
 defparam CLK_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire LD_ainput_I_routing_wire_inst (
+	.datain(LD),
+	.dataout(LD_ainput_I_driver));
+
+// Location: IOIBUF_X115_Y6_N15
+cycloneive_io_ibuf LD_ainput(
+	.i(LD_ainput_I_driver),
+	.ibar(gnd),
+	.o(LD_ainput_o));
+// synopsys translate_off
+defparam LD_ainput.bus_hold = "false";
+defparam LD_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_In_a0_a_ainput_I_routing_wire_inst (
@@ -495,18 +509,18 @@ defparam Count_In_a0_a_ainput.bus_hold = "false";
 defparam Count_In_a0_a_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_routing_wire LD_ainput_I_routing_wire_inst (
-	.datain(LD),
-	.dataout(LD_ainput_I_driver));
+cycloneive_routing_wire Up_Down_ainput_I_routing_wire_inst (
+	.datain(Up_Down),
+	.dataout(Up_Down_ainput_I_driver));
 
 // Location: IOIBUF_X115_Y10_N8
-cycloneive_io_ibuf LD_ainput(
-	.i(LD_ainput_I_driver),
+cycloneive_io_ibuf Up_Down_ainput(
+	.i(Up_Down_ainput_I_driver),
 	.ibar(gnd),
-	.o(LD_ainput_o));
+	.o(Up_Down_ainput_o));
 // synopsys translate_off
-defparam LD_ainput.bus_hold = "false";
-defparam LD_ainput.simulate_z_as = "z";
+defparam Up_Down_ainput.bus_hold = "false";
+defparam Up_Down_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_In_a2_a_ainput_I_routing_wire_inst (
@@ -523,20 +537,6 @@ defparam Count_In_a2_a_ainput.bus_hold = "false";
 defparam Count_In_a2_a_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_routing_wire Up_Down_ainput_I_routing_wire_inst (
-	.datain(Up_Down),
-	.dataout(Up_Down_ainput_I_driver));
-
-// Location: IOIBUF_X115_Y9_N22
-cycloneive_io_ibuf Up_Down_ainput(
-	.i(Up_Down_ainput_I_driver),
-	.ibar(gnd),
-	.o(Up_Down_ainput_o));
-// synopsys translate_off
-defparam Up_Down_ainput.bus_hold = "false";
-defparam Up_Down_ainput.simulate_z_as = "z";
-// synopsys translate_on
-
 cycloneive_routing_wire Count_In_a1_a_ainput_I_routing_wire_inst (
 	.datain(Count_In[1]),
 	.dataout(Count_In_a1_a_ainput_I_driver));
@@ -551,59 +551,11 @@ defparam Count_In_a1_a_ainput.bus_hold = "false";
 defparam Count_In_a1_a_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_routing_wire Add0_a0_DATAB_routing_wire_inst (
-	.datain(Count_Out_a0_a_areg0_q),
-	.dataout(Add0_a0_DATAB_driver));
-
-// Location: LCCOMB_X103_Y27_N14
-cycloneive_lcell_comb Add0_a0(
-// Equation(s):
-// Add0_a0_combout = Count_Out_a0_a_areg0_q $ (VCC)
-// Add0_a1 = CARRY(Count_Out_a0_a_areg0_q)
-
-	.dataa(gnd),
-	.datab(Add0_a0_DATAB_driver),
-	.datac(gnd),
-	.datad(vcc),
-	.cin(gnd),
-	.combout(Add0_a0_combout),
-	.cout(Add0_a1));
-// synopsys translate_off
-defparam Add0_a0.lut_mask = 16'h33CC;
-defparam Add0_a0.sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_routing_wire Add0_a2_DATAB_routing_wire_inst (
-	.datain(Count_Out_a1_a_areg0_q),
-	.dataout(Add0_a2_DATAB_driver));
-
-cycloneive_routing_wire Add0_a2_CIN_routing_wire_inst (
-	.datain(Add0_a1),
-	.dataout(Add0_a2_CIN_driver));
-
-// Location: LCCOMB_X103_Y27_N16
-cycloneive_lcell_comb Add0_a2(
-// Equation(s):
-// Add0_a2_combout = (Count_Out_a1_a_areg0_q & (!Add0_a1)) # (!Count_Out_a1_a_areg0_q & ((Add0_a1) # (GND)))
-// Add0_a3 = CARRY((!Add0_a1) # (!Count_Out_a1_a_areg0_q))
-
-	.dataa(gnd),
-	.datab(Add0_a2_DATAB_driver),
-	.datac(gnd),
-	.datad(vcc),
-	.cin(Add0_a2_CIN_driver),
-	.combout(Add0_a2_combout),
-	.cout(Add0_a3));
-// synopsys translate_off
-defparam Add0_a2.lut_mask = 16'h3C3F;
-defparam Add0_a2.sum_lutc_input = "cin";
-// synopsys translate_on
-
 cycloneive_routing_wire Add1_a0_DATAA_routing_wire_inst (
 	.datain(Count_Out_a0_a_areg0_q),
 	.dataout(Add1_a0_DATAA_driver));
 
-// Location: LCCOMB_X102_Y27_N4
+// Location: LCCOMB_X99_Y43_N4
 cycloneive_lcell_comb Add1_a0(
 // Equation(s):
 // Add1_a0_combout = Count_Out_a0_a_areg0_q $ (VCC)
@@ -629,7 +581,7 @@ cycloneive_routing_wire Add1_a2_CIN_routing_wire_inst (
 	.datain(Add1_a1),
 	.dataout(Add1_a2_CIN_driver));
 
-// Location: LCCOMB_X102_Y27_N6
+// Location: LCCOMB_X99_Y43_N6
 cycloneive_lcell_comb Add1_a2(
 // Equation(s):
 // Add1_a2_combout = (Count_Out_a1_a_areg0_q & (Add1_a1 & VCC)) # (!Count_Out_a1_a_areg0_q & (!Add1_a1))
@@ -647,22 +599,70 @@ defparam Add1_a2.lut_mask = 16'hC303;
 defparam Add1_a2.sum_lutc_input = "cin";
 // synopsys translate_on
 
+cycloneive_routing_wire Add0_a0_DATAB_routing_wire_inst (
+	.datain(Count_Out_a0_a_areg0_q),
+	.dataout(Add0_a0_DATAB_driver));
+
+// Location: LCCOMB_X100_Y43_N14
+cycloneive_lcell_comb Add0_a0(
+// Equation(s):
+// Add0_a0_combout = Count_Out_a0_a_areg0_q $ (VCC)
+// Add0_a1 = CARRY(Count_Out_a0_a_areg0_q)
+
+	.dataa(gnd),
+	.datab(Add0_a0_DATAB_driver),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(Add0_a0_combout),
+	.cout(Add0_a1));
+// synopsys translate_off
+defparam Add0_a0.lut_mask = 16'h33CC;
+defparam Add0_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Add0_a2_DATAB_routing_wire_inst (
+	.datain(Count_Out_a1_a_areg0_q),
+	.dataout(Add0_a2_DATAB_driver));
+
+cycloneive_routing_wire Add0_a2_CIN_routing_wire_inst (
+	.datain(Add0_a1),
+	.dataout(Add0_a2_CIN_driver));
+
+// Location: LCCOMB_X100_Y43_N16
+cycloneive_lcell_comb Add0_a2(
+// Equation(s):
+// Add0_a2_combout = (Count_Out_a1_a_areg0_q & (!Add0_a1)) # (!Count_Out_a1_a_areg0_q & ((Add0_a1) # (GND)))
+// Add0_a3 = CARRY((!Add0_a1) # (!Count_Out_a1_a_areg0_q))
+
+	.dataa(gnd),
+	.datab(Add0_a2_DATAB_driver),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(Add0_a2_CIN_driver),
+	.combout(Add0_a2_combout),
+	.cout(Add0_a3));
+// synopsys translate_off
+defparam Add0_a2.lut_mask = 16'h3C3F;
+defparam Add0_a2.sum_lutc_input = "cin";
+// synopsys translate_on
+
 cycloneive_routing_wire Count_Out_a10_DATAA_routing_wire_inst (
-	.datain(Up_Down_ainput_o),
+	.datain(Add1_a2_combout),
 	.dataout(Count_Out_a10_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a10_DATAB_routing_wire_inst (
-	.datain(Add0_a2_combout),
+	.datain(Up_Down_ainput_o),
 	.dataout(Count_Out_a10_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a10_DATAD_routing_wire_inst (
-	.datain(Add1_a2_combout),
+	.datain(Add0_a2_combout),
 	.dataout(Count_Out_a10_DATAD_driver));
 
-// Location: LCCOMB_X102_Y27_N28
+// Location: LCCOMB_X99_Y43_N28
 cycloneive_lcell_comb Count_Out_a10(
 // Equation(s):
-// Count_Out_a10_combout = (Up_Down_ainput_o & (Add0_a2_combout)) # (!Up_Down_ainput_o & ((Add1_a2_combout)))
+// Count_Out_a10_combout = (Up_Down_ainput_o & ((Add0_a2_combout))) # (!Up_Down_ainput_o & (Add1_a2_combout))
 
 	.dataa(Count_Out_a10_DATAA_driver),
 	.datab(Count_Out_a10_DATAB_driver),
@@ -672,12 +672,12 @@ cycloneive_lcell_comb Count_Out_a10(
 	.combout(Count_Out_a10_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a10.lut_mask = 16'hDD88;
+defparam Count_Out_a10.lut_mask = 16'hEE22;
 defparam Count_Out_a10.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a11_DATAA_routing_wire_inst (
-	.datain(Count_In_a1_a_ainput_o),
+	.datain(Count_Out_a0_a_a8_combout),
 	.dataout(Count_Out_a11_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a11_DATAB_routing_wire_inst (
@@ -685,17 +685,17 @@ cycloneive_routing_wire Count_Out_a11_DATAB_routing_wire_inst (
 	.dataout(Count_Out_a11_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a11_DATAC_routing_wire_inst (
-	.datain(Count_Out_a0_a_a8_combout),
+	.datain(Count_In_a1_a_ainput_o),
 	.dataout(Count_Out_a11_DATAC_driver));
 
 cycloneive_routing_wire Count_Out_a11_DATAD_routing_wire_inst (
 	.datain(Count_Out_a10_combout),
 	.dataout(Count_Out_a11_DATAD_driver));
 
-// Location: LCCOMB_X102_Y27_N20
+// Location: LCCOMB_X99_Y43_N20
 cycloneive_lcell_comb Count_Out_a11(
 // Equation(s):
-// Count_Out_a11_combout = (LD_ainput_o & (Count_In_a1_a_ainput_o)) # (!LD_ainput_o & (((!Count_Out_a0_a_a8_combout & Count_Out_a10_combout))))
+// Count_Out_a11_combout = (LD_ainput_o & (((Count_In_a1_a_ainput_o)))) # (!LD_ainput_o & (!Count_Out_a0_a_a8_combout & ((Count_Out_a10_combout))))
 
 	.dataa(Count_Out_a11_DATAA_driver),
 	.datab(Count_Out_a11_DATAB_driver),
@@ -705,7 +705,7 @@ cycloneive_lcell_comb Count_Out_a11(
 	.combout(Count_Out_a11_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a11.lut_mask = 16'h8B88;
+defparam Count_Out_a11.lut_mask = 16'hD1C0;
 defparam Count_Out_a11.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -713,7 +713,7 @@ cycloneive_routing_wire RST_ainput_I_routing_wire_inst (
 	.datain(RST),
 	.dataout(RST_ainput_I_driver));
 
-// Location: IOIBUF_X115_Y13_N1
+// Location: IOIBUF_X115_Y14_N8
 cycloneive_io_ibuf RST_ainput(
 	.i(RST_ainput_I_driver),
 	.ibar(gnd),
@@ -727,7 +727,7 @@ cycloneive_routing_wire CE_ainput_I_routing_wire_inst (
 	.datain(CE),
 	.dataout(CE_ainput_I_driver));
 
-// Location: IOIBUF_X115_Y6_N15
+// Location: IOIBUF_X115_Y13_N1
 cycloneive_io_ibuf CE_ainput(
 	.i(CE_ainput_I_driver),
 	.ibar(gnd),
@@ -753,7 +753,7 @@ cycloneive_routing_wire Count_Out_a1_a_areg0_ENA_routing_wire_inst (
 	.datain(CE_ainput_o),
 	.dataout(Count_Out_a1_a_areg0_ENA_driver));
 
-// Location: FF_X102_Y27_N21
+// Location: FF_X99_Y43_N21
 dffeas Count_Out_a1_a_areg0(
 	.clk(Count_Out_a1_a_areg0_CLK_driver),
 	.d(Count_Out_a1_a_areg0_D_driver),
@@ -780,7 +780,7 @@ cycloneive_routing_wire Add1_a4_CIN_routing_wire_inst (
 	.datain(Add1_a3),
 	.dataout(Add1_a4_CIN_driver));
 
-// Location: LCCOMB_X102_Y27_N8
+// Location: LCCOMB_X99_Y43_N8
 cycloneive_lcell_comb Add1_a4(
 // Equation(s):
 // Add1_a4_combout = (Count_Out_a2_a_areg0_q & ((GND) # (!Add1_a3))) # (!Count_Out_a2_a_areg0_q & (Add1_a3 $ (GND)))
@@ -848,7 +848,7 @@ cycloneive_routing_wire Add0_a5_CIN_routing_wire_inst (
 	.datain(Add0_a3),
 	.dataout(Add0_a5_CIN_driver));
 
-// Location: LCCOMB_X103_Y27_N18
+// Location: LCCOMB_X100_Y43_N18
 cycloneive_lcell_comb Add0_a5(
 // Equation(s):
 // Add0_a5_combout = (Count_Out_a2_a_areg0_q & (Add0_a3 $ (GND))) # (!Count_Out_a2_a_areg0_q & (!Add0_a3 & VCC))
@@ -874,7 +874,7 @@ cycloneive_routing_wire Add0_a7_CIN_routing_wire_inst (
 	.datain(Add0_a6),
 	.dataout(Add0_a7_CIN_driver));
 
-// Location: LCCOMB_X103_Y27_N20
+// Location: LCCOMB_X100_Y43_N20
 cycloneive_lcell_comb Add0_a7(
 // Equation(s):
 // Add0_a7_combout = (Count_Out_a3_a_areg0_q & (!Add0_a6)) # (!Count_Out_a3_a_areg0_q & ((Add0_a6) # (GND)))
@@ -900,7 +900,7 @@ cycloneive_routing_wire Add1_a6_CIN_routing_wire_inst (
 	.datain(Add1_a5),
 	.dataout(Add1_a6_CIN_driver));
 
-// Location: LCCOMB_X102_Y27_N10
+// Location: LCCOMB_X99_Y43_N10
 cycloneive_lcell_comb Add1_a6(
 // Equation(s):
 // Add1_a6_combout = (Count_Out_a3_a_areg0_q & (Add1_a5 & VCC)) # (!Count_Out_a3_a_areg0_q & (!Add1_a5))
@@ -930,7 +930,7 @@ cycloneive_routing_wire Count_Out_a13_DATAD_routing_wire_inst (
 	.datain(Add1_a6_combout),
 	.dataout(Count_Out_a13_DATAD_driver));
 
-// Location: LCCOMB_X103_Y27_N12
+// Location: LCCOMB_X100_Y43_N12
 cycloneive_lcell_comb Count_Out_a13(
 // Equation(s):
 // Count_Out_a13_combout = (Up_Down_ainput_o & (Add0_a7_combout)) # (!Up_Down_ainput_o & ((Add1_a6_combout)))
@@ -948,11 +948,11 @@ defparam Count_Out_a13.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a14_DATAA_routing_wire_inst (
-	.datain(Count_In_a3_a_ainput_o),
+	.datain(LD_ainput_o),
 	.dataout(Count_Out_a14_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a14_DATAB_routing_wire_inst (
-	.datain(LD_ainput_o),
+	.datain(Count_In_a3_a_ainput_o),
 	.dataout(Count_Out_a14_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a14_DATAC_routing_wire_inst (
@@ -963,7 +963,7 @@ cycloneive_routing_wire Count_Out_a14_DATAD_routing_wire_inst (
 	.datain(Count_Out_a13_combout),
 	.dataout(Count_Out_a14_DATAD_driver));
 
-// Location: LCCOMB_X103_Y27_N30
+// Location: LCCOMB_X100_Y43_N30
 cycloneive_lcell_comb Count_Out_a14(
 // Equation(s):
 // Count_Out_a14_combout = (LD_ainput_o & (Count_In_a3_a_ainput_o)) # (!LD_ainput_o & (((!Count_Out_a0_a_a8_combout & Count_Out_a13_combout))))
@@ -976,7 +976,7 @@ cycloneive_lcell_comb Count_Out_a14(
 	.combout(Count_Out_a14_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a14.lut_mask = 16'h8B88;
+defparam Count_Out_a14.lut_mask = 16'h8D88;
 defparam Count_Out_a14.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -996,7 +996,7 @@ cycloneive_routing_wire Count_Out_a3_a_areg0_ENA_routing_wire_inst (
 	.datain(CE_ainput_o),
 	.dataout(Count_Out_a3_a_areg0_ENA_driver));
 
-// Location: FF_X103_Y27_N31
+// Location: FF_X100_Y43_N31
 dffeas Count_Out_a3_a_areg0(
 	.clk(Count_Out_a3_a_areg0_CLK_driver),
 	.d(Count_Out_a3_a_areg0_D_driver),
@@ -1023,7 +1023,7 @@ cycloneive_routing_wire Add0_a9_CIN_routing_wire_inst (
 	.datain(Add0_a8),
 	.dataout(Add0_a9_CIN_driver));
 
-// Location: LCCOMB_X103_Y27_N22
+// Location: LCCOMB_X100_Y43_N22
 cycloneive_lcell_comb Add0_a9(
 // Equation(s):
 // Add0_a9_combout = (Count_Out_a4_a_areg0_q & (Add0_a8 $ (GND))) # (!Count_Out_a4_a_areg0_q & (!Add0_a8 & VCC))
@@ -1049,7 +1049,7 @@ cycloneive_routing_wire Add1_a8_CIN_routing_wire_inst (
 	.datain(Add1_a7),
 	.dataout(Add1_a8_CIN_driver));
 
-// Location: LCCOMB_X102_Y27_N12
+// Location: LCCOMB_X99_Y43_N12
 cycloneive_lcell_comb Add1_a8(
 // Equation(s):
 // Add1_a8_combout = (Count_Out_a4_a_areg0_q & ((GND) # (!Add1_a7))) # (!Count_Out_a4_a_areg0_q & (Add1_a7 $ (GND)))
@@ -1067,9 +1067,9 @@ defparam Add1_a8.lut_mask = 16'h3CCF;
 defparam Add1_a8.sum_lutc_input = "cin";
 // synopsys translate_on
 
-cycloneive_routing_wire Count_Out_a15_DATAB_routing_wire_inst (
+cycloneive_routing_wire Count_Out_a15_DATAA_routing_wire_inst (
 	.datain(Up_Down_ainput_o),
-	.dataout(Count_Out_a15_DATAB_driver));
+	.dataout(Count_Out_a15_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a15_DATAC_routing_wire_inst (
 	.datain(Add0_a9_combout),
@@ -1079,29 +1079,29 @@ cycloneive_routing_wire Count_Out_a15_DATAD_routing_wire_inst (
 	.datain(Add1_a8_combout),
 	.dataout(Count_Out_a15_DATAD_driver));
 
-// Location: LCCOMB_X103_Y27_N2
+// Location: LCCOMB_X100_Y43_N2
 cycloneive_lcell_comb Count_Out_a15(
 // Equation(s):
 // Count_Out_a15_combout = (Up_Down_ainput_o & (Add0_a9_combout)) # (!Up_Down_ainput_o & ((Add1_a8_combout)))
 
-	.dataa(gnd),
-	.datab(Count_Out_a15_DATAB_driver),
+	.dataa(Count_Out_a15_DATAA_driver),
+	.datab(gnd),
 	.datac(Count_Out_a15_DATAC_driver),
 	.datad(Count_Out_a15_DATAD_driver),
 	.cin(gnd),
 	.combout(Count_Out_a15_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a15.lut_mask = 16'hF3C0;
+defparam Count_Out_a15.lut_mask = 16'hF5A0;
 defparam Count_Out_a15.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a16_DATAA_routing_wire_inst (
-	.datain(Count_In_a4_a_ainput_o),
+	.datain(LD_ainput_o),
 	.dataout(Count_Out_a16_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a16_DATAB_routing_wire_inst (
-	.datain(LD_ainput_o),
+	.datain(Count_In_a4_a_ainput_o),
 	.dataout(Count_Out_a16_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a16_DATAC_routing_wire_inst (
@@ -1112,7 +1112,7 @@ cycloneive_routing_wire Count_Out_a16_DATAD_routing_wire_inst (
 	.datain(Count_Out_a15_combout),
 	.dataout(Count_Out_a16_DATAD_driver));
 
-// Location: LCCOMB_X103_Y27_N8
+// Location: LCCOMB_X100_Y43_N8
 cycloneive_lcell_comb Count_Out_a16(
 // Equation(s):
 // Count_Out_a16_combout = (LD_ainput_o & (Count_In_a4_a_ainput_o)) # (!LD_ainput_o & (((!Count_Out_a0_a_a8_combout & Count_Out_a15_combout))))
@@ -1125,7 +1125,7 @@ cycloneive_lcell_comb Count_Out_a16(
 	.combout(Count_Out_a16_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a16.lut_mask = 16'h8B88;
+defparam Count_Out_a16.lut_mask = 16'h8D88;
 defparam Count_Out_a16.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1145,7 +1145,7 @@ cycloneive_routing_wire Count_Out_a4_a_areg0_ENA_routing_wire_inst (
 	.datain(CE_ainput_o),
 	.dataout(Count_Out_a4_a_areg0_ENA_driver));
 
-// Location: FF_X103_Y27_N9
+// Location: FF_X100_Y43_N9
 dffeas Count_Out_a4_a_areg0(
 	.clk(Count_Out_a4_a_areg0_CLK_driver),
 	.d(Count_Out_a4_a_areg0_D_driver),
@@ -1172,7 +1172,7 @@ cycloneive_routing_wire Add1_a10_CIN_routing_wire_inst (
 	.datain(Add1_a9),
 	.dataout(Add1_a10_CIN_driver));
 
-// Location: LCCOMB_X102_Y27_N14
+// Location: LCCOMB_X99_Y43_N14
 cycloneive_lcell_comb Add1_a10(
 // Equation(s):
 // Add1_a10_combout = (Count_Out_a5_a_areg0_q & (Add1_a9 & VCC)) # (!Count_Out_a5_a_areg0_q & (!Add1_a9))
@@ -1190,29 +1190,29 @@ defparam Add1_a10.lut_mask = 16'hA505;
 defparam Add1_a10.sum_lutc_input = "cin";
 // synopsys translate_on
 
-cycloneive_routing_wire Add0_a11_DATAB_routing_wire_inst (
+cycloneive_routing_wire Add0_a11_DATAA_routing_wire_inst (
 	.datain(Count_Out_a5_a_areg0_q),
-	.dataout(Add0_a11_DATAB_driver));
+	.dataout(Add0_a11_DATAA_driver));
 
 cycloneive_routing_wire Add0_a11_CIN_routing_wire_inst (
 	.datain(Add0_a10),
 	.dataout(Add0_a11_CIN_driver));
 
-// Location: LCCOMB_X103_Y27_N24
+// Location: LCCOMB_X100_Y43_N24
 cycloneive_lcell_comb Add0_a11(
 // Equation(s):
 // Add0_a11_combout = (Count_Out_a5_a_areg0_q & (!Add0_a10)) # (!Count_Out_a5_a_areg0_q & ((Add0_a10) # (GND)))
 // Add0_a12 = CARRY((!Add0_a10) # (!Count_Out_a5_a_areg0_q))
 
-	.dataa(gnd),
-	.datab(Add0_a11_DATAB_driver),
+	.dataa(Add0_a11_DATAA_driver),
+	.datab(gnd),
 	.datac(gnd),
 	.datad(vcc),
 	.cin(Add0_a11_CIN_driver),
 	.combout(Add0_a11_combout),
 	.cout(Add0_a12));
 // synopsys translate_off
-defparam Add0_a11.lut_mask = 16'h3C3F;
+defparam Add0_a11.lut_mask = 16'h5A5F;
 defparam Add0_a11.sum_lutc_input = "cin";
 // synopsys translate_on
 
@@ -1228,7 +1228,7 @@ cycloneive_routing_wire Count_Out_a17_DATAD_routing_wire_inst (
 	.datain(Add0_a11_combout),
 	.dataout(Count_Out_a17_DATAD_driver));
 
-// Location: LCCOMB_X101_Y27_N12
+// Location: LCCOMB_X98_Y43_N24
 cycloneive_lcell_comb Count_Out_a17(
 // Equation(s):
 // Count_Out_a17_combout = (Up_Down_ainput_o & ((Add0_a11_combout))) # (!Up_Down_ainput_o & (Add1_a10_combout))
@@ -1246,11 +1246,11 @@ defparam Count_Out_a17.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a18_DATAA_routing_wire_inst (
-	.datain(Count_Out_a0_a_a8_combout),
+	.datain(Count_In_a5_a_ainput_o),
 	.dataout(Count_Out_a18_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a18_DATAB_routing_wire_inst (
-	.datain(Count_In_a5_a_ainput_o),
+	.datain(Count_Out_a0_a_a8_combout),
 	.dataout(Count_Out_a18_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a18_DATAC_routing_wire_inst (
@@ -1261,10 +1261,10 @@ cycloneive_routing_wire Count_Out_a18_DATAD_routing_wire_inst (
 	.datain(Count_Out_a17_combout),
 	.dataout(Count_Out_a18_DATAD_driver));
 
-// Location: LCCOMB_X101_Y27_N8
+// Location: LCCOMB_X98_Y43_N16
 cycloneive_lcell_comb Count_Out_a18(
 // Equation(s):
-// Count_Out_a18_combout = (LD_ainput_o & (((Count_In_a5_a_ainput_o)))) # (!LD_ainput_o & (!Count_Out_a0_a_a8_combout & ((Count_Out_a17_combout))))
+// Count_Out_a18_combout = (LD_ainput_o & (Count_In_a5_a_ainput_o)) # (!LD_ainput_o & (((!Count_Out_a0_a_a8_combout & Count_Out_a17_combout))))
 
 	.dataa(Count_Out_a18_DATAA_driver),
 	.datab(Count_Out_a18_DATAB_driver),
@@ -1274,7 +1274,7 @@ cycloneive_lcell_comb Count_Out_a18(
 	.combout(Count_Out_a18_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a18.lut_mask = 16'hC5C0;
+defparam Count_Out_a18.lut_mask = 16'hA3A0;
 defparam Count_Out_a18.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1294,7 +1294,7 @@ cycloneive_routing_wire Count_Out_a5_a_areg0_ENA_routing_wire_inst (
 	.datain(CE_ainput_o),
 	.dataout(Count_Out_a5_a_areg0_ENA_driver));
 
-// Location: FF_X101_Y27_N9
+// Location: FF_X98_Y43_N17
 dffeas Count_Out_a5_a_areg0(
 	.clk(Count_Out_a5_a_areg0_CLK_driver),
 	.d(Count_Out_a5_a_areg0_D_driver),
@@ -1329,7 +1329,7 @@ cycloneive_routing_wire Equal1_a1_DATAD_routing_wire_inst (
 	.datain(Count_Out_a4_a_areg0_q),
 	.dataout(Equal1_a1_DATAD_driver));
 
-// Location: LCCOMB_X101_Y27_N28
+// Location: LCCOMB_X98_Y43_N28
 cycloneive_lcell_comb Equal1_a1(
 // Equation(s):
 // Equal1_a1_combout = (!Count_Out_a1_a_areg0_q & (!Count_Out_a5_a_areg0_q & (!Count_Out_a3_a_areg0_q & !Count_Out_a4_a_areg0_q)))
@@ -1347,7 +1347,7 @@ defparam Equal1_a1.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Add0_a4_DATAA_routing_wire_inst (
-	.datain(Equal1_a0_combout),
+	.datain(Count_Out_a0_a_areg0_q),
 	.dataout(Add0_a4_DATAA_driver));
 
 cycloneive_routing_wire Add0_a4_DATAB_routing_wire_inst (
@@ -1355,17 +1355,17 @@ cycloneive_routing_wire Add0_a4_DATAB_routing_wire_inst (
 	.dataout(Add0_a4_DATAB_driver));
 
 cycloneive_routing_wire Add0_a4_DATAC_routing_wire_inst (
-	.datain(Count_Out_a0_a_areg0_q),
+	.datain(Equal1_a0_combout),
 	.dataout(Add0_a4_DATAC_driver));
 
 cycloneive_routing_wire Add0_a4_DATAD_routing_wire_inst (
 	.datain(Equal1_a1_combout),
 	.dataout(Add0_a4_DATAD_driver));
 
-// Location: LCCOMB_X101_Y27_N26
+// Location: LCCOMB_X98_Y43_N6
 cycloneive_lcell_comb Add0_a4(
 // Equation(s):
-// Add0_a4_combout = (!Up_Down_ainput_o & (((Count_Out_a0_a_areg0_q) # (!Equal1_a1_combout)) # (!Equal1_a0_combout)))
+// Add0_a4_combout = (!Up_Down_ainput_o & ((Count_Out_a0_a_areg0_q) # ((!Equal1_a1_combout) # (!Equal1_a0_combout))))
 
 	.dataa(Add0_a4_DATAA_driver),
 	.datab(Add0_a4_DATAB_driver),
@@ -1375,7 +1375,7 @@ cycloneive_lcell_comb Add0_a4(
 	.combout(Add0_a4_combout),
 	.cout());
 // synopsys translate_off
-defparam Add0_a4.lut_mask = 16'h3133;
+defparam Add0_a4.lut_mask = 16'h2333;
 defparam Add0_a4.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1395,7 +1395,7 @@ cycloneive_routing_wire Count_Out_a12_DATAD_routing_wire_inst (
 	.datain(Add0_a5_combout),
 	.dataout(Count_Out_a12_DATAD_driver));
 
-// Location: LCCOMB_X102_Y27_N26
+// Location: LCCOMB_X99_Y43_N22
 cycloneive_lcell_comb Count_Out_a12(
 // Equation(s):
 // Count_Out_a12_combout = (Up_Down_ainput_o & ((Add0_a5_combout) # ((Add1_a4_combout & Add0_a4_combout)))) # (!Up_Down_ainput_o & (Add1_a4_combout & (Add0_a4_combout)))
@@ -1413,11 +1413,11 @@ defparam Count_Out_a12.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a20_DATAA_routing_wire_inst (
-	.datain(Count_In_a2_a_ainput_o),
+	.datain(LD_ainput_o),
 	.dataout(Count_Out_a20_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a20_DATAB_routing_wire_inst (
-	.datain(Count_Out_a0_a_a8_combout),
+	.datain(Count_In_a2_a_ainput_o),
 	.dataout(Count_Out_a20_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a20_DATAC_routing_wire_inst (
@@ -1425,13 +1425,13 @@ cycloneive_routing_wire Count_Out_a20_DATAC_routing_wire_inst (
 	.dataout(Count_Out_a20_DATAC_driver));
 
 cycloneive_routing_wire Count_Out_a20_DATAD_routing_wire_inst (
-	.datain(LD_ainput_o),
+	.datain(Count_Out_a0_a_a8_combout),
 	.dataout(Count_Out_a20_DATAD_driver));
 
-// Location: LCCOMB_X102_Y27_N30
+// Location: LCCOMB_X99_Y43_N30
 cycloneive_lcell_comb Count_Out_a20(
 // Equation(s):
-// Count_Out_a20_combout = (LD_ainput_o & (Count_In_a2_a_ainput_o)) # (!LD_ainput_o & (((!Count_Out_a0_a_a8_combout & Count_Out_a12_combout))))
+// Count_Out_a20_combout = (LD_ainput_o & (Count_In_a2_a_ainput_o)) # (!LD_ainput_o & (((Count_Out_a12_combout & !Count_Out_a0_a_a8_combout))))
 
 	.dataa(Count_Out_a20_DATAA_driver),
 	.datab(Count_Out_a20_DATAB_driver),
@@ -1441,7 +1441,7 @@ cycloneive_lcell_comb Count_Out_a20(
 	.combout(Count_Out_a20_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a20.lut_mask = 16'hAA30;
+defparam Count_Out_a20.lut_mask = 16'h88D8;
 defparam Count_Out_a20.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1461,7 +1461,7 @@ cycloneive_routing_wire Count_Out_a2_a_areg0_ENA_routing_wire_inst (
 	.datain(CE_ainput_o),
 	.dataout(Count_Out_a2_a_areg0_ENA_driver));
 
-// Location: FF_X102_Y27_N31
+// Location: FF_X99_Y43_N31
 dffeas Count_Out_a2_a_areg0(
 	.clk(Count_Out_a2_a_areg0_CLK_driver),
 	.d(Count_Out_a2_a_areg0_D_driver),
@@ -1502,7 +1502,7 @@ cycloneive_routing_wire Add1_a12_CIN_routing_wire_inst (
 	.datain(Add1_a11),
 	.dataout(Add1_a12_CIN_driver));
 
-// Location: LCCOMB_X102_Y27_N16
+// Location: LCCOMB_X99_Y43_N16
 cycloneive_lcell_comb Add1_a12(
 // Equation(s):
 // Add1_a12_combout = (Count_Out_a6_a_areg0_q & ((GND) # (!Add1_a11))) # (!Count_Out_a6_a_areg0_q & (Add1_a11 $ (GND)))
@@ -1528,7 +1528,7 @@ cycloneive_routing_wire Add0_a13_CIN_routing_wire_inst (
 	.datain(Add0_a12),
 	.dataout(Add0_a13_CIN_driver));
 
-// Location: LCCOMB_X103_Y27_N26
+// Location: LCCOMB_X100_Y43_N26
 cycloneive_lcell_comb Add0_a13(
 // Equation(s):
 // Add0_a13_combout = (Count_Out_a6_a_areg0_q & (Add0_a12 $ (GND))) # (!Count_Out_a6_a_areg0_q & (!Add0_a12 & VCC))
@@ -1562,7 +1562,7 @@ cycloneive_routing_wire Count_Out_a19_DATAD_routing_wire_inst (
 	.datain(Add0_a13_combout),
 	.dataout(Count_Out_a19_DATAD_driver));
 
-// Location: LCCOMB_X102_Y27_N24
+// Location: LCCOMB_X99_Y43_N24
 cycloneive_lcell_comb Count_Out_a19(
 // Equation(s):
 // Count_Out_a19_combout = (Up_Down_ainput_o & ((Add0_a13_combout) # ((Add1_a12_combout & Add0_a4_combout)))) # (!Up_Down_ainput_o & (Add1_a12_combout & (Add0_a4_combout)))
@@ -1580,7 +1580,7 @@ defparam Count_Out_a19.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a21_DATAA_routing_wire_inst (
-	.datain(Count_In_a6_a_ainput_o),
+	.datain(Count_Out_a0_a_a8_combout),
 	.dataout(Count_Out_a21_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a21_DATAB_routing_wire_inst (
@@ -1588,17 +1588,17 @@ cycloneive_routing_wire Count_Out_a21_DATAB_routing_wire_inst (
 	.dataout(Count_Out_a21_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a21_DATAC_routing_wire_inst (
-	.datain(Count_Out_a0_a_a8_combout),
+	.datain(Count_In_a6_a_ainput_o),
 	.dataout(Count_Out_a21_DATAC_driver));
 
 cycloneive_routing_wire Count_Out_a21_DATAD_routing_wire_inst (
 	.datain(Count_Out_a19_combout),
 	.dataout(Count_Out_a21_DATAD_driver));
 
-// Location: LCCOMB_X102_Y27_N0
+// Location: LCCOMB_X99_Y43_N0
 cycloneive_lcell_comb Count_Out_a21(
 // Equation(s):
-// Count_Out_a21_combout = (LD_ainput_o & (Count_In_a6_a_ainput_o)) # (!LD_ainput_o & (((!Count_Out_a0_a_a8_combout & Count_Out_a19_combout))))
+// Count_Out_a21_combout = (LD_ainput_o & (((Count_In_a6_a_ainput_o)))) # (!LD_ainput_o & (!Count_Out_a0_a_a8_combout & ((Count_Out_a19_combout))))
 
 	.dataa(Count_Out_a21_DATAA_driver),
 	.datab(Count_Out_a21_DATAB_driver),
@@ -1608,7 +1608,7 @@ cycloneive_lcell_comb Count_Out_a21(
 	.combout(Count_Out_a21_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a21.lut_mask = 16'h8B88;
+defparam Count_Out_a21.lut_mask = 16'hD1C0;
 defparam Count_Out_a21.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1628,7 +1628,7 @@ cycloneive_routing_wire Count_Out_a6_a_areg0_ENA_routing_wire_inst (
 	.datain(CE_ainput_o),
 	.dataout(Count_Out_a6_a_areg0_ENA_driver));
 
-// Location: FF_X102_Y27_N1
+// Location: FF_X99_Y43_N1
 dffeas Count_Out_a6_a_areg0(
 	.clk(Count_Out_a6_a_areg0_CLK_driver),
 	.d(Count_Out_a6_a_areg0_D_driver),
@@ -1661,28 +1661,28 @@ defparam Count_In_a7_a_ainput.bus_hold = "false";
 defparam Count_In_a7_a_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_routing_wire Add1_a14_DATAD_routing_wire_inst (
+cycloneive_routing_wire Add1_a14_DATAA_routing_wire_inst (
 	.datain(Count_Out_a7_a_areg0_q),
-	.dataout(Add1_a14_DATAD_driver));
+	.dataout(Add1_a14_DATAA_driver));
 
 cycloneive_routing_wire Add1_a14_CIN_routing_wire_inst (
 	.datain(Add1_a13),
 	.dataout(Add1_a14_CIN_driver));
 
-// Location: LCCOMB_X102_Y27_N18
+// Location: LCCOMB_X99_Y43_N18
 cycloneive_lcell_comb Add1_a14(
 // Equation(s):
-// Add1_a14_combout = Add1_a13 $ (!Count_Out_a7_a_areg0_q)
+// Add1_a14_combout = Count_Out_a7_a_areg0_q $ (!Add1_a13)
 
-	.dataa(gnd),
+	.dataa(Add1_a14_DATAA_driver),
 	.datab(gnd),
 	.datac(gnd),
-	.datad(Add1_a14_DATAD_driver),
+	.datad(gnd),
 	.cin(Add1_a14_CIN_driver),
 	.combout(Add1_a14_combout),
 	.cout());
 // synopsys translate_off
-defparam Add1_a14.lut_mask = 16'hF00F;
+defparam Add1_a14.lut_mask = 16'hA5A5;
 defparam Add1_a14.sum_lutc_input = "cin";
 // synopsys translate_on
 
@@ -1694,7 +1694,7 @@ cycloneive_routing_wire Add0_a15_CIN_routing_wire_inst (
 	.datain(Add0_a14),
 	.dataout(Add0_a15_CIN_driver));
 
-// Location: LCCOMB_X103_Y27_N28
+// Location: LCCOMB_X100_Y43_N28
 cycloneive_lcell_comb Add0_a15(
 // Equation(s):
 // Add0_a15_combout = Add0_a14 $ (Count_Out_a7_a_areg0_q)
@@ -1727,7 +1727,7 @@ cycloneive_routing_wire Count_Out_a22_DATAD_routing_wire_inst (
 	.datain(Add0_a15_combout),
 	.dataout(Count_Out_a22_DATAD_driver));
 
-// Location: LCCOMB_X102_Y27_N2
+// Location: LCCOMB_X99_Y43_N2
 cycloneive_lcell_comb Count_Out_a22(
 // Equation(s):
 // Count_Out_a22_combout = (Up_Down_ainput_o & ((Add0_a15_combout) # ((Add1_a14_combout & Add0_a4_combout)))) # (!Up_Down_ainput_o & (Add1_a14_combout & (Add0_a4_combout)))
@@ -1745,7 +1745,7 @@ defparam Count_Out_a22.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a23_DATAA_routing_wire_inst (
-	.datain(Count_In_a7_a_ainput_o),
+	.datain(Count_Out_a0_a_a8_combout),
 	.dataout(Count_Out_a23_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a23_DATAB_routing_wire_inst (
@@ -1753,17 +1753,17 @@ cycloneive_routing_wire Count_Out_a23_DATAB_routing_wire_inst (
 	.dataout(Count_Out_a23_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a23_DATAC_routing_wire_inst (
-	.datain(Count_Out_a0_a_a8_combout),
+	.datain(Count_In_a7_a_ainput_o),
 	.dataout(Count_Out_a23_DATAC_driver));
 
 cycloneive_routing_wire Count_Out_a23_DATAD_routing_wire_inst (
 	.datain(Count_Out_a22_combout),
 	.dataout(Count_Out_a23_DATAD_driver));
 
-// Location: LCCOMB_X102_Y27_N22
+// Location: LCCOMB_X99_Y43_N26
 cycloneive_lcell_comb Count_Out_a23(
 // Equation(s):
-// Count_Out_a23_combout = (LD_ainput_o & (Count_In_a7_a_ainput_o)) # (!LD_ainput_o & (((!Count_Out_a0_a_a8_combout & Count_Out_a22_combout))))
+// Count_Out_a23_combout = (LD_ainput_o & (((Count_In_a7_a_ainput_o)))) # (!LD_ainput_o & (!Count_Out_a0_a_a8_combout & ((Count_Out_a22_combout))))
 
 	.dataa(Count_Out_a23_DATAA_driver),
 	.datab(Count_Out_a23_DATAB_driver),
@@ -1773,7 +1773,7 @@ cycloneive_lcell_comb Count_Out_a23(
 	.combout(Count_Out_a23_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a23.lut_mask = 16'h8B88;
+defparam Count_Out_a23.lut_mask = 16'hD1C0;
 defparam Count_Out_a23.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1793,7 +1793,7 @@ cycloneive_routing_wire Count_Out_a7_a_areg0_ENA_routing_wire_inst (
 	.datain(CE_ainput_o),
 	.dataout(Count_Out_a7_a_areg0_ENA_driver));
 
-// Location: FF_X102_Y27_N23
+// Location: FF_X99_Y43_N27
 dffeas Count_Out_a7_a_areg0(
 	.clk(Count_Out_a7_a_areg0_CLK_driver),
 	.d(Count_Out_a7_a_areg0_D_driver),
@@ -1824,7 +1824,7 @@ cycloneive_routing_wire Equal1_a0_DATAD_routing_wire_inst (
 	.datain(Count_Out_a7_a_areg0_q),
 	.dataout(Equal1_a0_DATAD_driver));
 
-// Location: LCCOMB_X101_Y27_N30
+// Location: LCCOMB_X98_Y43_N30
 cycloneive_lcell_comb Equal1_a0(
 // Equation(s):
 // Equal1_a0_combout = (!Count_Out_a2_a_areg0_q & (!Count_Out_a6_a_areg0_q & !Count_Out_a7_a_areg0_q))
@@ -1857,7 +1857,7 @@ cycloneive_routing_wire Count_Out_a0_a_a7_DATAD_routing_wire_inst (
 	.datain(Count_Out_a4_a_areg0_q),
 	.dataout(Count_Out_a0_a_a7_DATAD_driver));
 
-// Location: LCCOMB_X101_Y27_N16
+// Location: LCCOMB_X98_Y43_N20
 cycloneive_lcell_comb Count_Out_a0_a_a7(
 // Equation(s):
 // Count_Out_a0_a_a7_combout = (Count_Out_a1_a_areg0_q & (Count_Out_a5_a_areg0_q & (Count_Out_a3_a_areg0_q & Count_Out_a4_a_areg0_q)))
@@ -1875,7 +1875,7 @@ defparam Count_Out_a0_a_a7.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a0_a_a8_DATAA_routing_wire_inst (
-	.datain(Equal1_a0_combout),
+	.datain(Count_Out_a0_a_areg0_q),
 	.dataout(Count_Out_a0_a_a8_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a0_a_a8_DATAB_routing_wire_inst (
@@ -1883,17 +1883,17 @@ cycloneive_routing_wire Count_Out_a0_a_a8_DATAB_routing_wire_inst (
 	.dataout(Count_Out_a0_a_a8_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a0_a_a8_DATAC_routing_wire_inst (
-	.datain(Count_Out_a0_a_areg0_q),
+	.datain(Equal1_a0_combout),
 	.dataout(Count_Out_a0_a_a8_DATAC_driver));
 
 cycloneive_routing_wire Count_Out_a0_a_a8_DATAD_routing_wire_inst (
 	.datain(Count_Out_a0_a_a7_combout),
 	.dataout(Count_Out_a0_a_a8_DATAD_driver));
 
-// Location: LCCOMB_X101_Y27_N6
+// Location: LCCOMB_X98_Y43_N14
 cycloneive_lcell_comb Count_Out_a0_a_a8(
 // Equation(s):
-// Count_Out_a0_a_a8_combout = (Equal1_a0_combout & (Up_Down_ainput_o & (Count_Out_a0_a_areg0_q & Count_Out_a0_a_a7_combout)))
+// Count_Out_a0_a_a8_combout = (Count_Out_a0_a_areg0_q & (Up_Down_ainput_o & (Equal1_a0_combout & Count_Out_a0_a_a7_combout)))
 
 	.dataa(Count_Out_a0_a_a8_DATAA_driver),
 	.datab(Count_Out_a0_a_a8_DATAB_driver),
@@ -1907,41 +1907,41 @@ defparam Count_Out_a0_a_a8.lut_mask = 16'h8000;
 defparam Count_Out_a0_a_a8.sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneive_routing_wire Count_Out_a6_DATAB_routing_wire_inst (
+cycloneive_routing_wire Count_Out_a6_DATAA_routing_wire_inst (
 	.datain(Up_Down_ainput_o),
+	.dataout(Count_Out_a6_DATAA_driver));
+
+cycloneive_routing_wire Count_Out_a6_DATAB_routing_wire_inst (
+	.datain(Add0_a0_combout),
 	.dataout(Count_Out_a6_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a6_DATAC_routing_wire_inst (
 	.datain(Add1_a0_combout),
 	.dataout(Count_Out_a6_DATAC_driver));
 
-cycloneive_routing_wire Count_Out_a6_DATAD_routing_wire_inst (
-	.datain(Add0_a0_combout),
-	.dataout(Count_Out_a6_DATAD_driver));
-
-// Location: LCCOMB_X103_Y27_N10
+// Location: LCCOMB_X100_Y43_N10
 cycloneive_lcell_comb Count_Out_a6(
 // Equation(s):
-// Count_Out_a6_combout = (Up_Down_ainput_o & ((Add0_a0_combout))) # (!Up_Down_ainput_o & (Add1_a0_combout))
+// Count_Out_a6_combout = (Up_Down_ainput_o & (Add0_a0_combout)) # (!Up_Down_ainput_o & ((Add1_a0_combout)))
 
-	.dataa(gnd),
+	.dataa(Count_Out_a6_DATAA_driver),
 	.datab(Count_Out_a6_DATAB_driver),
 	.datac(Count_Out_a6_DATAC_driver),
-	.datad(Count_Out_a6_DATAD_driver),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(Count_Out_a6_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a6.lut_mask = 16'hFC30;
+defparam Count_Out_a6.lut_mask = 16'hD8D8;
 defparam Count_Out_a6.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Count_Out_a9_DATAA_routing_wire_inst (
-	.datain(Count_In_a0_a_ainput_o),
+	.datain(LD_ainput_o),
 	.dataout(Count_Out_a9_DATAA_driver));
 
 cycloneive_routing_wire Count_Out_a9_DATAB_routing_wire_inst (
-	.datain(LD_ainput_o),
+	.datain(Count_In_a0_a_ainput_o),
 	.dataout(Count_Out_a9_DATAB_driver));
 
 cycloneive_routing_wire Count_Out_a9_DATAC_routing_wire_inst (
@@ -1952,7 +1952,7 @@ cycloneive_routing_wire Count_Out_a9_DATAD_routing_wire_inst (
 	.datain(Count_Out_a6_combout),
 	.dataout(Count_Out_a9_DATAD_driver));
 
-// Location: LCCOMB_X103_Y27_N4
+// Location: LCCOMB_X100_Y43_N4
 cycloneive_lcell_comb Count_Out_a9(
 // Equation(s):
 // Count_Out_a9_combout = (LD_ainput_o & (Count_In_a0_a_ainput_o)) # (!LD_ainput_o & (((!Count_Out_a0_a_a8_combout & Count_Out_a6_combout))))
@@ -1965,7 +1965,7 @@ cycloneive_lcell_comb Count_Out_a9(
 	.combout(Count_Out_a9_combout),
 	.cout());
 // synopsys translate_off
-defparam Count_Out_a9.lut_mask = 16'h8B88;
+defparam Count_Out_a9.lut_mask = 16'h8D88;
 defparam Count_Out_a9.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -1985,7 +1985,7 @@ cycloneive_routing_wire Count_Out_a0_a_areg0_ENA_routing_wire_inst (
 	.datain(CE_ainput_o),
 	.dataout(Count_Out_a0_a_areg0_ENA_driver));
 
-// Location: FF_X103_Y27_N5
+// Location: FF_X100_Y43_N5
 dffeas Count_Out_a0_a_areg0(
 	.clk(Count_Out_a0_a_areg0_CLK_driver),
 	.d(Count_Out_a0_a_areg0_D_driver),

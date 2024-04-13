@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "04/11/2024 18:15:34"
+// DATE "04/12/2024 19:56:49"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -45,8 +45,8 @@ output 	[7:0] Count_Out;
 // Count_Out[5]	=>  Location: PIN_E18,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Count_Out[6]	=>  Location: PIN_J19,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // Count_Out[7]	=>  Location: PIN_H19,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CLK	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// RST	=>  Location: PIN_Y24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_M21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RST	=>  Location: PIN_Y23,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -292,7 +292,7 @@ cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
 	.datain(CLK),
 	.dataout(CLK_ainput_I_driver));
 
-// Location: IOIBUF_X115_Y14_N8
+// Location: IOIBUF_X115_Y53_N15
 cycloneive_io_ibuf CLK_ainput(
 	.i(CLK_ainput_I_driver),
 	.ibar(gnd),
@@ -306,7 +306,7 @@ cycloneive_routing_wire Count_Out_a0_a_a21_DATAC_routing_wire_inst (
 	.datain(Count_Out_a0_a_areg0_q),
 	.dataout(Count_Out_a0_a_a21_DATAC_driver));
 
-// Location: LCCOMB_X111_Y25_N12
+// Location: LCCOMB_X106_Y66_N12
 cycloneive_lcell_comb Count_Out_a0_a_a21(
 // Equation(s):
 // Count_Out_a0_a_a21_combout = !Count_Out_a0_a_areg0_q
@@ -327,7 +327,7 @@ cycloneive_routing_wire RST_ainput_I_routing_wire_inst (
 	.datain(RST),
 	.dataout(RST_ainput_I_driver));
 
-// Location: IOIBUF_X115_Y13_N1
+// Location: IOIBUF_X115_Y14_N8
 cycloneive_io_ibuf RST_ainput(
 	.i(RST_ainput_I_driver),
 	.ibar(gnd),
@@ -349,7 +349,7 @@ cycloneive_routing_wire Count_Out_a0_a_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Count_Out_a0_a_areg0_CLRN_driver));
 
-// Location: FF_X111_Y25_N13
+// Location: FF_X106_Y66_N13
 dffeas Count_Out_a0_a_areg0(
 	.clk(Count_Out_a0_a_areg0_CLK_driver),
 	.d(Count_Out_a0_a_areg0_D_driver),
@@ -376,7 +376,7 @@ cycloneive_routing_wire Count_Out_a1_a_a7_DATAB_routing_wire_inst (
 	.datain(Count_Out_a1_a_areg0_q),
 	.dataout(Count_Out_a1_a_a7_DATAB_driver));
 
-// Location: LCCOMB_X111_Y25_N16
+// Location: LCCOMB_X106_Y66_N16
 cycloneive_lcell_comb Count_Out_a1_a_a7(
 // Equation(s):
 // Count_Out_a1_a_a7_combout = (Count_Out_a0_a_areg0_q & (Count_Out_a1_a_areg0_q $ (VCC))) # (!Count_Out_a0_a_areg0_q & (Count_Out_a1_a_areg0_q & VCC))
@@ -406,7 +406,7 @@ cycloneive_routing_wire Count_Out_a1_a_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Count_Out_a1_a_areg0_CLRN_driver));
 
-// Location: FF_X111_Y25_N17
+// Location: FF_X106_Y66_N17
 dffeas Count_Out_a1_a_areg0(
 	.clk(Count_Out_a1_a_areg0_CLK_driver),
 	.d(Count_Out_a1_a_areg0_D_driver),
@@ -433,7 +433,7 @@ cycloneive_routing_wire Count_Out_a2_a_a9_CIN_routing_wire_inst (
 	.datain(Count_Out_a1_a_a8),
 	.dataout(Count_Out_a2_a_a9_CIN_driver));
 
-// Location: LCCOMB_X111_Y25_N18
+// Location: LCCOMB_X106_Y66_N18
 cycloneive_lcell_comb Count_Out_a2_a_a9(
 // Equation(s):
 // Count_Out_a2_a_a9_combout = (Count_Out_a2_a_areg0_q & (!Count_Out_a1_a_a8)) # (!Count_Out_a2_a_areg0_q & ((Count_Out_a1_a_a8) # (GND)))
@@ -463,7 +463,7 @@ cycloneive_routing_wire Count_Out_a2_a_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Count_Out_a2_a_areg0_CLRN_driver));
 
-// Location: FF_X111_Y25_N19
+// Location: FF_X106_Y66_N19
 dffeas Count_Out_a2_a_areg0(
 	.clk(Count_Out_a2_a_areg0_CLK_driver),
 	.d(Count_Out_a2_a_areg0_D_driver),
@@ -490,7 +490,7 @@ cycloneive_routing_wire Count_Out_a3_a_a11_CIN_routing_wire_inst (
 	.datain(Count_Out_a2_a_a10),
 	.dataout(Count_Out_a3_a_a11_CIN_driver));
 
-// Location: LCCOMB_X111_Y25_N20
+// Location: LCCOMB_X106_Y66_N20
 cycloneive_lcell_comb Count_Out_a3_a_a11(
 // Equation(s):
 // Count_Out_a3_a_a11_combout = (Count_Out_a3_a_areg0_q & (Count_Out_a2_a_a10 $ (GND))) # (!Count_Out_a3_a_areg0_q & (!Count_Out_a2_a_a10 & VCC))
@@ -520,7 +520,7 @@ cycloneive_routing_wire Count_Out_a3_a_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Count_Out_a3_a_areg0_CLRN_driver));
 
-// Location: FF_X111_Y25_N21
+// Location: FF_X106_Y66_N21
 dffeas Count_Out_a3_a_areg0(
 	.clk(Count_Out_a3_a_areg0_CLK_driver),
 	.d(Count_Out_a3_a_areg0_D_driver),
@@ -547,7 +547,7 @@ cycloneive_routing_wire Count_Out_a4_a_a13_CIN_routing_wire_inst (
 	.datain(Count_Out_a3_a_a12),
 	.dataout(Count_Out_a4_a_a13_CIN_driver));
 
-// Location: LCCOMB_X111_Y25_N22
+// Location: LCCOMB_X106_Y66_N22
 cycloneive_lcell_comb Count_Out_a4_a_a13(
 // Equation(s):
 // Count_Out_a4_a_a13_combout = (Count_Out_a4_a_areg0_q & (!Count_Out_a3_a_a12)) # (!Count_Out_a4_a_areg0_q & ((Count_Out_a3_a_a12) # (GND)))
@@ -577,7 +577,7 @@ cycloneive_routing_wire Count_Out_a4_a_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Count_Out_a4_a_areg0_CLRN_driver));
 
-// Location: FF_X111_Y25_N23
+// Location: FF_X106_Y66_N23
 dffeas Count_Out_a4_a_areg0(
 	.clk(Count_Out_a4_a_areg0_CLK_driver),
 	.d(Count_Out_a4_a_areg0_D_driver),
@@ -604,7 +604,7 @@ cycloneive_routing_wire Count_Out_a5_a_a15_CIN_routing_wire_inst (
 	.datain(Count_Out_a4_a_a14),
 	.dataout(Count_Out_a5_a_a15_CIN_driver));
 
-// Location: LCCOMB_X111_Y25_N24
+// Location: LCCOMB_X106_Y66_N24
 cycloneive_lcell_comb Count_Out_a5_a_a15(
 // Equation(s):
 // Count_Out_a5_a_a15_combout = (Count_Out_a5_a_areg0_q & (Count_Out_a4_a_a14 $ (GND))) # (!Count_Out_a5_a_areg0_q & (!Count_Out_a4_a_a14 & VCC))
@@ -634,7 +634,7 @@ cycloneive_routing_wire Count_Out_a5_a_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Count_Out_a5_a_areg0_CLRN_driver));
 
-// Location: FF_X111_Y25_N25
+// Location: FF_X106_Y66_N25
 dffeas Count_Out_a5_a_areg0(
 	.clk(Count_Out_a5_a_areg0_CLK_driver),
 	.d(Count_Out_a5_a_areg0_D_driver),
@@ -661,7 +661,7 @@ cycloneive_routing_wire Count_Out_a6_a_a17_CIN_routing_wire_inst (
 	.datain(Count_Out_a5_a_a16),
 	.dataout(Count_Out_a6_a_a17_CIN_driver));
 
-// Location: LCCOMB_X111_Y25_N26
+// Location: LCCOMB_X106_Y66_N26
 cycloneive_lcell_comb Count_Out_a6_a_a17(
 // Equation(s):
 // Count_Out_a6_a_a17_combout = (Count_Out_a6_a_areg0_q & (!Count_Out_a5_a_a16)) # (!Count_Out_a6_a_areg0_q & ((Count_Out_a5_a_a16) # (GND)))
@@ -691,7 +691,7 @@ cycloneive_routing_wire Count_Out_a6_a_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Count_Out_a6_a_areg0_CLRN_driver));
 
-// Location: FF_X111_Y25_N27
+// Location: FF_X106_Y66_N27
 dffeas Count_Out_a6_a_areg0(
 	.clk(Count_Out_a6_a_areg0_CLK_driver),
 	.d(Count_Out_a6_a_areg0_D_driver),
@@ -718,7 +718,7 @@ cycloneive_routing_wire Count_Out_a7_a_a19_CIN_routing_wire_inst (
 	.datain(Count_Out_a6_a_a18),
 	.dataout(Count_Out_a7_a_a19_CIN_driver));
 
-// Location: LCCOMB_X111_Y25_N28
+// Location: LCCOMB_X106_Y66_N28
 cycloneive_lcell_comb Count_Out_a7_a_a19(
 // Equation(s):
 // Count_Out_a7_a_a19_combout = Count_Out_a6_a_a18 $ (!Count_Out_a7_a_areg0_q)
@@ -747,7 +747,7 @@ cycloneive_routing_wire Count_Out_a7_a_areg0_CLRN_routing_wire_inst (
 	.datain(!RST_ainput_o),
 	.dataout(Count_Out_a7_a_areg0_CLRN_driver));
 
-// Location: FF_X111_Y25_N29
+// Location: FF_X106_Y66_N29
 dffeas Count_Out_a7_a_areg0(
 	.clk(Count_Out_a7_a_areg0_CLK_driver),
 	.d(Count_Out_a7_a_areg0_D_driver),
