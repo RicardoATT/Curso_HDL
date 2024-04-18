@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/simulation/modelsim
+vFF_T
+Z1 !s110 1713395540
+!i10b 1
+!s100 <lKj9gWQJh:QO>:DSMXdC3
+IzJDR4L7<3Wg=`0CJfkKoE3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1713394122
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/FF_T.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/FF_T.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1713395540.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/FF_T.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/FF_T.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T
+Z6 tCvgOpt 0
+n@f@f_@t
+vFF_T_vlg_tst
+R1
+!i10b 1
+!s100 h2]Z;mNHIBiL4fK?_PGRm1
+IKThY9QnOKXd^V3cUBe[RW0
+R2
+R0
+w1713395517
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/simulation/modelsim/FF_T.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/simulation/modelsim/FF_T.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/simulation/modelsim/FF_T.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/simulation/modelsim/FF_T.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FF_T/simulation/modelsim
+R6
+n@f@f_@t_vlg_tst

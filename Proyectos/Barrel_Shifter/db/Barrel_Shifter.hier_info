@@ -1,0 +1,35 @@
+|Barrel_Shifter
+DataIn[0] => DataOut.DATAA
+DataIn[0] => DataOut.DATAB
+DataIn[0] => Mux1.IN3
+DataIn[0] => Mux3.IN3
+DataIn[1] => DataOut.DATAB
+DataIn[1] => DataOut.DATAA
+DataIn[1] => Mux0.IN3
+DataIn[1] => Mux2.IN3
+DataIn[2] => DataOut.DATAB
+DataIn[2] => DataOut.DATAA
+DataIn[2] => Mux1.IN2
+DataIn[2] => Mux3.IN2
+DataIn[3] => DataOut.DATAA
+DataIn[3] => DataOut.DATAB
+DataIn[3] => Mux0.IN2
+DataIn[3] => Mux2.IN2
+Shift[0] => Mux0.IN5
+Shift[0] => Mux1.IN5
+Shift[0] => Mux2.IN5
+Shift[0] => Mux3.IN5
+Shift[1] => Mux0.IN4
+Shift[1] => Mux1.IN4
+Shift[1] => Mux2.IN4
+Shift[1] => Mux3.IN4
+LeftRight => DataOut.OUTPUTSELECT
+LeftRight => DataOut.OUTPUTSELECT
+LeftRight => DataOut.OUTPUTSELECT
+LeftRight => DataOut.OUTPUTSELECT
+DataOut[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+DataOut[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+DataOut[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+DataOut[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

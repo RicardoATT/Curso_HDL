@@ -1,0 +1,49 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Barrel_Shifter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Barrel_Shifter {C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Barrel_Shifter/Barrel_Shifter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:50:01 on Apr 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Barrel_Shifter" C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Barrel_Shifter/Barrel_Shifter.v 
+# -- Compiling module Barrel_Shifter
+# 
+# Top level modules:
+# 	Barrel_Shifter
+# End time: 17:50:01 on Apr 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Barrel_Shifter/simulation/modelsim {C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Barrel_Shifter/simulation/modelsim/Barrel_Shifter.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:50:01 on Apr 17,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Barrel_Shifter/simulation/modelsim" C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Barrel_Shifter/simulation/modelsim/Barrel_Shifter.vt 
+# -- Compiling module Barrel_Shifter_vlg_tst
+# 
+# Top level modules:
+# 	Barrel_Shifter_vlg_tst
+# End time: 17:50:01 on Apr 17,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Barrel_Shifter_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" Barrel_Shifter_vlg_tst 
+# Start time: 17:50:01 on Apr 17,2024
+# Loading work.Barrel_Shifter_vlg_tst
+# Loading work.Barrel_Shifter
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 320 ns
+# Running testbench at CIC
+# End time: 17:52:18 on Apr 17,2024, Elapsed time: 0:02:17
+# Errors: 0, Warnings: 0

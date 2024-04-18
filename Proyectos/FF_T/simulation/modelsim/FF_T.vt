@@ -1,0 +1,28 @@
+`timescale 1 ns/ 1 ps
+module FF_T_vlg_tst();
+	reg CLK;
+	reg RST;
+	reg T;                                              
+	wire Q;
+									 
+	FF_T i1 ( 
+		.CLK(CLK),
+		.Q(Q),
+		.RST(RST),
+		.T(T)
+	);
+
+	initial                                                
+	begin
+		CLK = 0; RST = 0; T = 0;
+		#50; RST = 1; #50; RST = 0;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#25; T = ~T;
+		#25; CLK = ~CLK;
+	end                                                    
+
+endmodule 

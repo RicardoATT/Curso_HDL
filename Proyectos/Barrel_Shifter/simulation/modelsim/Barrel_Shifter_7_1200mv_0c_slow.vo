@@ -1,0 +1,727 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "04/17/2024 17:49:05"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Barrel_Shifter (
+	DataIn,
+	Shift,
+	LeftRight,
+	DataOut);
+input 	[3:0] DataIn;
+input 	[1:0] Shift;
+input 	LeftRight;
+output 	[3:0] DataOut;
+
+// Design Ports Information
+// DataOut[0]	=>  Location: PIN_U6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DataOut[1]	=>  Location: PIN_AD2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DataOut[2]	=>  Location: PIN_W1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DataOut[3]	=>  Location: PIN_AD1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Shift[0]	=>  Location: PIN_Y3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DataIn[1]	=>  Location: PIN_AC2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DataIn[3]	=>  Location: PIN_AC3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// LeftRight	=>  Location: PIN_Y4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DataIn[2]	=>  Location: PIN_U5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// DataIn[0]	=>  Location: PIN_AC1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Shift[1]	=>  Location: PIN_AD3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Barrel_Shifter_7_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire DataOut_a0_a_aoutput_o;
+wire DataOut_a1_a_aoutput_o;
+wire DataOut_a2_a_aoutput_o;
+wire DataOut_a3_a_aoutput_o;
+wire Shift_a0_a_ainput_o;
+wire DataIn_a0_a_ainput_o;
+wire DataIn_a3_a_ainput_o;
+wire LeftRight_ainput_o;
+wire DataIn_a1_a_ainput_o;
+wire Mux3_a2_combout;
+wire Mux3_a3_combout;
+wire Shift_a1_a_ainput_o;
+wire DataIn_a2_a_ainput_o;
+wire Mux3_a0_combout;
+wire Mux3_a1_combout;
+wire Mux3_a4_combout;
+wire Mux2_a0_combout;
+wire Mux2_a1_combout;
+wire Mux2_a2_combout;
+wire Mux2_a3_combout;
+wire Mux2_a4_combout;
+wire Mux1_a0_combout;
+wire Mux0_a0_combout;
+
+wire DataOut_a0_a_aoutput_I_driver;
+wire DataOut_a1_a_aoutput_I_driver;
+wire DataOut_a2_a_aoutput_I_driver;
+wire DataOut_a3_a_aoutput_I_driver;
+wire Shift_a0_a_ainput_I_driver;
+wire DataIn_a0_a_ainput_I_driver;
+wire DataIn_a3_a_ainput_I_driver;
+wire LeftRight_ainput_I_driver;
+wire DataIn_a1_a_ainput_I_driver;
+wire Mux3_a2_DATAA_driver;
+wire Mux3_a2_DATAB_driver;
+wire Mux3_a2_DATAC_driver;
+wire Mux3_a2_DATAD_driver;
+wire Mux3_a3_DATAB_driver;
+wire Mux3_a3_DATAC_driver;
+wire Mux3_a3_DATAD_driver;
+wire Shift_a1_a_ainput_I_driver;
+wire DataIn_a2_a_ainput_I_driver;
+wire Mux3_a0_DATAA_driver;
+wire Mux3_a0_DATAB_driver;
+wire Mux3_a0_DATAC_driver;
+wire Mux3_a0_DATAD_driver;
+wire Mux3_a1_DATAA_driver;
+wire Mux3_a1_DATAB_driver;
+wire Mux3_a1_DATAD_driver;
+wire Mux3_a4_DATAA_driver;
+wire Mux3_a4_DATAC_driver;
+wire Mux3_a4_DATAD_driver;
+wire Mux2_a0_DATAA_driver;
+wire Mux2_a0_DATAB_driver;
+wire Mux2_a0_DATAC_driver;
+wire Mux2_a0_DATAD_driver;
+wire Mux2_a1_DATAA_driver;
+wire Mux2_a1_DATAB_driver;
+wire Mux2_a1_DATAD_driver;
+wire Mux2_a2_DATAA_driver;
+wire Mux2_a2_DATAB_driver;
+wire Mux2_a2_DATAC_driver;
+wire Mux2_a2_DATAD_driver;
+wire Mux2_a3_DATAA_driver;
+wire Mux2_a3_DATAB_driver;
+wire Mux2_a3_DATAC_driver;
+wire Mux2_a4_DATAB_driver;
+wire Mux2_a4_DATAC_driver;
+wire Mux2_a4_DATAD_driver;
+wire Mux1_a0_DATAA_driver;
+wire Mux1_a0_DATAC_driver;
+wire Mux1_a0_DATAD_driver;
+wire Mux0_a0_DATAB_driver;
+wire Mux0_a0_DATAC_driver;
+wire Mux0_a0_DATAD_driver;
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+cycloneive_routing_wire DataOut_a0_a_aoutput_I_routing_wire_inst (
+	.datain(Mux3_a4_combout),
+	.dataout(DataOut_a0_a_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y25_N23
+cycloneive_io_obuf DataOut_a0_a_aoutput(
+	.i(DataOut_a0_a_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(DataOut_a0_a_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam DataOut_a0_a_aoutput.bus_hold = "false";
+defparam DataOut_a0_a_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire DataOut_a1_a_aoutput_I_routing_wire_inst (
+	.datain(Mux2_a4_combout),
+	.dataout(DataOut_a1_a_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y22_N23
+cycloneive_io_obuf DataOut_a1_a_aoutput(
+	.i(DataOut_a1_a_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(DataOut_a1_a_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam DataOut_a1_a_aoutput.bus_hold = "false";
+defparam DataOut_a1_a_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire DataOut_a2_a_aoutput_I_routing_wire_inst (
+	.datain(Mux1_a0_combout),
+	.dataout(DataOut_a2_a_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y25_N16
+cycloneive_io_obuf DataOut_a2_a_aoutput(
+	.i(DataOut_a2_a_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(DataOut_a2_a_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam DataOut_a2_a_aoutput.bus_hold = "false";
+defparam DataOut_a2_a_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire DataOut_a3_a_aoutput_I_routing_wire_inst (
+	.datain(Mux0_a0_combout),
+	.dataout(DataOut_a3_a_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y21_N16
+cycloneive_io_obuf DataOut_a3_a_aoutput(
+	.i(DataOut_a3_a_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(DataOut_a3_a_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam DataOut_a3_a_aoutput.bus_hold = "false";
+defparam DataOut_a3_a_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire Shift_a0_a_ainput_I_routing_wire_inst (
+	.datain(Shift[0]),
+	.dataout(Shift_a0_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y24_N15
+cycloneive_io_ibuf Shift_a0_a_ainput(
+	.i(Shift_a0_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(Shift_a0_a_ainput_o));
+// synopsys translate_off
+defparam Shift_a0_a_ainput.bus_hold = "false";
+defparam Shift_a0_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire DataIn_a0_a_ainput_I_routing_wire_inst (
+	.datain(DataIn[0]),
+	.dataout(DataIn_a0_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y23_N15
+cycloneive_io_ibuf DataIn_a0_a_ainput(
+	.i(DataIn_a0_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(DataIn_a0_a_ainput_o));
+// synopsys translate_off
+defparam DataIn_a0_a_ainput.bus_hold = "false";
+defparam DataIn_a0_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire DataIn_a3_a_ainput_I_routing_wire_inst (
+	.datain(DataIn[3]),
+	.dataout(DataIn_a3_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y23_N22
+cycloneive_io_ibuf DataIn_a3_a_ainput(
+	.i(DataIn_a3_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(DataIn_a3_a_ainput_o));
+// synopsys translate_off
+defparam DataIn_a3_a_ainput.bus_hold = "false";
+defparam DataIn_a3_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire LeftRight_ainput_I_routing_wire_inst (
+	.datain(LeftRight),
+	.dataout(LeftRight_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y24_N8
+cycloneive_io_ibuf LeftRight_ainput(
+	.i(LeftRight_ainput_I_driver),
+	.ibar(gnd),
+	.o(LeftRight_ainput_o));
+// synopsys translate_off
+defparam LeftRight_ainput.bus_hold = "false";
+defparam LeftRight_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire DataIn_a1_a_ainput_I_routing_wire_inst (
+	.datain(DataIn[1]),
+	.dataout(DataIn_a1_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y24_N22
+cycloneive_io_ibuf DataIn_a1_a_ainput(
+	.i(DataIn_a1_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(DataIn_a1_a_ainput_o));
+// synopsys translate_off
+defparam DataIn_a1_a_ainput.bus_hold = "false";
+defparam DataIn_a1_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux3_a2_DATAA_routing_wire_inst (
+	.datain(DataIn_a3_a_ainput_o),
+	.dataout(Mux3_a2_DATAA_driver));
+
+cycloneive_routing_wire Mux3_a2_DATAB_routing_wire_inst (
+	.datain(LeftRight_ainput_o),
+	.dataout(Mux3_a2_DATAB_driver));
+
+cycloneive_routing_wire Mux3_a2_DATAC_routing_wire_inst (
+	.datain(DataIn_a1_a_ainput_o),
+	.dataout(Mux3_a2_DATAC_driver));
+
+cycloneive_routing_wire Mux3_a2_DATAD_routing_wire_inst (
+	.datain(Shift_a0_a_ainput_o),
+	.dataout(Mux3_a2_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N12
+cycloneive_lcell_comb Mux3_a2(
+// Equation(s):
+// Mux3_a2_combout = (Shift_a0_a_ainput_o & ((LeftRight_ainput_o & (DataIn_a3_a_ainput_o)) # (!LeftRight_ainput_o & ((DataIn_a1_a_ainput_o)))))
+
+	.dataa(Mux3_a2_DATAA_driver),
+	.datab(Mux3_a2_DATAB_driver),
+	.datac(Mux3_a2_DATAC_driver),
+	.datad(Mux3_a2_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux3_a2_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux3_a2.lut_mask = 16'hB800;
+defparam Mux3_a2.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux3_a3_DATAB_routing_wire_inst (
+	.datain(Shift_a0_a_ainput_o),
+	.dataout(Mux3_a3_DATAB_driver));
+
+cycloneive_routing_wire Mux3_a3_DATAC_routing_wire_inst (
+	.datain(DataIn_a0_a_ainput_o),
+	.dataout(Mux3_a3_DATAC_driver));
+
+cycloneive_routing_wire Mux3_a3_DATAD_routing_wire_inst (
+	.datain(Mux3_a2_combout),
+	.dataout(Mux3_a3_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N6
+cycloneive_lcell_comb Mux3_a3(
+// Equation(s):
+// Mux3_a3_combout = (Mux3_a2_combout) # ((!Shift_a0_a_ainput_o & DataIn_a0_a_ainput_o))
+
+	.dataa(gnd),
+	.datab(Mux3_a3_DATAB_driver),
+	.datac(Mux3_a3_DATAC_driver),
+	.datad(Mux3_a3_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux3_a3_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux3_a3.lut_mask = 16'hFF30;
+defparam Mux3_a3.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Shift_a1_a_ainput_I_routing_wire_inst (
+	.datain(Shift[1]),
+	.dataout(Shift_a1_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y22_N15
+cycloneive_io_ibuf Shift_a1_a_ainput(
+	.i(Shift_a1_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(Shift_a1_a_ainput_o));
+// synopsys translate_off
+defparam Shift_a1_a_ainput.bus_hold = "false";
+defparam Shift_a1_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire DataIn_a2_a_ainput_I_routing_wire_inst (
+	.datain(DataIn[2]),
+	.dataout(DataIn_a2_a_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y24_N1
+cycloneive_io_ibuf DataIn_a2_a_ainput(
+	.i(DataIn_a2_a_ainput_I_driver),
+	.ibar(gnd),
+	.o(DataIn_a2_a_ainput_o));
+// synopsys translate_off
+defparam DataIn_a2_a_ainput.bus_hold = "false";
+defparam DataIn_a2_a_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux3_a0_DATAA_routing_wire_inst (
+	.datain(DataIn_a3_a_ainput_o),
+	.dataout(Mux3_a0_DATAA_driver));
+
+cycloneive_routing_wire Mux3_a0_DATAB_routing_wire_inst (
+	.datain(LeftRight_ainput_o),
+	.dataout(Mux3_a0_DATAB_driver));
+
+cycloneive_routing_wire Mux3_a0_DATAC_routing_wire_inst (
+	.datain(DataIn_a1_a_ainput_o),
+	.dataout(Mux3_a0_DATAC_driver));
+
+cycloneive_routing_wire Mux3_a0_DATAD_routing_wire_inst (
+	.datain(Shift_a0_a_ainput_o),
+	.dataout(Mux3_a0_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N24
+cycloneive_lcell_comb Mux3_a0(
+// Equation(s):
+// Mux3_a0_combout = (Shift_a0_a_ainput_o & ((LeftRight_ainput_o & ((DataIn_a1_a_ainput_o))) # (!LeftRight_ainput_o & (DataIn_a3_a_ainput_o))))
+
+	.dataa(Mux3_a0_DATAA_driver),
+	.datab(Mux3_a0_DATAB_driver),
+	.datac(Mux3_a0_DATAC_driver),
+	.datad(Mux3_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux3_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux3_a0.lut_mask = 16'hE200;
+defparam Mux3_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux3_a1_DATAA_routing_wire_inst (
+	.datain(DataIn_a2_a_ainput_o),
+	.dataout(Mux3_a1_DATAA_driver));
+
+cycloneive_routing_wire Mux3_a1_DATAB_routing_wire_inst (
+	.datain(Shift_a0_a_ainput_o),
+	.dataout(Mux3_a1_DATAB_driver));
+
+cycloneive_routing_wire Mux3_a1_DATAD_routing_wire_inst (
+	.datain(Mux3_a0_combout),
+	.dataout(Mux3_a1_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N10
+cycloneive_lcell_comb Mux3_a1(
+// Equation(s):
+// Mux3_a1_combout = (Mux3_a0_combout) # ((DataIn_a2_a_ainput_o & !Shift_a0_a_ainput_o))
+
+	.dataa(Mux3_a1_DATAA_driver),
+	.datab(Mux3_a1_DATAB_driver),
+	.datac(gnd),
+	.datad(Mux3_a1_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux3_a1_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux3_a1.lut_mask = 16'hFF22;
+defparam Mux3_a1.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux3_a4_DATAA_routing_wire_inst (
+	.datain(Mux3_a3_combout),
+	.dataout(Mux3_a4_DATAA_driver));
+
+cycloneive_routing_wire Mux3_a4_DATAC_routing_wire_inst (
+	.datain(Shift_a1_a_ainput_o),
+	.dataout(Mux3_a4_DATAC_driver));
+
+cycloneive_routing_wire Mux3_a4_DATAD_routing_wire_inst (
+	.datain(Mux3_a1_combout),
+	.dataout(Mux3_a4_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N0
+cycloneive_lcell_comb Mux3_a4(
+// Equation(s):
+// Mux3_a4_combout = (Shift_a1_a_ainput_o & ((Mux3_a1_combout))) # (!Shift_a1_a_ainput_o & (Mux3_a3_combout))
+
+	.dataa(Mux3_a4_DATAA_driver),
+	.datab(gnd),
+	.datac(Mux3_a4_DATAC_driver),
+	.datad(Mux3_a4_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux3_a4_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux3_a4.lut_mask = 16'hFA0A;
+defparam Mux3_a4.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux2_a0_DATAA_routing_wire_inst (
+	.datain(DataIn_a2_a_ainput_o),
+	.dataout(Mux2_a0_DATAA_driver));
+
+cycloneive_routing_wire Mux2_a0_DATAB_routing_wire_inst (
+	.datain(LeftRight_ainput_o),
+	.dataout(Mux2_a0_DATAB_driver));
+
+cycloneive_routing_wire Mux2_a0_DATAC_routing_wire_inst (
+	.datain(DataIn_a0_a_ainput_o),
+	.dataout(Mux2_a0_DATAC_driver));
+
+cycloneive_routing_wire Mux2_a0_DATAD_routing_wire_inst (
+	.datain(Shift_a0_a_ainput_o),
+	.dataout(Mux2_a0_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N18
+cycloneive_lcell_comb Mux2_a0(
+// Equation(s):
+// Mux2_a0_combout = (Shift_a0_a_ainput_o & ((LeftRight_ainput_o & (DataIn_a2_a_ainput_o)) # (!LeftRight_ainput_o & ((DataIn_a0_a_ainput_o)))))
+
+	.dataa(Mux2_a0_DATAA_driver),
+	.datab(Mux2_a0_DATAB_driver),
+	.datac(Mux2_a0_DATAC_driver),
+	.datad(Mux2_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux2_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux2_a0.lut_mask = 16'hB800;
+defparam Mux2_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux2_a1_DATAA_routing_wire_inst (
+	.datain(DataIn_a3_a_ainput_o),
+	.dataout(Mux2_a1_DATAA_driver));
+
+cycloneive_routing_wire Mux2_a1_DATAB_routing_wire_inst (
+	.datain(Shift_a0_a_ainput_o),
+	.dataout(Mux2_a1_DATAB_driver));
+
+cycloneive_routing_wire Mux2_a1_DATAD_routing_wire_inst (
+	.datain(Mux2_a0_combout),
+	.dataout(Mux2_a1_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N20
+cycloneive_lcell_comb Mux2_a1(
+// Equation(s):
+// Mux2_a1_combout = (Mux2_a0_combout) # ((DataIn_a3_a_ainput_o & !Shift_a0_a_ainput_o))
+
+	.dataa(Mux2_a1_DATAA_driver),
+	.datab(Mux2_a1_DATAB_driver),
+	.datac(gnd),
+	.datad(Mux2_a1_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux2_a1_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux2_a1.lut_mask = 16'hFF22;
+defparam Mux2_a1.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux2_a2_DATAA_routing_wire_inst (
+	.datain(DataIn_a2_a_ainput_o),
+	.dataout(Mux2_a2_DATAA_driver));
+
+cycloneive_routing_wire Mux2_a2_DATAB_routing_wire_inst (
+	.datain(LeftRight_ainput_o),
+	.dataout(Mux2_a2_DATAB_driver));
+
+cycloneive_routing_wire Mux2_a2_DATAC_routing_wire_inst (
+	.datain(DataIn_a0_a_ainput_o),
+	.dataout(Mux2_a2_DATAC_driver));
+
+cycloneive_routing_wire Mux2_a2_DATAD_routing_wire_inst (
+	.datain(Shift_a0_a_ainput_o),
+	.dataout(Mux2_a2_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N22
+cycloneive_lcell_comb Mux2_a2(
+// Equation(s):
+// Mux2_a2_combout = (Shift_a0_a_ainput_o & ((LeftRight_ainput_o & ((DataIn_a0_a_ainput_o))) # (!LeftRight_ainput_o & (DataIn_a2_a_ainput_o))))
+
+	.dataa(Mux2_a2_DATAA_driver),
+	.datab(Mux2_a2_DATAB_driver),
+	.datac(Mux2_a2_DATAC_driver),
+	.datad(Mux2_a2_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux2_a2_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux2_a2.lut_mask = 16'hE200;
+defparam Mux2_a2.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux2_a3_DATAA_routing_wire_inst (
+	.datain(Mux2_a2_combout),
+	.dataout(Mux2_a3_DATAA_driver));
+
+cycloneive_routing_wire Mux2_a3_DATAB_routing_wire_inst (
+	.datain(Shift_a0_a_ainput_o),
+	.dataout(Mux2_a3_DATAB_driver));
+
+cycloneive_routing_wire Mux2_a3_DATAC_routing_wire_inst (
+	.datain(DataIn_a1_a_ainput_o),
+	.dataout(Mux2_a3_DATAC_driver));
+
+// Location: LCCOMB_X1_Y24_N16
+cycloneive_lcell_comb Mux2_a3(
+// Equation(s):
+// Mux2_a3_combout = (Mux2_a2_combout) # ((!Shift_a0_a_ainput_o & DataIn_a1_a_ainput_o))
+
+	.dataa(Mux2_a3_DATAA_driver),
+	.datab(Mux2_a3_DATAB_driver),
+	.datac(Mux2_a3_DATAC_driver),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(Mux2_a3_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux2_a3.lut_mask = 16'hBABA;
+defparam Mux2_a3.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux2_a4_DATAB_routing_wire_inst (
+	.datain(Mux2_a1_combout),
+	.dataout(Mux2_a4_DATAB_driver));
+
+cycloneive_routing_wire Mux2_a4_DATAC_routing_wire_inst (
+	.datain(Shift_a1_a_ainput_o),
+	.dataout(Mux2_a4_DATAC_driver));
+
+cycloneive_routing_wire Mux2_a4_DATAD_routing_wire_inst (
+	.datain(Mux2_a3_combout),
+	.dataout(Mux2_a4_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N26
+cycloneive_lcell_comb Mux2_a4(
+// Equation(s):
+// Mux2_a4_combout = (Shift_a1_a_ainput_o & (Mux2_a1_combout)) # (!Shift_a1_a_ainput_o & ((Mux2_a3_combout)))
+
+	.dataa(gnd),
+	.datab(Mux2_a4_DATAB_driver),
+	.datac(Mux2_a4_DATAC_driver),
+	.datad(Mux2_a4_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux2_a4_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux2_a4.lut_mask = 16'hCFC0;
+defparam Mux2_a4.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux1_a0_DATAA_routing_wire_inst (
+	.datain(Mux3_a3_combout),
+	.dataout(Mux1_a0_DATAA_driver));
+
+cycloneive_routing_wire Mux1_a0_DATAC_routing_wire_inst (
+	.datain(Shift_a1_a_ainput_o),
+	.dataout(Mux1_a0_DATAC_driver));
+
+cycloneive_routing_wire Mux1_a0_DATAD_routing_wire_inst (
+	.datain(Mux3_a1_combout),
+	.dataout(Mux1_a0_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N4
+cycloneive_lcell_comb Mux1_a0(
+// Equation(s):
+// Mux1_a0_combout = (Shift_a1_a_ainput_o & (Mux3_a3_combout)) # (!Shift_a1_a_ainput_o & ((Mux3_a1_combout)))
+
+	.dataa(Mux1_a0_DATAA_driver),
+	.datab(gnd),
+	.datac(Mux1_a0_DATAC_driver),
+	.datad(Mux1_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux1_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux1_a0.lut_mask = 16'hAFA0;
+defparam Mux1_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Mux0_a0_DATAB_routing_wire_inst (
+	.datain(Mux2_a1_combout),
+	.dataout(Mux0_a0_DATAB_driver));
+
+cycloneive_routing_wire Mux0_a0_DATAC_routing_wire_inst (
+	.datain(Shift_a1_a_ainput_o),
+	.dataout(Mux0_a0_DATAC_driver));
+
+cycloneive_routing_wire Mux0_a0_DATAD_routing_wire_inst (
+	.datain(Mux2_a3_combout),
+	.dataout(Mux0_a0_DATAD_driver));
+
+// Location: LCCOMB_X1_Y24_N30
+cycloneive_lcell_comb Mux0_a0(
+// Equation(s):
+// Mux0_a0_combout = (Shift_a1_a_ainput_o & ((Mux2_a3_combout))) # (!Shift_a1_a_ainput_o & (Mux2_a1_combout))
+
+	.dataa(gnd),
+	.datab(Mux0_a0_DATAB_driver),
+	.datac(Mux0_a0_DATAC_driver),
+	.datad(Mux0_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(Mux0_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Mux0_a0.lut_mask = 16'hFC0C;
+defparam Mux0_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign DataOut[0] = DataOut_a0_a_aoutput_o;
+
+assign DataOut[1] = DataOut_a1_a_aoutput_o;
+
+assign DataOut[2] = DataOut_a2_a_aoutput_o;
+
+assign DataOut[3] = DataOut_a3_a_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+wire a_aALTERA_ASDO_DATA1_a_aibuf_I_driver;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_I_driver;
+wire a_aALTERA_DATA0_a_aibuf_I_driver;
+
+endmodule

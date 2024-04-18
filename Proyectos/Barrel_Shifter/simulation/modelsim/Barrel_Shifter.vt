@@ -1,0 +1,36 @@
+`timescale 1 ns/ 1 ps
+module Barrel_Shifter_vlg_tst();
+	reg 	[3:0] 	DataIn;
+	reg 	[1:0] 	Shift; 
+	reg 				LeftRight;                                           
+	wire 	[3:0]		DataOut;
+									 
+	Barrel_Shifter i1 ( 
+		.DataIn(DataIn),
+		.LeftRight(LeftRight),
+		.Shift(Shift),
+		.DataOut(DataOut)
+	);
+
+	initial                                                
+	begin
+		DataIn = 4'b0011; LeftRight = 1'b0;
+		#40; LeftRight = 1'b1;
+		#40; DataIn = 4'b1100; LeftRight = 1'b0;
+		#40; LeftRight = 1'b1;
+		#40; DataIn = 4'b0101; LeftRight = 1'b0;
+		#40; LeftRight = 1'b1;
+		#40; DataIn = 4'b1010; LeftRight = 1'b0;
+		#40; LeftRight = 1'b1;
+		$display("Running testbench at CIC");
+	end
+		 
+	always
+	begin 
+		Shift = 2'b00;
+		#10; Shift = 2'b01;
+		#10; Shift = 2'b10;
+		#10; Shift = 2'b11; #10;
+	end                                                    
+
+endmodule 

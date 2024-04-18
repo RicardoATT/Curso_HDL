@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Apr 17 17:48:52 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Barrel_Shifter
+Top-level Entity Name : Barrel_Shifter
+Family : Cyclone IV E
+Total logic elements : 12
+    Total combinational functions : 12
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
