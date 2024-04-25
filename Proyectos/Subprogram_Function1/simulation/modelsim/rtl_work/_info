@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/simulation/modelsim
+Esubprogram_function1
+Z1 w1714020727
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/Subprogram_Function1.vhd
+Z7 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/Subprogram_Function1.vhd
+l0
+L6
+V<RlM5^mX?f?4DL4G7ES742
+!s100 ][OX9HHOhEA2T4WUKDKVU1
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1714029072
+!i10b 1
+Z10 !s108 1714029072.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/Subprogram_Function1.vhd|
+Z12 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/Subprogram_Function1.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+R5
+DEx4 work 20 subprogram_function1 0 22 <RlM5^mX?f?4DL4G7ES742
+l21
+L11
+VZYhI<0P9zzi`X][5jc`1d1
+!s100 AcJeLLAggNl3hzgRVQ5>l1
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Esubprogram_function1_vhd_tst
+Z15 w1714029037
+R4
+R5
+R0
+Z16 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/simulation/modelsim/Subprogram_Function1.vht
+Z17 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/simulation/modelsim/Subprogram_Function1.vht
+l0
+L4
+VIKL7jXAYzmSo3IZ>_[B[d3
+!s100 ^>;8Oe9QSK5ESBc_URj7f0
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/simulation/modelsim/Subprogram_Function1.vht|
+Z19 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function1/simulation/modelsim/Subprogram_Function1.vht|
+!i113 1
+R13
+R14
+Asubprogram_function1_arch
+R4
+R5
+DEx4 work 28 subprogram_function1_vhd_tst 0 22 IKL7jXAYzmSo3IZ>_[B[d3
+l29
+L6
+VoOL6NbLLFnbjD?1_FN^L^1
+!s100 iHn[L@Zg>PcBa]FJX_TTG3
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14

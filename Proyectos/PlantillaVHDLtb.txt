@@ -1,67 +1,30 @@
-LIBRARY ieee;                                               
-USE ieee.std_logic_1164.all;                                
+library ieee;                                               
+use ieee.std_logic_1164.all;                                
 
-ENTITY Adder_Cin_VHDL_vhd_tst IS
-END Adder_Cin_VHDL_vhd_tst;
+entity Subprogram_Function1_vhd_tst is
+end Subprogram_Function1_vhd_tst;
+architecture _arch of _vhd_tst is                                                  
 
-ARCHITECTURE Adder_Cin_VHDL_arch OF Adder_Cin_VHDL_vhd_tst IS                                                 
-	SIGNAL 	A		: STD_LOGIC:='0';
-	SIGNAL 	B		: STD_LOGIC:='0';
-	SIGNAL 	Cin	: STD_LOGIC:='0';
-	SIGNAL 	Sum	: STD_LOGIC;
-	COMPONENT Adder_Cin_VHDL
-		PORT 	(
-				A 		: IN STD_LOGIC;
-				B 		: IN STD_LOGIC;
-				Cin 	: IN STD_LOGIC;
-				Sum 	: OUT STD_LOGIC
-				);
-	END COMPONENT;
-BEGIN
-	i1 : Adder_Cin_VHDL
-	PORT MAP (
-				A 		=> A,
-				B 		=> B,
-				Cin 	=> Cin,
-				Sum 	=> Sum
-				);
-	
-	init : PROCESS                                    
-	BEGIN                                                        
-		WAIT;                                                       
-	END PROCESS init; 
-	
-	always : PROCESS                                              
-	BEGIN                                                         
-		WAIT FOR 50ns;
-		A 		<= '0';
-		B 		<= '0';
-		Cin 	<= '1';
-		WAIT FOR 50ns;
-		A 		<= '0';
-		B 		<= '1';
-		Cin 	<= '0';
-		WAIT FOR 50ns;
-		A 		<= '0';
-		B 		<= '1';
-		Cin 	<= '1';	
-		WAIT FOR 50ns;
-		A 		<= '1';
-		B 		<= '0';
-		Cin 	<= '0';
-		WAIT FOR 50ns;
-		A 		<= '1';
-		B 		<= '0';
-		Cin 	<= '1';
-		WAIT FOR 50ns;
-		A 		<= '1';
-		B 		<= '1';
-		Cin 	<= '0';
-		WAIT FOR 50ns;
-		A 		<= '1';
-		B 		<= '1';
-		Cin 	<= '1';
-		WAIT FOR 50ns;
-		WAIT;                                                        
-	END PROCESS always;                                          
-END Adder_Cin_VHDL_arch;
+component 
+	port ();
+end component;
+
+begin
+	i1 : 
+	port map ();
+	init : process                                     
+	begin
+		wait;
+	end process init;
+	always : process
+	begin
+		A <= "0001"; B <= "0010"; C <= "0011"; D <= "0100"; E <= "0101"; F <= "0110";	-- 1 + 2 | 3 + 4 | 5 + 6
+		wait for 50ns;
+		A <= "1000"; B <= "0111"; C <= "0111"; D <= "0110"; E <= "0110"; F <= "0101";	-- 8 + 7 | 7 + 6 | 6 + 5
+		wait for 50ns;
+		A <= "1110"; B <= "0001"; C <= "1101"; D <= "0010"; E <= "1100"; F <= "0011";	-- 14 + 1 | 13 + 2 | 12 + 3
+		wait for 50ns;
+		A <= "0111"; B <= "0111"; C <= "0011"; D <= "0011"; E <= "0001"; F <= "0001";	-- 7 + 7 | 3 + 3 | 1 + 1
+		wait for 50ns;
+	end process always;
+end _arch;

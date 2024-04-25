@@ -1,0 +1,38 @@
+`timescale 1 ns/ 1 ps
+module Subprogram_Function2_vlg_tst();
+	reg	[3:0]		A;
+	reg	[3:0]		B;
+	reg	[3:0]		C;
+	reg	[3:0]		D;
+	reg	[3:0]		E;
+	reg	[3:0]		F;
+	wire 	[3:0]		S1;
+	wire 	[3:0]		S2;
+	wire 	[3:0]		S3;
+									 
+	Subprogram_Function2 i1 ( 
+		.A(A),
+		.B(B),
+		.C(C),
+		.D(D),
+		.E(E),
+		.F(F),
+		.S1(S1),
+		.S2(S2),
+		.S3(S3)
+	);
+
+	initial                                                
+	begin
+		A = 1; B = 2; C = 3; D = 4; E = 5; F = 6;
+		$display("Running testbench at CIC");
+	end
+					 
+	always
+	begin
+		#50; A = 8;  B = 7; C = 7;  D = 6; E = 6;  F = 5;
+		#50; A = 14; B = 1; C = 13; D = 2; E = 12; F = 3;
+		#50; A = 7;  B = 7; C = 3;  D = 3; E = 1;  F = 1;
+	end                                                    
+
+endmodule 

@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/simulation/modelsim
+vSubprogram_Function2
+Z1 !s110 1714032631
+!i10b 1
+!s100 bBhIHkEbn727nZYYX?Sai0
+I`=K_KnEFgCNK_ZPO2Dh723
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1714031362
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/Subprogram_Function2.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/Subprogram_Function2.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1714032631.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/Subprogram_Function2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/Subprogram_Function2.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2
+Z6 tCvgOpt 0
+n@subprogram_@function2
+vSubprogram_Function2_vlg_tst
+R1
+!i10b 1
+!s100 1M]SN1J>iC6<WE2fSkjgK2
+IA0hhBUXj6XRD>Sh;I```N3
+R2
+R0
+w1714032324
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/simulation/modelsim/Subprogram_Function2.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/simulation/modelsim/Subprogram_Function2.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/simulation/modelsim/Subprogram_Function2.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/simulation/modelsim/Subprogram_Function2.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Subprogram_Function2/simulation/modelsim
+R6
+n@subprogram_@function2_vlg_tst
