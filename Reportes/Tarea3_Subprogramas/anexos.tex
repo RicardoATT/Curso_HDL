@@ -4,18 +4,42 @@
 
 \lstinputlisting[
 	language=vhdl,
-	label=prog:barrel_shifter,
-	caption={Descripción en Verilog del desplazador de barril de 4 bits.}
+	label=prog:subprogram_function1,
+	caption={Descripción en VHDL de los 3 sumadores de 4 bits usando funciones.}
 ]{
-	../../Proyectos/Barrel_Shifter/Barrel_Shifter.v
+	../../Proyectos/Subprogram_Function1/Subprogram_Function1.vhd
 }
 
 \lstinputlisting[
 	language=vhdl,
-	label=prog:ff_t,
-	caption={Descripción en Verilog del flip flop tipo T con \textit{reset} asíncrono.}
+	label=prog:subprogram_procedure1,
+	caption={Descripción en VHDL de los 3 sumadores de 4 bits usando procedimientos (caso 1).}
 ]{
-	../../Proyectos/FF_T/FF_T.v
+	../../Proyectos/Subprogram_Procedure1/Subprogram_Procedure1.vhd
+}
+
+\lstinputlisting[
+language=vhdl,
+label=prog:Subprogram_procedure2,
+caption={Descripción en VHDL de los 3 sumadores de 4 bits usando procedimientos (caso 2).}
+]{
+	../../Proyectos/Subprogram_Procedure2/Subprogram_Procedure2.vhd
+}
+
+\lstinputlisting[
+language=verilog,
+label=prog:subprogram_function2,
+caption={Descripción en Verilog de los 3 sumadores de 4 bits usando funciones.}
+]{
+	../../Proyectos/Subprogram_Function2/Subprogram_Function2.v
+}
+
+\lstinputlisting[
+language=verilog,
+label=prog:subprogram_task,
+caption={Descripción en Verilog de los 3 sumadores de 4 bits usando tareas.}
+]{
+	../../Proyectos/Subprogram_Task/Subprogram_Task.v
 }
 
 \subsection{Bancos de pruebas (\textit{Test Benches})}
@@ -23,15 +47,23 @@
 \lstinputlisting[
 	language=vhdl,
 	%label=prog:asign,
-	caption={Banco de prueba para el \autoref{prog:barrel_shifter}.}
+	caption={Banco de prueba para el \autoref{prog:subprogram_function1} y el \autoref{prog:subprogram_procedure2}.}
 ]{
-	../../Proyectos/Barrel_Shifter/simulation/modelsim/Barrel_Shifter.vt
+	../../Proyectos/Subprogram_Function1/simulation/modelsim/Subprogram_Function1.vht
 }
 
 \lstinputlisting[
 language=vhdl,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:ff_t}.}
+caption={Banco de prueba para el \autoref{prog:subprogram_procedure1} (Obsérvese que la S1, S2 y S3 se manejan en el componente instanciado como \textit{buffer}).}
 ]{
-	../../Proyectos/FF_T/simulation/modelsim/FF_T.vt
+	../../Proyectos/Subprogram_Procedure1/simulation/modelsim/Subprogram_Procedure1.vht
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:subprogram_function2} y el \autoref{prog:subprogram_task}.}
+]{
+	../../Proyectos/Subprogram_Function2/simulation/modelsim/Subprogram_Function2.vt
 }
