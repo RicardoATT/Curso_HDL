@@ -1,0 +1,28 @@
+`timescale 1 ns/ 1 ps
+module For_Loop_Verilog_vlg_tst();
+	reg 	[7:0] 	Data_In1;
+	reg 	[7:0] 	Data_In2;
+	reg 	[1:0] 	Dir;
+	reg 				WR;
+	wire 	[15:0]	Data_Out;
+
+	For_Loop_Verilog i1 ( 
+		.Data_In1(Data_In1),
+		.Data_In2(Data_In2),
+		.Data_Out(Data_Out),
+		.Dir(Dir),
+		.WR(WR)
+	);
+
+	initial
+	begin
+		Data_In1 = 1; Data_In2 = 1; Dir = 0; WR = 1;
+		$display("Running testbench at CIC");
+	end
+
+	always
+	begin
+	#100; WR = 0;
+	end
+
+endmodule 
