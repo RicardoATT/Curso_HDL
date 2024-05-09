@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/simulation/modelsim
+vMux_Structural_Description
+Z1 !s110 1715244916
+!i10b 1
+!s100 0j;m[fhNI]bo3bE:efRnZ2
+Iazz9lX:IDQ0zKKzHf=1MO0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1715244411
+Z4 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/Mux_Structural_Description.v
+Z5 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/Mux_Structural_Description.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1715244916.000000
+Z8 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/Mux_Structural_Description.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/Mux_Structural_Description.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description
+Z12 tCvgOpt 0
+n@mux_@structural_@description
+vMux_Structural_Description_vlg_tst
+R1
+!i10b 1
+!s100 SPH[SEV0Q`g9=L8P1^>Hl3
+IR101@SHGdH;MS;gWYgAAJ3
+R2
+R0
+w1715244796
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/simulation/modelsim/Mux_Structural_Description.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/simulation/modelsim/Mux_Structural_Description.vt
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/simulation/modelsim/Mux_Structural_Description.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/simulation/modelsim/Mux_Structural_Description.vt|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Mux_Structural_Description/simulation/modelsim
+R12
+n@mux_@structural_@description_vlg_tst
+vMyMux
+R1
+!i10b 1
+!s100 m2V?4?1:BY>BRHbEP9I7>0
+IW`PX[WGeUOXgU?n^ZNN6D0
+R2
+R0
+R3
+R4
+R5
+L0 10
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@my@mux

@@ -1,0 +1,14 @@
+|Mux_Structural_Description
+A => A.IN1
+B => B.IN1
+C => C.IN1
+F << MyMux:u0.port3
+
+
+|Mux_Structural_Description|MyMux:u0
+In1 => Out.DATAB
+In2 => Out.DATAA
+Ctrl => Out.OUTPUTSELECT
+Out <= Out.DB_MAX_OUTPUT_PORT_TYPE
+
+

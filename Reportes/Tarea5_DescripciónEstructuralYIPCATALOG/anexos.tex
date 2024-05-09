@@ -3,36 +3,36 @@
 \subsection{Descripciones del hardware}
 
 \lstinputlisting[
-	language=vhdl,
-	label=prog:for_loop1_vhdl,
-	caption={Descripción en VHDL del producto punto de dos vectores, empleando For-Loop.}
+	language=verilog,
+	label=prog:mux_str_des,
+	caption={Descripción en Verilog del multiplexor en forma estructural.}
 ]{
-	../../Proyectos/For_Loop1_VHDL/For_Loop1_VHDL.vhd
+	../../Proyectos/Mux_Structural_Description/Mux_Structural_Description.v
 }
 
 \lstinputlisting[
-language=vhdl,
-label=prog:for_loop_verilog,
-caption={Descripción en Verilog del producto punto de dos vectores, empleando For-Loop.}
+language=verilog,
+label=prog:mux_ip_catalog,
+caption={Descripción en Verilog del multiplexor en forma estructural, instanciando un archivo creado con IP Catalog.}
 ]{
-	../../Proyectos/For_Loop_Verilog/For_Loop_Verilog.v
+	../../Proyectos/Mux_IP_Catalog/Mux_IP_Catalog.v
 }
 
 \subsection{Bancos de pruebas (\textit{Test Benches})}
 
 \lstinputlisting[
-	language=vhdl,
+	language=verilog,
 	%label=prog:asign,
-	caption={Banco de prueba para el \autoref{prog:for_loop1_vhdl}.}
+	caption={Banco de prueba para el \autoref{prog:mux_str_des}.}
 ]{
-	../../Proyectos/For_Loop1_VHDL/simulation/modelsim/For_Loop1_VHDL.vht
+	../../Proyectos/Mux_Structural_Description/simulation/modelsim/Mux_Structural_Description.vt
 }
 
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:for_loop_verilog}.}
+caption={Banco de prueba para el \autoref{prog:mux_ip_catalog}.}
 ]{
-	../../Proyectos/For_Loop_Verilog/simulation/modelsim/For_Loop_Verilog.vt
+	../../Proyectos/Mux_IP_Catalog/simulation/modelsim/Mux_IP_Catalog.vt
 }
