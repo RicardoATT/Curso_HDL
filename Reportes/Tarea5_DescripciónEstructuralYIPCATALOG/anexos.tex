@@ -1,0 +1,38 @@
+\section{Anexos}
+
+\subsection{Descripciones del hardware}
+
+\lstinputlisting[
+	language=vhdl,
+	label=prog:for_loop1_vhdl,
+	caption={Descripción en VHDL del producto punto de dos vectores, empleando For-Loop.}
+]{
+	../../Proyectos/For_Loop1_VHDL/For_Loop1_VHDL.vhd
+}
+
+\lstinputlisting[
+language=vhdl,
+label=prog:for_loop_verilog,
+caption={Descripción en Verilog del producto punto de dos vectores, empleando For-Loop.}
+]{
+	../../Proyectos/For_Loop_Verilog/For_Loop_Verilog.v
+}
+
+\subsection{Bancos de pruebas (\textit{Test Benches})}
+
+\lstinputlisting[
+	language=vhdl,
+	%label=prog:asign,
+	caption={Banco de prueba para el \autoref{prog:for_loop1_vhdl}.}
+]{
+	../../Proyectos/For_Loop1_VHDL/simulation/modelsim/For_Loop1_VHDL.vht
+}
+
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:for_loop_verilog}.}
+]{
+	../../Proyectos/For_Loop_Verilog/simulation/modelsim/For_Loop_Verilog.vt
+}
