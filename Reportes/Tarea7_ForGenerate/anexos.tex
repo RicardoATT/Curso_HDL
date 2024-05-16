@@ -1,0 +1,38 @@
+\section{Anexos}
+
+\subsection{Descripciones del hardware}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:mux_str_des,
+	caption={Descripción en Verilog del multiplexor en forma estructural.}
+]{
+	../../Proyectos/Mux_Structural_Description/Mux_Structural_Description.v
+}
+
+\lstinputlisting[
+language=verilog,
+label=prog:mux_ip_catalog,
+caption={Descripción en Verilog del multiplexor en forma estructural, instanciando un archivo creado con \textit{IP Catalog}.}
+]{
+	../../Proyectos/Mux_IP_Catalog/Mux_IP_Catalog.v
+}
+
+\subsection{Bancos de pruebas (\textit{Test Benches})}
+
+\lstinputlisting[
+	language=verilog,
+	%label=prog:asign,
+	caption={Banco de prueba para el \autoref{prog:mux_str_des}.}
+]{
+	../../Proyectos/Mux_Structural_Description/simulation/modelsim/Mux_Structural_Description.vt
+}
+
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:mux_ip_catalog}.}
+]{
+	../../Proyectos/Mux_IP_Catalog/simulation/modelsim/Mux_IP_Catalog.vt
+}

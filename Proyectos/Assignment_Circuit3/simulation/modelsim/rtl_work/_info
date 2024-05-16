@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/simulation/modelsim
+vAssignment_Circuit3
+Z1 !s110 1715842315
+!i10b 1
+!s100 >fXU`SJUaz04lb7kb>ICI1
+IQlCbjniPmoD;nzBV^=VTk1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1715841879
+8C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/Assignment_Circuit3.v
+FC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/Assignment_Circuit3.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1715842315.000000
+!s107 C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/Assignment_Circuit3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3|C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/Assignment_Circuit3.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3}
+Z6 tCvgOpt 0
+n@assignment_@circuit3
+vAssignment_Circuit3_vlg_tst
+R1
+!i10b 1
+!s100 i2DUN87]7`Uez;Ld1nJg^0
+I?aMBdEDCGD[:P>AU2SHVK1
+R2
+R0
+w1715842308
+8C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/simulation/modelsim/Assignment_Circuit3.vt
+FC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/simulation/modelsim/Assignment_Circuit3.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/simulation/modelsim/Assignment_Circuit3.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/simulation/modelsim|C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/simulation/modelsim/Assignment_Circuit3.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/simulation/modelsim}
+R6
+n@assignment_@circuit3_vlg_tst

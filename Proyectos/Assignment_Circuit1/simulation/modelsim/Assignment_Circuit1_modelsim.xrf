@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit1/Assignment_Circuit1.v
+source_file = 1, C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit1/db/Assignment_Circuit1.cbx.xml
+design_name = Assignment_Circuit1
+instance = comp, Right_aoutput, Right~output, Assignment_Circuit1, 1
+instance = comp, Select_aoutput, Select~output, Assignment_Circuit1, 1
+instance = comp, Stop_aoutput, Stop~output, Assignment_Circuit1, 1
+instance = comp, Clock_ainput, Clock~input, Assignment_Circuit1, 1
+instance = comp, Mask_ainput, Mask~input, Assignment_Circuit1, 1
+instance = comp, Stop_a0, Stop~0, Assignment_Circuit1, 1
+instance = comp, Stop_areg0, Stop~reg0, Assignment_Circuit1, 1
+instance = comp, Strobe_ainput, Strobe~input, Assignment_Circuit1, 1
+instance = comp, Xflag_ainput, Xflag~input, Assignment_Circuit1, 1
+design_name = hard_block
+instance = comp, a_aALTERA_ASDO_DATA1_a_aibuf, ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_FLASH_nCE_nCSO_a_aibuf, ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_DATA0_a_aibuf, ~ALTERA_DATA0~~ibuf, hard_block, 1

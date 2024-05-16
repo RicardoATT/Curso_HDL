@@ -1,0 +1,287 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "05/16/2024 00:38:17"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Assignment_Circuit2 (
+	Clock,
+	Strobe,
+	Xflag,
+	Mask,
+	Right,
+	Select,
+	Stop);
+input 	Clock;
+input 	Strobe;
+input 	Xflag;
+input 	Mask;
+output 	Right;
+output 	Select;
+output 	Stop;
+
+// Design Ports Information
+// Strobe	=>  Location: PIN_87,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Xflag	=>  Location: PIN_2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Right	=>  Location: PIN_68,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Select	=>  Location: PIN_1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Stop	=>  Location: PIN_30,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Mask	=>  Location: PIN_28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Clock	=>  Location: PIN_31,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Assignment_Circuit2_6_1200mv_0c_v_slow.sdo");
+// synopsys translate_on
+
+wire Strobe_ainput_o;
+wire Xflag_ainput_o;
+wire Right_aoutput_o;
+wire Select_aoutput_o;
+wire Stop_aoutput_o;
+wire Clock_ainput_o;
+wire Mask_ainput_o;
+wire Stop_a0_combout;
+wire Stop_areg0_q;
+
+wire Stop_aoutput_I_driver;
+wire Clock_ainput_I_driver;
+wire Mask_ainput_I_driver;
+wire Stop_a0_DATAC_driver;
+wire Stop_areg0_CLK_driver;
+wire Stop_areg0_D_driver;
+wire Strobe_ainput_I_driver;
+wire Xflag_ainput_I_driver;
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X30_Y0_N9
+cycloneive_io_obuf Right_aoutput(
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Right_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam Right_aoutput.bus_hold = "false";
+defparam Right_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y23_N2
+cycloneive_io_obuf Select_aoutput(
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Select_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam Select_aoutput.bus_hold = "false";
+defparam Select_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire Stop_aoutput_I_routing_wire_inst (
+	.datain(Stop_areg0_q),
+	.dataout(Stop_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y8_N16
+cycloneive_io_obuf Stop_aoutput(
+	.i(Stop_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Stop_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam Stop_aoutput.bus_hold = "false";
+defparam Stop_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire Clock_ainput_I_routing_wire_inst (
+	.datain(Clock),
+	.dataout(Clock_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y7_N1
+cycloneive_io_ibuf Clock_ainput(
+	.i(Clock_ainput_I_driver),
+	.ibar(gnd),
+	.o(Clock_ainput_o));
+// synopsys translate_off
+defparam Clock_ainput.bus_hold = "false";
+defparam Clock_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Mask_ainput_I_routing_wire_inst (
+	.datain(Mask),
+	.dataout(Mask_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y9_N8
+cycloneive_io_ibuf Mask_ainput(
+	.i(Mask_ainput_I_driver),
+	.ibar(gnd),
+	.o(Mask_ainput_o));
+// synopsys translate_off
+defparam Mask_ainput.bus_hold = "false";
+defparam Mask_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Stop_a0_DATAC_routing_wire_inst (
+	.datain(Mask_ainput_o),
+	.dataout(Stop_a0_DATAC_driver));
+
+// Location: LCCOMB_X1_Y7_N0
+cycloneive_lcell_comb Stop_a0(
+// Equation(s):
+// Stop_a0_combout = !Mask_ainput_o
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(Stop_a0_DATAC_driver),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(Stop_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Stop_a0.lut_mask = 16'h0F0F;
+defparam Stop_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Stop_areg0_CLK_routing_wire_inst (
+	.datain(Clock_ainput_o),
+	.dataout(Stop_areg0_CLK_driver));
+
+cycloneive_routing_wire Stop_areg0_D_routing_wire_inst (
+	.datain(Stop_a0_combout),
+	.dataout(Stop_areg0_D_driver));
+
+// Location: FF_X1_Y7_N1
+dffeas Stop_areg0(
+	.clk(Stop_areg0_CLK_driver),
+	.d(Stop_areg0_D_driver),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Stop_areg0_q),
+	.prn(vcc));
+// synopsys translate_off
+defparam Stop_areg0.is_wysiwyg = "true";
+defparam Stop_areg0.power_up = "low";
+// synopsys translate_on
+
+cycloneive_routing_wire Strobe_ainput_I_routing_wire_inst (
+	.datain(Strobe),
+	.dataout(Strobe_ainput_I_driver));
+
+// Location: IOIBUF_X34_Y10_N8
+cycloneive_io_ibuf Strobe_ainput(
+	.i(Strobe_ainput_I_driver),
+	.ibar(gnd),
+	.o(Strobe_ainput_o));
+// synopsys translate_off
+defparam Strobe_ainput.bus_hold = "false";
+defparam Strobe_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Xflag_ainput_I_routing_wire_inst (
+	.datain(Xflag),
+	.dataout(Xflag_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y23_N8
+cycloneive_io_ibuf Xflag_ainput(
+	.i(Xflag_ainput_I_driver),
+	.ibar(gnd),
+	.o(Xflag_ainput_o));
+// synopsys translate_off
+defparam Xflag_ainput.bus_hold = "false";
+defparam Xflag_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+assign Right = Right_aoutput_o;
+
+assign Select = Select_aoutput_o;
+
+assign Stop = Stop_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_101,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+wire a_aALTERA_ASDO_DATA1_a_aibuf_I_driver;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_I_driver;
+wire a_aALTERA_DATA0_a_aibuf_I_driver;
+
+endmodule

@@ -1,0 +1,11 @@
+|Assignment_Circuit3
+A => Ax.IN0
+A => By.IN0
+B => Ax.IN1
+B => By.IN1
+Test => Ax$latch.LATCH_ENABLE
+Test => By$latch.LATCH_ENABLE
+Ax << Ax$latch.DB_MAX_OUTPUT_PORT_TYPE
+By << By$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

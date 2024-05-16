@@ -1,0 +1,354 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "05/16/2024 00:48:48"
+
+// 
+// Device: Altera EP4CE6E22C6 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Assignment_Circuit3 (
+	A,
+	B,
+	Test,
+	Ax,
+	By);
+input 	A;
+input 	B;
+input 	Test;
+output 	Ax;
+output 	By;
+
+// Design Ports Information
+// Ax	=>  Location: PIN_32,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// By	=>  Location: PIN_30,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// A	=>  Location: PIN_28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// B	=>  Location: PIN_11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Test	=>  Location: PIN_23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Assignment_Circuit3_v.sdo");
+// synopsys translate_on
+
+wire Ax_aoutput_o;
+wire By_aoutput_o;
+wire A_ainput_o;
+wire B_ainput_o;
+wire Ax_a0_combout;
+wire Test_ainput_o;
+wire Test_ainputclkctrl_outclk;
+wire Ax$latch_acombout;
+wire By_a0_combout;
+wire By$latch_acombout;
+
+wire Ax_aoutput_I_driver;
+wire By_aoutput_I_driver;
+wire A_ainput_I_driver;
+wire B_ainput_I_driver;
+wire Ax_a0_DATAC_driver;
+wire Ax_a0_DATAD_driver;
+wire Test_ainput_I_driver;
+wire Ax$latch_DATAB_driver;
+wire Ax$latch_DATAC_driver;
+wire Ax$latch_DATAD_driver;
+wire By_a0_DATAC_driver;
+wire By_a0_DATAD_driver;
+wire By$latch_DATAB_driver;
+wire By$latch_DATAC_driver;
+wire By$latch_DATAD_driver;
+wire [3:0] Test_ainputclkctrl_INCLK_bus;
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+cycloneive_routing_wire Ax_aoutput_I_routing_wire_inst (
+	.datain(Ax$latch_acombout),
+	.dataout(Ax_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y6_N16
+cycloneive_io_obuf Ax_aoutput(
+	.i(Ax_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Ax_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam Ax_aoutput.bus_hold = "false";
+defparam Ax_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire By_aoutput_I_routing_wire_inst (
+	.datain(By$latch_acombout),
+	.dataout(By_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y8_N16
+cycloneive_io_obuf By_aoutput(
+	.i(By_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(By_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam By_aoutput.bus_hold = "false";
+defparam By_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire A_ainput_I_routing_wire_inst (
+	.datain(A),
+	.dataout(A_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y9_N8
+cycloneive_io_ibuf A_ainput(
+	.i(A_ainput_I_driver),
+	.ibar(gnd),
+	.o(A_ainput_o));
+// synopsys translate_off
+defparam A_ainput.bus_hold = "false";
+defparam A_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire B_ainput_I_routing_wire_inst (
+	.datain(B),
+	.dataout(B_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y18_N22
+cycloneive_io_ibuf B_ainput(
+	.i(B_ainput_I_driver),
+	.ibar(gnd),
+	.o(B_ainput_o));
+// synopsys translate_off
+defparam B_ainput.bus_hold = "false";
+defparam B_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Ax_a0_DATAC_routing_wire_inst (
+	.datain(A_ainput_o),
+	.dataout(Ax_a0_DATAC_driver));
+
+cycloneive_routing_wire Ax_a0_DATAD_routing_wire_inst (
+	.datain(B_ainput_o),
+	.dataout(Ax_a0_DATAD_driver));
+
+// Location: LCCOMB_X2_Y11_N24
+cycloneive_lcell_comb Ax_a0(
+// Equation(s):
+// Ax_a0_combout = (A_ainput_o & B_ainput_o)
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(Ax_a0_DATAC_driver),
+	.datad(Ax_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(Ax_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Ax_a0.lut_mask = 16'hF000;
+defparam Ax_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Test_ainput_I_routing_wire_inst (
+	.datain(Test),
+	.dataout(Test_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y11_N8
+cycloneive_io_ibuf Test_ainput(
+	.i(Test_ainput_I_driver),
+	.ibar(gnd),
+	.o(Test_ainput_o));
+// synopsys translate_off
+defparam Test_ainput.bus_hold = "false";
+defparam Test_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Test_ainputclkctrl_INCLK_a0_a_routing_wire_inst (
+	.datain(Test_ainput_o),
+	.dataout(Test_ainputclkctrl_INCLK_bus[0]));
+
+cycloneive_routing_wire Test_ainputclkctrl_INCLK_a1_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(Test_ainputclkctrl_INCLK_bus[1]));
+
+cycloneive_routing_wire Test_ainputclkctrl_INCLK_a2_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(Test_ainputclkctrl_INCLK_bus[2]));
+
+cycloneive_routing_wire Test_ainputclkctrl_INCLK_a3_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(Test_ainputclkctrl_INCLK_bus[3]));
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl Test_ainputclkctrl(
+	.ena(vcc),
+	.inclk(Test_ainputclkctrl_INCLK_bus),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(Test_ainputclkctrl_outclk));
+// synopsys translate_off
+defparam Test_ainputclkctrl.clock_type = "global clock";
+defparam Test_ainputclkctrl.ena_register_mode = "none";
+// synopsys translate_on
+
+cycloneive_routing_wire Ax$latch_DATAB_routing_wire_inst (
+	.datain(Ax_a0_combout),
+	.dataout(Ax$latch_DATAB_driver));
+
+cycloneive_routing_wire Ax$latch_DATAC_routing_wire_inst (
+	.datain(Test_ainputclkctrl_outclk),
+	.dataout(Ax$latch_DATAC_driver));
+
+cycloneive_routing_wire Ax$latch_DATAD_routing_wire_inst (
+	.datain(Ax$latch_acombout),
+	.dataout(Ax$latch_DATAD_driver));
+
+// Location: LCCOMB_X1_Y11_N24
+cycloneive_lcell_comb Ax$latch(
+// Equation(s):
+// Ax$latch_acombout = (GLOBAL(Test_ainputclkctrl_outclk) & (Ax_a0_combout)) # (!GLOBAL(Test_ainputclkctrl_outclk) & ((Ax$latch_acombout)))
+
+	.dataa(gnd),
+	.datab(Ax$latch_DATAB_driver),
+	.datac(Ax$latch_DATAC_driver),
+	.datad(Ax$latch_DATAD_driver),
+	.cin(gnd),
+	.combout(Ax$latch_acombout),
+	.cout());
+// synopsys translate_off
+defparam Ax$latch.lut_mask = 16'hCFC0;
+defparam Ax$latch.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire By_a0_DATAC_routing_wire_inst (
+	.datain(A_ainput_o),
+	.dataout(By_a0_DATAC_driver));
+
+cycloneive_routing_wire By_a0_DATAD_routing_wire_inst (
+	.datain(B_ainput_o),
+	.dataout(By_a0_DATAD_driver));
+
+// Location: LCCOMB_X2_Y11_N18
+cycloneive_lcell_comb By_a0(
+// Equation(s):
+// By_a0_combout = (A_ainput_o) # (B_ainput_o)
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(By_a0_DATAC_driver),
+	.datad(By_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(By_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam By_a0.lut_mask = 16'hFFF0;
+defparam By_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire By$latch_DATAB_routing_wire_inst (
+	.datain(By_a0_combout),
+	.dataout(By$latch_DATAB_driver));
+
+cycloneive_routing_wire By$latch_DATAC_routing_wire_inst (
+	.datain(Test_ainputclkctrl_outclk),
+	.dataout(By$latch_DATAC_driver));
+
+cycloneive_routing_wire By$latch_DATAD_routing_wire_inst (
+	.datain(By$latch_acombout),
+	.dataout(By$latch_DATAD_driver));
+
+// Location: LCCOMB_X1_Y11_N10
+cycloneive_lcell_comb By$latch(
+// Equation(s):
+// By$latch_acombout = (GLOBAL(Test_ainputclkctrl_outclk) & ((By$latch_acombout))) # (!GLOBAL(Test_ainputclkctrl_outclk) & (By_a0_combout))
+
+	.dataa(gnd),
+	.datab(By$latch_DATAB_driver),
+	.datac(By$latch_DATAC_driver),
+	.datad(By$latch_DATAD_driver),
+	.cin(gnd),
+	.combout(By$latch_acombout),
+	.cout());
+// synopsys translate_off
+defparam By$latch.lut_mask = 16'hFC0C;
+defparam By$latch.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign Ax = Ax_aoutput_o;
+
+assign By = By_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_101,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+wire a_aALTERA_ASDO_DATA1_a_aibuf_I_driver;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_I_driver;
+wire a_aALTERA_DATA0_a_aibuf_I_driver;
+
+endmodule

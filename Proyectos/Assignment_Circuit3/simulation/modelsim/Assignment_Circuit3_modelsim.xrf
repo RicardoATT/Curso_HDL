@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/Assignment_Circuit3.v
+source_file = 1, C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/Assignment_Circuit3/db/Assignment_Circuit3.cbx.xml
+design_name = Assignment_Circuit3
+instance = comp, Ax_aoutput, Ax~output, Assignment_Circuit3, 1
+instance = comp, By_aoutput, By~output, Assignment_Circuit3, 1
+instance = comp, A_ainput, A~input, Assignment_Circuit3, 1
+instance = comp, B_ainput, B~input, Assignment_Circuit3, 1
+instance = comp, Ax_a0, Ax~0, Assignment_Circuit3, 1
+instance = comp, Test_ainput, Test~input, Assignment_Circuit3, 1
+instance = comp, Test_ainputclkctrl, Test~inputclkctrl, Assignment_Circuit3, 1
+instance = comp, By_a0, By~0, Assignment_Circuit3, 1
+design_name = hard_block
+instance = comp, a_aALTERA_ASDO_DATA1_a_aibuf, ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_FLASH_nCE_nCSO_a_aibuf, ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_DATA0_a_aibuf, ~ALTERA_DATA0~~ibuf, hard_block, 1

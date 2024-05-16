@@ -1,0 +1,39 @@
+`timescale 1 ns/ 1 ps
+module Assignment_Circuit2_vlg_tst();
+	reg Clock;
+	reg Mask;
+	reg Strobe;
+	reg Xflag;
+	wire Right;
+	wire Select;
+	wire Stop;
+
+	Assignment_Circuit2 i1 ( 
+		.Clock(Clock),
+		.Mask(Mask),
+		.Right(Right),
+		.Select(Select),
+		.Stop(Stop),
+		.Strobe(Strobe),
+		.Xflag(Xflag)
+	);
+
+	initial
+	begin
+		Clock = 0;  Mask = 0; Strobe = 0; Xflag = 0;
+		#20;			Mask = 0; Strobe = 0; Xflag = 1;
+		#20;			Mask = 0; Strobe = 1; Xflag = 0;
+		#20;			Mask = 0; Strobe = 1; Xflag = 1;
+		#20;			Mask = 1; Strobe = 0; Xflag = 0;
+		#20;			Mask = 1; Strobe = 0; Xflag = 1;
+		#20;			Mask = 1; Strobe = 1; Xflag = 0;
+		#20;			Mask = 1; Strobe = 1; Xflag = 1;
+		$display("Running testbench at CIC");
+	end
+
+	always
+	begin
+		#5; Clock = ~Clock;
+	end
+
+endmodule 
