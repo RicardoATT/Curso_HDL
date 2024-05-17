@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/simulation/modelsim
+vForGenerate1_Verilog
+Z1 !s110 1715916143
+!i10b 1
+!s100 9ZG9NTP_;n:?H:@4mJY<:0
+IHSU:3Tl>nRzh_CIZozfD40
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1715907283
+Z4 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/ForGenerate1_Verilog.v
+Z5 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/ForGenerate1_Verilog.v
+L0 9
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1715916143.000000
+Z8 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/ForGenerate1_Verilog.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/ForGenerate1_Verilog.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog
+Z12 tCvgOpt 0
+n@for@generate1_@verilog
+vForGenerate1_Verilog_vlg_tst
+R1
+!i10b 1
+!s100 T>[^S<49`nHXCVUNE8Yk^3
+IbzM1NPZ`Vii;0zKInIQ@W3
+R2
+R0
+w1715907990
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/simulation/modelsim/ForGenerate1_Verilog.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/simulation/modelsim/ForGenerate1_Verilog.vt
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/simulation/modelsim/ForGenerate1_Verilog.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/simulation/modelsim/ForGenerate1_Verilog.vt|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate1/ForGenerate1_Verilog/simulation/modelsim
+R12
+n@for@generate1_@verilog_vlg_tst
+vMyOr2
+R1
+!i10b 1
+!s100 0OS0W_;ldmzEScDM_=B]30
+IS]NcLGecdULTjNR^HNTRf0
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@my@or2

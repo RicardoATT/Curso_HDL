@@ -1,0 +1,75 @@
+|ForGenerate1_VHDL
+A[0] => MyOr2:G0:0:U0.Ac
+A[1] => MyOr2:G0:1:U0.Ac
+A[2] => MyOr2:G0:2:U0.Ac
+A[3] => MyOr2:G0:3:U0.Ac
+A[4] => MyOr2:G0:4:U0.Ac
+A[5] => MyOr2:G0:5:U0.Ac
+A[6] => MyOr2:G0:6:U0.Ac
+A[7] => MyOr2:G0:7:U0.Ac
+B[0] => MyOr2:G0:0:U0.Bc
+B[1] => MyOr2:G0:1:U0.Bc
+B[2] => MyOr2:G0:2:U0.Bc
+B[3] => MyOr2:G0:3:U0.Bc
+B[4] => MyOr2:G0:4:U0.Bc
+B[5] => MyOr2:G0:5:U0.Bc
+B[6] => MyOr2:G0:6:U0.Bc
+B[7] => MyOr2:G0:7:U0.Bc
+S1[0] << MyOr2:G0:0:U0.Sc
+S1[1] << MyOr2:G0:1:U0.Sc
+S1[2] << MyOr2:G0:2:U0.Sc
+S1[3] << MyOr2:G0:3:U0.Sc
+S1[4] << MyOr2:G0:4:U0.Sc
+S1[5] << MyOr2:G0:5:U0.Sc
+S1[6] << MyOr2:G0:6:U0.Sc
+S1[7] << MyOr2:G0:7:U0.Sc
+
+
+|ForGenerate1_VHDL|MyOr2:\G0:0:U0
+Ac => Sc.IN0
+Bc => Sc.IN1
+Sc <= Sc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ForGenerate1_VHDL|MyOr2:\G0:1:U0
+Ac => Sc.IN0
+Bc => Sc.IN1
+Sc <= Sc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ForGenerate1_VHDL|MyOr2:\G0:2:U0
+Ac => Sc.IN0
+Bc => Sc.IN1
+Sc <= Sc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ForGenerate1_VHDL|MyOr2:\G0:3:U0
+Ac => Sc.IN0
+Bc => Sc.IN1
+Sc <= Sc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ForGenerate1_VHDL|MyOr2:\G0:4:U0
+Ac => Sc.IN0
+Bc => Sc.IN1
+Sc <= Sc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ForGenerate1_VHDL|MyOr2:\G0:5:U0
+Ac => Sc.IN0
+Bc => Sc.IN1
+Sc <= Sc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ForGenerate1_VHDL|MyOr2:\G0:6:U0
+Ac => Sc.IN0
+Bc => Sc.IN1
+Sc <= Sc.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ForGenerate1_VHDL|MyOr2:\G0:7:U0
+Ac => Sc.IN0
+Bc => Sc.IN1
+Sc <= Sc.DB_MAX_OUTPUT_PORT_TYPE
+
+

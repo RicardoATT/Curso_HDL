@@ -1,0 +1,29 @@
+`timescale 1 ns/ 1 ps
+module ForGenerate2_Verilog_vlg_tst();
+	reg 	[7:0] 	A;
+	reg 	[7:0] 	B;
+	wire 	[7:0]  	S0;
+	wire 	[7:0]  	S1;
+
+	ForGenerate2_Verilog i1 ( 
+		.A(A),
+		.B(B),
+		.S0(S0),
+		.S1(S1)
+	);
+
+	initial
+	begin
+		A = 8'b00000000; B = 8'b00000000;
+		$display("Running testbench at CIC");
+	end
+
+	always
+	begin
+		#10; A = 8'b00001111; B = 8'b00000000;
+		#10; A = 8'b00000000; B = 8'b11110000;
+		#10; A = 8'b10101010; B = 8'b01010101;
+		#10; A = 8'b11111111; B = 8'b11111111;
+	end
+
+endmodule 

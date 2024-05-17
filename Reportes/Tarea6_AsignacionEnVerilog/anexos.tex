@@ -4,18 +4,26 @@
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:mux_str_des,
-	caption={Descripción en Verilog del multiplexor en forma estructural.}
+	label=prog:a_circuit1,
+	caption={Descripción en Verilog del código presentado en clase.}
 ]{
-	../../Proyectos/Mux_Structural_Description/Mux_Structural_Description.v
+	../../Proyectos/Assignment_Circuit1/Assignment_Circuit1.v
 }
 
 \lstinputlisting[
 language=verilog,
-label=prog:mux_ip_catalog,
-caption={Descripción en Verilog del multiplexor en forma estructural, instanciando un archivo creado con \textit{IP Catalog}.}
+label=prog:a_circuit2,
+caption={Descripción en Verilog del código presentado en clase (modificando la segunda asignación).}
 ]{
-	../../Proyectos/Mux_IP_Catalog/Mux_IP_Catalog.v
+	../../Proyectos/Assignment_Circuit2/Assignment_Circuit2.v
+}
+
+\lstinputlisting[
+language=verilog,
+label=prog:a_circuit3,
+caption={Descripción en Verilog del código con estructura \textit{if-else}}
+]{
+	../../Proyectos/Assignment_Circuit3/Assignment_Circuit3.v
 }
 
 \subsection{Bancos de pruebas (\textit{Test Benches})}
@@ -23,16 +31,24 @@ caption={Descripción en Verilog del multiplexor en forma estructural, instancia
 \lstinputlisting[
 	language=verilog,
 	%label=prog:asign,
-	caption={Banco de prueba para el \autoref{prog:mux_str_des}.}
+	caption={Banco de prueba para el \autoref{prog:a_circuit1}.}
 ]{
-	../../Proyectos/Mux_Structural_Description/simulation/modelsim/Mux_Structural_Description.vt
+	../../Proyectos/Assignment_Circuit1/simulation/modelsim/Assignment_Circuit1.vt
 }
 
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:mux_ip_catalog}.}
+caption={Banco de prueba para el \autoref{prog:a_circuit2}.}
 ]{
-	../../Proyectos/Mux_IP_Catalog/simulation/modelsim/Mux_IP_Catalog.vt
+	../../Proyectos/Assignment_Circuit2/simulation/modelsim/Assignment_Circuit2.vt
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:a_circuit3}.}
+]{
+	../../Proyectos/Assignment_Circuit3/simulation/modelsim/Assignment_Circuit3.vt
 }

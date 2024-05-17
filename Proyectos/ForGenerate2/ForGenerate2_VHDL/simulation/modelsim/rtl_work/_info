@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/simulation/modelsim
+Eforgenerate2_vhdl
+Z1 w1715901729
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/ForGenerate2_VHDL.vhd
+Z5 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/ForGenerate2_VHDL.vhd
+l0
+L4
+VRSgDPgd`E65Y]IJdlBK[e2
+!s100 UCUAUieUng`6^D@fkRg]`1
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1715902110
+!i10b 1
+Z8 !s108 1715902110.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/ForGenerate2_VHDL.vhd|
+Z10 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/ForGenerate2_VHDL.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+DEx4 work 17 forgenerate2_vhdl 0 22 RSgDPgd`E65Y]IJdlBK[e2
+l16
+L9
+Vkfo_2KQakkI4jGz<]QjGO0
+!s100 QFoTH^@;Ma7_EDI>V0zGz0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eforgenerate2_vhdl_vhd_tst
+Z13 w1715901877
+R2
+R3
+R0
+Z14 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/simulation/modelsim/ForGenerate2_VHDL.vht
+Z15 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/simulation/modelsim/ForGenerate2_VHDL.vht
+l0
+L4
+VGRf031FJD[@6XRhMP`<ZM3
+!s100 N0QgOgfgohWE?P:OK4Dzd0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/simulation/modelsim/ForGenerate2_VHDL.vht|
+Z17 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ForGenerate2/ForGenerate2_VHDL/simulation/modelsim/ForGenerate2_VHDL.vht|
+!i113 1
+R11
+R12
+Aforgenerate2_vhdl_arch
+R2
+R3
+DEx4 work 25 forgenerate2_vhdl_vhd_tst 0 22 GRf031FJD[@6XRhMP`<ZM3
+l20
+L6
+VIFIXnba3fIF^FX2S@;;jM1
+!s100 DY=of]6Z9V[zZL^D55NlW1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Emyor2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L31
+VJ9_XEoHCBZi82?jj3kL3:3
+!s100 :8?LcD[lCZ0PDdSWjokAQ1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Amyor2_behavior
+R2
+R3
+DEx4 work 5 myor2 0 22 J9_XEoHCBZi82?jj3kL3:3
+l37
+L36
+VXHN1MIa`?2aH0lzf3:2mJ0
+!s100 l`@D2WG3N:e4]T6;FW<Z02
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
