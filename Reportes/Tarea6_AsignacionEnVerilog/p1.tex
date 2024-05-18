@@ -8,13 +8,13 @@
 	\end{minipage}
 \end{center}
 
-La visualización RTL del circuito con múltiples asignaciones, descrito en Verilog, se muestra en la \autoref{fig:a_circuit1_rtl}. La implementación se hace con la instanciación de un multiplexor, denominado ``MyMux'', visualizado en el interior del módulo. Las simulaciones se visualizan en la \autoref{fig:a_circuit1_wave}, en donde se muestra que el multiplexor descrito opera de manera correcta.
+La visualización RTL del circuito con múltiples asignaciones, descrito en Verilog, se muestra en la \autoref{fig:a_circuit1_rtl}. La implementación se hace empleando las compuertas lógicas descritas en el código, no obstante, como se utilizaron operadores de asignación bloqueante y no bloqueante, se usan latches en las señales de salida. Las simulaciones se visualizan en la \autoref{fig:a_circuit1_wave}, en donde se muestra que el módulo opera de manera adecuada, siendo que los latches operan con el cambio de nivel lógico de la señal de \textit{Clock}.
 
-En los Anexos se localiza la descripción en Verilog de este multiplexor. En el código se tienen dos módulos, siendo el primero, el de la jerarquía más alta y en donde se realiza la declaración de las entradas y la salida, para luego instanciar al módulo llamado ``MyMux'' con la etiqueta ``u0''. Cabe señalar que los argumentos de la instancia se deben colocar en el orden correcto. El segundo módulo unicamente es la descripción de un multiplexor sencillo, utilizando el operador condicional ``?''.
+En los Anexos se localiza la descripción en Verilog de este multiplexor. En el código se tiene la declaración de entradas y salidas de la
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.45]{Assignment_Circuit1_RTL.png}
+{\tiny {\tiny }}	\includegraphics[scale=0.45]{Assignment_Circuit1_RTL.png}
 	\caption{Diagrama RTL del circuito con múltiples asignaciones, descrito en Verilog. \label{fig:a_circuit1_rtl}}
 \end{figure}
 
