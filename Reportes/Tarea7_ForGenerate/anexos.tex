@@ -3,19 +3,35 @@
 \subsection{Descripciones del hardware}
 
 \lstinputlisting[
-	language=verilog,
-	label=prog:mux_str_des,
-	caption={Descripción en Verilog del multiplexor en forma estructural.}
+language=vhdl,
+label=prog:forgenerate1_vhdl,
+caption={Descripción en VHDL del arreglo de compuertas OR.}
 ]{
-	../../Proyectos/Mux_Structural_Description/Mux_Structural_Description.v
+	../../Proyectos/ForGenerate1/ForGenerate1_VHDL/ForGenerate1_VHDL.vhd
+}
+
+\lstinputlisting[
+language=vhdl,
+label=prog:forgenerate2_vhdl,
+caption={Descripción en VHDL del arreglo de compuertas OR, AND y XOR.}
+]{
+	../../Proyectos/ForGenerate2/ForGenerate2_VHDL/ForGenerate2_VHDL.vhd
 }
 
 \lstinputlisting[
 language=verilog,
-label=prog:mux_ip_catalog,
-caption={Descripción en Verilog del multiplexor en forma estructural, instanciando un archivo creado con \textit{IP Catalog}.}
+label=prog:forgenerate1_verilog,
+caption={Descripción en Verilog del arreglo de compuertas OR.}
 ]{
-	../../Proyectos/Mux_IP_Catalog/Mux_IP_Catalog.v
+	../../Proyectos/ForGenerate1/ForGenerate1_Verilog/ForGenerate1_Verilog.v
+}
+
+\lstinputlisting[
+language=verilog,
+label=prog:forgenerate2_verilog,
+caption={Descripción en Verilog del arreglo de compuertas OR, AND y XOR.}
+]{
+	../../Proyectos/ForGenerate2/ForGenerate2_Verilog/ForGenerate2_Verilog.v
 }
 
 \subsection{Bancos de pruebas (\textit{Test Benches})}
@@ -23,16 +39,31 @@ caption={Descripción en Verilog del multiplexor en forma estructural, instancia
 \lstinputlisting[
 	language=verilog,
 	%label=prog:asign,
-	caption={Banco de prueba para el \autoref{prog:mux_str_des}.}
+	caption={Banco de prueba para el \autoref{prog:forgenerate1_vhdl}.}
 ]{
-	../../Proyectos/Mux_Structural_Description/simulation/modelsim/Mux_Structural_Description.vt
+	../../Proyectos/ForGenerate1/ForGenerate1_VHDL/simulation/modelsim/ForGenerate1_VHDL.vht
 }
-
 
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:mux_ip_catalog}.}
+caption={Banco de prueba para el \autoref{prog:forgenerate2_vhdl}.}
 ]{
-	../../Proyectos/Mux_IP_Catalog/simulation/modelsim/Mux_IP_Catalog.vt
+	../../Proyectos/ForGenerate2/ForGenerate2_VHDL/simulation/modelsim/ForGenerate2_VHDL.vht
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:forgenerate1_verilog}.}
+]{
+	../../Proyectos/ForGenerate1/ForGenerate1_Verilog/simulation/modelsim/ForGenerate1_Verilog.vt
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:forgenerate2_verilog}.}
+]{
+	../../Proyectos/ForGenerate2/ForGenerate2_Verilog/simulation/modelsim/ForGenerate2_Verilog.vt
 }

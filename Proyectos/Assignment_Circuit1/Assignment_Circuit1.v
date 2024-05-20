@@ -6,6 +6,6 @@ always @(posedge Clock)
 begin
    Right = Right | Strobe;
    Select <= Right | Xflag;
-   Stop <= Select ^Mask;
+   Stop <= Select ^ Mask;
 end
 endmodule 

@@ -1,25 +1,54 @@
-\section{Descripción estructural de un multiplexor con \textit{IP Catalog} \label{sec:s2}}
+\section{\textit{For - Generate} en Verilog \label{sec:s2}}
 
 \begin{center}
 	\begin{minipage}{12cm}
 		\begin{tcolorbox}[title=Actividad 2]
-			Describir el multiplexor en forma estructural usando una función creada por el \textit{IP Catalog} siguiendo los pasos descritos en el documento o presentación. Simular el multiplexor.
+			Investigar cómo se usa la estructura “\textit{generate}” en verilog.
 		\end{tcolorbox}	
 	\end{minipage}
 \end{center}
 
-La visualización RTL del circuito con múltiples asignaciones, descrito en Verilog, se muestra en la \autoref{fig:a_circuit2_rtl}. La implementación se hace con la instanciación de un multiplexor, denominado ``MyMux'', visualizado en el interior del módulo. Las simulaciones se visualizan en la \autoref{fig:a_circuit2_wave}, en donde se muestra que el multiplexor descrito opera de manera correcta.
+\subsection{Definición}
+La declaración \textit{generate}, en Verilog, es una construcción muy útil que genera código sintetizable durante el tiempo de elaboración de forma dinámica. El simulador proporciona un código elaborado del bloque \textit{generate} que tiene las siguientes características:
 
-En los Anexos se localiza la descripción en Verilog de este multiplexor. En el código se tienen dos módulos, siendo el primero, el de la jerarquía más alta y en donde se realiza la declaración de las entradas y la salida, para luego instanciar al módulo llamado ``MyMux'' con la etiqueta ``u0''. Cabe señalar que los argumentos de la instancia se deben colocar en el orden correcto. El segundo módulo unicamente es la descripción de un multiplexor sencillo, utilizando el operador condicional ``?''.
+\begin{itemize}
+	\item Se generan múltiples instancias de módulo, eliminando la repetición de código.
+	\item Se crea una instancia condicional de un bloque de código basado en un parámetro Verilog; sin embargo, el parámetro no está permitido en la declaración de generación.
+\end{itemize}
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=0.45]{Assignment_Circuit2_RTL.png}
-	\caption{Diagrama RTL del circuito con múltiples asignaciones, descrito en Verilog (versión modificada). \label{fig:a_circuit2_rtl}}
-\end{figure}
+Básicamente proporciona control sobre variables, funciones, tareas y declaraciones de creación de instancias. El bloque de generación se escribe dentro de las palabras clave \textit{generate} y \textit{endgenerate}. \cite{vlsiverify}
 
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale=2]{Assignment_Circuit2_Wave.png}
-	\caption{Simulación del circuito con múltiples asignaciones, descrito en Verilog, con el visor de formas de onda de ModelSim (versión modificada). \label{fig:a_circuit2_wave}}
-\end{figure}
+\subsection{Sintaxis}
+Como se observa en el \autoref{prog:forgenerateinverilog}, la estructura \textit{for-generate} tiene los siguiente puntos importantes:
+
+\lstinputlisting[
+language=verilog,
+label=prog:forgenerateinverilog,
+caption={Sintaxis de la estructura \textit{for-generate}, en Verilog.}
+]{
+	codes/ForGenerateInVerilog.v
+}
+
+\begin{itemize}
+	\item \textbf{\textit{genvar}}: Se declara una variable de generación ``i'' de tipo genvar. Esta variable solo es válida dentro del bloque generate.
+	\item \textbf{Valor\_inicial}: Valor inicial de la variable ``i''.
+	\item \textbf{Valor\_final}: Valor final de la variable ``i''.
+	\item \textbf{Incremento:} Incremento de la variable ``i'' en cada iteración. Si no se especifica, el incremento es de 1.
+	\item \textbf{Código repetitivo:} El código que se desea generar para cada valor de ``i''. Este código puede incluir declaraciones de variables, asignaciones, instanciaciones de módulos, etc. \cite{chipverify}
+\end{itemize}
+
+\subsection{Beneficios del \textit{for-generate}}
+
+\begin{itemize}
+	\item \textbf{Mejora la legibilidad del código:} El código repetitivo se organiza de manera más clara y concisa, lo que facilita su comprensión y mantenimiento.
+	\item \textbf{Reduce la redundancia:} Se elimina la necesidad de escribir el mismo código múltiples veces, lo que hace que el código sea más compacto y eficiente.
+	\item \textbf{Aumenta la flexibilidad:} El código generado puede ser parametrizado, lo que permite adaptar el diseño a diferentes necesidades.
+\end{itemize}
+
+\subsection{Consideraciones adicionales}
+\begin{itemize}
+	\item El \textit{for-generate} solo se puede utilizar para generar código dentro de un bloque \textit{generate}.
+	\item La variable de generación ``i'' no se puede utilizar fuera del bloque \textit{for-generate}.
+	\item Es importante usar el incremento adecuado para evitar bucles infinitos.
+	\item Se debe tener cuidado al utilizar el \textit{for-generate} con código sensible al tiempo, como las señales de reloj. \cite{vlsiverify}
+\end{itemize}

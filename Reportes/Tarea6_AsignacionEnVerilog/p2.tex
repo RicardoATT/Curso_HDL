@@ -8,18 +8,18 @@
 	\end{minipage}
 \end{center}
 
-La visualización RTL del circuito con múltiples asignaciones, descrito en Verilog, se muestra en la \autoref{fig:a_circuit2_rtl}. La implementación se hace con la instanciación de un multiplexor, denominado ``MyMux'', visualizado en el interior del módulo. Las simulaciones se visualizan en la \autoref{fig:a_circuit2_wave}, en donde se muestra que el multiplexor descrito opera de manera correcta.
+La visualización RTL del circuito modificado con múltiples asignaciones, descrito en Verilog, se muestra en la \autoref{fig:a_circuit2_rtl}. La implementación se hace empleando las mismas compuertas lógicas y Latches, no obstante, la conexión es diferente, siendo que, una de las entradas de compuerta XOR proviene de la salida de la compuerta OR de la señal \textit{Select}, y no del Latch dispuesto para la misma señal. Las simulaciones se visualizan en la \autoref{fig:a_circuit2_wave}, en donde se muestra que el módulo opera de manera diferente, en comparación con el módulo anterior.
 
-En los Anexos se localiza la descripción en Verilog de este multiplexor. En el código se tienen dos módulos, siendo el primero, el de la jerarquía más alta y en donde se realiza la declaración de las entradas y la salida, para luego instanciar al módulo llamado ``MyMux'' con la etiqueta ``u0''. Cabe señalar que los argumentos de la instancia se deben colocar en el orden correcto. El segundo módulo unicamente es la descripción de un multiplexor sencillo, utilizando el operador condicional ``?''.
+En los Anexos se localiza la descripción en Verilog de este módulo. En el código solo se realiza la modificación de la señal \textit{Select}, utilizando un operador de asignación bloqueante.
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=0.45]{Assignment_Circuit2_RTL.png}
+	\includegraphics[scale=0.23]{Assignment_Circuit2_RTL.png}
 	\caption{Diagrama RTL del circuito con múltiples asignaciones, descrito en Verilog (versión modificada). \label{fig:a_circuit2_rtl}}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
-	\includegraphics[scale=2]{Assignment_Circuit2_Wave.png}
+	\includegraphics[scale=0.7]{Assignment_Circuit2_Wave.png}
 	\caption{Simulación del circuito con múltiples asignaciones, descrito en Verilog, con el visor de formas de onda de ModelSim (versión modificada). \label{fig:a_circuit2_wave}}
 \end{figure}
