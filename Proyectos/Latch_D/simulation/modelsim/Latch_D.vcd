@@ -1,0 +1,53 @@
+$date
+	Thu May 23 22:00:25 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Latch_D_vlg_tst $end
+
+$scope module i1 $end
+$var wire 1 ! NAND4_a0_combout $end
+$var wire 1 " Q_aoutput_o $end
+$var wire 1 # CLK_ainput_o $end
+$var wire 1 $ D_ainput_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x"
+0$
+0#
+x!
+$end
+#10639
+1#
+#11699
+1!
+#15120
+0"
+#20699
+1$
+#20745
+0#
+#30639
+1#
+#31683
+0!
+#35010
+1"
+#40745
+0#
+#40805
+0$
+#50639
+1#
+#51699
+1!
+#55120
+0"

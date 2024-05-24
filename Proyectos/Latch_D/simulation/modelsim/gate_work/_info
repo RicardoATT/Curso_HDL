@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_D/simulation/modelsim
+vhard_block
+Z1 !s110 1716523223
+!i10b 1
+!s100 :@M9:7k1zRe;KcUafSi7<0
+I=<mT]j^5z0QGU6azFBnY]2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1716522174
+Z4 8Latch_D_7_1200mv_85c_slow.vo
+Z5 FLatch_D_7_1200mv_85c_slow.vo
+L0 155
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1716523223.000000
+Z8 !s107 Latch_D_7_1200mv_85c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Latch_D_7_1200mv_85c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vLatch_D
+R1
+!i10b 1
+!s100 HG>5Jl=]SLVWClnN@hM]92
+IO:L<Um70`ZE0_g3gk=KYk0
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@latch_@d
+vLatch_D_vlg_tst
+R1
+!i10b 1
+!s100 6mi6Cz`2boCiE6n;@QS582
+IAHUO2>5096TPQJ3_ekI4V2
+R2
+R0
+w1716520513
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_D/simulation/modelsim/Latch_D.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_D/simulation/modelsim/Latch_D.vt
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_D/simulation/modelsim/Latch_D.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_D/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_D/simulation/modelsim/Latch_D.vt|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_D/simulation/modelsim
+R12
+n@latch_@d_vlg_tst

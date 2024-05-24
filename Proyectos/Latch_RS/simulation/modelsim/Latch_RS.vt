@@ -1,0 +1,30 @@
+`timescale 1 ns/ 1 ps
+module Latch_RS_vlg_tst();
+	reg CLK;
+	reg R;
+	reg S;
+	wire Q;
+
+	Latch_RS i1 ( 
+		.CLK(CLK),
+		.Q(Q),
+		.R(R),
+		.S(S)
+	);
+
+	initial
+	begin
+		CLK = 0; R = 0; S = 0;
+		#10; R = 0; S = 1;
+		#20; R = 0; S = 0;
+		#20; R = 1; S = 0;
+		#20; R = 0; S = 0;
+		$display("Running testbench at CIC");
+	end
+
+	always
+	begin
+		#10; CLK = ~CLK;
+	end
+
+endmodule 

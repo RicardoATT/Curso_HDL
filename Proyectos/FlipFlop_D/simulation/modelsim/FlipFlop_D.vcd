@@ -1,0 +1,75 @@
+$date
+	Thu May 23 23:27:32 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module FlipFlop_D_vlg_tst $end
+
+$scope module i1 $end
+$var wire 1 ! U1_aNAND4_a0_combout $end
+$var wire 1 " U0_aNAND4_a0_combout $end
+$var wire 1 # Q_aoutput_o $end
+$var wire 1 $ CLK_ainput_o $end
+$var wire 1 % D_ainput_o $end
+$var wire 1 & CLK_ainputclkctrl_outclk $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x#
+0$
+x&
+0%
+x"
+x!
+$end
+#173
+0&
+#3579
+1"
+#10730
+1$
+#10917
+1&
+#13196
+1!
+#16659
+0#
+#20719
+1%
+#20836
+0$
+#21009
+0&
+#24027
+0"
+#30730
+1$
+#30917
+1&
+#33192
+0!
+#36566
+1#
+#40825
+0%
+#40836
+0$
+#41009
+0&
+#44404
+1"
+#50730
+1$
+#50917
+1&
+#53196
+1!
+#56659
+0#

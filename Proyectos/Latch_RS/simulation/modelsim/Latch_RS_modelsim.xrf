@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_RS/Latch_RS.v
+source_file = 1, C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/Latch_RS/db/Latch_RS.cbx.xml
+design_name = Latch_RS
+instance = comp, Q_aoutput, Q~output, Latch_RS, 1
+instance = comp, CLK_ainput, CLK~input, Latch_RS, 1
+instance = comp, R_ainput, R~input, Latch_RS, 1
+instance = comp, S_ainput, S~input, Latch_RS, 1
+design_name = hard_block
+instance = comp, a_aALTERA_ASDO_DATA1_a_aibuf, ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_FLASH_nCE_nCSO_a_aibuf, ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, a_aALTERA_DATA0_a_aibuf, ~ALTERA_DATA0~~ibuf, hard_block, 1

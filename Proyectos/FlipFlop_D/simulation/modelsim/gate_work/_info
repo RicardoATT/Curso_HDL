@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FlipFlop_D/simulation/modelsim
+vFlipFlop_D
+Z1 !s110 1716528450
+!i10b 1
+!s100 1YBClSjEoD8[7ZLn1Z<mE3
+IIYCkkA@Uj<b7^^01X4I3V1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1716527945
+Z4 8FlipFlop_D_7_1200mv_85c_slow.vo
+Z5 FFlipFlop_D_7_1200mv_85c_slow.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1716528450.000000
+Z8 !s107 FlipFlop_D_7_1200mv_85c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|FlipFlop_D_7_1200mv_85c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+n@flip@flop_@d
+vFlipFlop_D_vlg_tst
+R1
+!i10b 1
+!s100 770[Bj_=W4[`NDW4a1^6>3
+IlR3F85f=l^GVdE^7oa2]C3
+R2
+R0
+w1716524757
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FlipFlop_D/simulation/modelsim/FlipFlop_D.vt
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FlipFlop_D/simulation/modelsim/FlipFlop_D.vt
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FlipFlop_D/simulation/modelsim/FlipFlop_D.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FlipFlop_D/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FlipFlop_D/simulation/modelsim/FlipFlop_D.vt|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/FlipFlop_D/simulation/modelsim
+R12
+n@flip@flop_@d_vlg_tst
+vhard_block
+R1
+!i10b 1
+!s100 WT6Pl:kkOIdNmNLJQ0l[W3
+IJLBz=nW^HA:mNkU57P=P<3
+R2
+R0
+R3
+R4
+R5
+L0 219
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

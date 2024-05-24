@@ -1,0 +1,289 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "05/23/2024 19:05:18"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Latch_RS (
+	CLK,
+	R,
+	S,
+	Q);
+input 	CLK;
+input 	R;
+input 	S;
+output 	Q;
+
+// Design Ports Information
+// Q	=>  Location: PIN_N3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_M5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// R	=>  Location: PIN_L6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// S	=>  Location: PIN_L7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Latch_RS_v.sdo");
+// synopsys translate_on
+
+wire Q_aoutput_o;
+wire CLK_ainput_o;
+wire R_ainput_o;
+wire Ri_acombout;
+wire S_ainput_o;
+wire Si_acombout;
+wire Qb_acombout;
+wire Qa_acombout;
+
+wire Q_aoutput_I_driver;
+wire CLK_ainput_I_driver;
+wire R_ainput_I_driver;
+wire Ri_DATAA_driver;
+wire Ri_DATAD_driver;
+wire S_ainput_I_driver;
+wire Si_DATAA_driver;
+wire Si_DATAD_driver;
+wire Qb_DATAA_driver;
+wire Qb_DATAD_driver;
+wire Qa_DATAA_driver;
+wire Qa_DATAD_driver;
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+cycloneive_routing_wire Q_aoutput_I_routing_wire_inst (
+	.datain(Qa_acombout),
+	.dataout(Q_aoutput_I_driver));
+
+// Location: IOOBUF_X0_Y46_N23
+cycloneive_io_obuf Q_aoutput(
+	.i(Q_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Q_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam Q_aoutput.bus_hold = "false";
+defparam Q_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
+	.datain(CLK),
+	.dataout(CLK_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y47_N1
+cycloneive_io_ibuf CLK_ainput(
+	.i(CLK_ainput_I_driver),
+	.ibar(gnd),
+	.o(CLK_ainput_o));
+// synopsys translate_off
+defparam CLK_ainput.bus_hold = "false";
+defparam CLK_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire R_ainput_I_routing_wire_inst (
+	.datain(R),
+	.dataout(R_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y47_N22
+cycloneive_io_ibuf R_ainput(
+	.i(R_ainput_I_driver),
+	.ibar(gnd),
+	.o(R_ainput_o));
+// synopsys translate_off
+defparam R_ainput.bus_hold = "false";
+defparam R_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Ri_DATAA_routing_wire_inst (
+	.datain(CLK_ainput_o),
+	.dataout(Ri_DATAA_driver));
+
+cycloneive_routing_wire Ri_DATAD_routing_wire_inst (
+	.datain(R_ainput_o),
+	.dataout(Ri_DATAD_driver));
+
+// Location: LCCOMB_X1_Y47_N10
+cycloneive_lcell_comb Ri(
+// Equation(s):
+// Ri_acombout = LCELL((CLK_ainput_o & R_ainput_o))
+
+	.dataa(Ri_DATAA_driver),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(Ri_DATAD_driver),
+	.cin(gnd),
+	.combout(Ri_acombout),
+	.cout());
+// synopsys translate_off
+defparam Ri.lut_mask = 16'hAA00;
+defparam Ri.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire S_ainput_I_routing_wire_inst (
+	.datain(S),
+	.dataout(S_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y47_N15
+cycloneive_io_ibuf S_ainput(
+	.i(S_ainput_I_driver),
+	.ibar(gnd),
+	.o(S_ainput_o));
+// synopsys translate_off
+defparam S_ainput.bus_hold = "false";
+defparam S_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Si_DATAA_routing_wire_inst (
+	.datain(CLK_ainput_o),
+	.dataout(Si_DATAA_driver));
+
+cycloneive_routing_wire Si_DATAD_routing_wire_inst (
+	.datain(S_ainput_o),
+	.dataout(Si_DATAD_driver));
+
+// Location: LCCOMB_X1_Y47_N6
+cycloneive_lcell_comb Si(
+// Equation(s):
+// Si_acombout = LCELL((CLK_ainput_o & S_ainput_o))
+
+	.dataa(Si_DATAA_driver),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(Si_DATAD_driver),
+	.cin(gnd),
+	.combout(Si_acombout),
+	.cout());
+// synopsys translate_off
+defparam Si.lut_mask = 16'hAA00;
+defparam Si.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Qb_DATAA_routing_wire_inst (
+	.datain(Si_acombout),
+	.dataout(Qb_DATAA_driver));
+
+cycloneive_routing_wire Qb_DATAD_routing_wire_inst (
+	.datain(Qa_acombout),
+	.dataout(Qb_DATAD_driver));
+
+// Location: LCCOMB_X1_Y47_N12
+cycloneive_lcell_comb Qb(
+// Equation(s):
+// Qb_acombout = LCELL((!Si_acombout & !Qa_acombout))
+
+	.dataa(Qb_DATAA_driver),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(Qb_DATAD_driver),
+	.cin(gnd),
+	.combout(Qb_acombout),
+	.cout());
+// synopsys translate_off
+defparam Qb.lut_mask = 16'h0055;
+defparam Qb.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Qa_DATAA_routing_wire_inst (
+	.datain(Ri_acombout),
+	.dataout(Qa_DATAA_driver));
+
+cycloneive_routing_wire Qa_DATAD_routing_wire_inst (
+	.datain(Qb_acombout),
+	.dataout(Qa_DATAD_driver));
+
+// Location: LCCOMB_X1_Y47_N24
+cycloneive_lcell_comb Qa(
+// Equation(s):
+// Qa_acombout = LCELL((!Ri_acombout & !Qb_acombout))
+
+	.dataa(Qa_DATAA_driver),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(Qa_DATAD_driver),
+	.cin(gnd),
+	.combout(Qa_acombout),
+	.cout());
+// synopsys translate_off
+defparam Qa.lut_mask = 16'h0055;
+defparam Qa.sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign Q = Q_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+wire a_aALTERA_ASDO_DATA1_a_aibuf_I_driver;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_I_driver;
+wire a_aALTERA_DATA0_a_aibuf_I_driver;
+
+endmodule

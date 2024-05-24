@@ -1,0 +1,8 @@
+|Latch_RS
+CLK => Ri.IN0
+CLK => Si.IN0
+R => Ri.IN1
+S => Si.IN1
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
