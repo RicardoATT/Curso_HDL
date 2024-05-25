@@ -1,7 +1,7 @@
 |FlipFlop_D
 CLK => CLK.IN1
 D => D.IN1
-Q <= Latch_D:U1.port2
+Q << Latch_D:U1.port2
 
 
 |FlipFlop_D|Latch_D:U0

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/23/2024 23:30:40"
+// DATE "05/25/2024 00:29:52"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -37,9 +37,9 @@ input 	D;
 output 	Q;
 
 // Design Ports Information
-// Q	=>  Location: PIN_W2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CLK	=>  Location: PIN_AB1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// D	=>  Location: PIN_AB2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q	=>  Location: PIN_G19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// D	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -58,8 +58,8 @@ initial $sdf_annotate("FlipFlop_D_7_1200mv_85c_v_slow.sdo");
 // synopsys translate_on
 
 wire Q_aoutput_o;
-wire CLK_ainput_o;
 wire D_ainput_o;
+wire CLK_ainput_o;
 wire U0_aNAND1_acombout;
 wire U0_aNAND3_acombout;
 wire U0_aNAND2_acombout;
@@ -71,11 +71,11 @@ wire U1_aNAND3_acombout;
 wire U1_aNAND4_acombout;
 
 wire Q_aoutput_I_driver;
-wire CLK_ainput_I_driver;
 wire D_ainput_I_driver;
+wire CLK_ainput_I_driver;
 wire U0_aNAND1_DATAA_driver;
 wire U0_aNAND1_DATAD_driver;
-wire U0_aNAND3_DATAC_driver;
+wire U0_aNAND3_DATAA_driver;
 wire U0_aNAND3_DATAD_driver;
 wire U0_aNAND2_DATAA_driver;
 wire U0_aNAND2_DATAD_driver;
@@ -86,9 +86,9 @@ wire U1_aNAND2_DATAB_driver;
 wire U1_aNAND2_DATAD_driver;
 wire U1_aNAND1_DATAB_driver;
 wire U1_aNAND1_DATAD_driver;
-wire U1_aNAND3_DATAA_driver;
+wire U1_aNAND3_DATAC_driver;
 wire U1_aNAND3_DATAD_driver;
-wire U1_aNAND4_DATAB_driver;
+wire U1_aNAND4_DATAC_driver;
 wire U1_aNAND4_DATAD_driver;
 
 hard_block auto_generated_inst(
@@ -100,7 +100,7 @@ cycloneive_routing_wire Q_aoutput_I_routing_wire_inst (
 	.datain(U1_aNAND4_acombout),
 	.dataout(Q_aoutput_I_driver));
 
-// Location: IOOBUF_X0_Y26_N16
+// Location: IOOBUF_X69_Y73_N16
 cycloneive_io_obuf Q_aoutput(
 	.i(Q_aoutput_I_driver),
 	.oe(vcc),
@@ -113,25 +113,11 @@ defparam Q_aoutput.bus_hold = "false";
 defparam Q_aoutput.open_drain_output = "false";
 // synopsys translate_on
 
-cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
-	.datain(CLK),
-	.dataout(CLK_ainput_I_driver));
-
-// Location: IOIBUF_X0_Y27_N22
-cycloneive_io_ibuf CLK_ainput(
-	.i(CLK_ainput_I_driver),
-	.ibar(gnd),
-	.o(CLK_ainput_o));
-// synopsys translate_off
-defparam CLK_ainput.bus_hold = "false";
-defparam CLK_ainput.simulate_z_as = "z";
-// synopsys translate_on
-
 cycloneive_routing_wire D_ainput_I_routing_wire_inst (
 	.datain(D),
 	.dataout(D_ainput_I_driver));
 
-// Location: IOIBUF_X0_Y27_N15
+// Location: IOIBUF_X115_Y17_N1
 cycloneive_io_ibuf D_ainput(
 	.i(D_ainput_I_driver),
 	.ibar(gnd),
@@ -139,6 +125,20 @@ cycloneive_io_ibuf D_ainput(
 // synopsys translate_off
 defparam D_ainput.bus_hold = "false";
 defparam D_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
+	.datain(CLK),
+	.dataout(CLK_ainput_I_driver));
+
+// Location: IOIBUF_X115_Y42_N15
+cycloneive_io_ibuf CLK_ainput(
+	.i(CLK_ainput_I_driver),
+	.ibar(gnd),
+	.o(CLK_ainput_o));
+// synopsys translate_off
+defparam CLK_ainput.bus_hold = "false";
+defparam CLK_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
 cycloneive_routing_wire U0_aNAND1_DATAA_routing_wire_inst (
@@ -149,7 +149,7 @@ cycloneive_routing_wire U0_aNAND1_DATAD_routing_wire_inst (
 	.datain(CLK_ainput_o),
 	.dataout(U0_aNAND1_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N22
+// Location: LCCOMB_X114_Y42_N6
 cycloneive_lcell_comb U0_aNAND1(
 // Equation(s):
 // U0_aNAND1_acombout = LCELL((D_ainput_o) # (CLK_ainput_o))
@@ -166,28 +166,28 @@ defparam U0_aNAND1.lut_mask = 16'hFFAA;
 defparam U0_aNAND1.sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneive_routing_wire U0_aNAND3_DATAC_routing_wire_inst (
+cycloneive_routing_wire U0_aNAND3_DATAA_routing_wire_inst (
 	.datain(U0_aNAND1_acombout),
-	.dataout(U0_aNAND3_DATAC_driver));
+	.dataout(U0_aNAND3_DATAA_driver));
 
 cycloneive_routing_wire U0_aNAND3_DATAD_routing_wire_inst (
 	.datain(U0_aNAND4_acombout),
 	.dataout(U0_aNAND3_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N4
+// Location: LCCOMB_X114_Y42_N4
 cycloneive_lcell_comb U0_aNAND3(
 // Equation(s):
 // U0_aNAND3_acombout = LCELL((!U0_aNAND4_acombout) # (!U0_aNAND1_acombout))
 
-	.dataa(gnd),
+	.dataa(U0_aNAND3_DATAA_driver),
 	.datab(gnd),
-	.datac(U0_aNAND3_DATAC_driver),
+	.datac(gnd),
 	.datad(U0_aNAND3_DATAD_driver),
 	.cin(gnd),
 	.combout(U0_aNAND3_acombout),
 	.cout());
 // synopsys translate_off
-defparam U0_aNAND3.lut_mask = 16'h0FFF;
+defparam U0_aNAND3.lut_mask = 16'h55FF;
 defparam U0_aNAND3.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -199,7 +199,7 @@ cycloneive_routing_wire U0_aNAND2_DATAD_routing_wire_inst (
 	.datain(CLK_ainput_o),
 	.dataout(U0_aNAND2_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N10
+// Location: LCCOMB_X114_Y42_N10
 cycloneive_lcell_comb U0_aNAND2(
 // Equation(s):
 // U0_aNAND2_acombout = LCELL((CLK_ainput_o) # (!D_ainput_o))
@@ -224,7 +224,7 @@ cycloneive_routing_wire U0_aNAND4_DATAD_routing_wire_inst (
 	.datain(U0_aNAND2_acombout),
 	.dataout(U0_aNAND4_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N16
+// Location: LCCOMB_X114_Y42_N0
 cycloneive_lcell_comb U0_aNAND4(
 // Equation(s):
 // U0_aNAND4_acombout = LCELL((!U0_aNAND2_acombout) # (!U0_aNAND3_acombout))
@@ -245,7 +245,7 @@ cycloneive_routing_wire L1_DATAD_routing_wire_inst (
 	.datain(U0_aNAND4_acombout),
 	.dataout(L1_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N0
+// Location: LCCOMB_X114_Y42_N24
 cycloneive_lcell_comb L1(
 // Equation(s):
 // L1_acombout = LCELL(U0_aNAND4_acombout)
@@ -263,17 +263,17 @@ defparam L1.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire U1_aNAND2_DATAB_routing_wire_inst (
-	.datain(CLK_ainput_o),
+	.datain(L1_acombout),
 	.dataout(U1_aNAND2_DATAB_driver));
 
 cycloneive_routing_wire U1_aNAND2_DATAD_routing_wire_inst (
-	.datain(L1_acombout),
+	.datain(CLK_ainput_o),
 	.dataout(U1_aNAND2_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N18
+// Location: LCCOMB_X114_Y42_N26
 cycloneive_lcell_comb U1_aNAND2(
 // Equation(s):
-// U1_aNAND2_acombout = LCELL((!L1_acombout) # (!CLK_ainput_o))
+// U1_aNAND2_acombout = LCELL((!CLK_ainput_o) # (!L1_acombout))
 
 	.dataa(gnd),
 	.datab(U1_aNAND2_DATAB_driver),
@@ -288,14 +288,14 @@ defparam U1_aNAND2.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire U1_aNAND1_DATAB_routing_wire_inst (
-	.datain(CLK_ainput_o),
+	.datain(L1_acombout),
 	.dataout(U1_aNAND1_DATAB_driver));
 
 cycloneive_routing_wire U1_aNAND1_DATAD_routing_wire_inst (
-	.datain(L1_acombout),
+	.datain(CLK_ainput_o),
 	.dataout(U1_aNAND1_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N6
+// Location: LCCOMB_X114_Y42_N22
 cycloneive_lcell_comb U1_aNAND1(
 // Equation(s):
 // U1_aNAND1_acombout = LCELL((L1_acombout) # (!CLK_ainput_o))
@@ -308,57 +308,57 @@ cycloneive_lcell_comb U1_aNAND1(
 	.combout(U1_aNAND1_acombout),
 	.cout());
 // synopsys translate_off
-defparam U1_aNAND1.lut_mask = 16'hFF33;
+defparam U1_aNAND1.lut_mask = 16'hCCFF;
 defparam U1_aNAND1.sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneive_routing_wire U1_aNAND3_DATAA_routing_wire_inst (
+cycloneive_routing_wire U1_aNAND3_DATAC_routing_wire_inst (
 	.datain(U1_aNAND1_acombout),
-	.dataout(U1_aNAND3_DATAA_driver));
+	.dataout(U1_aNAND3_DATAC_driver));
 
 cycloneive_routing_wire U1_aNAND3_DATAD_routing_wire_inst (
 	.datain(U1_aNAND4_acombout),
 	.dataout(U1_aNAND3_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N20
+// Location: LCCOMB_X114_Y42_N20
 cycloneive_lcell_comb U1_aNAND3(
 // Equation(s):
 // U1_aNAND3_acombout = LCELL((!U1_aNAND4_acombout) # (!U1_aNAND1_acombout))
 
-	.dataa(U1_aNAND3_DATAA_driver),
+	.dataa(gnd),
 	.datab(gnd),
-	.datac(gnd),
+	.datac(U1_aNAND3_DATAC_driver),
 	.datad(U1_aNAND3_DATAD_driver),
 	.cin(gnd),
 	.combout(U1_aNAND3_acombout),
 	.cout());
 // synopsys translate_off
-defparam U1_aNAND3.lut_mask = 16'h55FF;
+defparam U1_aNAND3.lut_mask = 16'h0FFF;
 defparam U1_aNAND3.sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneive_routing_wire U1_aNAND4_DATAB_routing_wire_inst (
+cycloneive_routing_wire U1_aNAND4_DATAC_routing_wire_inst (
 	.datain(U1_aNAND2_acombout),
-	.dataout(U1_aNAND4_DATAB_driver));
+	.dataout(U1_aNAND4_DATAC_driver));
 
 cycloneive_routing_wire U1_aNAND4_DATAD_routing_wire_inst (
 	.datain(U1_aNAND3_acombout),
 	.dataout(U1_aNAND4_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N24
+// Location: LCCOMB_X114_Y42_N16
 cycloneive_lcell_comb U1_aNAND4(
 // Equation(s):
 // U1_aNAND4_acombout = LCELL((!U1_aNAND3_acombout) # (!U1_aNAND2_acombout))
 
 	.dataa(gnd),
-	.datab(U1_aNAND4_DATAB_driver),
-	.datac(gnd),
+	.datab(gnd),
+	.datac(U1_aNAND4_DATAC_driver),
 	.datad(U1_aNAND4_DATAD_driver),
 	.cin(gnd),
 	.combout(U1_aNAND4_acombout),
 	.cout());
 // synopsys translate_off
-defparam U1_aNAND4.lut_mask = 16'h33FF;
+defparam U1_aNAND4.lut_mask = 16'h0FFF;
 defparam U1_aNAND4.sum_lutc_input = "datac";
 // synopsys translate_on
 

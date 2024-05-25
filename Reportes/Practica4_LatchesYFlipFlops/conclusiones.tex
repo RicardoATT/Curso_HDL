@@ -1,10 +1,14 @@
 \section{Conclusiones}
 En conclusión, se implementaron los 4 circuitos en lenguaje Verilog de manera exitosa.
 
-Para los flip flop tipo D, se implementaron de manera correcta y se diferenció el funcionamiento del \textit{reset} asíncrono del síncrono, así como sus características físicas en el visor RTL. 
+Para los latches RS y D, se implementaron de manera correcta, usando la directiva \textit{keep} para observar que, al mantenerse las señales internas en el módulo, se utilizan más compuertas lógicos, en el visor RTL, y más celdas lógicas, en el \textit{Technology Map Viewer}. Esto puede resultar en ser una ventajas, ya que al realizar la simulación con retardos (modo lento de 85°C), se observa que los circuitos con directiva \textit{keep}, son ligeramente más lentos.
 
-Para los contadores de 8 bits, se describieron de forma adecuada. Para el contador sencillo se observo como se implementa en el visor RTL, utilizando unicamente un flip flop de 8 bits junto con un sumador en el lazo de retroalimentación. Para el contador completo, se entendió como implementar la señales de control con respecto a un orden de prioridad y se observó la complejidad de este modulo al implementar no solo un flip flop de 8 bits, sino también sumadores, multiplexores y comparadores.
+Para el flip-flop D, se describió el módulo usando la configuración maestro-esclavo con 2 latches D, pero se realizó el mismo análisis que con los latches RS y D, concluyendo en que, las instancias mantienen las señales internas, generando más compuertas y celdas lógicas, y el retardo sigue siendo mayor cuando se emplea a la directiva \textit{keep}.
 
-Se comprobó su funcionamiento utilizando las simulaciones de forma de onda en ModelSim y se asignaron los pines correspondientes en la placa de desarrollo para programar el dispositivo y realizar las pruebas pertinentes en hardware.
+Para el latch D y el flip-flop D, se observó con el \textit{Chip Planner} que no se implementan en los mismos recursos, ya que el latch se implementa en la \textit{Look Up Table} de un elemento lógico, mientras que el flip-flop se implementa de forma directa en el elemento lógico. 
+
+Con el uso de simulaciones con retardos, se visualizó que los circuitos implementados tienen una frecuencia máxima de operación, puesto que en el peor de los casos, la señal de salida va retrasando su respuesta a la señal de entrada
+
+Finalmente, se asignaron los pines correspondientes en la placa de desarrollo para programar el dispositivo y realizar las pruebas pertinentes en hardware.
 
 En los Anexos se pueden encontrar los códigos implementados junto con sus respectivos bancos de pruebas.

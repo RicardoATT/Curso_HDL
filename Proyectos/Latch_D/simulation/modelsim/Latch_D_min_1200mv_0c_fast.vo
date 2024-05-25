@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "05/23/2024 22:02:34"
+// DATE "05/25/2024 00:27:02"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -37,9 +37,9 @@ input 	D;
 output 	Q;
 
 // Design Ports Information
-// Q	=>  Location: PIN_W2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CLK	=>  Location: PIN_AB1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// D	=>  Location: PIN_AB2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q	=>  Location: PIN_G19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_N21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// D	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -86,7 +86,7 @@ cycloneive_routing_wire Q_aoutput_I_routing_wire_inst (
 	.datain(NAND4_acombout),
 	.dataout(Q_aoutput_I_driver));
 
-// Location: IOOBUF_X0_Y26_N16
+// Location: IOOBUF_X69_Y73_N16
 cycloneive_io_obuf Q_aoutput(
 	.i(Q_aoutput_I_driver),
 	.oe(vcc),
@@ -103,7 +103,7 @@ cycloneive_routing_wire D_ainput_I_routing_wire_inst (
 	.datain(D),
 	.dataout(D_ainput_I_driver));
 
-// Location: IOIBUF_X0_Y27_N15
+// Location: IOIBUF_X115_Y17_N1
 cycloneive_io_ibuf D_ainput(
 	.i(D_ainput_I_driver),
 	.ibar(gnd),
@@ -117,7 +117,7 @@ cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
 	.datain(CLK),
 	.dataout(CLK_ainput_I_driver));
 
-// Location: IOIBUF_X0_Y27_N22
+// Location: IOIBUF_X115_Y42_N15
 cycloneive_io_ibuf CLK_ainput(
 	.i(CLK_ainput_I_driver),
 	.ibar(gnd),
@@ -135,7 +135,7 @@ cycloneive_routing_wire NAND2_DATAD_routing_wire_inst (
 	.datain(CLK_ainput_o),
 	.dataout(NAND2_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N10
+// Location: LCCOMB_X114_Y42_N10
 cycloneive_lcell_comb NAND2(
 // Equation(s):
 // NAND2_acombout = LCELL((!CLK_ainput_o) # (!D_ainput_o))
@@ -160,7 +160,7 @@ cycloneive_routing_wire NAND1_DATAD_routing_wire_inst (
 	.datain(CLK_ainput_o),
 	.dataout(NAND1_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N6
+// Location: LCCOMB_X114_Y42_N6
 cycloneive_lcell_comb NAND1(
 // Equation(s):
 // NAND1_acombout = LCELL((D_ainput_o) # (!CLK_ainput_o))
@@ -185,7 +185,7 @@ cycloneive_routing_wire NAND3_DATAD_routing_wire_inst (
 	.datain(NAND4_acombout),
 	.dataout(NAND3_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N12
+// Location: LCCOMB_X114_Y42_N12
 cycloneive_lcell_comb NAND3(
 // Equation(s):
 // NAND3_acombout = LCELL((!NAND4_acombout) # (!NAND1_acombout))
@@ -210,7 +210,7 @@ cycloneive_routing_wire NAND4_DATAD_routing_wire_inst (
 	.datain(NAND3_acombout),
 	.dataout(NAND4_DATAD_driver));
 
-// Location: LCCOMB_X1_Y27_N24
+// Location: LCCOMB_X114_Y42_N16
 cycloneive_lcell_comb NAND4(
 // Equation(s):
 // NAND4_acombout = LCELL((!NAND3_acombout) # (!NAND2_acombout))
