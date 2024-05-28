@@ -8,35 +8,35 @@
 	\end{minipage}
 \end{center}
 
-La visualización RTL, del latch RS implementado con la directiva \textit{keep}, se muestra en la \autoref{fig:Latch_RS_Keep_RTL} y sin esta directiva en la \autoref{fig:Latch_RS_NoKeep_RTL}. Los módulos se diferencian en que el circuito con \textit{keep} conserva más compuertas lógicas que el que no usa la directiva, además de mantener intactas a las señales internas.
+La visualización RTL del latch RS, implementado con la directiva \textit{keep}, se muestra en la \autoref{fig:Latch_RS_Keep_RTL} y sin esta directiva en la \autoref{fig:Latch_RS_NoKeep_RTL}. Los módulos se diferencian en que el circuito con \textit{keep} conserva más compuertas lógicas que el que no usa la directiva, además de mantener intactas a las señales internas.
 
-La visualización con el \textit{Technology Map Viewer}, del latch RS implementado con la directiva \textit{keep}, se muestra en la \autoref{fig:Latch_RS_Keep_TMV} y sin esta directiva en la \autoref{fig:Latch_RS_NoKeep_TMV}. Los módulos se diferencian en que el circuito con \textit{keep} implementa una celda lógica por cada señal interna declarada en el código, mientras que el circuito sin \textit{keep} emplea una sola celda lógica para todo el circuito.
+La visualización con el \textit{Technology Map Viewer} del latch RS, implementado con la directiva \textit{keep}, se muestra en la \autoref{fig:Latch_RS_Keep_TMV} y sin esta directiva en la \autoref{fig:Latch_RS_NoKeep_TMV}. Los módulos se diferencian en que el circuito con \textit{keep} implementa una celda lógica por cada señal interna declarada en el código, mientras que el circuito sin \textit{keep} emplea una sola celda lógica para todo el circuito.
 
-Las simulaciones sin retardos se visualizan en la \autoref{fig:Latch_RS_Keep_Wave} para el latch con directiva \textit{(keep)} y en la \autoref{fig:Latch_RS_NoKeep_Wave} para el latch sin directiva. Ambos circuitos funcionan de la misma manera, de tal forma que 
+Las simulaciones sin retardos se visualizan en la \autoref{fig:Latch_RS_Keep_Wave} para el latch con directiva \textit{(keep)} y en la \autoref{fig:Latch_RS_NoKeep_Wave} para el latch sin directiva. Ambos circuitos funcionan de la misma manera, de tal forma que:
 
 \begin{itemize}
 	\item \textbf{Si S = 0 y R = 0}: La salida mantiene el último estado adquirido.
 	\item \textbf{Si S = 1 y R = 0}: La salida adquiere un valor alto.
 	\item \textbf{Si S = 0 y R = 0}: La salida es restablecida a un nivel bajo.
-	\item \textbf{Si S = 1 y R = 1}: Es un estado prohibido que no se implementó en la simulación
+	\item \textbf{Si S = 1 y R = 1}: Estado prohibido, no se implementó en la simulación
 \end{itemize}
 
 Nótese que los cambios en la salida ocurren unicamente cuando CLK cambia a un nivel lógico alto.
 
 Las simulaciones con retardos (modo lento a 85°C) se visualizan en la \autoref{fig:Latch_RS_Keep_Wave85} para el latch con directiva \textit{keep} y en la \autoref{fig:Latch_RS_NoKeep_Wave85} para el latch sin directiva. Se observa que, debido a que se simuló en el peor de los escenarios, la señal de salida Q, tarda en actualizar su valor en ambas simulaciones, no obstante, para el caso del circuito con \textit{keep}, el retardo es ligeramente mayor en comparación con el circuito sin \textit{keep}.
 
-En los Anexos se localiza la descripción del latch RS. Además de declarar a las entradas y salidas, se describieron a Ri, Si, Qa y Qb como señales internas y por medio de la descripción de flujo de datos de bajo nivel, se asignaron los valores de estas señales y de la salida Q. Cabe resaltar que la diferencia entre los circuitos simulados en este apartado, es la directiva \textit{synthesis keep} en la declaración de las señales internas.
+En los Anexos se localiza la descripción del latch RS. Además de declarar a las entradas y salidas, se describieron a Ri, Si, Qa y Qb como señales internas y por medio de la descripción de flujo de datos de bajo nivel, se asignaron los valores de estas señales y de la salida Q. Cabe resaltar que la diferencia entre los circuitos simulados en este apartado, es la directiva \textit{synthesis keep}, en la declaración de las señales internas.
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.39]{Latch_RS_Keep_RTL.png}
-	\caption{Diagrama RTL del Latch RS, descrito con la directiva \textit{keep}. \label{fig:Latch_RS_Keep_RTL}}
+	\caption{Diagrama RTL del latch RS, descrito con la directiva \textit{keep}. \label{fig:Latch_RS_Keep_RTL}}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.39]{Latch_RS_NoKeep_RTL.png}
-	\caption{Diagrama RTL del Latch RS, descrito sin la directiva \textit{keep}. \label{fig:Latch_RS_NoKeep_RTL}}
+	\caption{Diagrama RTL del latch RS, descrito sin la directiva \textit{keep}. \label{fig:Latch_RS_NoKeep_RTL}}
 \end{figure}
 
 \begin{figure}[ht]
@@ -54,23 +54,23 @@ En los Anexos se localiza la descripción del latch RS. Además de declarar a la
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=1.3]{Latch_RS_Keep_Wave.png}
-	\caption{Simulación sin retardos del Latch RS (descrito con la directiva \textit{keep}) en el visor de formas de onda de ModelSim. \label{fig:Latch_RS_Keep_Wave}}
+	\caption{Simulación sin retardos del latch RS (descrito con la directiva \textit{keep}) en el visor de formas de onda de ModelSim. \label{fig:Latch_RS_Keep_Wave}}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=1.3]{Latch_RS_NoKeep_Wave.png}
-	\caption{Simulación sin retardos del Latch RS (descrito sin la directiva \textit{keep}) en el visor de formas de onda de ModelSim. \label{fig:Latch_RS_NoKeep_Wave}}
+	\caption{Simulación sin retardos del latch RS (descrito sin la directiva \textit{keep}) en el visor de formas de onda de ModelSim. \label{fig:Latch_RS_NoKeep_Wave}}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=1.3]{Latch_RS_Keep_Wave85.png}
-	\caption{Simulación con retardos del Latch RS (descrito con la directiva \textit{keep}) en el visor de formas de onda de ModelSim. \label{fig:Latch_RS_Keep_Wave85}}
+	\caption{Simulación con retardos del latch RS (descrito con la directiva \textit{keep}) en el visor de formas de onda de ModelSim. \label{fig:Latch_RS_Keep_Wave85}}
 \end{figure}
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=1.3]{Latch_RS_NoKeep_Wave85.png}
-	\caption{Simulación sin retardos del Latch RS (descrito sin la directiva \textit{keep}) en el visor de formas de onda de ModelSim. \label{fig:Latch_RS_NoKeep_Wave85}}
+	\caption{Simulación sin retardos del latch RS (descrito sin la directiva \textit{keep}) en el visor de formas de onda de ModelSim. \label{fig:Latch_RS_NoKeep_Wave85}}
 \end{figure}

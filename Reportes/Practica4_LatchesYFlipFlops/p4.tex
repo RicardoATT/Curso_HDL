@@ -8,7 +8,7 @@
 	\end{minipage}
 \end{center}
 
-La visualización RTL, del latch D descrito por comportamiento, se muestra en la \autoref{fig:L_D_RTL} y del flip flop D descrito por comportamiento en la \autoref{fig:FF_D_RTL}. Ahora bien, a través del \textit{Chip Planner} se observa que el latch D se implementa en el elemento lógico de la \autoref{fig:L_D_CP} y el flip-flop D en el elemento de la \autoref{fig:FF_D_CP} (Ver en la \autoref{fig:L_D_CP2} y en la \autoref{fig:FF_D_CP2} los elementos acercados). Aunque pareciera que el latch D y el flip-flop D se efectúan, de igual forma, en un elemento lógico, se observa en la \autoref{fig:L_D_CP3} que el latch se implementa en la \textit{Look Up Table} de un elemento lógico, mientras que en la \autoref{fig:FF_D_CP3} se ve que el flip-flop se implementa de forma directa en el elemento lógico.
+La visualización RTL, del latch D descrito por comportamiento, se muestra en la \autoref{fig:L_D_RTL} y del flip flop D descrito por comportamiento en la \autoref{fig:FF_D_RTL}. Ahora bien, a través del \textit{Chip Planner} se observa que el latch D se implementa en el elemento lógico de la \autoref{fig:L_D_CP} y el flip-flop D en el elemento de la \autoref{fig:FF_D_CP} (Ver en la \autoref{fig:L_D_CP2} y en la \autoref{fig:FF_D_CP2} a los elementos acercados). Aunque pareciera que el latch D y el flip-flop D se efectúan de igual forma en un elemento lógico, se observa en la \autoref{fig:L_D_CP3} que el latch se implementa en la \textit{Look Up Table} de un elemento lógico, mientras que en la \autoref{fig:FF_D_CP3} se ve que el flip-flop se implementa de forma directa en el elemento lógico.
 
 Las simulaciones se visualizan en la \autoref{fig:L_D_Wave} para el latch D y en la \autoref{fig:FF_D_Wave} para el flip-flop D. Se visualiza un correcto funcionamiento de ambos módulos, ya que el latch varía a la salida cuando en CLK hay un cambio al nivel lógico alto, mientras que el flip-flop lo hace con un flaco de subida en CLK.
 
@@ -51,7 +51,7 @@ Las simulaciones se visualizan en la \autoref{fig:L_D_Wave} para el latch D y en
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.4]{L_D_CP3.png}
-	\caption{Latch D visto desde el \textit{Chip Planner} (implementación en elemento lógico). \label{fig:L_D_CP3}}
+	\caption{Latch D visto desde el \textit{Chip Planner} (implementación en \textit{Look Up Table} del elemento lógico). \label{fig:L_D_CP3}}
 \end{figure}
 
 \begin{figure}[ht]

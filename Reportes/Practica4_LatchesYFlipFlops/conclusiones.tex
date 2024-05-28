@@ -1,7 +1,7 @@
 \section{Conclusiones}
 En conclusión, se implementaron los 4 circuitos en lenguaje Verilog de manera exitosa.
 
-Para los latches RS y D, se implementaron de manera correcta, usando la directiva \textit{keep} para observar que, al mantenerse las señales internas en el módulo, se utilizan más compuertas lógicos, en el visor RTL, y más celdas lógicas, en el \textit{Technology Map Viewer}. Esto puede resultar en ser una ventajas, ya que al realizar la simulación con retardos (modo lento de 85°C), se observa que los circuitos con directiva \textit{keep}, son ligeramente más lentos.
+Para los latches RS y D, se implementaron de manera correcta, usando la directiva \textit{keep} para observar que, al mantenerse las señales internas en el módulo, se utilizan más compuertas lógicas, en el visor RTL, y más celdas lógicas, en el \textit{Technology Map Viewer}. Esto puede resultar en una desventaja, ya que al realizar la simulación con retardos (modo lento de 85°C), se observa que los circuitos con directiva \textit{keep}, son ligeramente más lentos.
 
 Para el flip-flop D, se describió el módulo usando la configuración maestro-esclavo con 2 latches D, pero se realizó el mismo análisis que con los latches RS y D, concluyendo en que, las instancias mantienen las señales internas, generando más compuertas y celdas lógicas, y el retardo sigue siendo mayor cuando se emplea a la directiva \textit{keep}.
 

@@ -11,9 +11,9 @@
 	\end{minipage}
 \end{center}
 
-La visualización RTL, del flip-flop D implementado con la directiva \textit{(keep)}, se muestra en la \autoref{fig:FlipFlop_D_Keep_RTL} y sin esta directiva en la \autoref{fig:FlipFlop_D_NoKeep_RTL}. Se observa que dentro de estas instancias se tiene la descripción por flujo de datos de bajo nivel, o sea, la conexión entre compuertas lógicas (Ver \autoref{fig:FlipFlop_D_Keep_RTL2} y \autoref{fig:FlipFlop_D_NoKeep_RTL2}). Los módulos se diferencian en que el circuito con \textit{keep} conserva más compuertas lógicas que el que no usa la directiva, además de mantener intactas a las señales internas.
+La visualización RTL del flip-flop D, implementado con la directiva \textit{keep}, se muestra en la \autoref{fig:FlipFlop_D_Keep_RTL} y sin esta directiva en la \autoref{fig:FlipFlop_D_NoKeep_RTL}. Se observa que dentro de estas instancias se tiene la descripción por flujo de datos de bajo nivel, o sea, la conexión entre compuertas lógicas (Ver \autoref{fig:FlipFlop_D_Keep_RTL2} y \autoref{fig:FlipFlop_D_NoKeep_RTL2}). Los módulos se diferencian en que el circuito con \textit{keep} conserva más compuertas lógicas que el que no usa la directiva, además de mantener intactas a las señales internas.
 
-La visualización con el \textit{Technology Map Viewer}, del flip-flop D implementado con la directiva \textit{keep}, se muestra en la \autoref{fig:FlipFlop_D_Keep_TMV} y sin esta directiva en la \autoref{fig:FlipFlop_D_NoKeep_TMV}. En la \autoref{fig:FlipFlop_D_Keep_TMV2} y \autoref{fig:FlipFlop_D_NoKeep_TMV2}, se observa que dentro de las instancias se generan celdas lógicas. Los módulos se diferencian en que el circuito con \textit{keep} implementa una celda lógica por cada señal interna declarada en la instancia, mientras que el circuito sin \textit{keep} emplea una sola celda lógica para todo el circuito instanciado. Nótese que, la señal que conecta un latch D con el otro, también genera una celda lógica para el circuito con \textit{keep}, ya que es una señal interna del módulo.
+La visualización con el \textit{Technology Map Viewer} del flip-flop D, implementado con la directiva \textit{keep}, se muestra en la \autoref{fig:FlipFlop_D_Keep_TMV} y sin esta directiva en la \autoref{fig:FlipFlop_D_NoKeep_TMV}. En la \autoref{fig:FlipFlop_D_Keep_TMV2} y \autoref{fig:FlipFlop_D_NoKeep_TMV2}, se observa que dentro de las instancias se generan celdas lógicas. Los módulos se diferencian en que el circuito con \textit{keep} implementa una celda lógica por cada señal interna declarada en la instancia, mientras que el circuito sin \textit{keep} emplea una sola celda lógica para todo el circuito instanciado. Nótese que, la señal que conecta un latch D con el otro, también genera una celda lógica para el circuito con \textit{keep}, ya que es una señal interna del módulo.
 
 Las simulaciones sin retardos se visualizan en la \autoref{fig:FlipFlop_D_Keep_Wave} para el flip-flop D con directiva \textit{keep} y en la \autoref{fig:FlipFlop_D_NoKeep_Wave} para el flip-flop D sin directiva. Ambos circuitos funcionan de la misma manera, de tal forma que 
 
@@ -55,7 +55,7 @@ En los Anexos se localiza la descripción del flip-flop D. Tomando como instanci
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.38]{FlipFlop_D_Keep_TMV.png}
-	\caption{Flip-Flop D (descrito sin la directiva \textit{keep}) visto desde el \textit{Technology Map Viewer}. \label{fig:FlipFlop_D_Keep_TMV}}
+	\caption{Flip-Flop D (descrito con la directiva \textit{keep}) visto desde el \textit{Technology Map Viewer}. \label{fig:FlipFlop_D_Keep_TMV}}
 \end{figure}
 
 \begin{figure}[ht]
@@ -67,7 +67,7 @@ En los Anexos se localiza la descripción del flip-flop D. Tomando como instanci
 \begin{figure}[ht]
 	\centering
 	\includegraphics[scale=0.36]{FlipFlop_D_Keep_TMV2.png}
-	\caption{Flip-Flop D (descrito sin la directiva \textit{keep}) visto desde el \textit{Technology Map Viewer} (acercamiento al interior de la instancia). \label{fig:FlipFlop_D_Keep_TMV2}}
+	\caption{Flip-Flop D (descrito con la directiva \textit{keep}) visto desde el \textit{Technology Map Viewer} (acercamiento al interior de la instancia). \label{fig:FlipFlop_D_Keep_TMV2}}
 \end{figure}
 
 \begin{figure}[ht]
