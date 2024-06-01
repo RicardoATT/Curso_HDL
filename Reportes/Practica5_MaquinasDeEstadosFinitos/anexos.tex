@@ -1,0 +1,70 @@
+\section{Anexos}
+
+\subsection{Descripciones del hardware}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:FSM_OneHot,
+	caption={Descripción en Verilog del latch RS.}
+]{
+	../../Proyectos/FSM_OneHot/FSM_OneHot.v
+}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:FSM_OneHot_M,
+	caption={Descripción en Verilog del latch D.}
+]{
+	../../Proyectos/FSM_OneHot_M/FSM_OneHot_M.v
+}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:FSM_Behavior_MB,
+	caption={Descripción en Verilog del flip-flop D, en configuración maestro-esclavo.}
+]{
+	../../Proyectos/FSM_Behavior_MB/FSM_Behavior_MB.v
+}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:FSM_Behavior_OneHot,
+	caption={Descripción en Verilog del latch D, por comportamiento.}
+]{
+	../../Proyectos/FSM_Behavior_OneHot/FSM_Behavior_OneHot.v
+}
+
+\lstinputlisting[
+	language=verilog,
+	label=prog:FSM_2Logical_Shifter,
+	caption={Descripción en Verilog del flip-flop D, por comportamiento.}
+]{
+	../../Proyectos/FSM_2Logical_Shifter/FSM_2Logical_Shifter.v
+}
+
+\lstinputlisting[
+language=verilog,
+label=prog:FSM_1Logical_Shifter,
+caption={Descripción en Verilog del flip-flop D, por comportamiento.}
+]{
+	../../Proyectos/FSM_1Logical_Shifter/FSM_1Logical_Shifter.v
+}
+
+\newpage
+\subsection{Bancos de pruebas (\textit{Test Benches})}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:FSM_OneHot}, \autoref{prog:FSM_OneHot_M}, \autoref{prog:FSM_Behavior_MB} y \autoref{prog:FSM_Behavior_OneHot}.}
+]{
+	../../Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt
+}
+
+\lstinputlisting[
+language=verilog,
+%label=prog:asign,
+caption={Banco de prueba para el \autoref{prog:FSM_2Logical_Shifter} y \autoref{prog:FSM_1Logical_Shifter}.}
+]{
+	../../Proyectos/FSM_2Logical_Shifter/simulation/modelsim/FSM_2Logical_Shifter.vt
+}

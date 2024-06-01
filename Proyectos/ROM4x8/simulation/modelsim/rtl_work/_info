@@ -7,50 +7,50 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim
+Z0 dC:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim
 vROM4x8
-Z1 !s110 1711508595
+Z1 !s110 1712113684
 !i10b 1
 !s100 VMPE5NkGA]TcflO]NMAT02
-INNf_MYTYjmM6UILXhgnB00
+I1]Nfg1Vh36X^3UO1:HhTC1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1711501485
-8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/ROM4x8.v
-FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/ROM4x8.v
+Z3 w1712100908
+8C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/rom4x8.v
+FC:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/rom4x8.v
 L0 1
-Z3 OV;L;10.5b;63
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1711508595.000000
-!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/ROM4x8.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/ROM4x8.v|
+Z5 !s108 1712113684.000000
+!s107 C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/rom4x8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8|C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/rom4x8.v|
 !i113 1
-Z5 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8
-Z6 tCvgOpt 0
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8
+Z7 tCvgOpt 0
 n@r@o@m4x8
 vROM4x8_vlg_tst
 R1
 !i10b 1
 !s100 GWi_UANiCSW9bKB^=S4XN2
-IdXXC9>VWg7OXL9NG20g6j1
+I8CaHMT;hFYeciI[miF1ZO2
 R2
 R0
-w1711508486
-8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt
-FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt
-L0 2
 R3
+8C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt
+FC:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt
+L0 2
+R4
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt|
-!i113 1
 R5
-!s92 -vlog01compat -work work +incdir+C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim
+!s107 C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim|C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim/ROM4x8.vt|
+!i113 1
 R6
+!s92 -vlog01compat -work work +incdir+C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/ROM4x8/simulation/modelsim
+R7
 n@r@o@m4x8_vlg_tst

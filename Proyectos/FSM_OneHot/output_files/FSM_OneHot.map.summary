@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jun 01 14:31:35 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : FSM_OneHot
+Top-level Entity Name : FSM_OneHot
+Family : Cyclone IV E
+Total logic elements : 12
+    Total combinational functions : 11
+    Dedicated logic registers : 10
+Total registers : 10
+Total pins : 4
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

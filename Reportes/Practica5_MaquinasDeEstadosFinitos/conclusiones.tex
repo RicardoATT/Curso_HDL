@@ -1,0 +1,14 @@
+\section{Conclusiones}
+En conclusión, se implementaron los 4 circuitos en lenguaje Verilog de manera exitosa.
+
+Para los latches RS y D, se implementaron de manera correcta, usando la directiva \textit{keep} para observar que, al mantenerse las señales internas en el módulo, se utilizan más compuertas lógicas, en el visor RTL, y más celdas lógicas, en el \textit{Technology Map Viewer}. Esto puede resultar en una desventaja, ya que al realizar la simulación con retardos (modo lento de 85°C), se observa que los circuitos con directiva \textit{keep}, son ligeramente más lentos.
+
+Para el flip-flop D, se describió el módulo usando la configuración maestro-esclavo con 2 latches D, pero se realizó el mismo análisis que con los latches RS y D, concluyendo en que, las instancias mantienen las señales internas, generando más compuertas y celdas lógicas, y el retardo sigue siendo mayor cuando se emplea a la directiva \textit{keep}.
+
+Para el latch D y el flip-flop D, se observó con el \textit{Chip Planner} que no se implementan en los mismos recursos, ya que el latch se implementa en la \textit{Look Up Table} de un elemento lógico, mientras que el flip-flop se implementa de forma directa en el elemento lógico. 
+
+Con el uso de simulaciones con retardos, se visualizó que los circuitos implementados tienen una frecuencia máxima de operación, puesto que en el peor de los casos, la señal de salida va retrasando su respuesta a la señal de entrada
+
+Finalmente, se asignaron los pines correspondientes en la placa de desarrollo para programar el dispositivo y realizar las pruebas pertinentes en hardware.
+
+En los Anexos se pueden encontrar los códigos implementados junto con sus respectivos bancos de pruebas.
