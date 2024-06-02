@@ -1,0 +1,653 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "06/02/2024 03:05:48"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module FSM_2ShiftRegister (
+	CLK,
+	RST,
+	W,
+	S);
+input 	CLK;
+input 	RST;
+input 	W;
+output 	S;
+
+// Design Ports Information
+// S	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// W	=>  Location: PIN_B6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_J1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RST	=>  Location: PIN_Y2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("FSM_2ShiftRegister_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire S_aoutput_o;
+wire CLK_ainput_o;
+wire CLK_ainputclkctrl_outclk;
+wire W_ainput_o;
+wire RST_ainput_o;
+wire RST_ainputclkctrl_outclk;
+wire Ones_a1_a_afeeder_combout;
+wire Equal1_a0_combout;
+wire Zeros_a0_a_a0_combout;
+wire Zeros_a1_a_afeeder_combout;
+wire Equal0_a0_combout;
+wire always0_a0_combout;
+wire S_areg0_q;
+wire [3:0] Zeros;
+wire [3:0] Ones;
+
+wire S_aoutput_I_driver;
+wire CLK_ainput_I_driver;
+wire W_ainput_I_driver;
+wire RST_ainput_I_driver;
+wire Ones_a0_a_CLK_driver;
+wire Ones_a0_a_ASDATA_driver;
+wire Ones_a0_a_CLRN_driver;
+wire Ones_a1_a_afeeder_DATAD_driver;
+wire Ones_a1_a_CLK_driver;
+wire Ones_a1_a_D_driver;
+wire Ones_a1_a_CLRN_driver;
+wire Ones_a2_a_CLK_driver;
+wire Ones_a2_a_ASDATA_driver;
+wire Ones_a2_a_CLRN_driver;
+wire Equal1_a0_DATAA_driver;
+wire Equal1_a0_DATAB_driver;
+wire Equal1_a0_DATAC_driver;
+wire Equal1_a0_DATAD_driver;
+wire Zeros_a0_a_a0_DATAC_driver;
+wire Zeros_a0_a_CLK_driver;
+wire Zeros_a0_a_D_driver;
+wire Zeros_a0_a_CLRN_driver;
+wire Zeros_a1_a_afeeder_DATAC_driver;
+wire Zeros_a1_a_CLK_driver;
+wire Zeros_a1_a_D_driver;
+wire Zeros_a1_a_CLRN_driver;
+wire Zeros_a2_a_CLK_driver;
+wire Zeros_a2_a_ASDATA_driver;
+wire Zeros_a2_a_CLRN_driver;
+wire Equal0_a0_DATAA_driver;
+wire Equal0_a0_DATAB_driver;
+wire Equal0_a0_DATAC_driver;
+wire Equal0_a0_DATAD_driver;
+wire always0_a0_DATAC_driver;
+wire always0_a0_DATAD_driver;
+wire S_areg0_CLK_driver;
+wire S_areg0_D_driver;
+wire S_areg0_CLRN_driver;
+wire [3:0] RST_ainputclkctrl_INCLK_bus;
+wire [3:0] CLK_ainputclkctrl_INCLK_bus;
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+cycloneive_routing_wire S_aoutput_I_routing_wire_inst (
+	.datain(S_areg0_q),
+	.dataout(S_aoutput_I_driver));
+
+// Location: IOOBUF_X27_Y73_N16
+cycloneive_io_obuf S_aoutput(
+	.i(S_aoutput_I_driver),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(S_aoutput_o),
+	.obar());
+// synopsys translate_off
+defparam S_aoutput.bus_hold = "false";
+defparam S_aoutput.open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
+	.datain(CLK),
+	.dataout(CLK_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y36_N8
+cycloneive_io_ibuf CLK_ainput(
+	.i(CLK_ainput_I_driver),
+	.ibar(gnd),
+	.o(CLK_ainput_o));
+// synopsys translate_off
+defparam CLK_ainput.bus_hold = "false";
+defparam CLK_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire CLK_ainputclkctrl_INCLK_a0_a_routing_wire_inst (
+	.datain(CLK_ainput_o),
+	.dataout(CLK_ainputclkctrl_INCLK_bus[0]));
+
+cycloneive_routing_wire CLK_ainputclkctrl_INCLK_a1_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(CLK_ainputclkctrl_INCLK_bus[1]));
+
+cycloneive_routing_wire CLK_ainputclkctrl_INCLK_a2_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(CLK_ainputclkctrl_INCLK_bus[2]));
+
+cycloneive_routing_wire CLK_ainputclkctrl_INCLK_a3_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(CLK_ainputclkctrl_INCLK_bus[3]));
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl CLK_ainputclkctrl(
+	.ena(vcc),
+	.inclk(CLK_ainputclkctrl_INCLK_bus),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(CLK_ainputclkctrl_outclk));
+// synopsys translate_off
+defparam CLK_ainputclkctrl.clock_type = "global clock";
+defparam CLK_ainputclkctrl.ena_register_mode = "none";
+// synopsys translate_on
+
+cycloneive_routing_wire W_ainput_I_routing_wire_inst (
+	.datain(W),
+	.dataout(W_ainput_I_driver));
+
+// Location: IOIBUF_X27_Y73_N22
+cycloneive_io_ibuf W_ainput(
+	.i(W_ainput_I_driver),
+	.ibar(gnd),
+	.o(W_ainput_o));
+// synopsys translate_off
+defparam W_ainput.bus_hold = "false";
+defparam W_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire RST_ainput_I_routing_wire_inst (
+	.datain(RST),
+	.dataout(RST_ainput_I_driver));
+
+// Location: IOIBUF_X0_Y36_N15
+cycloneive_io_ibuf RST_ainput(
+	.i(RST_ainput_I_driver),
+	.ibar(gnd),
+	.o(RST_ainput_o));
+// synopsys translate_off
+defparam RST_ainput.bus_hold = "false";
+defparam RST_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire RST_ainputclkctrl_INCLK_a0_a_routing_wire_inst (
+	.datain(RST_ainput_o),
+	.dataout(RST_ainputclkctrl_INCLK_bus[0]));
+
+cycloneive_routing_wire RST_ainputclkctrl_INCLK_a1_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(RST_ainputclkctrl_INCLK_bus[1]));
+
+cycloneive_routing_wire RST_ainputclkctrl_INCLK_a2_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(RST_ainputclkctrl_INCLK_bus[2]));
+
+cycloneive_routing_wire RST_ainputclkctrl_INCLK_a3_a_routing_wire_inst (
+	.datain(vcc),
+	.dataout(RST_ainputclkctrl_INCLK_bus[3]));
+
+// Location: CLKCTRL_G4
+cycloneive_clkctrl RST_ainputclkctrl(
+	.ena(vcc),
+	.inclk(RST_ainputclkctrl_INCLK_bus),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(RST_ainputclkctrl_outclk));
+// synopsys translate_off
+defparam RST_ainputclkctrl.clock_type = "global clock";
+defparam RST_ainputclkctrl.ena_register_mode = "none";
+// synopsys translate_on
+
+cycloneive_routing_wire Ones_a0_a_CLK_routing_wire_inst (
+	.datain(CLK_ainputclkctrl_outclk),
+	.dataout(Ones_a0_a_CLK_driver));
+
+cycloneive_routing_wire Ones_a0_a_ASDATA_routing_wire_inst (
+	.datain(W_ainput_o),
+	.dataout(Ones_a0_a_ASDATA_driver));
+
+cycloneive_routing_wire Ones_a0_a_CLRN_routing_wire_inst (
+	.datain(RST_ainputclkctrl_outclk),
+	.dataout(Ones_a0_a_CLRN_driver));
+
+// Location: FF_X27_Y72_N1
+dffeas Ones_a0_a(
+	.clk(Ones_a0_a_CLK_driver),
+	.d(gnd),
+	.asdata(Ones_a0_a_ASDATA_driver),
+	.clrn(Ones_a0_a_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Ones[0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam Ones_a0_a.is_wysiwyg = "true";
+defparam Ones_a0_a.power_up = "low";
+// synopsys translate_on
+
+cycloneive_routing_wire Ones_a1_a_afeeder_DATAD_routing_wire_inst (
+	.datain(Ones[0]),
+	.dataout(Ones_a1_a_afeeder_DATAD_driver));
+
+// Location: LCCOMB_X27_Y72_N6
+cycloneive_lcell_comb Ones_a1_a_afeeder(
+// Equation(s):
+// Ones_a1_a_afeeder_combout = Ones[0]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(Ones_a1_a_afeeder_DATAD_driver),
+	.cin(gnd),
+	.combout(Ones_a1_a_afeeder_combout),
+	.cout());
+// synopsys translate_off
+defparam Ones_a1_a_afeeder.lut_mask = 16'hFF00;
+defparam Ones_a1_a_afeeder.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Ones_a1_a_CLK_routing_wire_inst (
+	.datain(CLK_ainputclkctrl_outclk),
+	.dataout(Ones_a1_a_CLK_driver));
+
+cycloneive_routing_wire Ones_a1_a_D_routing_wire_inst (
+	.datain(Ones_a1_a_afeeder_combout),
+	.dataout(Ones_a1_a_D_driver));
+
+cycloneive_routing_wire Ones_a1_a_CLRN_routing_wire_inst (
+	.datain(RST_ainputclkctrl_outclk),
+	.dataout(Ones_a1_a_CLRN_driver));
+
+// Location: FF_X27_Y72_N7
+dffeas Ones_a1_a(
+	.clk(Ones_a1_a_CLK_driver),
+	.d(Ones_a1_a_D_driver),
+	.asdata(vcc),
+	.clrn(Ones_a1_a_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Ones[1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam Ones_a1_a.is_wysiwyg = "true";
+defparam Ones_a1_a.power_up = "low";
+// synopsys translate_on
+
+cycloneive_routing_wire Ones_a2_a_CLK_routing_wire_inst (
+	.datain(CLK_ainputclkctrl_outclk),
+	.dataout(Ones_a2_a_CLK_driver));
+
+cycloneive_routing_wire Ones_a2_a_ASDATA_routing_wire_inst (
+	.datain(Ones[1]),
+	.dataout(Ones_a2_a_ASDATA_driver));
+
+cycloneive_routing_wire Ones_a2_a_CLRN_routing_wire_inst (
+	.datain(RST_ainputclkctrl_outclk),
+	.dataout(Ones_a2_a_CLRN_driver));
+
+// Location: FF_X27_Y72_N5
+dffeas Ones_a2_a(
+	.clk(Ones_a2_a_CLK_driver),
+	.d(gnd),
+	.asdata(Ones_a2_a_ASDATA_driver),
+	.clrn(Ones_a2_a_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Ones[2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam Ones_a2_a.is_wysiwyg = "true";
+defparam Ones_a2_a.power_up = "low";
+// synopsys translate_on
+
+cycloneive_routing_wire Equal1_a0_DATAA_routing_wire_inst (
+	.datain(W_ainput_o),
+	.dataout(Equal1_a0_DATAA_driver));
+
+cycloneive_routing_wire Equal1_a0_DATAB_routing_wire_inst (
+	.datain(Ones[0]),
+	.dataout(Equal1_a0_DATAB_driver));
+
+cycloneive_routing_wire Equal1_a0_DATAC_routing_wire_inst (
+	.datain(Ones[2]),
+	.dataout(Equal1_a0_DATAC_driver));
+
+cycloneive_routing_wire Equal1_a0_DATAD_routing_wire_inst (
+	.datain(Ones[1]),
+	.dataout(Equal1_a0_DATAD_driver));
+
+// Location: LCCOMB_X27_Y72_N4
+cycloneive_lcell_comb Equal1_a0(
+// Equation(s):
+// Equal1_a0_combout = (W_ainput_o & (Ones[0] & (Ones[2] & Ones[1])))
+
+	.dataa(Equal1_a0_DATAA_driver),
+	.datab(Equal1_a0_DATAB_driver),
+	.datac(Equal1_a0_DATAC_driver),
+	.datad(Equal1_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(Equal1_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Equal1_a0.lut_mask = 16'h8000;
+defparam Equal1_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Zeros_a0_a_a0_DATAC_routing_wire_inst (
+	.datain(W_ainput_o),
+	.dataout(Zeros_a0_a_a0_DATAC_driver));
+
+// Location: LCCOMB_X27_Y72_N10
+cycloneive_lcell_comb Zeros_a0_a_a0(
+// Equation(s):
+// Zeros_a0_a_a0_combout = !W_ainput_o
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(Zeros_a0_a_a0_DATAC_driver),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(Zeros_a0_a_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Zeros_a0_a_a0.lut_mask = 16'h0F0F;
+defparam Zeros_a0_a_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Zeros_a0_a_CLK_routing_wire_inst (
+	.datain(CLK_ainputclkctrl_outclk),
+	.dataout(Zeros_a0_a_CLK_driver));
+
+cycloneive_routing_wire Zeros_a0_a_D_routing_wire_inst (
+	.datain(Zeros_a0_a_a0_combout),
+	.dataout(Zeros_a0_a_D_driver));
+
+cycloneive_routing_wire Zeros_a0_a_CLRN_routing_wire_inst (
+	.datain(RST_ainputclkctrl_outclk),
+	.dataout(Zeros_a0_a_CLRN_driver));
+
+// Location: FF_X27_Y72_N11
+dffeas Zeros_a0_a(
+	.clk(Zeros_a0_a_CLK_driver),
+	.d(Zeros_a0_a_D_driver),
+	.asdata(vcc),
+	.clrn(Zeros_a0_a_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Zeros[0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam Zeros_a0_a.is_wysiwyg = "true";
+defparam Zeros_a0_a.power_up = "low";
+// synopsys translate_on
+
+cycloneive_routing_wire Zeros_a1_a_afeeder_DATAC_routing_wire_inst (
+	.datain(Zeros[0]),
+	.dataout(Zeros_a1_a_afeeder_DATAC_driver));
+
+// Location: LCCOMB_X27_Y72_N28
+cycloneive_lcell_comb Zeros_a1_a_afeeder(
+// Equation(s):
+// Zeros_a1_a_afeeder_combout = Zeros[0]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(Zeros_a1_a_afeeder_DATAC_driver),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(Zeros_a1_a_afeeder_combout),
+	.cout());
+// synopsys translate_off
+defparam Zeros_a1_a_afeeder.lut_mask = 16'hF0F0;
+defparam Zeros_a1_a_afeeder.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire Zeros_a1_a_CLK_routing_wire_inst (
+	.datain(CLK_ainputclkctrl_outclk),
+	.dataout(Zeros_a1_a_CLK_driver));
+
+cycloneive_routing_wire Zeros_a1_a_D_routing_wire_inst (
+	.datain(Zeros_a1_a_afeeder_combout),
+	.dataout(Zeros_a1_a_D_driver));
+
+cycloneive_routing_wire Zeros_a1_a_CLRN_routing_wire_inst (
+	.datain(RST_ainputclkctrl_outclk),
+	.dataout(Zeros_a1_a_CLRN_driver));
+
+// Location: FF_X27_Y72_N29
+dffeas Zeros_a1_a(
+	.clk(Zeros_a1_a_CLK_driver),
+	.d(Zeros_a1_a_D_driver),
+	.asdata(vcc),
+	.clrn(Zeros_a1_a_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Zeros[1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam Zeros_a1_a.is_wysiwyg = "true";
+defparam Zeros_a1_a.power_up = "low";
+// synopsys translate_on
+
+cycloneive_routing_wire Zeros_a2_a_CLK_routing_wire_inst (
+	.datain(CLK_ainputclkctrl_outclk),
+	.dataout(Zeros_a2_a_CLK_driver));
+
+cycloneive_routing_wire Zeros_a2_a_ASDATA_routing_wire_inst (
+	.datain(Zeros[1]),
+	.dataout(Zeros_a2_a_ASDATA_driver));
+
+cycloneive_routing_wire Zeros_a2_a_CLRN_routing_wire_inst (
+	.datain(RST_ainputclkctrl_outclk),
+	.dataout(Zeros_a2_a_CLRN_driver));
+
+// Location: FF_X27_Y72_N3
+dffeas Zeros_a2_a(
+	.clk(Zeros_a2_a_CLK_driver),
+	.d(gnd),
+	.asdata(Zeros_a2_a_ASDATA_driver),
+	.clrn(Zeros_a2_a_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Zeros[2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam Zeros_a2_a.is_wysiwyg = "true";
+defparam Zeros_a2_a.power_up = "low";
+// synopsys translate_on
+
+cycloneive_routing_wire Equal0_a0_DATAA_routing_wire_inst (
+	.datain(W_ainput_o),
+	.dataout(Equal0_a0_DATAA_driver));
+
+cycloneive_routing_wire Equal0_a0_DATAB_routing_wire_inst (
+	.datain(Zeros[1]),
+	.dataout(Equal0_a0_DATAB_driver));
+
+cycloneive_routing_wire Equal0_a0_DATAC_routing_wire_inst (
+	.datain(Zeros[2]),
+	.dataout(Equal0_a0_DATAC_driver));
+
+cycloneive_routing_wire Equal0_a0_DATAD_routing_wire_inst (
+	.datain(Zeros[0]),
+	.dataout(Equal0_a0_DATAD_driver));
+
+// Location: LCCOMB_X27_Y72_N2
+cycloneive_lcell_comb Equal0_a0(
+// Equation(s):
+// Equal0_a0_combout = (!W_ainput_o & (Zeros[1] & (Zeros[2] & Zeros[0])))
+
+	.dataa(Equal0_a0_DATAA_driver),
+	.datab(Equal0_a0_DATAB_driver),
+	.datac(Equal0_a0_DATAC_driver),
+	.datad(Equal0_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(Equal0_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam Equal0_a0.lut_mask = 16'h4000;
+defparam Equal0_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire always0_a0_DATAC_routing_wire_inst (
+	.datain(Equal1_a0_combout),
+	.dataout(always0_a0_DATAC_driver));
+
+cycloneive_routing_wire always0_a0_DATAD_routing_wire_inst (
+	.datain(Equal0_a0_combout),
+	.dataout(always0_a0_DATAD_driver));
+
+// Location: LCCOMB_X27_Y72_N24
+cycloneive_lcell_comb always0_a0(
+// Equation(s):
+// always0_a0_combout = (Equal1_a0_combout) # (Equal0_a0_combout)
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(always0_a0_DATAC_driver),
+	.datad(always0_a0_DATAD_driver),
+	.cin(gnd),
+	.combout(always0_a0_combout),
+	.cout());
+// synopsys translate_off
+defparam always0_a0.lut_mask = 16'hFFF0;
+defparam always0_a0.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire S_areg0_CLK_routing_wire_inst (
+	.datain(CLK_ainputclkctrl_outclk),
+	.dataout(S_areg0_CLK_driver));
+
+cycloneive_routing_wire S_areg0_D_routing_wire_inst (
+	.datain(always0_a0_combout),
+	.dataout(S_areg0_D_driver));
+
+cycloneive_routing_wire S_areg0_CLRN_routing_wire_inst (
+	.datain(RST_ainputclkctrl_outclk),
+	.dataout(S_areg0_CLRN_driver));
+
+// Location: FF_X27_Y72_N25
+dffeas S_areg0(
+	.clk(S_areg0_CLK_driver),
+	.d(S_areg0_D_driver),
+	.asdata(vcc),
+	.clrn(S_areg0_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(S_areg0_q),
+	.prn(vcc));
+// synopsys translate_off
+defparam S_areg0.is_wysiwyg = "true";
+defparam S_areg0.power_up = "low";
+// synopsys translate_on
+
+assign S = S_aoutput_o;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire a_aALTERA_ASDO_DATA1_a_apadout;
+wire a_aALTERA_FLASH_nCE_nCSO_a_apadout;
+wire a_aALTERA_DATA0_a_apadout;
+wire a_aALTERA_ASDO_DATA1_a_aibuf_o;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_o;
+wire a_aALTERA_DATA0_a_aibuf_o;
+
+wire a_aALTERA_ASDO_DATA1_a_aibuf_I_driver;
+wire a_aALTERA_FLASH_nCE_nCSO_a_aibuf_I_driver;
+wire a_aALTERA_DATA0_a_aibuf_I_driver;
+
+endmodule

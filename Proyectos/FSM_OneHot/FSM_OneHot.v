@@ -39,7 +39,7 @@ begin
 		Y6 <= Y5 &  W;
 		Y7 <= Y6 &  W;
 		Y8 <= Y7 &  W | Y8 & W;
-		//Estado de aceptación
+		/*Estado de aceptación*/
 		S  <= Y3 & ~W | Y4 & ~W | Y7 &  W | Y8 &  W;
 	end
 end

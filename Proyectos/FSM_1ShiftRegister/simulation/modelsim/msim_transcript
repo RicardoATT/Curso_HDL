@@ -1,0 +1,55 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do FSM_1ShiftRegister_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_1ShiftRegister {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_1ShiftRegister/FSM_1ShiftRegister.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:51:17 on Jun 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_1ShiftRegister" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_1ShiftRegister/FSM_1ShiftRegister.v 
+# -- Compiling module FSM_1ShiftRegister
+# 
+# Top level modules:
+# 	FSM_1ShiftRegister
+# End time: 03:51:17 on Jun 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Ricardo\ Aldair\ TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_1ShiftRegister/simulation/modelsim {C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_1ShiftRegister/simulation/modelsim/FSM_1ShiftRegister.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 03:51:17 on Jun 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_1ShiftRegister/simulation/modelsim" C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_1ShiftRegister/simulation/modelsim/FSM_1ShiftRegister.vt 
+# -- Compiling module FSM_1ShiftRegister_vlg_tst
+# 
+# Top level modules:
+# 	FSM_1ShiftRegister_vlg_tst
+# End time: 03:51:17 on Jun 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  FSM_1ShiftRegister_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" FSM_1ShiftRegister_vlg_tst 
+# Start time: 03:51:17 on Jun 02,2024
+# Loading work.FSM_1ShiftRegister_vlg_tst
+# Loading work.FSM_1ShiftRegister
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 300 ns
+# Running testbench at CIC
+add wave -position insertpoint  \
+sim:/FSM_1ShiftRegister_vlg_tst/i1/ZerosOnes \
+sim:/FSM_1ShiftRegister_vlg_tst/i1/BeforeWasOne
+restart
+run
+# Running testbench at CIC
+# End time: 03:55:38 on Jun 02,2024, Elapsed time: 0:04:21
+# Errors: 0, Warnings: 0

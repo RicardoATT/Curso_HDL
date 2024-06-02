@@ -1,0 +1,23 @@
+
+State Machine - |FSM_Behavior_MB|NextState
+Name NextState.I NextState.H NextState.G NextState.F NextState.E NextState.D NextState.C NextState.B 
+NextState.B 0 0 0 0 0 0 0 0 
+NextState.C 0 0 0 0 0 0 1 1 
+NextState.D 0 0 0 0 0 1 0 1 
+NextState.E 0 0 0 0 1 0 0 1 
+NextState.F 0 0 0 1 0 0 0 1 
+NextState.G 0 0 1 0 0 0 0 1 
+NextState.H 0 1 0 0 0 0 0 1 
+NextState.I 1 0 0 0 0 0 0 1 
+
+State Machine - |FSM_Behavior_MB|State
+Name State.I State.H State.G State.F State.E State.D State.C State.B State.A 
+State.A 0 0 0 0 0 0 0 0 0 
+State.B 0 0 0 0 0 0 0 1 1 
+State.C 0 0 0 0 0 0 1 0 1 
+State.D 0 0 0 0 0 1 0 0 1 
+State.E 0 0 0 0 1 0 0 0 1 
+State.F 0 0 0 1 0 0 0 0 1 
+State.G 0 0 1 0 0 0 0 0 1 
+State.H 0 1 0 0 0 0 0 0 1 
+State.I 1 0 0 0 0 0 0 0 1 

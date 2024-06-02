@@ -7,50 +7,50 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim
+Z0 dC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim
 vFSM_OneHot
-Z1 !s110 1717278635
+Z1 !s110 1717311353
 !i10b 1
 !s100 HBckiDC`jj3B^@hY6ISjU0
-Ia0=;E2kA9`@mMWaP;]gW72
+I`NlDbnoSLlLIb3Q88fkN61
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1717273186
-8C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/FSM_OneHot.v
-FC:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/FSM_OneHot.v
+w1717301337
+8C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/fsm_onehot.v
+FC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/fsm_onehot.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1717278635.000000
-!s107 C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/FSM_OneHot.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot|C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/FSM_OneHot.v|
+!s108 1717311352.000000
+!s107 C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/fsm_onehot.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot|C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/fsm_onehot.v|
 !i113 1
-Z5 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot
-Z6 tCvgOpt 0
+Z4 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot}
+Z5 tCvgOpt 0
 n@f@s@m_@one@hot
 vFSM_OneHot_vlg_tst
 R1
 !i10b 1
-!s100 0IYM63@9bdHG;NFSFbO5i3
-IF[PK`Sj>VC0cD8kc6E2282
+!s100 S;1l=c3VKYh;6j^ZeF_]k2
+IU5LE[O3e:8acSMaEKIUV[0
 R2
 R0
-w1717278603
-8C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt
-FC:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt
+w1717311332
+8C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt
+FC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt
 L0 2
 R3
 r1
 !s85 0
 31
-R4
-!s107 C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim|C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt|
+!s108 1717311353.000000
+!s107 C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim|C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt|
 !i113 1
+R4
+!s92 -vlog01compat -work work {+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim}
 R5
-!s92 -vlog01compat -work work +incdir+C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/simulation/modelsim
-R6
 n@f@s@m_@one@hot_vlg_tst

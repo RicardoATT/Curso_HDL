@@ -1,0 +1,21 @@
+|FSM_1ShiftRegister
+CLK => BeforeWasOne.CLK
+CLK => S~reg0.CLK
+CLK => ZerosOnes[0].CLK
+CLK => ZerosOnes[1].CLK
+CLK => ZerosOnes[2].CLK
+CLK => ZerosOnes[3].CLK
+RST => BeforeWasOne.ACLR
+RST => S~reg0.ACLR
+RST => ZerosOnes[0].ACLR
+RST => ZerosOnes[1].ACLR
+RST => ZerosOnes[2].ACLR
+RST => ZerosOnes[3].ACLR
+W => ZerosOnes.OUTPUTSELECT
+W => ZerosOnes.OUTPUTSELECT
+W => ZerosOnes.OUTPUTSELECT
+W => ZerosOnes.OUTPUTSELECT
+W => BeforeWasOne.DATAIN
+S << S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

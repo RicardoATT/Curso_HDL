@@ -1,0 +1,42 @@
+|FSM_OneHotM
+CLK => S~reg0.CLK
+CLK => Y8.CLK
+CLK => Y7.CLK
+CLK => Y6.CLK
+CLK => Y5.CLK
+CLK => Y4.CLK
+CLK => Y3.CLK
+CLK => Y2.CLK
+CLK => Y1.CLK
+CLK => Y0.CLK
+RST => S~reg0.ACLR
+RST => Y8.ACLR
+RST => Y7.ACLR
+RST => Y6.ACLR
+RST => Y5.ACLR
+RST => Y4.ACLR
+RST => Y3.ACLR
+RST => Y2.ACLR
+RST => Y1.ACLR
+RST => Y0.ACLR
+W => Y5.IN1
+W => Y5.IN1
+W => Y5.IN1
+W => Y5.IN1
+W => Y5.IN1
+W => Y6.IN1
+W => Y7.IN1
+W => S.IN1
+W => S.IN1
+W => S.IN1
+W => S.IN1
+W => Y1.IN1
+W => Y1.IN1
+W => Y1.IN1
+W => Y1.IN1
+W => Y1.IN1
+W => Y2.IN1
+W => Y3.IN1
+S << S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

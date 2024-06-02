@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/simulation/modelsim
+vFSM_Behavior_MB
+Z1 !s110 1717317806
+!i10b 1
+!s100 ?5OSB3hVcW;2zz[:MDm8]3
+IL61G1i249d=lD33Tj]_@30
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1717317518
+8C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/FSM_Behavior_MB.v
+FC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/FSM_Behavior_MB.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1717317806.000000
+!s107 C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/FSM_Behavior_MB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB|C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/FSM_Behavior_MB.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB}
+Z6 tCvgOpt 0
+n@f@s@m_@behavior_@m@b
+vFSM_Behavior_MB_vlg_tst
+R1
+!i10b 1
+!s100 H8aFWC`aJMm^5G2];BjZe2
+IbC5AmM94cEK]GH33f0O]60
+R2
+R0
+w1717317762
+8C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/simulation/modelsim/FSM_Behavior_MB.vt
+FC:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/simulation/modelsim/FSM_Behavior_MB.vt
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/simulation/modelsim/FSM_Behavior_MB.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/simulation/modelsim|C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/simulation/modelsim/FSM_Behavior_MB.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work {+incdir+C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_Behavior_MB/simulation/modelsim}
+R6
+n@f@s@m_@behavior_@m@b_vlg_tst

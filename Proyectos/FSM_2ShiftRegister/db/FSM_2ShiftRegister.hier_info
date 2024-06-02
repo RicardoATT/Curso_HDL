@@ -1,0 +1,22 @@
+|FSM_2ShiftRegister
+CLK => S~reg0.CLK
+CLK => Ones[0].CLK
+CLK => Ones[1].CLK
+CLK => Ones[2].CLK
+CLK => Zeros[0].CLK
+CLK => Zeros[1].CLK
+CLK => Zeros[2].CLK
+RST => S~reg0.ACLR
+RST => Ones[0].ACLR
+RST => Ones[1].ACLR
+RST => Ones[2].ACLR
+RST => Zeros[0].ACLR
+RST => Zeros[1].ACLR
+RST => Zeros[2].ACLR
+W => Ones[0].DATAIN
+W => Zeros[0].DATAIN
+W => Equal0.IN3
+W => Equal1.IN3
+S <= S~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

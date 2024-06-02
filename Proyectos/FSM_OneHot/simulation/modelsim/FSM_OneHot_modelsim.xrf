@@ -1,6 +1,5 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/FSM_OneHot.v
-source_file = 1, C:/Users/ricar/Documents/RATT_repositorios/Curso_HDL/Proyectos/FSM_OneHot/db/FSM_OneHot.cbx.xml
+source_file = 1, C:/Users/Ricardo Aldair TT/Documents/RATT_repos/Curso_HDL/Proyectos/FSM_OneHot/fsm_onehot.v
 design_name = FSM_OneHot
 instance = comp, S_aoutput, S~output, FSM_OneHot, 1
 instance = comp, CLK_ainput, CLK~input, FSM_OneHot, 1
