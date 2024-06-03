@@ -29,17 +29,14 @@ begin
 	else
 	begin
 		Y0 <= 0;
-		/*Secuencia 0000*/
 		Y1 <= Y0 & ~W | Y5 & ~W | Y6 & ~W | Y7 & ~W | Y8 & ~W;
 		Y2 <= Y1 & ~W;
 		Y3 <= Y2 & ~W;
 		Y4 <= Y3 & ~W | Y4 & ~W;
-		/*Secuencia 1111*/
 		Y5 <= Y0 &  W | Y1 &  W | Y2 &  W | Y3 &  W | Y4 &  W;
 		Y6 <= Y5 &  W;
 		Y7 <= Y6 &  W;
 		Y8 <= Y7 &  W | Y8 & W;
-		/*Estado de aceptación*/
 		S  <= Y3 & ~W | Y4 & ~W | Y7 &  W | Y8 &  W;
 	end
 end

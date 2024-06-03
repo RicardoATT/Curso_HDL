@@ -5,23 +5,23 @@
 \lstinputlisting[
 	language=verilog,
 	label=prog:FSM_OneHot,
-	caption={Descripción en Verilog del latch RS.}
+	caption={Descripción en Verilog de la máquina de estados finitos, utilizando flip-flops codificados en \textit{One-Hot}.}
 ]{
 	../../Proyectos/FSM_OneHot/FSM_OneHot.v
 }
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:FSM_OneHot_M,
-	caption={Descripción en Verilog del latch D.}
+	label=prog:FSM_OneHotM,
+	caption={Descripción en Verilog de la máquina de estados finitos, utilizando flip-flops codificados en \textit{One-Hot} modificado.}
 ]{
-	../../Proyectos/FSM_OneHot_M/FSM_OneHot_M.v
+	../../Proyectos/FSM_OneHotM/FSM_OneHotM.v
 }
 
 \lstinputlisting[
 	language=verilog,
 	label=prog:FSM_Behavior_MB,
-	caption={Descripción en Verilog del flip-flop D, en configuración maestro-esclavo.}
+	caption={Descripción en Verilog de la máquina de estados finitos, utilizando codificación \textit{Minimal Bits}.}
 ]{
 	../../Proyectos/FSM_Behavior_MB/FSM_Behavior_MB.v
 }
@@ -29,25 +29,25 @@
 \lstinputlisting[
 	language=verilog,
 	label=prog:FSM_Behavior_OneHot,
-	caption={Descripción en Verilog del latch D, por comportamiento.}
+	caption={Descripción en Verilog de la máquina de estados finitos, utilizando codificación \textit{One-Hot}.}
 ]{
 	../../Proyectos/FSM_Behavior_OneHot/FSM_Behavior_OneHot.v
 }
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:FSM_2Logical_Shifter,
-	caption={Descripción en Verilog del flip-flop D, por comportamiento.}
+	label=prog:FSM_2ShiftRegister,
+	caption={Descripción en Verilog de la máquina de estados finitos, utilizando 2 registro de corrimiento.}
 ]{
-	../../Proyectos/FSM_2Logical_Shifter/FSM_2Logical_Shifter.v
+	../../Proyectos/FSM_2ShiftRegister/FSM_2ShiftRegister.v
 }
 
 \lstinputlisting[
-language=verilog,
-label=prog:FSM_1Logical_Shifter,
-caption={Descripción en Verilog del flip-flop D, por comportamiento.}
+	language=verilog,
+	label=prog:FSM_1ShiftRegister,
+	caption={Descripción en Verilog de la máquina de estados finitos, utilizando 1 registro de corrimiento.}
 ]{
-	../../Proyectos/FSM_1Logical_Shifter/FSM_1Logical_Shifter.v
+	../../Proyectos/FSM_1ShiftRegister/FSM_1ShiftRegister.v
 }
 
 \newpage
@@ -56,15 +56,7 @@ caption={Descripción en Verilog del flip-flop D, por comportamiento.}
 \lstinputlisting[
 language=verilog,
 %label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:FSM_OneHot}, \autoref{prog:FSM_OneHot_M}, \autoref{prog:FSM_Behavior_MB} y \autoref{prog:FSM_Behavior_OneHot}.}
+caption={Banco de prueba para el \autoref{prog:FSM_OneHot}, \autoref{prog:FSM_OneHotM}, \autoref{prog:FSM_Behavior_MB}, \autoref{prog:FSM_Behavior_OneHot}, \autoref{prog:FSM_2ShiftRegister} y \autoref{prog:FSM_1ShiftRegister}.}
 ]{
 	../../Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt
-}
-
-\lstinputlisting[
-language=verilog,
-%label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:FSM_2Logical_Shifter} y \autoref{prog:FSM_1Logical_Shifter}.}
-]{
-	../../Proyectos/FSM_2Logical_Shifter/simulation/modelsim/FSM_2Logical_Shifter.vt
 }
