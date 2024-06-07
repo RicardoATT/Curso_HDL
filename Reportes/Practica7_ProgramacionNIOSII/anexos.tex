@@ -4,59 +4,16 @@
 
 \lstinputlisting[
 	language=verilog,
-	label=prog:FSM_OneHot,
-	caption={Descripción en Verilog de la máquina de estados finitos, utilizando flip-flops codificados en \textit{One-Hot}.}
+	label=prog:NiosII,
+	caption={Instanciación del procesador NIOS II en el proyecto generado.}
 ]{
-	../../Proyectos/FSM_OneHot/FSM_OneHot.v
+	../../Proyectos/NiosII/NiosII.v
 }
 
 \lstinputlisting[
-	language=verilog,
-	label=prog:FSM_OneHotM,
-	caption={Descripción en Verilog de la máquina de estados finitos, utilizando flip-flops codificados en \textit{One-Hot} modificado.}
+language=c,
+label=prog:hello_world,
+caption={Programa en C, que imprime un mensaje en la consola y asigna valores a la salida del procesador NIOS II.}
 ]{
-	../../Proyectos/FSM_OneHotM/FSM_OneHotM.v
-}
-
-\lstinputlisting[
-	language=verilog,
-	label=prog:FSM_Behavior_MB,
-	caption={Descripción en Verilog de la máquina de estados finitos, utilizando codificación \textit{Minimal Bits}.}
-]{
-	../../Proyectos/FSM_Behavior_MB/FSM_Behavior_MB.v
-}
-
-\lstinputlisting[
-	language=verilog,
-	label=prog:FSM_Behavior_OneHot,
-	caption={Descripción en Verilog de la máquina de estados finitos, utilizando codificación \textit{One-Hot}.}
-]{
-	../../Proyectos/FSM_Behavior_OneHot/FSM_Behavior_OneHot.v
-}
-
-\lstinputlisting[
-	language=verilog,
-	label=prog:FSM_2ShiftRegister,
-	caption={Descripción en Verilog de la máquina de estados finitos, utilizando 2 registros de corrimiento.}
-]{
-	../../Proyectos/FSM_2ShiftRegister/FSM_2ShiftRegister.v
-}
-
-\lstinputlisting[
-	language=verilog,
-	label=prog:FSM_1ShiftRegister,
-	caption={Descripción en Verilog de la máquina de estados finitos, utilizando 1 registro de corrimiento.}
-]{
-	../../Proyectos/FSM_1ShiftRegister/FSM_1ShiftRegister.v
-}
-
-\newpage
-\subsection{Bancos de pruebas (\textit{Test Benches})}
-
-\lstinputlisting[
-language=verilog,
-%label=prog:asign,
-caption={Banco de prueba para el \autoref{prog:FSM_OneHot}, \autoref{prog:FSM_OneHotM}, \autoref{prog:FSM_Behavior_MB}, \autoref{prog:FSM_Behavior_OneHot}, \autoref{prog:FSM_2ShiftRegister} y \autoref{prog:FSM_1ShiftRegister}.}
-]{
-	../../Proyectos/FSM_OneHot/simulation/modelsim/FSM_OneHot.vt
+	../../Proyectos/NiosII/software/Hola_CIC/hello_world_small.c
 }

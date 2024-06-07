@@ -298,9 +298,9 @@ int main()
 		IOWR(PIO_0_BASE, 0, led_initial);
     1090:	10803fcc 	andi	r2,r2,255
     1094:	80800035 	stwio	r2,0(r16)
-		usleep(1000000);
-    1098:	010003f4 	movhi	r4,15
-    109c:	21109004 	addi	r4,r4,16960
+		usleep(100000);
+    1098:	010000b4 	movhi	r4,2
+    109c:	2121a804 	addi	r4,r4,-31072
     10a0:	00011ec0 	call	11ec <usleep>
     10a4:	003ff806 	br	1088 <_gp+0xffff7b98>
 
