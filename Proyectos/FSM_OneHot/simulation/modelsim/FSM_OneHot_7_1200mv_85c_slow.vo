@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "06/02/2024 00:07:05"
+// DATE "06/04/2024 18:54:07"
 
 // 
 // Device: Altera EP4CE115F29C7 Package FBGA780
@@ -39,10 +39,10 @@ input 	W;
 output 	S;
 
 // Design Ports Information
-// S	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// W	=>  Location: PIN_B6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// CLK	=>  Location: PIN_J1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// RST	=>  Location: PIN_Y2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// S	=>  Location: PIN_G19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// W	=>  Location: PIN_AB28,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_M21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RST	=>  Location: PIN_AC28,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -62,11 +62,11 @@ initial $sdf_annotate("FSM_OneHot_7_1200mv_85c_v_slow.sdo");
 
 wire S_aoutput_o;
 wire CLK_ainput_o;
-wire CLK_ainputclkctrl_outclk;
 wire W_ainput_o;
-wire Y0_afeeder_combout;
+wire S_a2_combout;
 wire RST_ainput_o;
-wire RST_ainputclkctrl_outclk;
+wire Y8_aq;
+wire Y0_afeeder_combout;
 wire Y0_aq;
 wire Y1_a0_combout;
 wire Y1_a1_combout;
@@ -85,15 +85,19 @@ wire Y6_a0_combout;
 wire Y6_aq;
 wire Y7_a0_combout;
 wire Y7_aq;
-wire S_a2_combout;
-wire Y8_aq;
 wire S_a1_combout;
 wire S_areg0_q;
 
 wire S_aoutput_I_driver;
 wire CLK_ainput_I_driver;
 wire W_ainput_I_driver;
+wire S_a2_DATAA_driver;
+wire S_a2_DATAB_driver;
+wire S_a2_DATAC_driver;
 wire RST_ainput_I_driver;
+wire Y8_CLK_driver;
+wire Y8_D_driver;
+wire Y8_CLRN_driver;
 wire Y0_CLK_driver;
 wire Y0_D_driver;
 wire Y0_CLRN_driver;
@@ -101,23 +105,23 @@ wire Y1_a0_DATAA_driver;
 wire Y1_a0_DATAB_driver;
 wire Y1_a0_DATAC_driver;
 wire Y1_a0_DATAD_driver;
-wire Y1_a1_DATAB_driver;
+wire Y1_a1_DATAA_driver;
 wire Y1_a1_DATAC_driver;
 wire Y1_a1_DATAD_driver;
 wire Y1_CLK_driver;
 wire Y1_D_driver;
 wire Y1_CLRN_driver;
-wire Y2_a0_DATAB_driver;
 wire Y2_a0_DATAC_driver;
+wire Y2_a0_DATAD_driver;
 wire Y2_CLK_driver;
 wire Y2_D_driver;
 wire Y2_CLRN_driver;
-wire Y3_a0_DATAB_driver;
+wire Y3_a0_DATAC_driver;
 wire Y3_a0_DATAD_driver;
 wire Y3_CLK_driver;
 wire Y3_D_driver;
 wire Y3_CLRN_driver;
-wire S_a0_DATAB_driver;
+wire S_a0_DATAA_driver;
 wire S_a0_DATAC_driver;
 wire S_a0_DATAD_driver;
 wire Y4_afeeder_DATAD_driver;
@@ -128,28 +132,22 @@ wire Y5_a0_DATAA_driver;
 wire Y5_a0_DATAB_driver;
 wire Y5_a0_DATAC_driver;
 wire Y5_a0_DATAD_driver;
-wire Y5_a1_DATAB_driver;
+wire Y5_a1_DATAA_driver;
 wire Y5_a1_DATAC_driver;
 wire Y5_a1_DATAD_driver;
 wire Y5_CLK_driver;
 wire Y5_D_driver;
 wire Y5_CLRN_driver;
-wire Y6_a0_DATAB_driver;
+wire Y6_a0_DATAC_driver;
 wire Y6_a0_DATAD_driver;
 wire Y6_CLK_driver;
 wire Y6_D_driver;
 wire Y6_CLRN_driver;
+wire Y7_a0_DATAA_driver;
 wire Y7_a0_DATAC_driver;
-wire Y7_a0_DATAD_driver;
 wire Y7_CLK_driver;
 wire Y7_D_driver;
 wire Y7_CLRN_driver;
-wire S_a2_DATAA_driver;
-wire S_a2_DATAC_driver;
-wire S_a2_DATAD_driver;
-wire Y8_CLK_driver;
-wire Y8_D_driver;
-wire Y8_CLRN_driver;
 wire S_a1_DATAA_driver;
 wire S_a1_DATAB_driver;
 wire S_a1_DATAC_driver;
@@ -157,8 +155,6 @@ wire S_a1_DATAD_driver;
 wire S_areg0_CLK_driver;
 wire S_areg0_D_driver;
 wire S_areg0_CLRN_driver;
-wire [3:0] RST_ainputclkctrl_INCLK_bus;
-wire [3:0] CLK_ainputclkctrl_INCLK_bus;
 
 hard_block auto_generated_inst(
 	.devpor(devpor),
@@ -169,7 +165,7 @@ cycloneive_routing_wire S_aoutput_I_routing_wire_inst (
 	.datain(S_areg0_q),
 	.dataout(S_aoutput_I_driver));
 
-// Location: IOOBUF_X27_Y73_N16
+// Location: IOOBUF_X69_Y73_N16
 cycloneive_io_obuf S_aoutput(
 	.i(S_aoutput_I_driver),
 	.oe(vcc),
@@ -186,7 +182,7 @@ cycloneive_routing_wire CLK_ainput_I_routing_wire_inst (
 	.datain(CLK),
 	.dataout(CLK_ainput_I_driver));
 
-// Location: IOIBUF_X0_Y36_N8
+// Location: IOIBUF_X115_Y53_N15
 cycloneive_io_ibuf CLK_ainput(
 	.i(CLK_ainput_I_driver),
 	.ibar(gnd),
@@ -196,40 +192,11 @@ defparam CLK_ainput.bus_hold = "false";
 defparam CLK_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
-cycloneive_routing_wire CLK_ainputclkctrl_INCLK_a0_a_routing_wire_inst (
-	.datain(CLK_ainput_o),
-	.dataout(CLK_ainputclkctrl_INCLK_bus[0]));
-
-cycloneive_routing_wire CLK_ainputclkctrl_INCLK_a1_a_routing_wire_inst (
-	.datain(vcc),
-	.dataout(CLK_ainputclkctrl_INCLK_bus[1]));
-
-cycloneive_routing_wire CLK_ainputclkctrl_INCLK_a2_a_routing_wire_inst (
-	.datain(vcc),
-	.dataout(CLK_ainputclkctrl_INCLK_bus[2]));
-
-cycloneive_routing_wire CLK_ainputclkctrl_INCLK_a3_a_routing_wire_inst (
-	.datain(vcc),
-	.dataout(CLK_ainputclkctrl_INCLK_bus[3]));
-
-// Location: CLKCTRL_G2
-cycloneive_clkctrl CLK_ainputclkctrl(
-	.ena(vcc),
-	.inclk(CLK_ainputclkctrl_INCLK_bus),
-	.clkselect(2'b00),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.outclk(CLK_ainputclkctrl_outclk));
-// synopsys translate_off
-defparam CLK_ainputclkctrl.clock_type = "global clock";
-defparam CLK_ainputclkctrl.ena_register_mode = "none";
-// synopsys translate_on
-
 cycloneive_routing_wire W_ainput_I_routing_wire_inst (
 	.datain(W),
 	.dataout(W_ainput_I_driver));
 
-// Location: IOIBUF_X27_Y73_N22
+// Location: IOIBUF_X115_Y17_N1
 cycloneive_io_ibuf W_ainput(
 	.i(W_ainput_I_driver),
 	.ibar(gnd),
@@ -239,7 +206,81 @@ defparam W_ainput.bus_hold = "false";
 defparam W_ainput.simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X27_Y72_N8
+cycloneive_routing_wire S_a2_DATAA_routing_wire_inst (
+	.datain(W_ainput_o),
+	.dataout(S_a2_DATAA_driver));
+
+cycloneive_routing_wire S_a2_DATAB_routing_wire_inst (
+	.datain(Y7_aq),
+	.dataout(S_a2_DATAB_driver));
+
+cycloneive_routing_wire S_a2_DATAC_routing_wire_inst (
+	.datain(Y8_aq),
+	.dataout(S_a2_DATAC_driver));
+
+// Location: LCCOMB_X114_Y53_N6
+cycloneive_lcell_comb S_a2(
+// Equation(s):
+// S_a2_combout = (W_ainput_o & ((Y7_aq) # (Y8_aq)))
+
+	.dataa(S_a2_DATAA_driver),
+	.datab(S_a2_DATAB_driver),
+	.datac(S_a2_DATAC_driver),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(S_a2_combout),
+	.cout());
+// synopsys translate_off
+defparam S_a2.lut_mask = 16'hA8A8;
+defparam S_a2.sum_lutc_input = "datac";
+// synopsys translate_on
+
+cycloneive_routing_wire RST_ainput_I_routing_wire_inst (
+	.datain(RST),
+	.dataout(RST_ainput_I_driver));
+
+// Location: IOIBUF_X115_Y14_N1
+cycloneive_io_ibuf RST_ainput(
+	.i(RST_ainput_I_driver),
+	.ibar(gnd),
+	.o(RST_ainput_o));
+// synopsys translate_off
+defparam RST_ainput.bus_hold = "false";
+defparam RST_ainput.simulate_z_as = "z";
+// synopsys translate_on
+
+cycloneive_routing_wire Y8_CLK_routing_wire_inst (
+	.datain(CLK_ainput_o),
+	.dataout(Y8_CLK_driver));
+
+cycloneive_routing_wire Y8_D_routing_wire_inst (
+	.datain(S_a2_combout),
+	.dataout(Y8_D_driver));
+
+cycloneive_routing_wire Y8_CLRN_routing_wire_inst (
+	.datain(RST_ainput_o),
+	.dataout(Y8_CLRN_driver));
+
+// Location: FF_X114_Y53_N7
+dffeas Y8(
+	.clk(Y8_CLK_driver),
+	.d(Y8_D_driver),
+	.asdata(vcc),
+	.clrn(Y8_CLRN_driver),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(Y8_aq),
+	.prn(vcc));
+// synopsys translate_off
+defparam Y8.is_wysiwyg = "true";
+defparam Y8.power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X114_Y53_N8
 cycloneive_lcell_comb Y0_afeeder(
 // Equation(s):
 // Y0_afeeder_combout = VCC
@@ -256,51 +297,8 @@ defparam Y0_afeeder.lut_mask = 16'hFFFF;
 defparam Y0_afeeder.sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneive_routing_wire RST_ainput_I_routing_wire_inst (
-	.datain(RST),
-	.dataout(RST_ainput_I_driver));
-
-// Location: IOIBUF_X0_Y36_N15
-cycloneive_io_ibuf RST_ainput(
-	.i(RST_ainput_I_driver),
-	.ibar(gnd),
-	.o(RST_ainput_o));
-// synopsys translate_off
-defparam RST_ainput.bus_hold = "false";
-defparam RST_ainput.simulate_z_as = "z";
-// synopsys translate_on
-
-cycloneive_routing_wire RST_ainputclkctrl_INCLK_a0_a_routing_wire_inst (
-	.datain(RST_ainput_o),
-	.dataout(RST_ainputclkctrl_INCLK_bus[0]));
-
-cycloneive_routing_wire RST_ainputclkctrl_INCLK_a1_a_routing_wire_inst (
-	.datain(vcc),
-	.dataout(RST_ainputclkctrl_INCLK_bus[1]));
-
-cycloneive_routing_wire RST_ainputclkctrl_INCLK_a2_a_routing_wire_inst (
-	.datain(vcc),
-	.dataout(RST_ainputclkctrl_INCLK_bus[2]));
-
-cycloneive_routing_wire RST_ainputclkctrl_INCLK_a3_a_routing_wire_inst (
-	.datain(vcc),
-	.dataout(RST_ainputclkctrl_INCLK_bus[3]));
-
-// Location: CLKCTRL_G4
-cycloneive_clkctrl RST_ainputclkctrl(
-	.ena(vcc),
-	.inclk(RST_ainputclkctrl_INCLK_bus),
-	.clkselect(2'b00),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.outclk(RST_ainputclkctrl_outclk));
-// synopsys translate_off
-defparam RST_ainputclkctrl.clock_type = "global clock";
-defparam RST_ainputclkctrl.ena_register_mode = "none";
-// synopsys translate_on
-
 cycloneive_routing_wire Y0_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(Y0_CLK_driver));
 
 cycloneive_routing_wire Y0_D_routing_wire_inst (
@@ -308,10 +306,10 @@ cycloneive_routing_wire Y0_D_routing_wire_inst (
 	.dataout(Y0_D_driver));
 
 cycloneive_routing_wire Y0_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(Y0_CLRN_driver));
 
-// Location: FF_X27_Y72_N9
+// Location: FF_X114_Y53_N9
 dffeas Y0(
 	.clk(Y0_CLK_driver),
 	.d(Y0_D_driver),
@@ -331,25 +329,25 @@ defparam Y0.power_up = "low";
 // synopsys translate_on
 
 cycloneive_routing_wire Y1_a0_DATAA_routing_wire_inst (
-	.datain(Y7_aq),
+	.datain(Y8_aq),
 	.dataout(Y1_a0_DATAA_driver));
 
 cycloneive_routing_wire Y1_a0_DATAB_routing_wire_inst (
-	.datain(Y0_aq),
+	.datain(Y7_aq),
 	.dataout(Y1_a0_DATAB_driver));
 
 cycloneive_routing_wire Y1_a0_DATAC_routing_wire_inst (
-	.datain(Y8_aq),
+	.datain(Y0_aq),
 	.dataout(Y1_a0_DATAC_driver));
 
 cycloneive_routing_wire Y1_a0_DATAD_routing_wire_inst (
 	.datain(Y5_aq),
 	.dataout(Y1_a0_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N10
+// Location: LCCOMB_X114_Y53_N10
 cycloneive_lcell_comb Y1_a0(
 // Equation(s):
-// Y1_a0_combout = (Y7_aq) # (((Y8_aq) # (Y5_aq)) # (!Y0_aq))
+// Y1_a0_combout = (Y8_aq) # ((Y7_aq) # ((Y5_aq) # (!Y0_aq)))
 
 	.dataa(Y1_a0_DATAA_driver),
 	.datab(Y1_a0_DATAB_driver),
@@ -359,13 +357,13 @@ cycloneive_lcell_comb Y1_a0(
 	.combout(Y1_a0_combout),
 	.cout());
 // synopsys translate_off
-defparam Y1_a0.lut_mask = 16'hFFFB;
+defparam Y1_a0.lut_mask = 16'hFFEF;
 defparam Y1_a0.sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneive_routing_wire Y1_a1_DATAB_routing_wire_inst (
+cycloneive_routing_wire Y1_a1_DATAA_routing_wire_inst (
 	.datain(W_ainput_o),
-	.dataout(Y1_a1_DATAB_driver));
+	.dataout(Y1_a1_DATAA_driver));
 
 cycloneive_routing_wire Y1_a1_DATAC_routing_wire_inst (
 	.datain(Y6_aq),
@@ -375,25 +373,25 @@ cycloneive_routing_wire Y1_a1_DATAD_routing_wire_inst (
 	.datain(Y1_a0_combout),
 	.dataout(Y1_a1_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N20
+// Location: LCCOMB_X114_Y53_N20
 cycloneive_lcell_comb Y1_a1(
 // Equation(s):
 // Y1_a1_combout = (!W_ainput_o & ((Y6_aq) # (Y1_a0_combout)))
 
-	.dataa(gnd),
-	.datab(Y1_a1_DATAB_driver),
+	.dataa(Y1_a1_DATAA_driver),
+	.datab(gnd),
 	.datac(Y1_a1_DATAC_driver),
 	.datad(Y1_a1_DATAD_driver),
 	.cin(gnd),
 	.combout(Y1_a1_combout),
 	.cout());
 // synopsys translate_off
-defparam Y1_a1.lut_mask = 16'h3330;
+defparam Y1_a1.lut_mask = 16'h5550;
 defparam Y1_a1.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Y1_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(Y1_CLK_driver));
 
 cycloneive_routing_wire Y1_D_routing_wire_inst (
@@ -401,10 +399,10 @@ cycloneive_routing_wire Y1_D_routing_wire_inst (
 	.dataout(Y1_D_driver));
 
 cycloneive_routing_wire Y1_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(Y1_CLRN_driver));
 
-// Location: FF_X27_Y72_N21
+// Location: FF_X114_Y53_N21
 dffeas Y1(
 	.clk(Y1_CLK_driver),
 	.d(Y1_D_driver),
@@ -423,33 +421,33 @@ defparam Y1.is_wysiwyg = "true";
 defparam Y1.power_up = "low";
 // synopsys translate_on
 
-cycloneive_routing_wire Y2_a0_DATAB_routing_wire_inst (
-	.datain(W_ainput_o),
-	.dataout(Y2_a0_DATAB_driver));
-
 cycloneive_routing_wire Y2_a0_DATAC_routing_wire_inst (
-	.datain(Y1_aq),
+	.datain(W_ainput_o),
 	.dataout(Y2_a0_DATAC_driver));
 
-// Location: LCCOMB_X27_Y72_N28
+cycloneive_routing_wire Y2_a0_DATAD_routing_wire_inst (
+	.datain(Y1_aq),
+	.dataout(Y2_a0_DATAD_driver));
+
+// Location: LCCOMB_X114_Y53_N12
 cycloneive_lcell_comb Y2_a0(
 // Equation(s):
 // Y2_a0_combout = (!W_ainput_o & Y1_aq)
 
 	.dataa(gnd),
-	.datab(Y2_a0_DATAB_driver),
+	.datab(gnd),
 	.datac(Y2_a0_DATAC_driver),
-	.datad(gnd),
+	.datad(Y2_a0_DATAD_driver),
 	.cin(gnd),
 	.combout(Y2_a0_combout),
 	.cout());
 // synopsys translate_off
-defparam Y2_a0.lut_mask = 16'h3030;
+defparam Y2_a0.lut_mask = 16'h0F00;
 defparam Y2_a0.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Y2_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(Y2_CLK_driver));
 
 cycloneive_routing_wire Y2_D_routing_wire_inst (
@@ -457,10 +455,10 @@ cycloneive_routing_wire Y2_D_routing_wire_inst (
 	.dataout(Y2_D_driver));
 
 cycloneive_routing_wire Y2_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(Y2_CLRN_driver));
 
-// Location: FF_X27_Y72_N29
+// Location: FF_X114_Y53_N13
 dffeas Y2(
 	.clk(Y2_CLK_driver),
 	.d(Y2_D_driver),
@@ -479,33 +477,33 @@ defparam Y2.is_wysiwyg = "true";
 defparam Y2.power_up = "low";
 // synopsys translate_on
 
-cycloneive_routing_wire Y3_a0_DATAB_routing_wire_inst (
+cycloneive_routing_wire Y3_a0_DATAC_routing_wire_inst (
 	.datain(W_ainput_o),
-	.dataout(Y3_a0_DATAB_driver));
+	.dataout(Y3_a0_DATAC_driver));
 
 cycloneive_routing_wire Y3_a0_DATAD_routing_wire_inst (
 	.datain(Y2_aq),
 	.dataout(Y3_a0_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N2
+// Location: LCCOMB_X114_Y53_N22
 cycloneive_lcell_comb Y3_a0(
 // Equation(s):
 // Y3_a0_combout = (!W_ainput_o & Y2_aq)
 
 	.dataa(gnd),
-	.datab(Y3_a0_DATAB_driver),
-	.datac(gnd),
+	.datab(gnd),
+	.datac(Y3_a0_DATAC_driver),
 	.datad(Y3_a0_DATAD_driver),
 	.cin(gnd),
 	.combout(Y3_a0_combout),
 	.cout());
 // synopsys translate_off
-defparam Y3_a0.lut_mask = 16'h3300;
+defparam Y3_a0.lut_mask = 16'h0F00;
 defparam Y3_a0.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Y3_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(Y3_CLK_driver));
 
 cycloneive_routing_wire Y3_D_routing_wire_inst (
@@ -513,10 +511,10 @@ cycloneive_routing_wire Y3_D_routing_wire_inst (
 	.dataout(Y3_D_driver));
 
 cycloneive_routing_wire Y3_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(Y3_CLRN_driver));
 
-// Location: FF_X27_Y72_N3
+// Location: FF_X114_Y53_N23
 dffeas Y3(
 	.clk(Y3_CLK_driver),
 	.d(Y3_D_driver),
@@ -535,32 +533,32 @@ defparam Y3.is_wysiwyg = "true";
 defparam Y3.power_up = "low";
 // synopsys translate_on
 
-cycloneive_routing_wire S_a0_DATAB_routing_wire_inst (
+cycloneive_routing_wire S_a0_DATAA_routing_wire_inst (
 	.datain(W_ainput_o),
-	.dataout(S_a0_DATAB_driver));
+	.dataout(S_a0_DATAA_driver));
 
 cycloneive_routing_wire S_a0_DATAC_routing_wire_inst (
-	.datain(Y4_aq),
+	.datain(Y3_aq),
 	.dataout(S_a0_DATAC_driver));
 
 cycloneive_routing_wire S_a0_DATAD_routing_wire_inst (
-	.datain(Y3_aq),
+	.datain(Y4_aq),
 	.dataout(S_a0_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N6
+// Location: LCCOMB_X114_Y53_N2
 cycloneive_lcell_comb S_a0(
 // Equation(s):
-// S_a0_combout = (!W_ainput_o & ((Y4_aq) # (Y3_aq)))
+// S_a0_combout = (!W_ainput_o & ((Y3_aq) # (Y4_aq)))
 
-	.dataa(gnd),
-	.datab(S_a0_DATAB_driver),
+	.dataa(S_a0_DATAA_driver),
+	.datab(gnd),
 	.datac(S_a0_DATAC_driver),
 	.datad(S_a0_DATAD_driver),
 	.cin(gnd),
 	.combout(S_a0_combout),
 	.cout());
 // synopsys translate_off
-defparam S_a0.lut_mask = 16'h3330;
+defparam S_a0.lut_mask = 16'h5550;
 defparam S_a0.sum_lutc_input = "datac";
 // synopsys translate_on
 
@@ -568,7 +566,7 @@ cycloneive_routing_wire Y4_afeeder_DATAD_routing_wire_inst (
 	.datain(S_a0_combout),
 	.dataout(Y4_afeeder_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N4
+// Location: LCCOMB_X114_Y53_N16
 cycloneive_lcell_comb Y4_afeeder(
 // Equation(s):
 // Y4_afeeder_combout = S_a0_combout
@@ -586,7 +584,7 @@ defparam Y4_afeeder.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Y4_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(Y4_CLK_driver));
 
 cycloneive_routing_wire Y4_D_routing_wire_inst (
@@ -594,10 +592,10 @@ cycloneive_routing_wire Y4_D_routing_wire_inst (
 	.dataout(Y4_D_driver));
 
 cycloneive_routing_wire Y4_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(Y4_CLRN_driver));
 
-// Location: FF_X27_Y72_N5
+// Location: FF_X114_Y53_N17
 dffeas Y4(
 	.clk(Y4_CLK_driver),
 	.d(Y4_D_driver),
@@ -617,11 +615,11 @@ defparam Y4.power_up = "low";
 // synopsys translate_on
 
 cycloneive_routing_wire Y5_a0_DATAA_routing_wire_inst (
-	.datain(Y4_aq),
+	.datain(Y3_aq),
 	.dataout(Y5_a0_DATAA_driver));
 
 cycloneive_routing_wire Y5_a0_DATAB_routing_wire_inst (
-	.datain(Y3_aq),
+	.datain(Y4_aq),
 	.dataout(Y5_a0_DATAB_driver));
 
 cycloneive_routing_wire Y5_a0_DATAC_routing_wire_inst (
@@ -632,10 +630,10 @@ cycloneive_routing_wire Y5_a0_DATAD_routing_wire_inst (
 	.datain(Y1_aq),
 	.dataout(Y5_a0_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N24
+// Location: LCCOMB_X114_Y53_N24
 cycloneive_lcell_comb Y5_a0(
 // Equation(s):
-// Y5_a0_combout = (Y4_aq) # ((Y3_aq) # ((Y1_aq) # (!Y0_aq)))
+// Y5_a0_combout = (Y3_aq) # ((Y4_aq) # ((Y1_aq) # (!Y0_aq)))
 
 	.dataa(Y5_a0_DATAA_driver),
 	.datab(Y5_a0_DATAB_driver),
@@ -649,37 +647,37 @@ defparam Y5_a0.lut_mask = 16'hFFEF;
 defparam Y5_a0.sum_lutc_input = "datac";
 // synopsys translate_on
 
-cycloneive_routing_wire Y5_a1_DATAB_routing_wire_inst (
-	.datain(W_ainput_o),
-	.dataout(Y5_a1_DATAB_driver));
+cycloneive_routing_wire Y5_a1_DATAA_routing_wire_inst (
+	.datain(Y2_aq),
+	.dataout(Y5_a1_DATAA_driver));
 
 cycloneive_routing_wire Y5_a1_DATAC_routing_wire_inst (
-	.datain(Y2_aq),
+	.datain(W_ainput_o),
 	.dataout(Y5_a1_DATAC_driver));
 
 cycloneive_routing_wire Y5_a1_DATAD_routing_wire_inst (
 	.datain(Y5_a0_combout),
 	.dataout(Y5_a1_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N18
+// Location: LCCOMB_X114_Y53_N18
 cycloneive_lcell_comb Y5_a1(
 // Equation(s):
 // Y5_a1_combout = (W_ainput_o & ((Y2_aq) # (Y5_a0_combout)))
 
-	.dataa(gnd),
-	.datab(Y5_a1_DATAB_driver),
+	.dataa(Y5_a1_DATAA_driver),
+	.datab(gnd),
 	.datac(Y5_a1_DATAC_driver),
 	.datad(Y5_a1_DATAD_driver),
 	.cin(gnd),
 	.combout(Y5_a1_combout),
 	.cout());
 // synopsys translate_off
-defparam Y5_a1.lut_mask = 16'hCCC0;
+defparam Y5_a1.lut_mask = 16'hF0A0;
 defparam Y5_a1.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Y5_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(Y5_CLK_driver));
 
 cycloneive_routing_wire Y5_D_routing_wire_inst (
@@ -687,10 +685,10 @@ cycloneive_routing_wire Y5_D_routing_wire_inst (
 	.dataout(Y5_D_driver));
 
 cycloneive_routing_wire Y5_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(Y5_CLRN_driver));
 
-// Location: FF_X27_Y72_N19
+// Location: FF_X114_Y53_N19
 dffeas Y5(
 	.clk(Y5_CLK_driver),
 	.d(Y5_D_driver),
@@ -709,33 +707,33 @@ defparam Y5.is_wysiwyg = "true";
 defparam Y5.power_up = "low";
 // synopsys translate_on
 
-cycloneive_routing_wire Y6_a0_DATAB_routing_wire_inst (
+cycloneive_routing_wire Y6_a0_DATAC_routing_wire_inst (
 	.datain(W_ainput_o),
-	.dataout(Y6_a0_DATAB_driver));
+	.dataout(Y6_a0_DATAC_driver));
 
 cycloneive_routing_wire Y6_a0_DATAD_routing_wire_inst (
 	.datain(Y5_aq),
 	.dataout(Y6_a0_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N22
+// Location: LCCOMB_X114_Y53_N30
 cycloneive_lcell_comb Y6_a0(
 // Equation(s):
 // Y6_a0_combout = (W_ainput_o & Y5_aq)
 
 	.dataa(gnd),
-	.datab(Y6_a0_DATAB_driver),
-	.datac(gnd),
+	.datab(gnd),
+	.datac(Y6_a0_DATAC_driver),
 	.datad(Y6_a0_DATAD_driver),
 	.cin(gnd),
 	.combout(Y6_a0_combout),
 	.cout());
 // synopsys translate_off
-defparam Y6_a0.lut_mask = 16'hCC00;
+defparam Y6_a0.lut_mask = 16'hF000;
 defparam Y6_a0.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Y6_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(Y6_CLK_driver));
 
 cycloneive_routing_wire Y6_D_routing_wire_inst (
@@ -743,10 +741,10 @@ cycloneive_routing_wire Y6_D_routing_wire_inst (
 	.dataout(Y6_D_driver));
 
 cycloneive_routing_wire Y6_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(Y6_CLRN_driver));
 
-// Location: FF_X27_Y72_N23
+// Location: FF_X114_Y53_N31
 dffeas Y6(
 	.clk(Y6_CLK_driver),
 	.d(Y6_D_driver),
@@ -765,33 +763,33 @@ defparam Y6.is_wysiwyg = "true";
 defparam Y6.power_up = "low";
 // synopsys translate_on
 
+cycloneive_routing_wire Y7_a0_DATAA_routing_wire_inst (
+	.datain(W_ainput_o),
+	.dataout(Y7_a0_DATAA_driver));
+
 cycloneive_routing_wire Y7_a0_DATAC_routing_wire_inst (
 	.datain(Y6_aq),
 	.dataout(Y7_a0_DATAC_driver));
 
-cycloneive_routing_wire Y7_a0_DATAD_routing_wire_inst (
-	.datain(W_ainput_o),
-	.dataout(Y7_a0_DATAD_driver));
-
-// Location: LCCOMB_X27_Y72_N12
+// Location: LCCOMB_X114_Y53_N4
 cycloneive_lcell_comb Y7_a0(
 // Equation(s):
-// Y7_a0_combout = (Y6_aq & W_ainput_o)
+// Y7_a0_combout = (W_ainput_o & Y6_aq)
 
-	.dataa(gnd),
+	.dataa(Y7_a0_DATAA_driver),
 	.datab(gnd),
 	.datac(Y7_a0_DATAC_driver),
-	.datad(Y7_a0_DATAD_driver),
+	.datad(gnd),
 	.cin(gnd),
 	.combout(Y7_a0_combout),
 	.cout());
 // synopsys translate_off
-defparam Y7_a0.lut_mask = 16'hF000;
+defparam Y7_a0.lut_mask = 16'hA0A0;
 defparam Y7_a0.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire Y7_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(Y7_CLK_driver));
 
 cycloneive_routing_wire Y7_D_routing_wire_inst (
@@ -799,10 +797,10 @@ cycloneive_routing_wire Y7_D_routing_wire_inst (
 	.dataout(Y7_D_driver));
 
 cycloneive_routing_wire Y7_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(Y7_CLRN_driver));
 
-// Location: FF_X27_Y72_N13
+// Location: FF_X114_Y53_N5
 dffeas Y7(
 	.clk(Y7_CLK_driver),
 	.d(Y7_D_driver),
@@ -821,86 +819,26 @@ defparam Y7.is_wysiwyg = "true";
 defparam Y7.power_up = "low";
 // synopsys translate_on
 
-cycloneive_routing_wire S_a2_DATAA_routing_wire_inst (
-	.datain(Y7_aq),
-	.dataout(S_a2_DATAA_driver));
-
-cycloneive_routing_wire S_a2_DATAC_routing_wire_inst (
-	.datain(Y8_aq),
-	.dataout(S_a2_DATAC_driver));
-
-cycloneive_routing_wire S_a2_DATAD_routing_wire_inst (
-	.datain(W_ainput_o),
-	.dataout(S_a2_DATAD_driver));
-
-// Location: LCCOMB_X27_Y72_N26
-cycloneive_lcell_comb S_a2(
-// Equation(s):
-// S_a2_combout = (W_ainput_o & ((Y7_aq) # (Y8_aq)))
-
-	.dataa(S_a2_DATAA_driver),
-	.datab(gnd),
-	.datac(S_a2_DATAC_driver),
-	.datad(S_a2_DATAD_driver),
-	.cin(gnd),
-	.combout(S_a2_combout),
-	.cout());
-// synopsys translate_off
-defparam S_a2.lut_mask = 16'hFA00;
-defparam S_a2.sum_lutc_input = "datac";
-// synopsys translate_on
-
-cycloneive_routing_wire Y8_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
-	.dataout(Y8_CLK_driver));
-
-cycloneive_routing_wire Y8_D_routing_wire_inst (
-	.datain(S_a2_combout),
-	.dataout(Y8_D_driver));
-
-cycloneive_routing_wire Y8_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
-	.dataout(Y8_CLRN_driver));
-
-// Location: FF_X27_Y72_N27
-dffeas Y8(
-	.clk(Y8_CLK_driver),
-	.d(Y8_D_driver),
-	.asdata(vcc),
-	.clrn(Y8_CLRN_driver),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.q(Y8_aq),
-	.prn(vcc));
-// synopsys translate_off
-defparam Y8.is_wysiwyg = "true";
-defparam Y8.power_up = "low";
-// synopsys translate_on
-
 cycloneive_routing_wire S_a1_DATAA_routing_wire_inst (
-	.datain(Y8_aq),
+	.datain(W_ainput_o),
 	.dataout(S_a1_DATAA_driver));
 
 cycloneive_routing_wire S_a1_DATAB_routing_wire_inst (
-	.datain(W_ainput_o),
+	.datain(Y7_aq),
 	.dataout(S_a1_DATAB_driver));
 
 cycloneive_routing_wire S_a1_DATAC_routing_wire_inst (
-	.datain(Y7_aq),
+	.datain(Y8_aq),
 	.dataout(S_a1_DATAC_driver));
 
 cycloneive_routing_wire S_a1_DATAD_routing_wire_inst (
 	.datain(S_a0_combout),
 	.dataout(S_a1_DATAD_driver));
 
-// Location: LCCOMB_X27_Y72_N16
+// Location: LCCOMB_X114_Y53_N28
 cycloneive_lcell_comb S_a1(
 // Equation(s):
-// S_a1_combout = (S_a0_combout) # ((W_ainput_o & ((Y8_aq) # (Y7_aq))))
+// S_a1_combout = (S_a0_combout) # ((W_ainput_o & ((Y7_aq) # (Y8_aq))))
 
 	.dataa(S_a1_DATAA_driver),
 	.datab(S_a1_DATAB_driver),
@@ -910,12 +848,12 @@ cycloneive_lcell_comb S_a1(
 	.combout(S_a1_combout),
 	.cout());
 // synopsys translate_off
-defparam S_a1.lut_mask = 16'hFFC8;
+defparam S_a1.lut_mask = 16'hFFA8;
 defparam S_a1.sum_lutc_input = "datac";
 // synopsys translate_on
 
 cycloneive_routing_wire S_areg0_CLK_routing_wire_inst (
-	.datain(CLK_ainputclkctrl_outclk),
+	.datain(CLK_ainput_o),
 	.dataout(S_areg0_CLK_driver));
 
 cycloneive_routing_wire S_areg0_D_routing_wire_inst (
@@ -923,10 +861,10 @@ cycloneive_routing_wire S_areg0_D_routing_wire_inst (
 	.dataout(S_areg0_D_driver));
 
 cycloneive_routing_wire S_areg0_CLRN_routing_wire_inst (
-	.datain(RST_ainputclkctrl_outclk),
+	.datain(RST_ainput_o),
 	.dataout(S_areg0_CLRN_driver));
 
-// Location: FF_X27_Y72_N17
+// Location: FF_X114_Y53_N29
 dffeas S_areg0(
 	.clk(S_areg0_CLK_driver),
 	.d(S_areg0_D_driver),
