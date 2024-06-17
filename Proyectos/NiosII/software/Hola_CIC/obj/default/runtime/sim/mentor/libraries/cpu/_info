@@ -1,0 +1,560 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/software/Hola_CIC/obj/default/runtime/sim/mentor
+vMinionsII_nios2_gen2_0_cpu
+Z1 !s110 1718647568
+!i10b 1
+!s100 1Wl;Z35_ggKLG;`^9fRVf0
+I2DlLX6V5JE[nj_KCiF6?21
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1718390692
+Z4 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu.v
+Z5 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu.v
+L0 2834
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1718647568.000000
+Z8 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu.v|
+Z9 !s90 -reportprogress|300|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu.v|-work|cpu|
+!i113 1
+Z10 o-work cpu
+Z11 tCvgOpt 0
+n@minions@i@i_nios2_gen2_0_cpu
+vMinionsII_nios2_gen2_0_cpu_debug_slave_sysclk
+R1
+!i10b 1
+!s100 ?=4U9FWS6<`WWF3RWb8Ca1
+IL_Xz2RVoB^PD?SZ1b6Da_0
+R2
+R0
+R3
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_sysclk.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_sysclk.v
+Z12 L0 21
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_sysclk.v|-work|cpu|
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_debug_slave_sysclk
+vMinionsII_nios2_gen2_0_cpu_debug_slave_tck
+R1
+!i10b 1
+!s100 Y>SHmHK`;_3l64kP;C<bd3
+I7YWI[7A[mOmiB:L9GDT4I2
+R2
+R0
+R3
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_tck.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_tck.v
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_tck.v|-work|cpu|
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_debug_slave_tck
+vMinionsII_nios2_gen2_0_cpu_debug_slave_wrapper
+R1
+!i10b 1
+!s100 j`j36G>c`1IRLS^DlZ;;Q3
+I1=cMo^G:?FB77I5gH81ec2
+R2
+R0
+R3
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_wrapper.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_wrapper.v
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_debug_slave_wrapper.v|-work|cpu|
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_debug_slave_wrapper
+vMinionsII_nios2_gen2_0_cpu_nios2_avalon_reg
+R1
+!i10b 1
+!s100 JFbUi[zBGW;1eameITahE1
+I@^F`=NVfJ@8ehUHKi[0>73
+R2
+R0
+R3
+R4
+R5
+L0 2023
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_avalon_reg
+vMinionsII_nios2_gen2_0_cpu_nios2_oci
+R1
+!i10b 1
+!s100 =Vghm7X@5W`b_;MOg2<4]1
+IXK@UKI?jaG=>0Mze>?=IL0
+R2
+R0
+R3
+R4
+R5
+L0 2362
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_break
+R1
+!i10b 1
+!s100 ;L^MB;Rf>Voe8^WjdkHZ42
+IWS^;1kmU_IlJg1HmfLVNN0
+R2
+R0
+R3
+R4
+R5
+L0 295
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_break
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+R1
+!i10b 1
+!s100 XBfN<29:nj3YSO`lMeiB83
+IXhGWBB41>NOQ`L;h9WzBe1
+R2
+R0
+R3
+R4
+R5
+L0 1265
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_dbrk
+R1
+!i10b 1
+!s100 9RG61LSH`jTAU`mhoIECk0
+ILBWVb>4hCI71dJ28?lbB22
+R2
+R0
+R3
+R4
+R5
+L0 795
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_dbrk
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_debug
+R1
+!i10b 1
+!s100 ]@a0hA3mfPaziHk1PA2GA3
+I`9bkRD2cbLe`CBaaHmW3W2
+R2
+R0
+R3
+R4
+R5
+L0 153
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_debug
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_dtrace
+R1
+!i10b 1
+!s100 TXa;?1hG3M5cl@BY`KZSz2
+IS5I=We?7eCEho[oc@6F[L3
+R2
+R0
+R3
+R4
+R5
+L0 1183
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_dtrace
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_fifo
+R1
+!i10b 1
+!s100 J3_M;0>GC4;eC6JBjRli>2
+IcXZBk2J?[KKEZK]KM<5AC2
+R2
+R0
+R3
+R4
+R5
+L0 1427
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_fifo
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+R1
+!i10b 1
+!s100 kNQj=]UC0Te>[<MRb9:c`0
+II2Si>0HYDA7f;ZzfW46>J2
+R2
+R0
+R3
+R4
+R5
+L0 1380
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+R1
+!i10b 1
+!s100 Cahm`5Tf[GcH4cb`>2W8Z2
+I:nA[C9e6PC0Sa@an^HTzC2
+R2
+R0
+R3
+R4
+R5
+L0 1337
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_im
+R1
+!i10b 1
+!s100 RWkWdz;lII8WU28^jCGRg2
+I3CM>AU]YANQ1g31DlAN@Q0
+R2
+R0
+R3
+R4
+R5
+L0 1936
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_im
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_itrace
+R1
+!i10b 1
+!s100 7_fi?J8e`c34en3T^Po^02
+IY6HgI@j:KO2UXY4ZX4R`X0
+R2
+R0
+R3
+R4
+R5
+L0 982
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_itrace
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_pib
+R1
+!i10b 1
+!s100 X3VYiDPbPUl8AZm9PdB__2
+IKEoKIR1nC8mRIWi3<<R]P2
+R2
+R0
+R3
+R4
+R5
+L0 1913
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_pib
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_td_mode
+R1
+!i10b 1
+!s100 KgEaWfJD91@z:l60L=g4X0
+I[zL;o<9YEOY5J;<jf9<SI0
+R2
+R0
+R3
+R4
+R5
+L0 1115
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_td_mode
+vMinionsII_nios2_gen2_0_cpu_nios2_oci_xbrk
+R1
+!i10b 1
+!s100 5OP]k>Sc@9[HBU>kkUf?]0
+I93jLA9FZEj[LTSXjG:CRF3
+R2
+R0
+R3
+R4
+R5
+L0 588
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_oci_xbrk
+vMinionsII_nios2_gen2_0_cpu_nios2_ocimem
+R1
+!i10b 1
+!s100 QL_aN]Uh[gBH8a8jkJ9ZK2
+I6lI^bo;U?0O@O=K@`E<>61
+R2
+R0
+R3
+R4
+R5
+L0 2181
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_ocimem
+vMinionsII_nios2_gen2_0_cpu_nios2_performance_monitors
+R1
+!i10b 1
+!s100 JP4I;A2>heienK`d<W[5N2
+IbQNdhj2^];O]2`T5c^9en0
+R2
+R0
+R3
+R4
+R5
+L0 2006
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_nios2_performance_monitors
+vMinionsII_nios2_gen2_0_cpu_ociram_sp_ram_module
+R1
+!i10b 1
+!s100 zKiWS=o1zZWQncRJeRMUc2
+IV2ZK[MQO]76CEg4;nC^e12
+R2
+R0
+R3
+R4
+R5
+L0 2116
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_ociram_sp_ram_module
+vMinionsII_nios2_gen2_0_cpu_register_bank_a_module
+R1
+!i10b 1
+!s100 N>JmZR:JcGl1aB5DI^JZF3
+Io[<HVd5dLYQ=_=17@9KiJ1
+R2
+R0
+R3
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_register_bank_a_module
+vMinionsII_nios2_gen2_0_cpu_register_bank_b_module
+R1
+!i10b 1
+!s100 occ<9<n_G>CFV^7lVD1Ce0
+I[fbHmFLaiY6QJ5K^7Pf2B3
+R2
+R0
+R3
+R4
+R5
+L0 87
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_register_bank_b_module
+vMinionsII_nios2_gen2_0_cpu_test_bench
+R1
+!i10b 1
+!s100 0O_zLV;Hj[0;_l;VK1NZ:2
+IV_6<XSa=T<X`4FYb6W1La0
+R2
+R0
+R3
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_test_bench.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_test_bench.v
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_test_bench.v|
+!s90 -reportprogress|300|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_nios2_gen2_0_cpu_test_bench.v|-work|cpu|
+!i113 1
+R10
+R11
+n@minions@i@i_nios2_gen2_0_cpu_test_bench

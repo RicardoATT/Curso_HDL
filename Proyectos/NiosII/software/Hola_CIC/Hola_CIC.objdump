@@ -35,49 +35,49 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
   8 .debug_aranges 000001e8  00000000  00000000  00001518  2**3
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_info   000010b1  00000000  00000000  00001700  2**0
+  9 .debug_info   000010ad  00000000  00000000  00001700  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_abbrev 000008fb  00000000  00000000  000027b1  2**0
+ 10 .debug_abbrev 000008fb  00000000  00000000  000027ad  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_line   00000ab3  00000000  00000000  000030ac  2**0
+ 11 .debug_line   00000ab0  00000000  00000000  000030a8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_frame  00000254  00000000  00000000  00003b60  2**2
+ 12 .debug_frame  00000254  00000000  00000000  00003b58  2**2
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_str    0000082e  00000000  00000000  00003db4  2**0
+ 13 .debug_str    0000082e  00000000  00000000  00003dac  2**0
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_loc    00000714  00000000  00000000  000045e2  2**0
+ 14 .debug_loc    00000715  00000000  00000000  000045da  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_alt_sim_info 00000040  00000000  00000000  00004cf8  2**2
+ 15 .debug_alt_sim_info 00000040  00000000  00000000  00004cf0  2**2
                   CONTENTS, READONLY, DEBUGGING
- 16 .debug_ranges 000000e8  00000000  00000000  00004d38  2**3
+ 16 .debug_ranges 000000e8  00000000  00000000  00004d30  2**3
                   CONTENTS, READONLY, DEBUGGING
- 17 .thread_model 00000003  00000000  00000000  00005d5e  2**0
+ 17 .thread_model 00000003  00000000  00000000  00005d56  2**0
                   CONTENTS, READONLY
- 18 .cpu          0000000c  00000000  00000000  00005d61  2**0
+ 18 .cpu          0000000c  00000000  00000000  00005d59  2**0
                   CONTENTS, READONLY
- 19 .qsys         00000001  00000000  00000000  00005d6d  2**0
+ 19 .qsys         00000001  00000000  00000000  00005d65  2**0
                   CONTENTS, READONLY
- 20 .simulation_enabled 00000001  00000000  00000000  00005d6e  2**0
+ 20 .simulation_enabled 00000001  00000000  00000000  00005d66  2**0
                   CONTENTS, READONLY
- 21 .sysid_hash   00000004  00000000  00000000  00005d6f  2**0
+ 21 .sysid_hash   00000004  00000000  00000000  00005d67  2**0
                   CONTENTS, READONLY
- 22 .sysid_base   00000004  00000000  00000000  00005d73  2**0
+ 22 .sysid_base   00000004  00000000  00000000  00005d6b  2**0
                   CONTENTS, READONLY
- 23 .sysid_time   00000004  00000000  00000000  00005d77  2**0
+ 23 .sysid_time   00000004  00000000  00000000  00005d6f  2**0
                   CONTENTS, READONLY
- 24 .stderr_dev   0000000b  00000000  00000000  00005d7b  2**0
+ 24 .stderr_dev   0000000b  00000000  00000000  00005d73  2**0
                   CONTENTS, READONLY
- 25 .stdin_dev    0000000b  00000000  00000000  00005d86  2**0
+ 25 .stdin_dev    0000000b  00000000  00000000  00005d7e  2**0
                   CONTENTS, READONLY
- 26 .stdout_dev   0000000b  00000000  00000000  00005d91  2**0
+ 26 .stdout_dev   0000000b  00000000  00000000  00005d89  2**0
                   CONTENTS, READONLY
- 27 .sopc_system_name 00000009  00000000  00000000  00005d9c  2**0
+ 27 .sopc_system_name 00000009  00000000  00000000  00005d94  2**0
                   CONTENTS, READONLY
- 28 .quartus_project_dir 00000047  00000000  00000000  00005da5  2**0
+ 28 .quartus_project_dir 00000047  00000000  00000000  00005d9d  2**0
                   CONTENTS, READONLY
- 29 .jdi          000052f7  00000000  00000000  00005dec  2**0
+ 29 .jdi          000052f7  00000000  00000000  00005de4  2**0
                   CONTENTS, READONLY
- 30 .sopcinfo     000381e6  00000000  00000000  0000b0e3  2**0
+ 30 .sopcinfo     000381db  00000000  00000000  0000b0db  2**0
                   CONTENTS, READONLY
 SYMBOL TABLE:
 00001000 l    d  .entry	00000000 .entry
@@ -242,16 +242,16 @@ alt_after_alt_main:
     1058:	003fff06 	br	1058 <_gp+0xffff7b68>
 
 0000105c <main>:
-#include "system.h"
 #include "unistd.h"
+#include "system.h"
 
 int main()
 { 
 	alt_putstr("Hello from CIC IPN!\n");
     105c:	01000034 	movhi	r4,0
 #include "io.h"
-#include "system.h"
 #include "unistd.h"
+#include "system.h"
 
 int main()
 { 
@@ -259,8 +259,8 @@ int main()
 	alt_putstr("Hello from CIC IPN!\n");
     1064:	21053604 	addi	r4,r4,5336
 #include "io.h"
-#include "system.h"
 #include "unistd.h"
+#include "system.h"
 
 int main()
 { 
@@ -269,40 +269,38 @@ int main()
     1070:	dc000015 	stw	r16,0(sp)
 	alt_putstr("Hello from CIC IPN!\n");
     1074:	00011b40 	call	11b4 <alt_putstr>
-	alt_u8 led_initial = 0x00 ;
-
+	alt_u8 led_initial = 0xF0;
 	IOWR(PIO_0_BASE, 0, led_initial);
     1078:	008c0404 	movi	r2,12304
-    107c:	10000035 	stwio	zero,0(r2)
-#include "unistd.h"
+    107c:	00c03c04 	movi	r3,240
+    1080:	10c00035 	stwio	r3,0(r2)
+#include "system.h"
 
 int main()
 { 
 	alt_putstr("Hello from CIC IPN!\n");
-	alt_u8 led_initial = 0x00 ;
-    1080:	0023883a 	mov	r17,zero
-
+	alt_u8 led_initial = 0xF0;
+    1084:	047ffc04 	movi	r17,-16
 	IOWR(PIO_0_BASE, 0, led_initial);
 	while (1){
 		led_initial-=1;
 		IOWR(PIO_0_BASE, 0, led_initial);
-    1084:	1021883a 	mov	r16,r2
+    1088:	1021883a 	mov	r16,r2
+{ 
 	alt_putstr("Hello from CIC IPN!\n");
-	alt_u8 led_initial = 0x00 ;
-
+	alt_u8 led_initial = 0xF0;
 	IOWR(PIO_0_BASE, 0, led_initial);
 	while (1){
 		led_initial-=1;
-    1088:	88bfffc4 	addi	r2,r17,-1
-    108c:	1023883a 	mov	r17,r2
+    108c:	88bfffc4 	addi	r2,r17,-1
+    1090:	1023883a 	mov	r17,r2
 		IOWR(PIO_0_BASE, 0, led_initial);
-    1090:	10803fcc 	andi	r2,r2,255
-    1094:	80800035 	stwio	r2,0(r16)
-		usleep(100000);
-    1098:	010000b4 	movhi	r4,2
-    109c:	2121a804 	addi	r4,r4,-31072
+    1094:	10803fcc 	andi	r2,r2,255
+    1098:	80800035 	stwio	r2,0(r16)
+		usleep(1);
+    109c:	01000044 	movi	r4,1
     10a0:	00011ec0 	call	11ec <usleep>
-    10a4:	003ff806 	br	1088 <_gp+0xffff7b98>
+    10a4:	003ff906 	br	108c <_gp+0xffff7b9c>
 
 000010a8 <alt_load>:
  * there is no bootloader, so this application is responsible for loading to

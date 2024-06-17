@@ -174,7 +174,7 @@
    library="jtag_uart_0" />
  <file path="simulation/MinionsII.v" type="VERILOG" />
  <topLevel name="MinionsII" />
- <deviceFamily name="cycloneive" />
+ <deviceFamily name="cyclonev" />
  <modelMap
    controllerPath="MinionsII.onchip_memory2_0"
    modelPath="MinionsII.onchip_memory2_0" />

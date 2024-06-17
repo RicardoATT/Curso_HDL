@@ -49,7 +49,7 @@ module MinionsII_sysid_qsys_0 (
 
   wire    [ 31: 0] readdata;
   //control_slave, which is an e_avalon_slave
-  assign readdata = address ? 1717732989 : 19088743;
+  assign readdata = address ? 1718390681 : 19088743;
 
 endmodule
 

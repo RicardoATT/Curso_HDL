@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'MinionsII'
  * SOPC Builder design path: ../../MinionsII.sopcinfo
  *
- * Generated: Thu Jun 06 23:35:15 CDT 2024
+ * Generated: Fri Jun 14 13:58:09 CDT 2024
  */
 
 /*

@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="d0701fabd8b6cb353af1"/>
+    <hash md5_digest_80b="156487dc8bc514ed9aa1"/>
   </project>
   <file_info>
     <file device="5CSEBA6U23I7" path="NiosII.sof" usercode="0xFFFFFFFF"/>
@@ -139,7 +139,7 @@
   <sld_infos>
     <sld_info hpath="MinionsII:xXxNiosxXx" name="xXxNiosxXx">
       <assignment_values>
-        <assignment_value text="QSYS_NAME MinionsII HAS_SOPCINFO 1 GENERATION_ID 1717733001"/>
+        <assignment_value text="QSYS_NAME MinionsII HAS_SOPCINFO 1 GENERATION_ID 1718390696"/>
       </assignment_values>
       <parameters/>
     </sld_info>

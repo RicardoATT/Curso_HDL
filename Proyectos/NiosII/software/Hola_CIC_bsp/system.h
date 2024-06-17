@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'MinionsII'
  * SOPC Builder design path: ../../MinionsII.sopcinfo
  *
- * Generated: Thu Jun 06 23:35:15 CDT 2024
+ * Generated: Fri Jun 14 13:58:09 CDT 2024
  */
 
 /*
@@ -145,7 +145,7 @@
  *
  */
 
-#define ALT_DEVICE_FAMILY "Cyclone IV E"
+#define ALT_DEVICE_FAMILY "Cyclone V"
 #define ALT_ENHANCED_INTERRUPT_API_PRESENT
 #define ALT_IRQ_BASE NULL
 #define ALT_LOG_PORT "/dev/null"
@@ -273,7 +273,7 @@
 #define SYSID_QSYS_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_QSYS_0_NAME "/dev/sysid_qsys_0"
 #define SYSID_QSYS_0_SPAN 8
-#define SYSID_QSYS_0_TIMESTAMP 1717733001
+#define SYSID_QSYS_0_TIMESTAMP 1718390696
 #define SYSID_QSYS_0_TYPE "altera_avalon_sysid_qsys"
 
 #endif /* __SYSTEM_H_ */

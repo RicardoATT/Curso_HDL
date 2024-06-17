@@ -1,0 +1,32 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/software/Hola_CIC/obj/default/runtime/sim/mentor
+vMinionsII_onchip_memory2_0
+!s110 1718647568
+!i10b 1
+!s100 EhY`Q3]iURF2h11^>nO@43
+Iz:VChn^DYFR:z@8e;zXX<3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1718390686
+8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_onchip_memory2_0.v
+FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_onchip_memory2_0.v
+L0 21
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1718647568.000000
+!s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_onchip_memory2_0.v|
+!s90 -reportprogress|300|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_onchip_memory2_0.v|-work|onchip_memory2_0|
+!i113 1
+o-work onchip_memory2_0
+tCvgOpt 0
+n@minions@i@i_onchip_memory2_0

@@ -1,0 +1,67 @@
+\section{Manejo de una memoria de 32 localidades de 8 bits \label{sec:s1}}
+
+\begin{center}
+	\begin{minipage}{12cm}
+		\begin{tcolorbox}[title=Actividad 1]
+			Crear una memoria inicializada de 32x8 con archivo MIF como se vio en clase, habilitar la opción de uso del \textit{In-System Memory Content Editor}. Automatizar el despliegue del contenido de las 32 localidades de memoria, usando un contador a una razón de localidad por segundo. Usar la tarjeta DE2-115.
+		\end{tcolorbox}	
+	\end{minipage}
+\end{center}
+
+La visualización RTL de la memoria de 32 localidades de 8 bits se muestra en la \autoref{fig:mem_rtl}. De manera interna, la implementación en hardware utiliza una instancia de memoria perteneciente a la herramienta de \textit{IP Catalog} (ver \autoref{fig:mem_rtl2}). Para inicializar la memoria, se generó un archivo \textit{.mif} cuyos valores se presentan en la \autoref{fig:mem_init}, siendo estos el valor de la dirección incrementado en uno. Las simulaciones se visualizan en la \autoref{fig:mem_wave}. Se observa que por cada ciclo de reloj se incrementa el valor de la dirección en uno y el valor almacenado en la localidad actual se ve reflejado en la salida Q. Una observación importante es que la señal WE esta en bajo, por lo que la memoria esta en modo lectura. Con respecto a la implementación en la tarjeta DE2-115, se utilizó la herramienta \textit{In-System Memory Content Editor}, como se visualiza en la \autoref{fig:mem_content1}
+
+En los Anexos se localiza la descripción de la memoria de 32 localidades de 8 bits. Al emplear un elemento proveniente de la herramienta de \textit{IP Catalog}, el código se reduce a describir las entradas y salidas y llamar a la instancia dentro del módulo principal.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.35]{Mem_RTL.png}
+	\caption{Diagrama RTL de la memoria de 32 localidades de 8 bits, instanciada con un componente de IP Catalog. \label{fig:mem_rtl}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.87]{Mem_RTL2.png}
+	\caption{Diagrama RTL de la memoria de 32 localidades de 8 bits, instanciada con un componente de IP Catalog (vista interna). \label{fig:mem_rtl2}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1]{Mem_Init.png}
+	\caption{Visualización del archivo de inicialización de la memoria de 32 localidades de 8 bits. \label{fig:mem_init}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.75]{Mem_Wave.png}
+	\caption{Simulación de la memoria de 32 localidades de 8 bits, en el visor de formas de onda de ModelSim. \label{fig:mem_wave}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.75]{Mem_ModelSim.png}
+	\caption{Simulación de la memoria de 32 localidades de 8 bits, en el visor de formas de onda de ModelSim. \label{fig:mem_modelsim}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.75]{Mem_Content.png}
+	\caption{Simulación de la memoria de 32 localidades de 8 bits, en el visor de formas de onda de ModelSim. \label{fig:mem_content1}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.75]{Mem_Content2.png}
+	\caption{Simulación de la memoria de 32 localidades de 8 bits, en el visor de formas de onda de ModelSim. \label{fig:mem_content2}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.75]{Mem_Content3.png}
+	\caption{Simulación de la memoria de 32 localidades de 8 bits, en el visor de formas de onda de ModelSim. \label{fig:mem_content3}}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.75]{Mem_Content4.png}
+	\caption{Simulación de la memoria de 32 localidades de 8 bits, en el visor de formas de onda de ModelSim. \label{fig:mem_content4}}
+\end{figure}

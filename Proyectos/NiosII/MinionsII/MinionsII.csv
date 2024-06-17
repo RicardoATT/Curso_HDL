@@ -1,12 +1,12 @@
-# system info MinionsII on 2024.06.06.23:03:19
+# system info MinionsII on 2024.06.14.13:44:53
 system_info:
 name,value
-DEVICE,EP4CE115F29C7
-DEVICE_FAMILY,Cyclone IV E
-GENERATION_ID,1717732989
+DEVICE,5CSEBA6U23I7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1718390681
 #
 #
-# Files generated for MinionsII on 2024.06.06.23:03:19
+# Files generated for MinionsII on 2024.06.14.13:44:53
 files:
 filepath,kind,attributes,module,is_top
 simulation/MinionsII.v,VERILOG,,MinionsII,true

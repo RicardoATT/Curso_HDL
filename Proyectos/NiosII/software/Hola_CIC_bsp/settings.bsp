@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>6/06/2024 11:35:14 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1717734914976</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>14/06/2024 01:58:08 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1718391488370</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\Usuario\Documents\RATT_repositorios\Curso_HDL\Proyectos\NiosII\software\Hola_CIC_bsp</BspGeneratedLocation>
         <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\MinionsII.sopcinfo</SopcDesignFile>

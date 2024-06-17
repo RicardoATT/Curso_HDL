@@ -372,23 +372,23 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x10b1
+.debug_info     0x0000000000000000     0x10ad
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x0000000000000000       0x92 ../Hola_CIC_bsp//obj/HAL/src/crt0.o
- .debug_info    0x0000000000000092       0xf5 obj/default/hello_world_small.o
- .debug_info    0x0000000000000187      0x1c9 ../Hola_CIC_bsp/\libhal_bsp.a(alt_load.o)
- .debug_info    0x0000000000000350      0x169 ../Hola_CIC_bsp/\libhal_bsp.a(alt_main.o)
- .debug_info    0x00000000000004b9      0x13a ../Hola_CIC_bsp/\libhal_bsp.a(alt_putstr.o)
- .debug_info    0x00000000000005f3       0xd1 ../Hola_CIC_bsp/\libhal_bsp.a(alt_usleep.o)
- .debug_info    0x00000000000006c4      0x185 ../Hola_CIC_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_info    0x0000000000000849      0x197 ../Hola_CIC_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_info    0x00000000000009e0       0xd8 ../Hola_CIC_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .debug_info    0x0000000000000ab8       0x92 ../Hola_CIC_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_info    0x0000000000000b4a       0x92 ../Hola_CIC_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_info    0x0000000000000bdc       0x92 ../Hola_CIC_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_info    0x0000000000000c6e       0xc9 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
- .debug_info    0x0000000000000d37      0x2c6 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_info    0x0000000000000ffd       0xb4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x0000000000000092       0xf1 obj/default/hello_world_small.o
+ .debug_info    0x0000000000000183      0x1c9 ../Hola_CIC_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x000000000000034c      0x169 ../Hola_CIC_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000000000004b5      0x13a ../Hola_CIC_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_info    0x00000000000005ef       0xd1 ../Hola_CIC_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_info    0x00000000000006c0      0x185 ../Hola_CIC_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000000000000845      0x197 ../Hola_CIC_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_info    0x00000000000009dc       0xd8 ../Hola_CIC_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_info    0x0000000000000ab4       0x92 ../Hola_CIC_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x0000000000000b46       0x92 ../Hola_CIC_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x0000000000000bd8       0x92 ../Hola_CIC_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_info    0x0000000000000c6a       0xc9 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_info    0x0000000000000d33      0x2c6 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x0000000000000ff9       0xb4 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
 
 .debug_abbrev   0x0000000000000000      0x8fb
  *(.debug_abbrev)
@@ -408,23 +408,23 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  .debug_abbrev  0x000000000000077e      0x10e c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
  .debug_abbrev  0x000000000000088c       0x6f c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
 
-.debug_line     0x0000000000000000      0xab3
+.debug_line     0x0000000000000000      0xab0
  *(.debug_line)
  .debug_line    0x0000000000000000       0x66 ../Hola_CIC_bsp//obj/HAL/src/crt0.o
- .debug_line    0x0000000000000066      0x10a obj/default/hello_world_small.o
- .debug_line    0x0000000000000170       0xa4 ../Hola_CIC_bsp/\libhal_bsp.a(alt_load.o)
- .debug_line    0x0000000000000214       0xbd ../Hola_CIC_bsp/\libhal_bsp.a(alt_main.o)
- .debug_line    0x00000000000002d1       0xa0 ../Hola_CIC_bsp/\libhal_bsp.a(alt_putstr.o)
- .debug_line    0x0000000000000371       0xcf ../Hola_CIC_bsp/\libhal_bsp.a(alt_usleep.o)
- .debug_line    0x0000000000000440      0x101 ../Hola_CIC_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x0000000000000541       0xf0 ../Hola_CIC_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_line    0x0000000000000631       0xb5 ../Hola_CIC_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .debug_line    0x00000000000006e6       0x4e ../Hola_CIC_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x0000000000000734       0x4e ../Hola_CIC_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x0000000000000782       0x50 ../Hola_CIC_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
- .debug_line    0x00000000000007d2      0x15c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
- .debug_line    0x000000000000092e      0x105 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_line    0x0000000000000a33       0x80 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x0000000000000066      0x107 obj/default/hello_world_small.o
+ .debug_line    0x000000000000016d       0xa4 ../Hola_CIC_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000000000000211       0xbd ../Hola_CIC_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000000000002ce       0xa0 ../Hola_CIC_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_line    0x000000000000036e       0xcf ../Hola_CIC_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_line    0x000000000000043d      0x101 ../Hola_CIC_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x000000000000053e       0xf0 ../Hola_CIC_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_line    0x000000000000062e       0xb5 ../Hola_CIC_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_line    0x00000000000006e3       0x4e ../Hola_CIC_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x0000000000000731       0x4e ../Hola_CIC_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000000000000077f       0x50 ../Hola_CIC_bsp/\libhal_bsp.a(altera_nios2_gen2_irq.o)
+ .debug_line    0x00000000000007cf      0x15c c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_line    0x000000000000092b      0x105 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000000000000a30       0x80 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
 
 .debug_frame    0x0000000000000000      0x254
  *(.debug_frame)
@@ -474,17 +474,17 @@ LOAD c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nio
  .debug_str     0x00000000000007ee       0x40 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
                                         0x193 (size before relaxing)
 
-.debug_loc      0x0000000000000000      0x714
+.debug_loc      0x0000000000000000      0x715
  *(.debug_loc)
- .debug_loc     0x0000000000000000       0x2a obj/default/hello_world_small.o
- .debug_loc     0x000000000000002a       0x37 ../Hola_CIC_bsp/\libhal_bsp.a(alt_putstr.o)
- .debug_loc     0x0000000000000061       0x21 ../Hola_CIC_bsp/\libhal_bsp.a(alt_usleep.o)
- .debug_loc     0x0000000000000082       0x21 ../Hola_CIC_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_loc     0x00000000000000a3       0x8b ../Hola_CIC_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
- .debug_loc     0x000000000000012e       0x67 ../Hola_CIC_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .debug_loc     0x0000000000000195       0x1e c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
- .debug_loc     0x00000000000001b3      0x4ce c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_loc     0x0000000000000681       0x93 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_loc     0x0000000000000000       0x2b obj/default/hello_world_small.o
+ .debug_loc     0x000000000000002b       0x37 ../Hola_CIC_bsp/\libhal_bsp.a(alt_putstr.o)
+ .debug_loc     0x0000000000000062       0x21 ../Hola_CIC_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_loc     0x0000000000000083       0x21 ../Hola_CIC_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000000000000a4       0x8b ../Hola_CIC_bsp/\libhal_bsp.a(altera_avalon_jtag_uart_write.o)
+ .debug_loc     0x000000000000012f       0x67 ../Hola_CIC_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_loc     0x0000000000000196       0x1e c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/../../../../../H-x86_64-mingw32/nios2-elf/lib/mno-hw-mul\libsmallc.a(lib_a-strlen.o)
+ .debug_loc     0x00000000000001b4      0x4ce c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x0000000000000682       0x93 c:/intelfpga_lite/18.1/nios2eds/bin/gnu/h-x86_64-mingw32/bin/../lib/gcc/nios2-elf/5.3.0/mno-hw-mul\libgcc.a(lib2-mul.o)
 
 .debug_macinfo
  *(.debug_macinfo)

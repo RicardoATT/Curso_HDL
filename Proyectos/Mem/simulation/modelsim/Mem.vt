@@ -1,0 +1,30 @@
+`timescale 1 ns/ 1 ps
+module Mem_vlg_tst();
+	reg 				CLK;
+	reg 	[7:0] 	DATA;
+	reg 	[4:0] 	DIR;
+	reg 				WE;                                              
+	wire 	[7:0]		Q;
+
+	Mem i1 ( 
+		.CLK(CLK),
+		.DATA(DATA),
+		.DIR(DIR),
+		.Q(Q),
+		.WE(WE)
+	);
+
+	initial
+	begin
+		$display("Running testbench at CIC");
+		DIR = 0; WE = 0; DATA = 0; CLK = 0;
+	end
+
+	always
+	begin
+		#10; CLK = ~CLK;
+		#10; CLK = ~CLK;
+		DIR = DIR + 1;
+	end
+
+endmodule 

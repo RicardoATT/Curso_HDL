@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 win32 2024.06.06.23:03:19
+# ACDS 18.1 625 win32 2024.06.14.13:44:53
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2024.06.06.23:03:19
+# ACDS 18.1 625 win32 2024.06.14.13:44:53
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="MinionsII"
@@ -148,7 +148,13 @@ vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPT
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.v \
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.v \
   $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv \
-  -v $QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.v \
+  -v $QUARTUS_INSTALL_DIR/eda/sim_lib/synopsys/cyclonev_atoms_ncrypt.v \
+  -v $QUARTUS_INSTALL_DIR/eda/sim_lib/synopsys/cyclonev_hmi_atoms_ncrypt.v \
+  -v $QUARTUS_INSTALL_DIR/eda/sim_lib/cyclonev_atoms.v \
+  -v $QUARTUS_INSTALL_DIR/eda/sim_lib/synopsys/cyclonev_hssi_atoms_ncrypt.v \
+  -v $QUARTUS_INSTALL_DIR/eda/sim_lib/cyclonev_hssi_atoms.v \
+  -v $QUARTUS_INSTALL_DIR/eda/sim_lib/synopsys/cyclonev_pcie_hip_atoms_ncrypt.v \
+  -v $QUARTUS_INSTALL_DIR/eda/sim_lib/cyclonev_pcie_hip_atoms.v \
   $QSYS_SIMDIR/submodules/MinionsII_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv \
   $QSYS_SIMDIR/submodules/MinionsII_mm_interconnect_0_avalon_st_adapter.v \
   $QSYS_SIMDIR/submodules/MinionsII_mm_interconnect_0_rsp_mux.sv \

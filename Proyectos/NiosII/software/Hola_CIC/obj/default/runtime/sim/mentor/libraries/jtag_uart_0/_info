@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/software/Hola_CIC/obj/default/runtime/sim/mentor
+vMinionsII_jtag_uart_0
+Z1 !s110 1718647568
+!i10b 1
+!s100 6f0;^bNd0[HoUDQ39_gaS0
+I>;UPO?P[FE:C<TOD_5Y>k1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1718390685
+Z4 8C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_jtag_uart_0.v
+Z5 FC:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_jtag_uart_0.v
+L0 331
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1718647568.000000
+Z8 !s107 C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_jtag_uart_0.v|
+Z9 !s90 -reportprogress|300|C:/Users/Usuario/Documents/RATT_repositorios/Curso_HDL/Proyectos/NiosII/MinionsII/simulation/submodules/MinionsII_jtag_uart_0.v|-work|jtag_uart_0|
+!i113 1
+Z10 o-work jtag_uart_0
+Z11 tCvgOpt 0
+n@minions@i@i_jtag_uart_0
+vMinionsII_jtag_uart_0_scfifo_r
+R1
+!i10b 1
+!s100 @TO<nmjdcb`d5ZjW_`XWF0
+IZ2RnSj^kk3zWn3m^dYE@K1
+R2
+R0
+R3
+R4
+R5
+L0 243
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_jtag_uart_0_scfifo_r
+vMinionsII_jtag_uart_0_scfifo_w
+R1
+!i10b 1
+!s100 PbDgmHYF6YblHGmPAZhR[3
+ILbFg=Z99RzM2kgO;3zJBX1
+R2
+R0
+R3
+R4
+R5
+L0 78
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_jtag_uart_0_scfifo_w
+vMinionsII_jtag_uart_0_sim_scfifo_r
+R1
+!i10b 1
+!s100 K5@icT[je2eV66OP4k4Uk2
+I=YL5nilB2:XZId=[nVCn<0
+R2
+R0
+R3
+R4
+R5
+L0 164
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_jtag_uart_0_sim_scfifo_r
+vMinionsII_jtag_uart_0_sim_scfifo_w
+R1
+!i10b 1
+!s100 GQC?8YLOCP3z5W1N7W]9V0
+I?L5nDYN5zLZB4LTfWc79g0
+R2
+R0
+R3
+R4
+R5
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@minions@i@i_jtag_uart_0_sim_scfifo_w
