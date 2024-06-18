@@ -1,6 +1,10 @@
 \section{Conclusiones}
-En conclusión, se implementó la simulación del programa de asignación de valores en la salida del procesador NIOS II de manera exitosa.
+En conclusión, se implementó la memoria dentro del dispositivo de hardware de manera exitosa.
 
-Utilizando el procedimiento de la presentación vista en clase para simular un NIOS II, se escribieron los comandos necesarios para simular la impresión de una cadena de texto en la consola de ModelSim y en el visor de formas de onda se observó el tiempo requerido para cargar el mensaje y para mandar valores al puerto de salida del procesador. Se empleó la herramienta de \textit{Eclipse} para variar el retardo del programa y con la herramienta de ModelSim se generó el archivo \textit{.do} para los comandos.
+Utilizando el procedimiento de la presentación vista en clase, se creo una memoria de 32 direcciones con un tamaño de 8 bits cada una, empleando una instancia de memoria perteneciente al apartado de \textit{IP Catalog}. Con un archivo \textit{.mif} se inicializó la memoria.
+
+Se realizaron las simulaciones pertinentes para observar los datos de la memoria con el visor de formas de onda de ModelSim.
+
+Con el \textit{Pin Planner} se asignaron los puertos de entradas y salidas y con \textit{In-System Memory Content Editor} se cargó la implementación a la tarjeta DE2-115. Con la herramienta mencionada se leyeron y escribieron datos en la memoria del FPGA en tiempo real.
 
 En los Anexos se pueden encontrar los códigos implementados.
